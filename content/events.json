@@ -1,0 +1,38 @@
+[
+  {
+    "title": "El agua nos llama — VSG Group Exhibition",
+    "venue": "The Local Air",
+    "location": "Valencia, Spain",
+    "date_start": "2026-02-18",
+    "date_end": "2026-02-28",
+    "status": "past",
+    "description": "The first exhibition of Virtual Studio Groups artists in Spain. Fifteen artists, fifteen relationships with water — sculpture, photography, installation, collage, and painting.",
+    "artists_count": 15,
+    "image": "/assets/images/exhibitions/5fd09b71-e321-4777-9c86-2eae2b467920.jpg",
+    "article_link": "/magazine/exhibitions/el-agua-nos-llama/"
+  },
+  {
+    "title": "Dreams — VSG Group Exhibition",
+    "venue": "Juxtapose Art Fair",
+    "location": "Aarhus, Denmark",
+    "date_start": "2025-06-01",
+    "date_end": "2025-06-30",
+    "status": "past",
+    "description": "A collective wall of dream images. Twenty-one artists contributed square-format works that together form a shared interior landscape.",
+    "artists_count": 21,
+    "image": "/assets/images/exhibitions/juxtaose-2025_credit_iovermorgen.jpg",
+    "article_link": null
+  },
+  {
+    "title": "VSG at Supermarket Art Fair",
+    "venue": "Supermarket Art Fair",
+    "location": "Stockholm, Sweden",
+    "date_start": "2025-04-03",
+    "date_end": "2025-04-06",
+    "status": "past",
+    "description": "VSG participated in Supermarket Art Fair Stockholm, the independent art fair for artist-run spaces and projects.",
+    "artists_count": 12,
+    "image": "/assets/images/exhibitions/img_0833.jpg",
+    "article_link": null
+  }
+]

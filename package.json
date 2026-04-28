@@ -1,0 +1,13 @@
+{
+  "name": "vsg-website",
+  "version": "1.0.0",
+  "description": "Virtual Studio Groups static website",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && npx serve dist"
+  },
+  "dependencies": {
+    "front-matter": "^4.0.2",
+    "marked": "^12.0.0"
+  }
+}
