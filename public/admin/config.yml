@@ -3,7 +3,7 @@ backend:
   repo: gotzagotzagotza/vsg-website
   branch: main
   auth_type: pkce
-  app_id: "3598783"
+  app_id: Ov23liXDyN2GfamhBWb1
 
 media_folder: assets/images/uploads
 public_folder: /assets/images/uploads
