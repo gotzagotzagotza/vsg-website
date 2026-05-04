@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: virtualstudiogroups/vsg-website
+  repo: gotzagotzagotza/vsg-website
   branch: main
   base_url: https://vsg-cms-auth.dragon277.workers.dev
 
