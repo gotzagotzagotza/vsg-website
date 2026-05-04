@@ -683,12 +683,13 @@ function buildArticle(article, sectionSlug) {
   </div>
 
   ${coverHtml}
-  ${instagramHtml}
   ${videoHtml}
 
   <div class="article-text">
     ${article.body}
   </div>
+
+  ${instagramHtml}
 </div>
 `;
 
