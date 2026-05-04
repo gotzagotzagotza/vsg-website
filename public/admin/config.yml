@@ -64,6 +64,49 @@ collections:
       - { label: YouTube video URL, name: video, widget: string, required: false }
       - { label: Body, name: body, widget: markdown }
 
+  - name: events
+    label: Events
+    files:
+      - label: All Events
+        name: events
+        file: content/events.json
+        fields:
+          - label: Events
+            name: events
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Venue, name: venue, widget: string }
+              - { label: Location, name: location, widget: string }
+              - { label: Start date, name: date_start, widget: datetime, format: YYYY-MM-DD }
+              - { label: End date, name: date_end, widget: datetime, format: YYYY-MM-DD, required: false }
+              - label: Status
+                name: status
+                widget: select
+                options: [upcoming, past]
+              - { label: Description, name: description, widget: text }
+              - { label: Number of artists, name: artists_count, widget: number, required: false }
+              - { label: Cover image, name: image, widget: image, required: false }
+              - { label: Article link, name: article_link, widget: string, required: false }
+
+  - name: artists
+    label: Artists
+    files:
+      - label: All Artists
+        name: artists
+        file: content/artists.json
+        fields:
+          - label: Artists
+            name: artists
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Country, name: country, widget: string }
+              - { label: Instagram username, name: instagram, widget: string, required: false }
+              - { label: Website (without https://), name: website, widget: string, required: false }
+              - { label: Photo, name: photo, widget: image, required: false }
+              - { label: Bio, name: bio, widget: text }
+
   - name: pages
     label: Pages
     files:
