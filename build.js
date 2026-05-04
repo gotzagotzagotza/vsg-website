@@ -396,13 +396,14 @@ function buildArtists(artists) {
 
 // ---- MAGAZINE INDEX ----
 
-function buildMagazineIndex(exhibitions, booksAndIdeas, projectsResearch, reflections) {
+function buildMagazineIndex(exhibitions, booksAndIdeas, projectsResearch, reflections, presentations) {
   const sectionUrl = s => {
     const map = {
       'Exhibitions and Encounters': 'exhibitions-and-encounters',
       'Books & Ideas': 'books-and-ideas',
       'Projects & Research': 'projects-and-research',
-      'Reflections': 'reflections'
+      'Reflections': 'reflections',
+      'Artist Presentations': 'artist-presentations'
     };
     return map[s] || slugify(s);
   };
@@ -411,6 +412,7 @@ function buildMagazineIndex(exhibitions, booksAndIdeas, projectsResearch, reflec
     ...exhibitions.map(a => ({ ...a, _sectionSlug: 'exhibitions-and-encounters' })),
     ...projectsResearch.map(a => ({ ...a, _sectionSlug: 'projects-and-research' })),
     ...reflections.map(a => ({ ...a, _sectionSlug: 'reflections' })),
+    ...presentations.map(a => ({ ...a, _sectionSlug: 'artist-presentations' })),
   ].sort((a, b) => new Date(b.date) - new Date(a.date));
 
   const allCards = allArticles.map(a => articleCard({
@@ -446,6 +448,7 @@ function buildMagazineIndex(exhibitions, booksAndIdeas, projectsResearch, reflec
       <a href="/magazine/books-and-ideas/" class="section-tab">Books & Ideas</a>
       <a href="/magazine/projects-and-research/" class="section-tab">Projects & Research</a>
       <a href="/magazine/reflections/" class="section-tab">Reflections</a>
+      <a href="/magazine/artist-presentations/" class="section-tab">Artist Presentations</a>
     </div>
 
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem">
@@ -516,6 +519,7 @@ function buildMagazineSection({ sectionTitle, sectionSlug, articles, intro }) {
       <a href="/magazine/books-and-ideas/" class="section-tab${sectionSlug === 'books-and-ideas' ? ' active' : ''}">Books & Ideas</a>
       <a href="/magazine/projects-and-research/" class="section-tab${sectionSlug === 'projects-and-research' ? ' active' : ''}">Projects & Research</a>
       <a href="/magazine/reflections/" class="section-tab${sectionSlug === 'reflections' ? ' active' : ''}">Reflections</a>
+      <a href="/magazine/artist-presentations/" class="section-tab${sectionSlug === 'artist-presentations' ? ' active' : ''}">Artist Presentations</a>
     </div>
 
     <div style="margin-top:1rem;margin-bottom:2rem;text-align:right">
@@ -562,6 +566,7 @@ function buildBooksAndIdeas(books) {
       <a href="/magazine/books-and-ideas/" class="section-tab active">Books & Ideas</a>
       <a href="/magazine/projects-and-research/" class="section-tab">Projects & Research</a>
       <a href="/magazine/reflections/" class="section-tab">Reflections</a>
+      <a href="/magazine/artist-presentations/" class="section-tab">Artist Presentations</a>
     </div>
 
     <div style="margin-top:1rem;margin-bottom:2.5rem;text-align:right">
@@ -613,6 +618,7 @@ function buildReflections(reflections) {
       <a href="/magazine/books-and-ideas/" class="section-tab">Books & Ideas</a>
       <a href="/magazine/projects-and-research/" class="section-tab">Projects & Research</a>
       <a href="/magazine/reflections/" class="section-tab active">Reflections</a>
+      <a href="/magazine/artist-presentations/" class="section-tab">Artist Presentations</a>
     </div>
 
     <div style="margin-top:1rem;margin-bottom:2rem">
@@ -938,6 +944,7 @@ function build() {
   const booksAndIdeas = readMarkdownFiles('content/magazine/books-and-ideas');
   const projectsResearch = readMarkdownFiles('content/magazine/projects-and-research');
   const reflections = readMarkdownFiles('content/magazine/reflections');
+  const presentations = readMarkdownFiles('content/magazine/artist-presentations');
   const artists = JSON.parse(readFile('content/artists.json'));
   const events = JSON.parse(readFile('content/events.json'));
 
@@ -957,7 +964,7 @@ function build() {
   console.log('  ✓ artists/index.html');
 
   // Magazine index
-  writeFile('dist/magazine/index.html', buildMagazineIndex(exhibitions, booksAndIdeas, projectsResearch, reflections));
+  writeFile('dist/magazine/index.html', buildMagazineIndex(exhibitions, booksAndIdeas, projectsResearch, reflections, presentations));
   console.log('  ✓ magazine/index.html');
 
   // Magazine sections
@@ -983,6 +990,14 @@ function build() {
   writeFile('dist/magazine/reflections/index.html', buildReflections(reflections));
   console.log('  ✓ magazine/reflections/index.html');
 
+  writeFile('dist/magazine/artist-presentations/index.html', buildMagazineSection({
+    sectionTitle: 'Artist Presentations',
+    sectionSlug: 'artist-presentations',
+    articles: presentations,
+    intro: 'Detailed write-ups of artist presentations from VSG sessions — practice, process, and conversation.'
+  }));
+  console.log('  ✓ magazine/artist-presentations/index.html');
+
   // Individual article pages
   const sectionMap = {
     exhibitions: 'exhibitions-and-encounters',
@@ -1003,6 +1018,11 @@ function build() {
   for (const article of reflections) {
     writeFile(`dist/magazine/reflections/${article.slug}/index.html`, buildArticle(article, 'reflections'));
     console.log(`  ✓ magazine/reflections/${article.slug}/`);
+  }
+
+  for (const article of presentations) {
+    writeFile(`dist/magazine/artist-presentations/${article.slug}/index.html`, buildArticle(article, 'artist-presentations'));
+    console.log(`  ✓ magazine/artist-presentations/${article.slug}/`);
   }
 
   // Projects

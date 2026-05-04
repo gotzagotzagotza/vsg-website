@@ -64,6 +64,20 @@ collections:
       - { label: YouTube video URL, name: video, widget: string, required: false }
       - { label: Body, name: body, widget: markdown }
 
+  - name: presentations
+    label: "Magazine — Artist Presentations"
+    folder: content/magazine/artist-presentations
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD }
+      - { label: Author, name: author, widget: string, required: false }
+      - { label: Section, name: section, widget: hidden, default: "Artist Presentations" }
+      - { label: Excerpt, name: excerpt, widget: text }
+      - { label: Cover image, name: cover, widget: image, required: false }
+      - { label: Body, name: body, widget: markdown }
+
   - name: events
     label: Events
     files:
