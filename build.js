@@ -205,7 +205,7 @@ function buildHome(exhibitions, projects, events) {
       </div>
     </div>
     <div class="home-hero-image">
-      <img src="/assets/images/exhibitions/img_0841-2.jpg" alt="VSG at Juxtapose Art Fair" loading="eager">
+      <img src="/assets/images/vsg-pictext.jpeg" alt="Virtual Studio Groups" loading="eager">
     </div>
   </div>
 </section>
@@ -350,11 +350,14 @@ function buildArtists(artists) {
       ? `<a href="https://${a.website}" target="_blank" rel="noopener">Website</a>`
       : '';
 
+    const countryHtml = a.country && !a.country.startsWith('[MISSING')
+      ? `<div class="artist-country">${a.country}</div>`
+      : '';
+
     return `<div class="artist-card">
   <div class="artist-photo">${photoHtml}</div>
   <div class="artist-name">${a.name}</div>
-  <div class="artist-country">${a.country}</div>
-  <p class="artist-bio">${a.bio}</p>
+  ${countryHtml}
   <div class="artist-links">
     ${instagramLink}
     ${websiteLink}
@@ -795,20 +798,30 @@ function buildEvents(events) {
       ? `${d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long' })} – ${new Date(e.date_end).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}`
       : formatDate(e.date_start);
 
-    return `<div class="event-card">
-  <div class="event-date-block">
-    <span class="month">${month}</span>
-    <span class="year">${year}</span>
-  </div>
-  <div>
-    <div class="event-title">${e.title}</div>
-    <div class="event-location">${e.venue} &nbsp;·&nbsp; ${e.location}</div>
-    <p class="event-desc">${e.description}</p>
-    <p style="font-family:var(--font-mono);font-size:0.72rem;color:var(--gray-text);margin-top:0.4rem">${dateRange}${e.artists_count ? ` &nbsp;·&nbsp; ${e.artists_count} artists` : ''}</p>
-    <span class="event-status ${e.status}">${e.status}</span>
-    ${e.article_link ? `<br><a href="${e.article_link}" style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--accent);margin-top:0.5rem;display:inline-block">Read review →</a>` : ''}
-  </div>
-</div>`;
+    const imageHtml = e.image
+      ? `<div class="event-card-image"><img src="${e.image}" alt="${e.title}" loading="lazy"></div>`
+      : '';
+
+    const inner = `
+  ${imageHtml}
+  <div class="event-card-body">
+    <div class="event-date-block">
+      <span class="month">${month}</span>
+      <span class="year">${year}</span>
+    </div>
+    <div>
+      <div class="event-title">${e.title}</div>
+      <div class="event-location">${e.venue} &nbsp;·&nbsp; ${e.location}</div>
+      <p class="event-desc">${e.description}</p>
+      <p style="font-family:var(--font-mono);font-size:0.72rem;color:var(--gray-text);margin-top:0.4rem">${dateRange}${e.artists_count ? ` &nbsp;·&nbsp; ${e.artists_count} artists` : ''}</p>
+      <span class="event-status ${e.status}">${e.status}</span>
+      ${e.article_link ? `<br><span style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--accent);margin-top:0.5rem;display:inline-block">Read review →</span>` : ''}
+    </div>
+  </div>`;
+
+    return e.article_link
+      ? `<a href="${e.article_link}" class="event-card event-card-link">${inner}</a>`
+      : `<div class="event-card">${inner}</div>`;
   }
 
   const upcomingHtml = upcoming.length > 0
@@ -870,6 +883,7 @@ function buildResources() {
       title: 'Artist Communities & Networks',
       items: [
         { name: 'Virtual Studio Groups', url: 'https://virtualstudiogroups.github.io', desc: 'Our own peer community — Sunday meetings, artist interviews, and collective projects. You are already here.' },
+        { name: 'AIR Exchange Network', url: 'https://airexchangenetwork.wordpress.com', desc: 'Sister site to VSG. A network focused on artist residency exchanges and international artistic collaboration.' },
       ]
     }
   ];
