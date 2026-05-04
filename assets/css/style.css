@@ -617,10 +617,10 @@ nav.main-nav a.active {
 
 .section-tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 0;
   border-bottom: 2px solid var(--black);
   margin-bottom: 2.5rem;
-  overflow-x: auto;
 }
 
 .section-tab {
@@ -629,7 +629,7 @@ nav.main-nav a.active {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--gray-text);
-  padding: 0.6rem 1.25rem;
+  padding: 0.6rem 1rem;
   text-decoration: none;
   border-bottom: 2px solid transparent;
   margin-bottom: -2px;
