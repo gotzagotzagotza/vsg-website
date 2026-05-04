@@ -661,6 +661,16 @@ function buildArticle(article, sectionSlug) {
       </div>`
     : '';
 
+  const instagramHtml = article.instagram
+    ? `<div class="instagram-embed">
+        <blockquote class="instagram-media" data-instgrm-captioned
+          data-instgrm-permalink="${article.instagram}"
+          data-instgrm-version="14">
+        </blockquote>
+        <script async src="//www.instagram.com/embed.js"></script>
+      </div>`
+    : '';
+
   const body = `
 <div class="article-body">
   <div class="article-header">
@@ -673,6 +683,7 @@ function buildArticle(article, sectionSlug) {
   </div>
 
   ${coverHtml}
+  ${instagramHtml}
   ${videoHtml}
 
   <div class="article-text">

@@ -76,6 +76,7 @@ collections:
       - { label: Section, name: section, widget: hidden, default: "Artist Presentations" }
       - { label: Excerpt, name: excerpt, widget: text }
       - { label: Cover image, name: cover, widget: image, required: false }
+      - { label: Instagram post URL, name: instagram, widget: string, required: false }
       - { label: Body, name: body, widget: markdown }
 
   - name: events

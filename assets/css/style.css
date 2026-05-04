@@ -715,6 +715,18 @@ nav.main-nav a.active {
   height: auto;
 }
 
+.instagram-embed {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-embed .instagram-media {
+  min-width: 0 !important;
+  width: 100% !important;
+  max-width: 540px !important;
+}
+
 .article-text {
   font-family: var(--font-serif);
   font-size: 1.05rem;

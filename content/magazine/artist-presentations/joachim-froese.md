@@ -5,6 +5,7 @@ section: Artist Presentations
 author: "VSG"
 excerpt: "A conversation with Joachim Froese — photographer, academic, and educator — from a recent Virtual Studio Groups session. On salt printing, Mars, mortality, and the professional discipline of being ready when the door opens."
 cover: null
+instagram: "https://www.instagram.com/p/DGKoqocT1k3/"
 ---
 
 *A conversation with Joachim Froese, a photographer and academic from a recent Virtual Studio Groups session*
