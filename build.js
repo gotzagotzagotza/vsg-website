@@ -1003,6 +1003,10 @@ function build() {
   writeFile('dist/resources/index.html', buildResources());
   console.log('  ✓ resources/index.html');
 
+  // Copy admin CMS panel
+  copyDir('public/admin', 'dist/admin');
+  console.log('  ✓ admin/');
+
   console.log('\nBuild complete → dist/');
 }
 

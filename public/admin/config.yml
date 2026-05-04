@@ -1,0 +1,83 @@
+backend:
+  name: github
+  repo: gotzagotzagotza/vsg-website
+  branch: main
+  auth_type: pkce
+  app_id: "3598783"
+
+media_folder: assets/images/uploads
+public_folder: /assets/images/uploads
+
+site_url: https://virtualstudiogroups.com
+
+collections:
+  - name: exhibitions
+    label: "Magazine — Exhibitions & Encounters"
+    folder: content/magazine/exhibitions
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD }
+      - { label: Section, name: section, widget: hidden, default: "Exhibitions and Encounters" }
+      - { label: Excerpt, name: excerpt, widget: text }
+      - { label: Cover image, name: cover, widget: image, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: books
+    label: "Magazine — Books & Ideas"
+    folder: content/magazine/books-and-ideas
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Author, name: author, widget: string }
+      - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD }
+      - { label: Section, name: section, widget: hidden, default: "Books & Ideas" }
+      - { label: Excerpt, name: excerpt, widget: text }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: projects_research
+    label: "Magazine — Projects & Research"
+    folder: content/magazine/projects-and-research
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD }
+      - { label: Author, name: author, widget: string, required: false }
+      - { label: Section, name: section, widget: hidden, default: "Projects & Research" }
+      - { label: Excerpt, name: excerpt, widget: text }
+      - { label: Cover image, name: cover, widget: image, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: reflections
+    label: "Magazine — Reflections"
+    folder: content/magazine/reflections
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime, format: YYYY-MM-DD }
+      - { label: Author, name: author, widget: string, required: false }
+      - { label: Section, name: section, widget: hidden, default: "Reflections" }
+      - { label: Excerpt, name: excerpt, widget: text }
+      - { label: YouTube video URL, name: video, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: pages
+    label: Pages
+    files:
+      - label: About
+        name: about
+        file: content/about.md
+        fields:
+          - { label: Title, name: title, widget: hidden, default: About }
+          - { label: Body, name: body, widget: markdown }
+
+      - label: Culture Code
+        name: culture_code
+        file: content/culture-code.md
+        fields:
+          - { label: Title, name: title, widget: hidden, default: "Culture Code" }
+          - { label: Body, name: body, widget: markdown }
