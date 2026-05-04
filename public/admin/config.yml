@@ -2,8 +2,7 @@ backend:
   name: github
   repo: gotzagotzagotza/vsg-website
   branch: main
-  auth_type: pkce
-  app_id: Ov23liXDyN2GfamhBWb1
+  base_url: https://vsg-cms-auth.dragon277.workers.dev
 
 media_folder: assets/images/uploads
 public_folder: /assets/images/uploads
