@@ -326,6 +326,38 @@ function buildCommunity(aboutContent) {
     </div>
   </div>
 </div>
+
+<div class="section-block" style="background:var(--gray-light)">
+  <div class="container">
+    <p class="section-label">Sister Network</p>
+    <h2 class="section-title">AIR Exchange Network</h2>
+    <p class="section-intro" style="max-width:640px;margin-bottom:3rem">A parallel initiative — same principle of peer dialogue and sustained online community, but for a different circle: people who run, organize, or are building artist residencies and artist-run spaces.</p>
+
+    <div class="air-exchange-block">
+      <div>
+        <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.8;color:var(--gray-text);margin-bottom:1rem">AIR Exchange Network is an international peer circle for residency organizers and artist-run space directors — and for those who are thinking about starting one and want support along the way.</p>
+        <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.8;color:var(--gray-text);margin-bottom:1rem">We meet online once a month to exchange experiences, share working methods, and discuss the questions many of us are facing: from sustainability and funding to artist care, programming, and the long-term impact of what we build.</p>
+        <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.8;color:var(--gray-text);margin-bottom:1.5rem">This is different from directories, mailing lists, and institutional networks. It is a live, ongoing conversation — not a database, not a conference, not a broadcast channel. The value is in the dialogue itself.</p>
+        <div class="air-exchange-meta">
+          <span class="air-exchange-meta-item">Monthly meetings — first Wednesday of each month, 18:00 CET</span>
+          <span class="air-exchange-meta-item">Online via Zoom &nbsp;·&nbsp; Open to residency organizers and artist-run space directors</span>
+          <span class="air-exchange-meta-item">Contact: virtualstudiogroups@gmail.com</span>
+        </div>
+        <a href="https://airexchangenetwork.wordpress.com" class="btn btn-primary" style="margin-top:1.75rem;display:inline-block" target="_blank" rel="noopener">Visit AIR Exchange Network →</a>
+      </div>
+      <div>
+        <div style="border:1px solid var(--gray-mid);padding:2rem;background:white">
+          <p class="section-label" style="margin-bottom:1rem">Who is it for?</p>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1rem">
+            <li style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.65;color:var(--gray-text);padding-left:1rem;border-left:2px solid var(--accent)">Residency organizers and artist-run space directors who want to share what they know and learn from others in similar contexts</li>
+            <li style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.65;color:var(--gray-text);padding-left:1rem;border-left:2px solid var(--accent)">Hybrid and experimental programs that mix production, exchange, education, and community in their own way</li>
+            <li style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.65;color:var(--gray-text);padding-left:1rem;border-left:2px solid var(--accent)">Emerging organizers in the early stages of developing a residency or artist-run space who need peer support and honest conversation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 `;
 
   return baseTemplate({
@@ -606,9 +638,43 @@ function buildReflections(reflections) {
   const body = `
 <div class="page-hero">
   <div class="container">
-    <p class="section-label">VSG Magazine</p>
-    <h1>Reflections</h1>
-    <p class="intro">This is where we think out loud. Reflections gathers written responses to our own processes — notes from VSG Sunday meetings, responses to works in progress, thoughts that didn't fit anywhere else.</p>
+    <p class="section-label">VSG Magazine — Reflections</p>
+    <h1>How do contemporary artists think?</h1>
+    <p class="intro">A living archive — built in real time, one artist at a time. Every response is a timestamp: what artists think now, how they work now, what they are making now.</p>
+  </div>
+</div>
+
+<div class="section-block" style="background:var(--gray-light)">
+  <div class="container" style="max-width:760px">
+    <p class="section-label">The Archive</p>
+    <h2 class="section-title">Three questions. Every artist. No deadline.</h2>
+    <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.8;color:var(--gray-text);margin-bottom:1.5rem">
+      This section exists because no one is systematically recording how working artists actually think — not critics, not institutions, not algorithms. We are. Each contribution is a document: a single artist's perspective, at a specific moment in time, answering the same three questions every contributor answers.
+    </p>
+    <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.8;color:var(--gray-text);margin-bottom:2rem">
+      In ten years, this will be a genuine archive of contemporary artistic thought. The first responses matter most. They are the foundation.
+    </p>
+
+    <div class="reflections-questions">
+      <div class="reflection-question">
+        <span class="reflection-q-number">01</span>
+        <p class="reflection-q-text">What is good artwork?</p>
+      </div>
+      <div class="reflection-question">
+        <span class="reflection-q-number">02</span>
+        <p class="reflection-q-text">What does it mean to be a successful artist today?</p>
+      </div>
+      <div class="reflection-question">
+        <span class="reflection-q-number">03</span>
+        <p class="reflection-q-text">What is the project you are working on right now?</p>
+      </div>
+    </div>
+
+    <div style="margin-top:2.5rem;padding:1.5rem;border:1px solid var(--gray-mid);background:white">
+      <p style="font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.75rem">Contribute your reflection</p>
+      <p style="font-family:var(--font-serif);font-size:0.9rem;color:var(--gray-text);line-height:1.6;margin-bottom:1.25rem">Open to any working artist. Answer in your own language. Any length. No image required — though you are welcome to include one. Your response will be published here with your name and the date.</p>
+      <a href="https://forms.gle/usHJPEGHajfUXFjh8" class="btn btn-primary" target="_blank" rel="noopener">Submit your reflection</a>
+    </div>
   </div>
 </div>
 
@@ -623,26 +689,21 @@ function buildReflections(reflections) {
       <a href="/magazine/artist-presentations/" class="section-tab">Artist Presentations</a>
     </div>
 
-    <div style="margin-top:1rem;margin-bottom:2rem">
-      <div style="border-left:3px solid var(--accent);padding-left:1.25rem;margin-bottom:2rem">
-        <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7;color:var(--gray-text)">This section gathers personal reflections from artists around the world who respond to three guiding questions:</p>
-        <ol style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7;color:var(--gray-text);padding-left:1.5em;margin-top:0.5rem">
-          <li><em>What is good artwork?</em></li>
-          <li><em>What does it mean to be a successful artist today?</em></li>
-          <li><em>What is the project you are working on right now?</em></li>
-        </ol>
-      </div>
-      <a href="https://forms.gle/usHJPEGHajfUXFjh8" class="submit-cta" target="_blank" rel="noopener">Submit your reflection</a>
-    </div>
-
-    ${reflections.length > 0 ? `<div class="grid-3" style="margin-top:2rem">${articleCards}</div>` : ''}
+    ${reflections.length > 0
+      ? `<div class="grid-3">${articleCards}</div>`
+      : `<div style="padding:3rem 0;text-align:center">
+          <p style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--gray-text);margin-bottom:0.75rem">No responses yet</p>
+          <p style="font-family:var(--font-serif);font-size:1rem;color:var(--gray-text)">Be among the first artists in this archive.</p>
+          <a href="https://forms.gle/usHJPEGHajfUXFjh8" class="btn btn-primary" style="margin-top:1.25rem;display:inline-block" target="_blank" rel="noopener">Submit your reflection</a>
+        </div>`
+    }
   </div>
 </div>
 `;
 
   return baseTemplate({
     title: 'Reflections',
-    description: 'Artists reflecting on their practice — what is good art, what does it mean to be a successful artist today.',
+    description: 'A living archive of how contemporary artists think — three questions, answered by artists from around the world.',
     body,
     activePage: 'magazine'
   });

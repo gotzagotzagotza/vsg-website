@@ -912,6 +912,71 @@ nav.main-nav a.active {
   line-height: 1.6;
 }
 
+/* ---- Reflections ---- */
+
+.reflections-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid var(--gray-mid);
+}
+
+.reflection-question {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--gray-mid);
+}
+
+.reflection-q-number {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  min-width: 28px;
+}
+
+.reflection-q-text {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--black);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ---- AIR Exchange ---- */
+
+.air-exchange-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+@media (max-width: 720px) {
+  .air-exchange-block { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+.air-exchange-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--gray-mid);
+}
+
+.air-exchange-meta-item {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--gray-text);
+}
+
+/* ---- Join block ---- */
+
 .join-block {
   background: var(--gray-light);
   padding: 3rem;
