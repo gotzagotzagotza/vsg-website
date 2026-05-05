@@ -645,35 +645,42 @@ function buildReflections(reflections) {
 </div>
 
 <div class="section-block" style="background:var(--gray-light)">
-  <div class="container" style="max-width:760px">
-    <p class="section-label">The Archive</p>
-    <h2 class="section-title">Three questions. Every artist. No deadline.</h2>
-    <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.8;color:var(--gray-text);margin-bottom:1.5rem">
-      This section exists because no one is systematically recording how working artists actually think — not critics, not institutions, not algorithms. We are. Each contribution is a document: a single artist's perspective, at a specific moment in time, answering the same three questions every contributor answers.
-    </p>
-    <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.8;color:var(--gray-text);margin-bottom:2rem">
-      In ten years, this will be a genuine archive of contemporary artistic thought. The first responses matter most. They are the foundation.
-    </p>
+  <div class="container">
+    <div class="reflections-intro-grid">
+      <div class="reflections-intro-image">
+        <img src="/assets/images/reflections-poster.jpg" alt="How do contemporary artists think? A living archive built in real time." loading="lazy">
+      </div>
+      <div class="reflections-intro-text">
+        <p class="section-label">The Archive</p>
+        <h2 class="section-title">Three questions. Every artist. No deadline.</h2>
+        <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.8;color:var(--gray-text);margin-bottom:1.5rem">
+          This section exists because no one is systematically recording how working artists actually think — not critics, not institutions, not algorithms. We are. Each contribution is a document: a single artist's perspective, at a specific moment in time, answering the same three questions every contributor answers.
+        </p>
+        <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.8;color:var(--gray-text);margin-bottom:2rem">
+          In ten years, this will be a genuine archive of contemporary artistic thought. The first responses matter most. They are the foundation.
+        </p>
 
-    <div class="reflections-questions">
-      <div class="reflection-question">
-        <span class="reflection-q-number">01</span>
-        <p class="reflection-q-text">What is good artwork?</p>
-      </div>
-      <div class="reflection-question">
-        <span class="reflection-q-number">02</span>
-        <p class="reflection-q-text">What does it mean to be a successful artist today?</p>
-      </div>
-      <div class="reflection-question">
-        <span class="reflection-q-number">03</span>
-        <p class="reflection-q-text">What is the project you are working on right now?</p>
-      </div>
-    </div>
+        <div class="reflections-questions">
+          <div class="reflection-question">
+            <span class="reflection-q-number">01</span>
+            <p class="reflection-q-text">What is good artwork?</p>
+          </div>
+          <div class="reflection-question">
+            <span class="reflection-q-number">02</span>
+            <p class="reflection-q-text">What does it mean to be a successful artist today?</p>
+          </div>
+          <div class="reflection-question">
+            <span class="reflection-q-number">03</span>
+            <p class="reflection-q-text">What is the project you are working on right now?</p>
+          </div>
+        </div>
 
-    <div style="margin-top:2.5rem;padding:1.5rem;border:1px solid var(--gray-mid);background:white">
-      <p style="font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.75rem">Contribute your reflection</p>
-      <p style="font-family:var(--font-serif);font-size:0.9rem;color:var(--gray-text);line-height:1.6;margin-bottom:1.25rem">Open to any working artist. Answer in your own language. Any length. No image required — though you are welcome to include one. Your response will be published here with your name and the date.</p>
-      <a href="https://forms.gle/usHJPEGHajfUXFjh8" class="btn btn-primary" target="_blank" rel="noopener">Submit your reflection</a>
+        <div style="margin-top:2.5rem;padding:1.5rem;border:1px solid var(--gray-mid);background:white">
+          <p style="font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.75rem">Contribute your reflection</p>
+          <p style="font-family:var(--font-serif);font-size:0.9rem;color:var(--gray-text);line-height:1.6;margin-bottom:1.25rem">Open to any working artist. Answer in your own language. Any length. No image required — though you are welcome to include one. Your response will be published here with your name and the date.</p>
+          <a href="https://forms.gle/usHJPEGHajfUXFjh8" class="btn btn-primary" target="_blank" rel="noopener">Submit your reflection</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>

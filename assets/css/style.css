@@ -946,6 +946,29 @@ nav.main-nav a.active {
   margin: 0;
 }
 
+.reflections-intro-grid {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.reflections-intro-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 860px) {
+  .reflections-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .reflections-intro-image {
+    max-width: 400px;
+  }
+}
+
 /* ---- AIR Exchange ---- */
 
 .air-exchange-block {
