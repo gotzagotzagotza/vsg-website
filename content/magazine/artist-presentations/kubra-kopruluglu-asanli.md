@@ -1,6 +1,6 @@
 ---
 title: "Portraits of the \"Unseen\": On Digital Craft, Indigenous Knowledge, and Building a Life in a Forest"
-date: 2025-05-05
+date: 2026-04-26
 section: Artist Presentations
 excerpt: "A conversation with Kübra Köprülüoğlu Aşanlı — visual artist and designer — from a recent Virtual Studio Groups session. On painting the erased, living off-grid, and what the forest left behind."
 cover: /assets/images/exhibitions/kubra-cover.jpg
