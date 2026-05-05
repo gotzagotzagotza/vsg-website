@@ -90,6 +90,7 @@ function baseTemplate({ title, description = '', body, activePage = '' }) {
       <a href="/magazine/"${activePage === 'magazine' ? ' class="active"' : ''}>Magazine</a>
       <a href="/projects/"${activePage === 'projects' ? ' class="active"' : ''}>Projects</a>
       <a href="/events/"${activePage === 'events' ? ' class="active"' : ''}>Events</a>
+      <a href="/network/"${activePage === 'network' ? ' class="active"' : ''}>Network</a>
       <a href="/resources/"${activePage === 'resources' ? ' class="active"' : ''}>Resources</a>
     </nav>
   </div>
@@ -114,6 +115,7 @@ ${body}
         <li><a href="/magazine/">Magazine</a></li>
         <li><a href="/projects/">Projects</a></li>
         <li><a href="/events/">Events</a></li>
+        <li><a href="/network/">Network</a></li>
         <li><a href="/resources/">Resources</a></li>
       </ul>
     </nav>
@@ -1080,6 +1082,101 @@ function buildEvents(events) {
   });
 }
 
+// ---- NETWORK PAGE ----
+
+function buildNetwork() {
+  const body = `
+<div class="page-hero">
+  <div class="container">
+    <p class="section-label">Network</p>
+    <h1>Partners &amp; Collaborations</h1>
+    <p class="intro">VSG exists within a wider ecosystem of artist-run spaces, residencies, and peer networks. These are the organisations we are most closely connected to — through shared founding, ongoing exchange, and a common belief in what art communities can be.</p>
+  </div>
+</div>
+
+<div class="section-block">
+  <div class="container">
+    <div class="network-org">
+      <div class="network-org-header">
+        <div>
+          <p class="section-label">Co-founded by VSG · Belgrade, Serbia · Est. 2012</p>
+          <h2 class="section-title">Belgrade Artist in Residence (BAIR)</h2>
+        </div>
+        <a href="https://belgradeartistinresidence.wordpress.com" class="btn btn-outline" target="_blank" rel="noopener">Visit BAIR →</a>
+      </div>
+
+      <p style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.8;color:var(--gray-text);margin-bottom:1.5rem">Belgrade Artist in Residence is a self-directed, tailor-made residency hosted by Center424 — an artist-run non-profit at the heart of Belgrade's independent art scene. Since 2012, BAIR has offered artists from around the world a residency that adapts to how artists actually work today.</p>
+
+      <p style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.8;color:var(--gray-text);margin-bottom:2rem">BAIR is hybrid: a physical base in Belgrade, extended by an active virtual community that keeps the exchange alive long after the residency ends. That virtual community is Virtual Studio Groups. VSG is not an add-on to the residency — it is built into its structure.</p>
+
+      <div class="network-pillars">
+        <div class="network-pillar">
+          <div class="network-pillar-n">01</div>
+          <h3>In-person residency in Belgrade</h3>
+          <p>Studio time, city immersion, curatorial support, and on-ground community in Serbia's most active arts neighbourhood.</p>
+        </div>
+        <div class="network-pillar">
+          <div class="network-pillar-n">02</div>
+          <h3>Virtual Studio Groups (VSG)</h3>
+          <p>Weekly two-hour sessions with approximately sixty curated international artists. Feedback, collaboration, and continuity — from anywhere in the world.</p>
+        </div>
+        <div class="network-pillar">
+          <div class="network-pillar-n">03</div>
+          <h3>Exchange with The Local AIR, Valencia</h3>
+          <p>An ongoing partnership providing reciprocal opportunities for artists between Belgrade and Valencia, Spain.</p>
+        </div>
+      </div>
+
+      <div class="network-meta">
+        <p>BAIR is artist-run and self-supported. Artists cover program fees and living costs; the team provides conceptual guidance, project feedback, documentation support, and invitation letters for grant applications.</p>
+        <p style="margin-top:0.75rem"><strong>Apply or enquire:</strong> <a href="mailto:belgradeair@gmail.com">belgradeair@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-block" style="background:var(--gray-light)">
+  <div class="container">
+    <div class="network-org">
+      <div class="network-org-header">
+        <div>
+          <p class="section-label">Exhibition partner · Valencia, Spain</p>
+          <h2 class="section-title">The Local AIR Valencia</h2>
+        </div>
+        <a href="https://thelocalairvalencia.weebly.com" class="btn btn-outline" target="_blank" rel="noopener">Visit The Local AIR →</a>
+      </div>
+
+      <p style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.8;color:var(--gray-text);margin-bottom:1.5rem">The Local AIR Valencia is an artist-run workshop, gallery, and artist residency in Valencia, Spain. Founded and directed by Dr. Theresa Wilshusen — a multidisciplinary artist, curator, and VSG member — it promotes artistic and cultural exchange by connecting the local community in Valencia with international artists.</p>
+
+      <p style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.8;color:var(--gray-text);margin-bottom:1.5rem">In February 2026, The Local AIR Valencia hosted <em>El agua nos llama</em> — the first VSG group exhibition in Spain. Fifteen artists, fifteen relationships with water. The space has also shown solo work by individual VSG members, and the connection between our communities continues to grow.</p>
+
+      <div class="network-meta">
+        <p>The residency is self-directed and free to apply. Artists have access to a shared studio, accommodation, exhibition opportunities in the gallery, and connection to Valencia's emerging art scene.</p>
+        <p style="margin-top:0.75rem"><strong>Director &amp; curator:</strong> Dr. Theresa Wilshusen</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-block">
+  <div class="container">
+    <div class="join-block">
+      <h2>Interested in collaborating?</h2>
+      <p>If you run an artist-run space, residency, or peer network and are interested in exchange — we would like to hear from you.</p>
+      <a href="mailto:virtualstudiogroups@gmail.com" class="btn btn-primary">virtualstudiogroups@gmail.com</a>
+    </div>
+  </div>
+</div>
+`;
+
+  return baseTemplate({
+    title: 'Network',
+    description: 'VSG partner organisations — Belgrade Artist in Residence (BAIR) and The Local AIR Valencia.',
+    body,
+    activePage: 'network'
+  });
+}
+
 // ---- RESOURCES PAGE ----
 
 function buildResources() {
@@ -1255,6 +1352,10 @@ function build() {
   // Events
   writeFile('dist/events/index.html', buildEvents(events));
   console.log('  ✓ events/index.html');
+
+  // Network
+  writeFile('dist/network/index.html', buildNetwork());
+  console.log('  ✓ network/index.html');
 
   // Resources
   writeFile('dist/resources/index.html', buildResources());

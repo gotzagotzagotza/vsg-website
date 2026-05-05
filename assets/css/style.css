@@ -1229,6 +1229,63 @@ nav.main-nav a.active {
   .section-block { padding: 2.5rem 1.5rem; }
 }
 
+/* ---- Network Page ---- */
+
+.network-org {
+  max-width: 800px;
+}
+
+.network-org-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.network-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 720px) {
+  .network-pillars { grid-template-columns: 1fr; gap: 1.5rem; }
+}
+
+.network-pillar-n {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--gray-text);
+  margin-bottom: 0.5rem;
+}
+
+.network-pillar h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.network-pillar p {
+  font-family: var(--font-serif);
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--gray-text);
+  margin: 0;
+}
+
+.network-meta {
+  border-top: 1px solid var(--gray-mid);
+  padding-top: 1.5rem;
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--gray-text);
+}
+
 /* ---- Meeting Notes ---- */
 
 .meeting-list {
