@@ -534,11 +534,18 @@ function buildMagazineIndex(exhibitions, booksAndIdeas, projectsResearch, reflec
 </div>
 
 <div class="section-block" style="background:var(--gray-light)">
-  <div class="container" style="text-align:center">
-    <p class="section-label">Contribute</p>
-    <h2 class="section-title">Share your work or research</h2>
-    <p class="section-intro" style="margin:1rem auto 2rem">We are opening a space for reflection and collective thinking. This is an invitation to all artists to share their thoughts in writing — on exhibitions, books, projects, or practice.</p>
-    <a href="https://forms.gle/usHJPEGHajfUXFjh8" class="submit-cta" target="_blank" rel="noopener">Submit your reflections</a>
+  <div class="container">
+    <div class="magazine-contribute-block">
+      <div class="magazine-contribute-poster">
+        <img src="/assets/images/magazine-cover.jpg" alt="VSG Digital Art Magazine — Submit your reflections" loading="lazy">
+      </div>
+      <div class="magazine-contribute-text">
+        <p class="section-label">Contribute</p>
+        <h2 class="section-title">Share your work or research</h2>
+        <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.8;color:var(--gray-text);margin:1rem 0 1.5rem">We are opening a space for reflection and collective thinking. This is an invitation to all artists to share their thoughts in writing — on exhibitions, books, projects, or practice. Any length. Any language.</p>
+        <a href="https://forms.gle/usHJPEGHajfUXFjh8" class="btn btn-primary" target="_blank" rel="noopener">Submit your reflections</a>
+      </div>
+    </div>
   </div>
 </div>
 `;

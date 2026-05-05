@@ -1229,6 +1229,32 @@ nav.main-nav a.active {
   .section-block { padding: 2.5rem 1.5rem; }
 }
 
+/* ---- Magazine Contribute Block ---- */
+
+.magazine-contribute-block {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.magazine-contribute-poster img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 720px) {
+  .magazine-contribute-block {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .magazine-contribute-poster {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+}
+
 /* ---- Network Page ---- */
 
 .network-org {
