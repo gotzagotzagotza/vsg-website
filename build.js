@@ -133,6 +133,7 @@ ${body}
 </footer>
 
 <script src="/assets/js/main.js"></script>
+<script src="/assets/js/gallery.js"></script>
 </body>
 </html>`;
 }
@@ -734,13 +735,23 @@ function buildArticle(article, sectionSlug) {
       .filter(f => /\.(jpe?g|png|webp)$/i.test(f))
       .sort();
     if (galleryImages.length > 0) {
-      const imgs = galleryImages.map(f =>
-        `<div class="gallery-item"><img src="/assets/images/gallery/${article.slug}/${f}" alt="" loading="lazy"></div>`
+      const imgs = galleryImages.map((f, i) =>
+        `<button class="gallery-thumb" data-index="${i}" aria-label="View photo ${i+1}">
+  <img src="/assets/images/gallery/${article.slug}/${f}" alt="" loading="lazy">
+</button>`
       ).join('\n');
       galleryHtml = `
 <div class="article-gallery">
   <p class="section-label" style="margin-bottom:1.5rem">Exhibition Photos</p>
   <div class="gallery-grid">${imgs}</div>
+</div>
+
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <button class="lightbox-prev" aria-label="Previous">&#8592;</button>
+  <button class="lightbox-next" aria-label="Next">&#8594;</button>
+  <div class="lightbox-img-wrap"><img id="lightbox-img" src="" alt=""></div>
+  <div class="lightbox-counter"></div>
 </div>`;
     }
   }
