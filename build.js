@@ -726,8 +726,8 @@ function buildArticle(article, sectionSlug) {
     ? `<div class="article-cover"><img src="${article.cover}" alt="${article.title}"></div>`
     : '';
 
-  // Auto-gallery: scan for images in assets/images/[sectionSlug]/[slug]/
-  const galleryDir = path.join('assets', 'images', sectionSlug, article.slug);
+  // Auto-gallery: scan for images in assets/images/gallery/[slug]/
+  const galleryDir = path.join('assets', 'images', 'gallery', article.slug);
   let galleryHtml = '';
   if (fs.existsSync(galleryDir)) {
     const galleryImages = fs.readdirSync(galleryDir)
@@ -735,7 +735,7 @@ function buildArticle(article, sectionSlug) {
       .sort();
     if (galleryImages.length > 0) {
       const imgs = galleryImages.map(f =>
-        `<div class="gallery-item"><img src="/assets/images/${sectionSlug}/${article.slug}/${f}" alt="" loading="lazy"></div>`
+        `<div class="gallery-item"><img src="/assets/images/gallery/${article.slug}/${f}" alt="" loading="lazy"></div>`
       ).join('\n');
       galleryHtml = `
 <div class="article-gallery">
