@@ -726,6 +726,25 @@ function buildArticle(article, sectionSlug) {
     ? `<div class="article-cover"><img src="${article.cover}" alt="${article.title}"></div>`
     : '';
 
+  // Auto-gallery: scan for images in assets/images/[sectionSlug]/[slug]/
+  const galleryDir = path.join('assets', 'images', sectionSlug, article.slug);
+  let galleryHtml = '';
+  if (fs.existsSync(galleryDir)) {
+    const galleryImages = fs.readdirSync(galleryDir)
+      .filter(f => /\.(jpe?g|png|webp)$/i.test(f))
+      .sort();
+    if (galleryImages.length > 0) {
+      const imgs = galleryImages.map(f =>
+        `<div class="gallery-item"><img src="/assets/images/${sectionSlug}/${article.slug}/${f}" alt="" loading="lazy"></div>`
+      ).join('\n');
+      galleryHtml = `
+<div class="article-gallery">
+  <p class="section-label" style="margin-bottom:1.5rem">Exhibition Photos</p>
+  <div class="gallery-grid">${imgs}</div>
+</div>`;
+    }
+  }
+
   const videoHtml = article.video
     ? `<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:2em 0">
         <iframe src="https://www.youtube.com/embed/${article.video.split('/').pop().split('?')[0]}"
@@ -764,6 +783,8 @@ function buildArticle(article, sectionSlug) {
 
   ${instagramHtml}
 </div>
+
+${galleryHtml}
 `;
 
   return baseTemplate({
@@ -862,7 +883,7 @@ function buildProjects() {
   <div class="container">
     <p class="section-label">Future Projects</p>
     <h2 class="section-title">What's next</h2>
-    <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;color:var(--gray-text);max-width:640px">[MISSING: future projects content — to be added as projects are confirmed. Contact virtualstudiogroups@gmail.com to propose a collaboration.]</p>
+    <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;color:var(--gray-text);max-width:640px">More projects coming. To propose a collaboration, write to <a href="mailto:virtualstudiogroups@gmail.com">virtualstudiogroups@gmail.com</a>.</p>
   </div>
 </div>
 `;
