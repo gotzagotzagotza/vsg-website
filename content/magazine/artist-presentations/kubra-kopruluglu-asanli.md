@@ -66,3 +66,7 @@ She did not dismiss the idea. She said she would need to think about it.
 The knowledge she and Melih accumulated over six years — about building, growing, making, teaching — is the kind of knowledge that tends to disappear when the people who hold it return to ordinary life. It would be something, to find a form for it. To make it available without having to live it again full time.
 
 That, perhaps, is also a kind of portraiture.
+
+---
+
+**Kübra's life in the woods:** [Watch on YouTube](https://youtu.be/r97Wmdx6QXo)
