@@ -973,13 +973,14 @@ nav.main-nav a.active {
 
 .air-exchange-block {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 380px 1fr;
   gap: 4rem;
   align-items: start;
 }
 
-@media (max-width: 720px) {
-  .air-exchange-block { grid-template-columns: 1fr; gap: 2rem; }
+@media (max-width: 860px) {
+  .air-exchange-block { grid-template-columns: 1fr; gap: 2.5rem; }
+  .air-exchange-poster { max-width: 400px; }
 }
 
 .air-exchange-meta {

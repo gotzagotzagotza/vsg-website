@@ -334,6 +334,9 @@ function buildCommunity(aboutContent) {
     <p class="section-intro" style="max-width:640px;margin-bottom:3rem">A parallel initiative — same principle of peer dialogue and sustained online community, but for a different circle: people who run, organize, or are building artist residencies and artist-run spaces.</p>
 
     <div class="air-exchange-block">
+      <div class="air-exchange-poster">
+        <img src="/assets/images/air-exchange-poster.jpg" alt="AIR Exchange Network" loading="lazy" style="width:100%;height:auto;display:block">
+      </div>
       <div>
         <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.8;color:var(--gray-text);margin-bottom:1rem">AIR Exchange Network is an international peer circle for residency organizers and artist-run space directors — and for those who are thinking about starting one and want support along the way.</p>
         <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.8;color:var(--gray-text);margin-bottom:1rem">We meet online once a month to exchange experiences, share working methods, and discuss the questions many of us are facing: from sustainability and funding to artist care, programming, and the long-term impact of what we build.</p>
