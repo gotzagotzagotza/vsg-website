@@ -207,7 +207,7 @@ function buildHome(exhibitions, projects, events, presentations) {
       </div>
     </div>
     <div class="home-hero-image">
-      <img src="/assets/images/vsg-pictext.jpeg" alt="Virtual Studio Groups" loading="eager">
+      <img src="/assets/images/vsg-poster.jpg" alt="Virtual Studio Groups" loading="eager">
     </div>
   </div>
 </section>
@@ -295,7 +295,7 @@ function buildCommunity(aboutContent) {
         </div>
       </div>
       <div>
-        <img src="/assets/images/vsg-pictext.jpeg" alt="Virtual Studio Groups" loading="lazy" style="width:100%;height:auto;margin-bottom:1.5rem">
+        <img src="/assets/images/vsg-poster.jpg" alt="Virtual Studio Groups" loading="lazy" style="width:100%;height:auto;margin-bottom:1.5rem">
         <div style="border:1px solid var(--gray-mid);padding:1.5rem">
           <h3 style="font-size:1rem;font-weight:700;margin-bottom:0.75rem">Meeting details</h3>
           <p style="font-size:0.875rem;color:var(--gray-text);line-height:1.6">Every <strong>Sunday evening, 8 PM</strong> (European time). Online via video call. Open to artists, curators, cultural professionals, and art writers.</p>
