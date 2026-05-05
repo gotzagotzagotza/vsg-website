@@ -85,3 +85,7 @@ That same pragmatism shapes his approach to documentation. A website, he argued,
 On social media, his philosophy is simple: quality over volume. Frequent posting without substance quickly becomes noise. Less frequent, more considered updates are ultimately more valuable.
 
 What exists online, he noted, is not the artwork itself but its documentation — and for most people, that documentation will be their only encounter with the work. If artists choose to participate in the exhibition world, the professional framework needs to be in place before the opportunity arrives, not assembled afterward in haste.
+
+---
+
+If you want to follow Joachim on Instagram: [@joachimfroese](https://www.instagram.com/joachimfroese/)
