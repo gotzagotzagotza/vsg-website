@@ -109,6 +109,7 @@ ${body}
       <h4>Navigate</h4>
       <ul>
         <li><a href="/community/">Community</a></li>
+        <li><a href="/meetings/">Meeting Notes</a></li>
         <li><a href="/artists/">Artists</a></li>
         <li><a href="/magazine/">Magazine</a></li>
         <li><a href="/projects/">Projects</a></li>
@@ -258,7 +259,7 @@ ${eventHtml}
 
 // ---- COMMUNITY PAGE ----
 
-function buildCommunity(aboutContent) {
+function buildCommunity(aboutContent, meetings) {
   const values = [
     { n: '01', title: 'Artists Lead', text: 'We believe in artist-led spaces. Everyone creates, suggests, and shapes what happens here.' },
     { n: '02', title: 'Trust and Care First', text: 'Trust, kindness, and genuine support are at the heart of everything we do. They must be offered first if they are to be received.' },
@@ -332,7 +333,7 @@ function buildCommunity(aboutContent) {
   <div class="container">
     <p class="section-label">Sister Network</p>
     <h2 class="section-title">AIR Exchange Network</h2>
-    <p class="section-intro" style="max-width:640px;margin-bottom:3rem">A parallel initiative — same principle of peer dialogue and sustained online community, but for a different circle: people who run, organize, or are building artist residencies and artist-run spaces.</p>
+    <p class="section-intro" style="max-width:640px;margin:0 auto 3rem">A parallel initiative — same principle of peer dialogue and sustained online community, but for a different circle: people who run, organize, or are building artist residencies and artist-run spaces.</p>
 
     <div class="air-exchange-block">
       <div class="air-exchange-poster">
@@ -360,6 +361,26 @@ function buildCommunity(aboutContent) {
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="section-block">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:2rem">
+      <div>
+        <p class="section-label">Meeting Notes</p>
+        <h2 class="section-title">What we talked about</h2>
+      </div>
+      <a href="/meetings/" style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--black)">All meetings →</a>
+    </div>
+    ${meetings.length > 0
+      ? '<div class="meeting-list">' + meetings.slice(0, 5).map(m => `<a href="/meetings/${m.slug}/" class="meeting-item">
+  <time class="meeting-date">${formatDate(m.date)}</time>
+  <div class="meeting-title">${m.title}</div>
+  ${m.excerpt ? '<p class="meeting-excerpt">' + m.excerpt + '</p>' : ''}
+</a>`).join('') + '</div>'
+      : '<p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--gray-text)">Meeting notes coming soon. VSG meets every Sunday evening.</p>'
+    }
   </div>
 </div>
 `;
@@ -806,9 +827,69 @@ ${galleryHtml}
   });
 }
 
+// ---- MEETINGS LIST PAGE ----
+
+function buildMeetings(meetings) {
+  const items = meetings.map(m => `<a href="/meetings/${m.slug}/" class="meeting-item">
+  <time class="meeting-date">${formatDate(m.date)}</time>
+  <div class="meeting-title">${m.title}</div>
+  ${m.excerpt ? '<p class="meeting-excerpt">' + m.excerpt + '</p>' : ''}
+</a>`).join('');
+
+  const body = `
+<div class="page-hero">
+  <div class="container">
+    <p class="section-label">Community</p>
+    <h1>Meeting Notes</h1>
+    <p class="intro">VSG meets every Sunday evening. These are summaries of what we talked about — for members who missed a session, and for anyone curious about how the community works.</p>
+  </div>
+</div>
+
+<div class="section-block">
+  <div class="container" style="max-width:760px">
+    ${meetings.length > 0
+      ? '<div class="meeting-list">' + items + '</div>'
+      : '<p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--gray-text)">Meeting notes coming soon.</p>'
+    }
+  </div>
+</div>
+`;
+
+  return baseTemplate({
+    title: 'Meeting Notes',
+    description: 'VSG meeting summaries — what we talked about each Sunday.',
+    body,
+    activePage: 'community'
+  });
+}
+
+function buildMeetingPage(meeting) {
+  const body = `
+<div class="article-body">
+  <div class="article-header">
+    <p class="section-label"><a href="/meetings/" style="color:inherit">Meeting Notes</a></p>
+    <h1>${meeting.title}</h1>
+    <div class="article-meta">
+      <time class="article-meta-item" datetime="${meeting.date}">${formatDate(meeting.date)}</time>
+    </div>
+  </div>
+  <div class="article-text">
+    ${meeting.body}
+  </div>
+</div>
+`;
+
+  return baseTemplate({
+    title: meeting.title,
+    description: meeting.excerpt || 'VSG meeting notes',
+    body,
+    activePage: 'community'
+  });
+}
+
 // ---- PROJECTS PAGE ----
 
-function buildProjects() {
+function buildProjects(reflections) {
   const dreamImages = [
     '635c6c47-85ba-4bdf-8be9-b057a20dfe49_1_102_o.jpeg',
     '6d42ff9d-de87-4f2d-88ed-dea288cf8751_1_201_a.jpeg',
@@ -860,7 +941,7 @@ function buildProjects() {
 
 <div class="section-block">
   <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start">
+    <div class="grid-2" style="gap:4rem;align-items:start">
       <div>
         <p class="section-label">Open Archive</p>
         <h2 class="section-title">DREAMS</h2>
@@ -882,7 +963,7 @@ function buildProjects() {
         <p style="margin-top:1.5rem;font-family:var(--font-serif);font-style:italic;font-size:0.875rem;color:var(--gray-text)">In time, this growing collection may evolve into new exhibitions, seasonal themes (Nightmare, Recurring Dream, Forgotten Dream, Collective Dream), or even a printed book — a tactile dream object. A wall of dreams, slowly unfolding.</p>
       </div>
       <div>
-        <div class="dreams-grid" style="grid-template-columns:repeat(3,1fr)">
+        <div class="dreams-grid">
           ${dreamGrid}
         </div>
       </div>
@@ -892,9 +973,25 @@ function buildProjects() {
 
 <div class="section-block" style="background:var(--gray-light)">
   <div class="container">
-    <p class="section-label">Future Projects</p>
-    <h2 class="section-title">What's next</h2>
-    <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;color:var(--gray-text);max-width:640px">More projects coming. To propose a collaboration, write to <a href="mailto:virtualstudiogroups@gmail.com">virtualstudiogroups@gmail.com</a>.</p>
+    <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:2rem">
+      <div>
+        <p class="section-label">Ongoing Project</p>
+        <h2 class="section-title">Reflections Archive</h2>
+      </div>
+      <a href="/magazine/reflections/" style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--black)">Read all →</a>
+    </div>
+    <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;color:var(--gray-text);max-width:640px;margin-bottom:2.5rem">Three questions. Every artist answers the same three questions. Together, the responses form a living archive of how contemporary artists actually think — built in real time, one artist at a time.</p>
+    ${reflections.length > 0
+      ? '<div class="grid-3">' + reflections.slice(0, 3).map(a => articleCard({
+          title: a.title,
+          date: a.date,
+          section: a.section,
+          excerpt: a.excerpt,
+          cover: a.cover || null,
+          url: '/magazine/reflections/' + a.slug + '/'
+        })).join('') + '</div>'
+      : '<p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--gray-text)">No reflections yet — <a href="https://forms.gle/usHJPEGHajfUXFjh8">be the first to contribute</a>.</p>'
+    }
   </div>
 </div>
 `;
@@ -1062,6 +1159,7 @@ function build() {
   const projectsResearch = readMarkdownFiles('content/magazine/projects-and-research');
   const reflections = readMarkdownFiles('content/magazine/reflections');
   const presentations = readMarkdownFiles('content/magazine/artist-presentations');
+  const meetings = readMarkdownFiles('content/meetings');
   const artists = JSON.parse(readFile('content/artists.json'));
   const events = JSON.parse(readFile('content/events.json'));
 
@@ -1073,7 +1171,7 @@ function build() {
   console.log('  ✓ index.html');
 
   // Community
-  writeFile('dist/community/index.html', buildCommunity(aboutContent));
+  writeFile('dist/community/index.html', buildCommunity(aboutContent, meetings));
   console.log('  ✓ community/index.html');
 
   // Artists
@@ -1143,8 +1241,16 @@ function build() {
   }
 
   // Projects
-  writeFile('dist/projects/index.html', buildProjects());
+  writeFile('dist/projects/index.html', buildProjects(reflections));
   console.log('  ✓ projects/index.html');
+
+  // Meetings
+  writeFile('dist/meetings/index.html', buildMeetings(meetings));
+  console.log('  ✓ meetings/index.html');
+  for (const meeting of meetings) {
+    writeFile(`dist/meetings/${meeting.slug}/index.html`, buildMeetingPage(meeting));
+    console.log(`  ✓ meetings/${meeting.slug}/`);
+  }
 
   // Events
   writeFile('dist/events/index.html', buildEvents(events));

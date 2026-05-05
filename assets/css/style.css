@@ -1228,3 +1228,49 @@ nav.main-nav a.active {
   .page-hero { padding: 2.5rem 1.5rem 2rem; }
   .section-block { padding: 2.5rem 1.5rem; }
 }
+
+/* ---- Meeting Notes ---- */
+
+.meeting-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.meeting-item {
+  display: block;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--gray-mid);
+  text-decoration: none;
+  color: inherit;
+}
+
+.meeting-item:first-child { border-top: 1px solid var(--gray-mid); }
+
+.meeting-item:hover .meeting-title { color: var(--accent); }
+
+.meeting-date {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray-text);
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.meeting-title {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.15s;
+}
+
+.meeting-excerpt {
+  font-family: var(--font-serif);
+  font-size: 0.875rem;
+  color: var(--gray-text);
+  line-height: 1.6;
+  margin-top: 0.35rem;
+  margin-bottom: 0;
+}
