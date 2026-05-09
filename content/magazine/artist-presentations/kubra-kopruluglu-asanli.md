@@ -5,9 +5,12 @@ section: Artist Presentations
 excerpt: "A conversation with Kübra Köprülüoğlu Aşanlı — visual artist and designer — from a recent Virtual Studio Groups session. On painting the erased, living off-grid, and what the forest left behind."
 cover: /assets/images/exhibitions/kubra-cover.jpg
 instagram: https://www.instagram.com/noooneelsebutme/
+website: https://kubrakopruluogluasanli.myportfolio.com
 ---
 
 *A conversation with Kübra Köprülüoğlu Aşanlı, visual artist and designer, from a recent Virtual Studio Groups session.*
+
+[Instagram](https://www.instagram.com/noooneelsebutme/) · [kubrakopruluogluasanli.myportfolio.com](https://kubrakopruluogluasanli.myportfolio.com)
 
 ---
 
