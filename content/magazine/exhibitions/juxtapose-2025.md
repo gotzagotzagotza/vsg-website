@@ -4,6 +4,7 @@ date: 2025-06-15
 section: Exhibitions and Encounters
 excerpt: "In June 2025, Virtual Studio Groups participated in Juxtapose in Aarhus, Denmark — presenting Dreams, a collective wall of Instax images made by 21 artists from across the VSG community."
 cover: /assets/images/exhibitions/juxtapose-vsg-installation.jpeg
+video: https://youtu.be/rC6wwFSLNY0
 ---
 
 *Virtual Studio Groups at Juxtapose, Godsbanen, Rå Hal, Aarhus, Denmark. June 13–15, 2025.*
@@ -33,9 +34,7 @@ The range of projects on show was extraordinary: an artist-run school on a farm 
 
 ## Watch the Tour
 
-During the fair, Pamela Grombacher gave VSG members a live Zoom walkthrough of the entire exhibition — booth by booth, project by project. You can watch the recording here:
-
-[Watch on YouTube — Juxtapose 2025 tour with Pamela Grombacher](https://youtu.be/rC6wwFSLNY0)
+During the fair, Pamela Grombacher gave VSG members a live Zoom walkthrough of the entire exhibition — booth by booth, project by project. The recording is embedded above.
 
 ## Our Exhibition: Dreams
 
