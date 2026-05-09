@@ -25,11 +25,11 @@ Her triptych *Lifelines* (2008) reflects on how those forced to leave their Heim
 
 The motif of the roaring deer — a traditional emblem of Heimat in Germany — reappears in *Heimat* (2017), a two-part work rendered in black silk thread on white silk fabric, each held within a 40 cm embroidery hoop. Here, Götzmann uses stitch as a form of drawing, a fluid approach that allows her to move seamlessly between textile and line. The stag, at once familiar and faintly sentimental, may still roar, but its authority has waned. Heimat, for Götzmann, no longer resides in a singular place, but across many.
 
+![Heimat, 2017 — embroidery hoops, black silk thread on white silk fabric](/assets/images/exhibitions/maren-gotzmann-heimat.png)
+
 ## Cloth and Memory
 
 *Touched* (2020) is among the most personal works Götzmann presented. Composed of 40 × 40 cm fabric squares, each brings together fragments of intimate garments donated by close female friends — nightgowns, underwear, bed sheets, tablecloths — shaped by proximity to the body and the rhythms of everyday life. Some of these women have since passed away, lending the work an added layer of poignancy. Assembled by hand, the composition recalls an abstract quilt yet remains deliberately unquilted: the seams are left visible, the joins unhidden, allowing each fragment's history to remain legible. The result hovers between artwork and memorial, a quiet act of holding and remembrance.
-
-![Wearable works at Artisan Machinery Street Gallery](/assets/images/exhibitions/maren-gotzmann-cover.png)
 
 Alongside this deeply personal practice, Götzmann collaborates with textile artist Sylvia Watt, united by a shared commitment to natural materials and to processes of reuse, reinvention, and upcycling — an approach that stands in deliberate counterpoint to the excesses of global fashion production and consumption. Their one-off wearable art works, sold through Brisbane outlets, draw on pre-used kimonos as well as recycled linen, cotton, and silk, often incorporating the Japanese boro tradition of layering and mending cloth.
 
@@ -56,6 +56,8 @@ In one of their early artist book series, *The Anarchist Notebooks* (2014), thei
 No mark is too precious to be overwritten; no gesture is protected. The process depends on a shared willingness to relinquish ownership, grounded in mutual trust.
 
 ![NightLadder artist books](/assets/images/exhibitions/maren-gotzmann-nightladder.png)
+
+![NightLadder exhibition — artist books and works on paper](/assets/images/exhibitions/maren-gotzmann-nightladder-books.png)
 
 NightLadder maintains a steady, unhurried rhythm, mounting an exhibition every two years. Over time, their work has taken on varied forms: small, repurposed railway notebooks sourced from a deceased worker's estate; 100 × 70 cm large-scale mixed media drawings assembled as wall pieces; manipulated postcards; or chalk-based notebooks with a strong emphasis on collage. Not every experiment succeeds, and Götzmann is candid about the projects that fall short. But this openness — to failure as much as discovery — is central to the group's longevity. Process, rather than outcome, remains the guiding principle.
 
