@@ -25,7 +25,28 @@
     "country": "Australia / Germany",
     "instagram": "marengotzmann8",
     "website": null,
+    "photo": "/assets/images/artists/maren-gotzmann.jpg"
+  },
+  {
+    "name": "Patricia Chow",
+    "country": "[MISSING: country]",
+    "instagram": "p.chow.studio",
+    "website": null,
+    "photo": "/assets/images/artists/patricia-chow.jpeg"
+  },
+  {
+    "name": "Joachim Froese",
+    "country": "Australia",
+    "instagram": "joachimfroese",
+    "website": "joachimfroese.com",
     "photo": null
+  },
+  {
+    "name": "Sally Burch",
+    "country": "[MISSING: country]",
+    "instagram": "sally.burch",
+    "website": "sallyburch.org",
+    "photo": "/assets/images/artists/sally-burch.jpg"
   },
   {
     "name": "Theresa Wilshusen",
@@ -53,7 +74,7 @@
     "country": "Serbia",
     "instagram": "katarinarasicart",
     "website": "katarinarasic.com",
-    "photo": null
+    "photo": "/assets/images/artists/katarina-rasic.jpg"
   },
   {
     "name": "Rosie Hearne",
@@ -109,7 +130,7 @@
     "country": "[MISSING: country]",
     "instagram": "genevieveleavold",
     "website": "genevieveleavold.com",
-    "photo": null
+    "photo": "/assets/images/artists/genevieve-leavold.jpeg"
   },
   {
     "name": "Cassandra Stubbington",
