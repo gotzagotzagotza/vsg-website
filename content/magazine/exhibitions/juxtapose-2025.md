@@ -15,8 +15,6 @@ video: https://youtu.be/rC6wwFSLNY0
 
 In June 2025, Virtual Studio Groups participated in [Juxtapose](https://www.juxtaposeartfair.com/) — held at [Godsbanen](https://godsbanen.dk/), a former train station and cultural centre in Aarhus, Denmark. It was our first time presenting as a collective in a physical exhibition space outside Spain, and we showed alongside 22 other artist-run projects from across Europe and beyond.
 
-![VSG Dreams installation at Juxtapose, Aarhus](/assets/images/exhibitions/juxtapose-vsg-installation.jpeg)
-
 ## About Juxtapose
 
 Juxtapose was founded in 2018 by co-directors Cecilie Bernts and Pamela Grombacher with the specific intention of creating a space for artist-run projects that were being excluded from commercial fairs. As Pamela explained to VSG members during a live Zoom walkthrough of the fair, the name itself says it all: to juxtapose is to place different things side by side so you can better understand and appreciate the differences between them.
@@ -29,8 +27,6 @@ Juxtapose takes place in the Rå Hal — the Raw Hall — of Godsbanen, a vast f
 This year Juxtapose also officially dropped the word "art fair" from its identity — a deliberate move, both to shed commercial associations and to open up what the event can be. There are now year-round public and professional programmes developing alongside the annual event, all aimed at supporting artist-run initiatives.
 
 The range of projects on show was extraordinary: an artist-run school on a farm in Colchester; a space that began in Damascus and has been based in Stockholm for ten years; an outdoor ceramic studio; a photography newspaper from Norway; a queer itinerant space from Uppsala; a performance collective doing a live news studio; architects who used no modules and responded directly to the building's architecture instead. And VSG — an online community of artists, presenting a physical wall of dreams.
-
-![VSG booth overview at Juxtapose](/assets/images/exhibitions/juxtapose-vsg-overview.jpeg)
 
 ## Watch the Tour
 
@@ -46,9 +42,9 @@ We asked each participant to send one digital image. It could be a photo of an a
 
 *How can dream narratives become photographs?* This question hovered behind every image: not to be answered, but followed. In a dream, logic loosens and things transform. These images, too, resist strict interpretation — some reveal, some conceal, all invite the viewer into a layered space between memory, fiction, and emotion.
 
-![The Dreams wall — VSG at Juxtapose 2025](/assets/images/exhibitions/juxtapose-vsg-visitor.jpeg)
+![The Dreams wall with all participating artists](/assets/images/exhibitions/juxtapose-vsg-wall-full.jpeg)
 
-![Visitor with the Dreams wall](/assets/images/exhibitions/juxtapose-vsg-close.jpeg)
+![Close-up of Instax prints — Dreams, Juxtapose 2025](/assets/images/exhibitions/juxtapose-vsg-polaroids.jpg)
 
 ## Participating Artists
 
@@ -56,10 +52,34 @@ Twenty-one VSG members contributed an image to the collective wall:
 
 Gordana Žikić · Bosko Begovic · Theresa Wilshusen · Ilija Dincic · Raymond Watson · Cassandra Stubbington · Ylva Eklöf · Paula Elion · Predrag Damjanovic · Elena Greta Falcini · Kai Rennes · Juan David Gallindo · Juan Antonio Cerezuela · Juan Pablo Meneses · Katarina Rasic · Zey Öztaşdelen · Genevieve Leavold · Åsa Ekman · Seb Bradshaw · River Reishi · Rosie Hearne
 
-![The full Dreams wall with all participating artists](/assets/images/exhibitions/juxtapose-vsg-wall-full.jpeg)
+## A Visual Dialogue: Theresa Wilshusen & Gordana Žikić
 
-![Close-up of Instax prints — Dreams, Juxtapose 2025](/assets/images/exhibitions/juxtapose-vsg-polaroids.jpg)
+Among the VSG participants, two artists — Theresa Wilshusen and Gordana Žikić — brought more than a single Instax print to the exhibition. Each had developed a more extended body of work around the Dreams theme, and their individual approaches, while distinct, entered into an unexpected dialogue at the fair.
 
----
+Both work with collage as a method — layering digital iPad drawing over photographic images to build a visual language that sits between documentation and invention. The result in each case is imagery that feels simultaneously grounded and displaced: the logic of dreams made visible through a specific, recognisable hand.
 
-*Photo credit: [juxtaose-2025_credit_iovermorgen](/assets/images/exhibitions/juxtaose-2025_credit_iovermorgen.jpg) · VSG archive*
+Theresa Wilshusen's series layers white line drawings over landscape photographs — hands, stones, water, geological forms — building images that feel like memories of places half-remembered. Each work holds a physical specificity (a particular rock, a particular coastline) that dissolves under the drawn lines into something more interior. The series has its own coherence as a body of work: a sustained visual investigation of how the material world appears when seen from inside a dream.
+
+![Theresa Wilshusen — Dreams series](/assets/images/exhibitions/theresa-dreams-6.png)
+
+![Theresa Wilshusen — Dreams series](/assets/images/exhibitions/theresa-dreams-1.png)
+
+![Theresa Wilshusen — Dreams series](/assets/images/exhibitions/theresa-dreams-5.png)
+
+![Theresa Wilshusen — Dreams series](/assets/images/exhibitions/theresa-dreams-8.png)
+
+![Theresa Wilshusen — Dreams series](/assets/images/exhibitions/theresa-dreams-4.png)
+
+![Theresa Wilshusen — Dreams series](/assets/images/exhibitions/theresa-dreams-7.png)
+
+![Theresa Wilshusen — Dreams series](/assets/images/exhibitions/theresa-dreams-2.png)
+
+![Theresa Wilshusen — Dreams series](/assets/images/exhibitions/theresa-dreams-3.png)
+
+![Theresa Wilshusen — Dreams series](/assets/images/exhibitions/theresa-dreams-9.png)
+
+Gordana Žikić's work operates in a similar register but with a different charge: figures, feet, shoes placed into open water, the body navigating a landscape that feels uncertain beneath it. Where Wilshusen's imagery tends toward the elemental and geological, Žikić's carries a sense of movement and contingency — standing somewhere you might not stay. The drawn lines in her work have a different quality too: more abrupt, less flowing, as if the image is still deciding what it is.
+
+![Gordana Žikić — Dreams](/assets/images/exhibitions/gordana-dreams.jpeg)
+
+Together their works formed a quiet conversation within the larger collective wall: two different visual languages finding a shared grammar in the collage of drawing over photography — each one distinct, each one recognisably part of the same question.
