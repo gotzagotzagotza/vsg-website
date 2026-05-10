@@ -71,6 +71,7 @@ function baseTemplate({ title, description = '', body, activePage = '' }) {
   <meta name="description" content="${description || 'Virtual Studio Groups — an international online community of artists.'}">
   <link rel="icon" type="image/png" href="/assets/images/vsg_logo_black-1.png">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="Virtual Studio Groups Magazine" href="/feed.xml">
 </head>
 <body>
 
@@ -127,6 +128,12 @@ ${body}
         <li><a href="https://www.youtube.com/@virtualstudiogroups/videos" target="_blank" rel="noopener">YouTube</a></li>
         <li><a href="https://forms.gle/usHJPEGHajfUXFjh8" target="_blank" rel="noopener">Submit to Magazine</a></li>
       </ul>
+    </div>
+    <div class="footer-subscribe">
+      <h4>Stay Connected</h4>
+      <p style="font-size:0.85rem;line-height:1.5;margin-bottom:1rem;opacity:0.8">New articles and exhibition reports delivered to your inbox.</p>
+      <a href="https://virtualstudiogroups.substack.com" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.8rem;padding:0.5rem 1rem">Subscribe on Substack</a>
+      <p style="margin-top:0.75rem;font-size:0.75rem;opacity:0.6"><a href="/feed.xml" style="color:inherit">RSS feed</a></p>
     </div>
   </div>
   <div class="footer-bottom">
@@ -1280,6 +1287,53 @@ function buildResources() {
   });
 }
 
+// ---- RSS FEED ----
+
+function buildRSS(allArticles) {
+  const siteUrl = 'https://virtualstudiogroups.com';
+  const sectionSlugs = {
+    'Exhibitions and Encounters': 'exhibitions-and-encounters',
+    'Books and Ideas': 'books-and-ideas',
+    'Projects & Research': 'projects-and-research',
+    'Reflections': 'reflections',
+    'Artist Presentations': 'artist-presentations'
+  };
+
+  const sorted = [...allArticles].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  const items = sorted.map(a => {
+    const slug = sectionSlugs[a.section] || 'magazine';
+    const url = `${siteUrl}/magazine/${slug}/${a.slug}/`;
+    const date = new Date(a.date).toUTCString();
+    const desc = (a.excerpt || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const title = a.title.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return `  <item>
+    <title>${title}</title>
+    <link>${url}</link>
+    <guid isPermaLink="true">${url}</guid>
+    <pubDate>${date}</pubDate>
+    <description>${desc}</description>
+  </item>`;
+  }).join('\n');
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virtual Studio Groups — Magazine</title>
+    <link>${siteUrl}</link>
+    <atom:link href="${siteUrl}/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Articles, artist presentations, exhibitions and reflections from Virtual Studio Groups — an international online artist community.</description>
+    <language>en</language>
+    <image>
+      <url>${siteUrl}/assets/images/vsg_logo_black-1.png</url>
+      <title>Virtual Studio Groups</title>
+      <link>${siteUrl}</link>
+    </image>
+${items}
+  </channel>
+</rss>`;
+}
+
 // ---- MAIN BUILD ----
 
 function build() {
@@ -1398,6 +1452,11 @@ function build() {
   // Resources
   writeFile('dist/resources/index.html', buildResources());
   console.log('  ✓ resources/index.html');
+
+  // RSS feed
+  const allArticles = [...exhibitions, ...booksAndIdeas, ...projectsResearch, ...reflections, ...presentations];
+  writeFile('dist/feed.xml', buildRSS(allArticles));
+  console.log('  ✓ feed.xml');
 
   // Copy admin CMS panel
   copyDir('public/admin', 'dist/admin');
