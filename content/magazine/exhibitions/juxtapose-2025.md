@@ -13,7 +13,7 @@ video: https://youtu.be/rC6wwFSLNY0
 
 ---
 
-In June 2025, Virtual Studio Groups participated in [Juxtapose](https://www.juxtaposeartfair.com/) — held at [Godsbanen](https://godsbanen.dk/), a former train station and cultural centre in Aarhus, Denmark. It was our first time presenting as a collective in a physical exhibition space outside Spain, and we showed alongside 22 other artist-run projects from across Europe and beyond.
+In June 2025, Virtual Studio Groups participated in [Juxtapose](https://www.juxtaposeartfair.com/) — held at [Godsbanen](https://godsbanen.dk/), a former train station and cultural centre in Aarhus, Denmark, and we showed alongside 22 other artist-run projects from across Europe and beyond.
 
 ## About Juxtapose
 
@@ -50,36 +50,15 @@ We asked each participant to send one digital image. It could be a photo of an a
 
 Twenty-one VSG members contributed an image to the collective wall:
 
-Gordana Žikić · Bosko Begovic · Theresa Wilshusen · Ilija Dincic · Raymond Watson · Cassandra Stubbington · Ylva Eklöf · Paula Elion · Predrag Damjanovic · Elena Greta Falcini · Kai Rennes · Juan David Gallindo · Juan Antonio Cerezuela · Juan Pablo Meneses · Katarina Rasic · Zey Öztaşdelen · Genevieve Leavold · Åsa Ekman · Seb Bradshaw · River Reishi · Rosie Hearne
+Gordana Zikic · Bosko Begovic · Theresa Wilshusen · Ilija Dincic · Raymond Watson · Cassandra Stubbington · Ylva Eklöf · Paula Elion · Predrag Damjanovic · Elena Greta Falcini · Kai Rennes · Juan David Gallindo · Juan Antonio Cerezuela · Juan Pablo Meneses · Katarina Rasic · Zey Öztaşdelen · Genevieve Leavold · Åsa Ekman · Seb Bradshaw · River Reishi · Rosie Hearne
 
-## A Visual Dialogue: Theresa Wilshusen & Gordana Žikić
+## A Visual Dialogue: Theresa Wilshusen & Gordana Zikic
 
-Among the VSG participants, two artists — Theresa Wilshusen and Gordana Žikić — brought more than a single Instax print to the exhibition. Each had developed a more extended body of work around the Dreams theme, and their individual approaches, while distinct, entered into an unexpected dialogue at the fair.
+Among the VSG participants, two artists — Theresa Wilshusen and Gordana Zikic — brought more than a single Instax print to the exhibition. Each had developed a more extended body of work around the Dreams theme, and their individual approaches, while distinct, entered into an unexpected dialogue at the fair.
 
 Both work with collage as a method — layering digital iPad drawing over photographic images to build a visual language that sits between documentation and invention. The result in each case is imagery that feels simultaneously grounded and displaced: the logic of dreams made visible through a specific, recognisable hand.
 
 Theresa Wilshusen's series layers white line drawings over landscape photographs — hands, stones, water, geological forms — building images that feel like memories of places half-remembered. Each work holds a physical specificity (a particular rock, a particular coastline) that dissolves under the drawn lines into something more interior. The series has its own coherence as a body of work: a sustained visual investigation of how the material world appears when seen from inside a dream.
 
-![Theresa Wilshusen — Dreams series](/assets/images/exhibitions/theresa-dreams-6.png)
-
-![Theresa Wilshusen — Dreams series](/assets/images/exhibitions/theresa-dreams-1.png)
-
-![Theresa Wilshusen — Dreams series](/assets/images/exhibitions/theresa-dreams-5.png)
-
-![Theresa Wilshusen — Dreams series](/assets/images/exhibitions/theresa-dreams-8.png)
-
-![Theresa Wilshusen — Dreams series](/assets/images/exhibitions/theresa-dreams-4.png)
-
-![Theresa Wilshusen — Dreams series](/assets/images/exhibitions/theresa-dreams-7.png)
-
-![Theresa Wilshusen — Dreams series](/assets/images/exhibitions/theresa-dreams-2.png)
-
-![Theresa Wilshusen — Dreams series](/assets/images/exhibitions/theresa-dreams-3.png)
-
-![Theresa Wilshusen — Dreams series](/assets/images/exhibitions/theresa-dreams-9.png)
-
-Gordana Žikić's work operates in a similar register but with a different charge: figures, feet, shoes placed into open water, the body navigating a landscape that feels uncertain beneath it. Where Wilshusen's imagery tends toward the elemental and geological, Žikić's carries a sense of movement and contingency — standing somewhere you might not stay. The drawn lines in her work have a different quality too: more abrupt, less flowing, as if the image is still deciding what it is.
-
-![Gordana Žikić — Dreams](/assets/images/exhibitions/gordana-dreams.jpeg)
-
+Gordana Zikic's work operates in a similar register but with a different charge: figures, feet, shoes placed into open water, the body navigating a landscape that feels uncertain beneath it. Where Wilshusen's imagery tends toward the elemental and geological, Zikic's carries a sense of movement and contingency — standing somewhere you might not stay.
 Together their works formed a quiet conversation within the larger collective wall: two different visual languages finding a shared grammar in the collage of drawing over photography — each one distinct, each one recognisably part of the same question.

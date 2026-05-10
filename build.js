@@ -757,25 +757,40 @@ function buildArticle(article, sectionSlug) {
     ? `<div class="article-cover"><img src="${article.cover}" alt="${article.title}"></div>`
     : '';
 
-  // Auto-gallery: scan for images in assets/images/gallery/[slug]/
-  const galleryDir = path.join('assets', 'images', 'gallery', article.slug);
+  // Auto-gallery: scan for main gallery and named sub-galleries
+  // Main: assets/images/gallery/[slug]/  → label "Exhibition Photos"
+  // Sub:  assets/images/gallery/[slug]-[name]/ → label derived from [name]
+  const galleryBase = path.join('assets', 'images', 'gallery');
   let galleryHtml = '';
-  if (fs.existsSync(galleryDir)) {
-    const galleryImages = fs.readdirSync(galleryDir)
-      .filter(f => /\.(jpe?g|png|webp)$/i.test(f))
+  if (fs.existsSync(galleryBase)) {
+    const allDirs = fs.readdirSync(galleryBase)
+      .filter(d => d === article.slug || d.startsWith(article.slug + '-'))
       .sort();
-    if (galleryImages.length > 0) {
-      const imgs = galleryImages.map((f, i) =>
-        `<button class="gallery-thumb" data-index="${i}" aria-label="View photo ${i+1}">
-  <img src="/assets/images/gallery/${article.slug}/${f}" alt="" loading="lazy">
+    let offset = 0;
+    const grids = allDirs.map(dir => {
+      const dirPath = path.join(galleryBase, dir);
+      const images = fs.readdirSync(dirPath)
+        .filter(f => /\.(jpe?g|png|webp)$/i.test(f))
+        .sort();
+      if (images.length === 0) return '';
+      const suffix = dir === article.slug ? '' : dir.slice(article.slug.length + 1);
+      const label = suffix === ''
+        ? 'Exhibition Photos'
+        : suffix.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+      const imgs = images.map((f, i) =>
+        `<button class="gallery-thumb" data-index="${offset + i}" aria-label="View photo ${offset + i + 1}">
+  <img src="/assets/images/gallery/${dir}/${f}" alt="" loading="lazy">
 </button>`
       ).join('\n');
-      galleryHtml = `
-<div class="article-gallery">
-  <p class="section-label" style="margin-bottom:1.5rem">Exhibition Photos</p>
+      offset += images.length;
+      return `<div class="article-gallery">
+  <p class="section-label" style="margin-bottom:1.5rem">${label}</p>
   <div class="gallery-grid">${imgs}</div>
-</div>
+</div>`;
+    }).filter(Boolean).join('\n\n');
 
+    if (grids) {
+      galleryHtml = grids + `
 <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
   <button class="lightbox-close" aria-label="Close">&times;</button>
   <button class="lightbox-prev" aria-label="Previous">&#8592;</button>
