@@ -1307,17 +1307,21 @@ function buildRSS(allArticles) {
     const date = new Date(a.date).toUTCString();
     const desc = (a.excerpt || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     const title = a.title.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    // Make image src absolute for RSS readers
+    const fullHtml = (a.body || '').replace(/src="\/assets\//g, `src="${siteUrl}/assets/`);
+    const cdata = `<![CDATA[${fullHtml}]]>`;
     return `  <item>
     <title>${title}</title>
     <link>${url}</link>
     <guid isPermaLink="true">${url}</guid>
     <pubDate>${date}</pubDate>
     <description>${desc}</description>
+    <content:encoded>${cdata}</content:encoded>
   </item>`;
   }).join('\n');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Virtual Studio Groups — Magazine</title>
     <link>${siteUrl}</link>
