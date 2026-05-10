@@ -5,18 +5,30 @@
   var lb = document.getElementById('lightbox');
   if (!lb) return;
 
-  var images = Array.from(thumbs).map(function (btn) {
-    return btn.querySelector('img').src;
+  var images = Array.from(thumbs).map(function (el) {
+    return {
+      src: el.querySelector('img').src,
+      caption: el.getAttribute('data-caption') || ''
+    };
   });
 
   var current = 0;
   var img = document.getElementById('lightbox-img');
   var counter = lb.querySelector('.lightbox-counter');
 
+  // Add caption element to lightbox if not already present
+  var captionEl = lb.querySelector('.lightbox-caption');
+  if (!captionEl) {
+    captionEl = document.createElement('div');
+    captionEl.className = 'lightbox-caption';
+    lb.querySelector('.lightbox-img-wrap').after(captionEl);
+  }
+
   function open(i) {
     current = i;
-    img.src = images[i];
+    img.src = images[i].src;
     counter.textContent = (i + 1) + ' / ' + images.length;
+    captionEl.textContent = images[i].caption;
     lb.setAttribute('aria-hidden', 'false');
     lb.classList.add('active');
     document.body.style.overflow = 'hidden';
@@ -28,8 +40,8 @@
     document.body.style.overflow = '';
   }
 
-  thumbs.forEach(function (btn, i) {
-    btn.addEventListener('click', function () { open(i); });
+  thumbs.forEach(function (el, i) {
+    el.addEventListener('click', function () { open(i); });
   });
 
   lb.querySelector('.lightbox-close').addEventListener('click', close);

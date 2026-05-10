@@ -777,11 +777,14 @@ function buildArticle(article, sectionSlug) {
       const label = suffix === ''
         ? 'Exhibition Photos'
         : suffix.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-      const imgs = images.map((f, i) =>
-        `<button class="gallery-thumb" data-index="${offset + i}" aria-label="View photo ${offset + i + 1}">
-  <img src="/assets/images/gallery/${dir}/${f}" alt="" loading="lazy">
-</button>`
-      ).join('\n');
+      const imgs = images.map((f, i) => {
+        const caption = f.replace(/^\d+-/, '').replace(/\.[^.]+$/, '')
+          .split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+        return `<figure class="gallery-thumb" data-index="${offset + i}" data-caption="${caption}" aria-label="View ${caption}">
+  <img src="/assets/images/gallery/${dir}/${f}" alt="${caption}" loading="lazy">
+  <figcaption class="gallery-caption">${caption}</figcaption>
+</figure>`;
+      }).join('\n');
       offset += images.length;
       return `<div class="article-gallery">
   <p class="section-label" style="margin-bottom:1.5rem">${label}</p>
