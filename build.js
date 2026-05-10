@@ -997,14 +997,27 @@ function buildProjects(reflections) {
 
 <div class="section-block" style="background:var(--gray-light)">
   <div class="container">
-    <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:2rem">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;margin-bottom:3rem">
+      <div>
+        <a href="/magazine/reflections/" style="display:block">
+          <img src="/assets/images/reflections-poster.jpg" alt="Reflections Archive — How do contemporary artists think?" loading="lazy" style="width:100%;display:block">
+        </a>
+      </div>
       <div>
         <p class="section-label">Ongoing Project</p>
-        <h2 class="section-title">Reflections Archive</h2>
+        <h2 class="section-title" style="margin-bottom:1.25rem">Reflections Archive</h2>
+        <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;color:var(--gray-text);margin-bottom:1.5rem">Three questions. Every artist answers the same three questions. Together, the responses form a living archive of how contemporary artists actually think — built in real time, one artist at a time.</p>
+        <div style="margin-bottom:2rem">
+          <p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--gray-text);margin-bottom:0.5rem">01 &nbsp; What is good artwork?</p>
+          <p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--gray-text);margin-bottom:0.5rem">02 &nbsp; What does it mean to be a successful artist today?</p>
+          <p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--gray-text)">03 &nbsp; What project are you working on right now?</p>
+        </div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap">
+          <a href="/magazine/reflections/" class="btn btn-primary">Read the archive</a>
+          <a href="https://forms.gle/usHJPEGHajfUXFjh8" class="btn btn-secondary" target="_blank" rel="noopener">Contribute your reflection</a>
+        </div>
       </div>
-      <a href="/magazine/reflections/" style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--black)">Read all →</a>
     </div>
-    <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;color:var(--gray-text);max-width:640px;margin-bottom:2.5rem">Three questions. Every artist answers the same three questions. Together, the responses form a living archive of how contemporary artists actually think — built in real time, one artist at a time.</p>
     ${reflections.length > 0
       ? '<div class="grid-3">' + reflections.slice(0, 3).map(a => articleCard({
           title: a.title,
@@ -1014,7 +1027,7 @@ function buildProjects(reflections) {
           cover: a.cover || null,
           url: '/magazine/reflections/' + a.slug + '/'
         })).join('') + '</div>'
-      : '<p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--gray-text)">No reflections yet — <a href="https://forms.gle/usHJPEGHajfUXFjh8">be the first to contribute</a>.</p>'
+      : ''
     }
   </div>
 </div>
