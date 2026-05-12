@@ -3,7 +3,7 @@ title: "El agua nos llama — VSG Exhibition at The Local Air, Valencia"
 date: 2026-03-12
 section: Exhibitions and Encounters
 excerpt: "The first exhibition of Virtual Studio Groups artists in Spain — fifteen artists, fifteen relationships with water. A review of El agua nos llama at The Local Air, Valencia, February 2026."
-cover: /assets/images/exhibitions/el-agua-nos-llama-poster.jpg
+cover: /assets/images/exhibitions/el-agua-nos-llama-cover.jpg
 ---
 
 *El agua nos llama* opened on 18 February 2026 at The Local Air in Valencia — the first exhibition of Virtual Studio Groups artists in Spain, and a significant moment for a community that has, until now, existed almost entirely online.
