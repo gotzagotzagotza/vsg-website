@@ -241,19 +241,12 @@ function buildHome(exhibitions, projects, events, presentations) {
 ${eventHtml}
 
 <div class="section-block">
-  <div class="container">
-    <div class="grid-2" style="align-items:center;gap:4rem">
-      <div>
-        <p class="section-label">About VSG</p>
-        <h2 class="section-title">Peer support for artists, everywhere</h2>
-        <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;color:var(--gray-text);margin:1rem 0 1.5rem">The Virtual Studio Groups project evolved from our virtual residency program, initiated during the pandemic. With a decade-long history of art residency in Belgrade and a vast artist network, the project grew organically.</p>
-        <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;color:var(--gray-text);margin-bottom:1.75rem">We meet every Sunday evening. No hierarchy, no predetermined outcomes. Just artists, talking honestly about their work.</p>
-        <a href="/community/" class="btn btn-primary">Learn more</a>
-      </div>
-      <div>
-        <img src="/assets/images/exhibitions/el-agua-nos-llama-poster.jpg" alt="El agua nos llama, Valencia 2026" loading="lazy" style="width:100%;height:auto">
-      </div>
-    </div>
+  <div class="container" style="max-width:700px">
+    <p class="section-label">About VSG</p>
+    <h2 class="section-title">Peer support for artists, everywhere</h2>
+    <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;color:var(--gray-text);margin:1rem 0 1.5rem">The Virtual Studio Groups project evolved from our virtual residency program, initiated during the pandemic. With a decade-long history of art residency in Belgrade and a vast artist network, the project grew organically.</p>
+    <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;color:var(--gray-text);margin-bottom:1.75rem">We meet every Sunday evening. No hierarchy, no predetermined outcomes. Just artists, talking honestly about their work.</p>
+    <a href="/community/" class="btn btn-primary">Learn more</a>
   </div>
 </div>
 `;
