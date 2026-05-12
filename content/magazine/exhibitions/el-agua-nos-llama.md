@@ -1,12 +1,12 @@
 ---
-title: "The Water Calls To Us — VSG Exhibition at The Local Air, Valencia"
+title: "El agua nos llama — VSG Exhibition at The Local Air, Valencia"
 date: 2026-03-12
 section: Exhibitions and Encounters
 excerpt: "The first exhibition of Virtual Studio Groups artists in Spain — fifteen artists, fifteen relationships with water. A review of El agua nos llama at The Local Air, Valencia, February 2026."
 cover: /assets/images/exhibitions/el-agua-nos-llama-poster.jpg
 ---
 
-*The Water Calls To Us* opened on 18 February 2026 at The Local Air in Valencia — the first exhibition of Virtual Studio Groups artists in Spain, and a significant moment for a community that has, until now, existed almost entirely online.
+*El agua nos llama* opened on 18 February 2026 at The Local Air in Valencia — the first exhibition of Virtual Studio Groups artists in Spain, and a significant moment for a community that has, until now, existed almost entirely online.
 
 Fifteen artists. Fifteen relationships with water. The breadth of that relationship is what strikes you first as you move through the space.
 
@@ -20,7 +20,7 @@ Three framed collage works hang in sequence, layering photographic imagery with 
 
 In the window display, landscape works hang pinned to a teal wall, visible from the street — an invitation rather than a boundary.
 
-The show ran through 28 February. *The Water Calls To Us* is curated from within the VSG community, with exhibition text by Seb Bradshaw ([@artbyseb138](https://www.instagram.com/artbyseb138/)).
+The show ran through 28 February. *El agua nos llama* is curated from within the VSG community, with exhibition text by Seb Bradshaw ([@artbyseb138](https://www.instagram.com/artbyseb138/)).
 
 ---
 
