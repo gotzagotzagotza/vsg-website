@@ -1268,7 +1268,8 @@ function buildResources() {
       title: 'Artist Communities & Networks',
       items: [
         { name: 'Virtual Studio Groups', url: 'https://virtualstudiogroups.github.io', desc: 'Our own peer community — Sunday meetings, artist interviews, and collective projects. You are already here.' },
-        { name: 'AIR Exchange Network', url: 'https://airexchangenetwork.wordpress.com', desc: 'Sister site to VSG. A network focused on artist residency exchanges and international artistic collaboration.' },
+        { name: 'AIR Exchange Network', url: 'https://airexchangenetwork.wordpress.com', desc: 'Sister site to VSG. A peer circle for residency organizers and artist-run space directors — monthly online meetings.' },
+        { name: 'The Local AIR Valencia', url: 'https://thelocalairvalencia.weebly.com', desc: 'Artist-run workshop, gallery, and residency in Valencia, Spain. Founded by Dr. Theresa Wilshusen. Host of VSG\'s first exhibition in Spain.' },
       ]
     }
   ];
