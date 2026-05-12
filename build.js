@@ -251,7 +251,7 @@ ${eventHtml}
         <a href="/community/" class="btn btn-primary">Learn more</a>
       </div>
       <div>
-        <img src="/assets/images/exhibitions/5fd09b71-e321-4777-9c86-2eae2b467920.jpg" alt="El agua nos llama, Valencia 2026" loading="lazy" style="width:100%;height:auto">
+        <img src="/assets/images/exhibitions/el-agua-nos-llama-poster.jpg" alt="El agua nos llama, Valencia 2026" loading="lazy" style="width:100%;height:auto">
       </div>
     </div>
   </div>
@@ -1204,6 +1204,29 @@ function buildNetwork() {
 </div>
 
 <div class="section-block">
+  <div class="container">
+    <div class="network-org">
+      <div class="network-org-header">
+        <div>
+          <p class="section-label">Sister Network · International · Est. 2023</p>
+          <h2 class="section-title">AIR Exchange Network</h2>
+        </div>
+        <a href="https://airexchangenetwork.wordpress.com" class="btn btn-outline" target="_blank" rel="noopener">Visit AIR Exchange →</a>
+      </div>
+
+      <p style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.8;color:var(--gray-text);margin-bottom:1.5rem">AIR Exchange Network is an international peer circle for residency organizers and artist-run space directors — and for those who are thinking about starting one and want support along the way.</p>
+
+      <p style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.8;color:var(--gray-text);margin-bottom:1.5rem">We meet online once a month to exchange experiences, share working methods, and discuss the questions many of us are facing: from sustainability and funding to artist care, programming, and the long-term impact of what we build. This is a live, ongoing conversation — not a database, not a conference, not a broadcast channel.</p>
+
+      <div class="network-meta">
+        <p>Monthly meetings — first Wednesday of each month, 18:00 CET. Online via Zoom. Open to residency organizers and artist-run space directors.</p>
+        <p style="margin-top:0.75rem"><strong>Contact:</strong> <a href="mailto:virtualstudiogroups@gmail.com">virtualstudiogroups@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-block" style="background:var(--gray-light)">
   <div class="container">
     <div class="join-block">
       <h2>Interested in collaborating?</h2>

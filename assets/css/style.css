@@ -706,12 +706,17 @@ nav.main-nav a.active {
 
 .article-cover {
   margin: 2rem 0;
+  text-align: center;
+  background: var(--gray-light);
 }
 
 .article-cover img {
-  width: 100%;
+  max-height: 600px;
+  max-width: 100%;
+  width: auto;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 
 /* ---- Article Gallery ---- */
