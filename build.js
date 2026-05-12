@@ -979,7 +979,7 @@ function buildProjects(reflections) {
       <div>
         <p class="section-label">Open Archive</p>
         <h2 class="section-title">DREAMS</h2>
-        <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;color:var(--gray-text);margin-bottom:1rem">This project began with the exhibition <em>Dreams</em>, Juxtapose Art Fair, Aarhus, Denmark, June 2025 — a collective wall of dream images.</p>
+        <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;color:var(--gray-text);margin-bottom:1rem">This project began with the exhibition <a href="/magazine/exhibitions-and-encounters/juxtapose-2025/"><em>Dreams</em></a>, Juxtapose Art Fair, Aarhus, Denmark, June 2025 — a collective wall of dream images.</p>
         <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;color:var(--gray-text);margin-bottom:1rem">Now it continues as an open, ongoing archive. We invite artists to send us their dream images: at least one, or a series. The only requirement is a <strong>square format</strong> (so it can be printed on Instax photo paper and added to the collective wall in future exhibitions).</p>
         <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;color:var(--gray-text);margin-bottom:1.5rem">Each image can stand alone as a glimpse into one artist's interior landscape — yet together they form a collective dream. This is a living project, always expanding, like dreams themselves: unfinished, open-ended, and constantly transforming.</p>
 

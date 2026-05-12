@@ -1,6 +1,6 @@
 ---
 title: "Dreams — VSG at Juxtapose, Aarhus 2025"
-date: 2025-06-15
+date: 2026-05-12
 section: Exhibitions and Encounters
 excerpt: "In June 2025, Virtual Studio Groups participated in Juxtapose in Aarhus, Denmark — presenting Dreams, a collective wall of Instax images made by 21 artists from across the VSG community."
 cover: /assets/images/exhibitions/juxtapose-vsg-installation.jpeg
