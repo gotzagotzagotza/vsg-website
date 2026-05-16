@@ -102,7 +102,7 @@
     "country": "UK",
     "instagram": "artbyseb138",
     "website": null,
-    "photo": null
+    "photo": "/assets/images/artists/seb-bradshaw.jpeg"
   },
   {
     "name": "Ilija Dincic",
@@ -227,7 +227,7 @@
     "name": "Yann Courte",
     "country": null,
     "instagram": "memoire.courte",
-    "website": null,
-    "photo": null
+    "website": "yanncourte.fr",
+    "photo": "/assets/images/artists/yann-courte.jpeg"
   }
 ]
