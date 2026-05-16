@@ -11,8 +11,8 @@ cover: /assets/images/exhibitions/img_7357.jpeg
 Moderna Museet, Stockholm
 
 *Exhibition reflection for Virtual Studio Groups / Digital Art Magazine*  
-Photos © Gordana Žikić  
-Text: exhibition reflection by Gordana Žikić
+Photos © Gordana Zikic  
+Text: exhibition reflection by Gordana Zikic
 
 *Text reference used for editorial and educational purposes from [Moderna Museet, Stockholm](https://www.modernamuseet.se/stockholm/en/exhibitions/britta-marakatt-labba/), "Britta Marakatt-Labba: Where Each Stitch Breathes," exhibition description (2025)*
 

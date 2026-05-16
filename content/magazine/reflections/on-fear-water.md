@@ -2,8 +2,8 @@
 title: "On Fear, Water, and the Work That Keeps Going"
 date: 2026-01-01
 section: Reflections
-author: Gordana Žikić
-excerpt: "Gordana Žikić reflects on her long-term project exploring the sea — the shamanic headdress, the performances, the ongoing series of water paintings and drawings, and what it means to make art from a fear that doesn't fully go away."
+author: Gordana Zikic
+excerpt: "Gordana Zikic reflects on her long-term project exploring the sea — the shamanic headdress, the performances, the ongoing series of water paintings and drawings, and what it means to make art from a fear that doesn't fully go away."
 video: https://youtu.be/LREU-z4ZhlU
 ---
 
