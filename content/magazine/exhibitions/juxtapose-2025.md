@@ -17,7 +17,7 @@ In June 2025, Virtual Studio Groups participated in [Juxtapose](https://www.juxt
 
 ## About Juxtapose
 
-Juxtapose was founded in 2018 by co-directors Cecilie Bernts and Pamela Grombacher with the specific intention of creating a space for artist-run projects that were being excluded from commercial fairs. As Pamela explained to VSG members during a live Zoom walkthrough of the fair, the name itself says it all: to juxtapose is to place different things side by side so you can better understand and appreciate the differences between them.
+Juxtapose was founded in 2018 by Pamela Grombacher and former co-directors Jacob Juhl and Sasha Richter, with the specific intention of creating a space for artist-run projects that were being excluded from commercial fairs. It is now run by Co-Directors Cecilie Bernts and Pamela Grombacher. As Pamela explained to VSG members during a live Zoom walkthrough of the fair, the name itself says it all: to juxtapose is to place different things side by side so you can better understand and appreciate the differences between them.
 
 > "We don't have a theme. Instead, we just try to show as many different kinds of artist-run projects as we can."
 > — Pamela Grombacher, Co-Director, Juxtapose
