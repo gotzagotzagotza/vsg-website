@@ -39,7 +39,7 @@
     "country": "Australia",
     "instagram": "joachimfroese",
     "website": "joachimfroese.com",
-    "photo": null
+    "photo": "/assets/images/artists/joachim-froese.jpg"
   },
   {
     "name": "Sally Burch",
@@ -222,6 +222,13 @@
     "instagram": "_ruth.louise_",
     "website": null,
     "photo": null
+  },
+  {
+    "name": "Annie Mo Kjellberg",
+    "country": null,
+    "instagram": null,
+    "website": "anniemokjellberg.com",
+    "photo": "/assets/images/artists/annie-mo-kjellberg.jpg"
   },
   {
     "name": "Yann Courte",
