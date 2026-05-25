@@ -71,11 +71,11 @@ She was living in the Barceloneta neighbourhood, close to the sea. She photograp
 
 ![Bar facade at night — oil painting, Barcelona 2011–2012, the gestural quality and night light](/assets/images/gordana/cerveceria-painting.jpeg)
 
-![Theatre entrance at dusk — oil painting, Barcelona 2011–2012](/assets/images/gordana/theatre-painting.jpeg)
-
 ![Orange rescue vessel — oil painting, Barcelona 2011–2012](/assets/images/gordana/ship-painting.jpeg)
 
 ![Untitled, Barcelona — oil painting](/assets/images/gordana/barcelona-painting.jpeg)
+
+![Theatre entrance at dusk — oil painting, Barcelona 2011–2012](/assets/images/gordana/theatre-painting.jpeg)
 
 The Hipstamatic series from 2011 to approximately 2015 has a visual coherence that comes from the limitations of those early iPhone cameras as much as from her eye. The grain is inseparable from the colour. One image: a rainy day, palm trees reflected in flooded pavement, everything darkened to sepia and shadow, the vignetting of the early Hipstamatic frame pressing in from the edges. Another: the beach seen through what might be bars, the sand burning orange-red, the sky turquoise, the palms between them — a colour shift so extreme it reads as chromatic invention rather than documentation. Later phones, later versions of the app, produced different results. She still uses Hipstamatic. The comparison between then and now, she noted, is becoming increasingly interesting — not as a record of technological change but as a record of how a visual language evolves inside a single practice over time.
 
