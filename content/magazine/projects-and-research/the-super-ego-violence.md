@@ -18,3 +18,9 @@ Text by [Mark Fish](https://www.instagram.com/mark_a_fish/?hl=en)
 ---
 
 *See the original exhibition at [uniarte.org](https://uniarte.org/en-buska-by-vesuhely-americaan/)*
+
+---
+
+![Mark Fish](/assets/images/bosko-logo.webp)
+
+*[Mark Fish](https://www.instagram.com/mark_a_fish/) · [thephilosopherscomic424.wordpress.com](https://thephilosopherscomic424.wordpress.com)*

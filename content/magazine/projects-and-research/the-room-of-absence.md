@@ -55,3 +55,9 @@ Now, that we covered NOTHING, we can go to something- the MATTER that lingers in
 \*\* Slavoj Žižek
 
 \*\*\* NOT MATTER, but not NON-MATTER!!!
+
+---
+
+![Mark Fish](/assets/images/bosko-logo.webp)
+
+*[Mark Fish](https://www.instagram.com/mark_a_fish/) · [thephilosopherscomic424.wordpress.com](https://thephilosopherscomic424.wordpress.com)*

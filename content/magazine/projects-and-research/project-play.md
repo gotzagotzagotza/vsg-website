@@ -104,3 +104,9 @@ What happens when you insert the ball into the group of people, individuals in a
 Moving surplus means becoming of relationship that becomes only in relation to this surplus and quickly fades away, for it never was solid or lasting, because it is directly dependent on unpredictable shape- an impossible relationship, that has it stakes on something that last only for the moment of balance. Whoever was in possession of balance, remembers it, for you posses it only in memory.
 
 But than, something happens and that ball, that surplus, finds its way through the structure and into the game in a way that impossible relationship becomes evident and evidently unique, almost possible. It becomes a pass, something new, an impossibility that found its way into the world. Something that for a moment structures the world in a way more meaningful that any structure ever could. The pass is like falling in love- contingent event that makes up for the meaning of it all.
+
+---
+
+![Mark Fish](/assets/images/bosko-logo.webp)
+
+*[Mark Fish](https://www.instagram.com/mark_a_fish/) · [thephilosopherscomic424.wordpress.com](https://thephilosopherscomic424.wordpress.com)*
