@@ -543,9 +543,7 @@ function buildColorHub() {
 
       <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7;color:var(--gray-text);margin-bottom:3rem">An interactive version of the Wada combinations is available at <a href="https://sanzo-wada.dmbk.io" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid currentColor">sanzo-wada.dmbk.io</a> — useful for exploring before buying, or for working with the combinations directly on screen.</p>
 
-      <h2 style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-text);margin-bottom:1.5rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem">Coming up</h2>
-
-      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.75;color:var(--gray-text);margin-bottom:3rem">More sessions on color are planned. The Pastoureau volumes on orange, gray, and purple are not yet in print in English — when they appear, they will be added here.</p>
+      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.75;color:var(--gray-text);margin-bottom:3rem">VSG will return to color as a dedicated session theme. Members interested in contributing references or organizing around this topic, get in touch.</p>
 
     </div>
   </div>
@@ -886,11 +884,8 @@ function buildArticle(article, sectionSlug) {
         ? 'Exhibition Photos'
         : suffix.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
       const imgs = images.map((f, i) => {
-        const caption = f.replace(/^\d+-/, '').replace(/\.[^.]+$/, '')
-          .split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-        return `<figure class="gallery-thumb" data-index="${offset + i}" data-caption="${caption}" aria-label="View ${caption}">
-  <img src="/assets/images/gallery/${dir}/${f}" alt="${caption}" loading="lazy">
-  <figcaption class="gallery-caption">${caption}</figcaption>
+        return `<figure class="gallery-thumb" data-index="${offset + i}">
+  <img src="/assets/images/gallery/${dir}/${f}" alt="" loading="lazy">
 </figure>`;
       }).join('\n');
       offset += images.length;
