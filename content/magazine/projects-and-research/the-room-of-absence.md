@@ -10,7 +10,7 @@ cover: /assets/images/projects/elena-greta-falcini_instax-format.jpg
 [https://site.elenagretafalcini.com/](https://site.elenagretafalcini.com/)  
 [https://www.instagram.com/elenagretafalcini/](https://www.instagram.com/elenagretafalcini/)
 
-[Click here for portfolio](https://elenagretafalcini.com/EGF-DINA5_English_18_02_2022_web.pdf)
+[Portfolio](https://thephilosopherscomic424.wordpress.com/wp-content/uploads/2022/04/egf-dina5_english_18_02_2022_web.pdf)
 
 Elena Greta Falcini was one of the participants in the Virtual Artist in Residence program in February and March 2022. Belgrade Artist in Residence.
 
@@ -32,6 +32,8 @@ Which is a weird way to phrase it and even weirder decision to end the sentence 
 
 There was something to be said, by the subject-missing, and that something was:"Material in its autonomy". Which is also an odd statement, because, what material stands in its autonomy?! Well, this is the ONE, that one that stands (out). It is very difficult for a material to stand for itself. Unless it stands for the matter. And if it stands for the matter, it certainly can 'fill ONE's shoes'.
 
+![Elena Greta Falcini — shoes covered in alien matter](/assets/images/elena/elena-shoes.png)
+
 ---
 
 ##### THE ROOM OF ABSENCE — theoretical approach
@@ -42,11 +44,15 @@ First, the video, is probing into the reality of someone else's gaze and that so
 
 Second, the formula- language of chemistry, symbols connected to assume the meaning. Meaning as the interspace, that empty space of relation between the Real, not reality, of material and our attempt to formalize it in language- the space of thinking. What material is ( in itself ), we don't know, but what it becomes ( for us ) we can formalize as a knowledge in the space of language- hence, the formula.
 
+![Elena Greta Falcini — the formula, chemistry symbols and the gaze of the electron](/assets/images/elena/elena-formula.png)
+
 Third, the shoes, and this shoes are the most sublime literal presentation one can dare to find- if there ever was a clearest and purest case of contradiction, this is the one to be- something so direct, so obvious and yet! not at all, or rather nothing at all. They carry on the subject that walk in alien shoes, and that is THE presentation of the subject- something as nothing, yet being through the other, in becoming alien to itself.
 
 Now, that we covered NOTHING, we can go to something- the MATTER that lingers in its full autonomy. Artists do work in material, but it is rather that they think in material, even if the material is the "stuff" of language. If the goal of thinking is to come to the notion of "things", well here, with this dark MATTER, the goal is achieved. The FORM of thinking, the form itself, is achieved and now we can go on filling all our contents with it- therefore, the good art never seizes to amaze by how long and unrelenting can haunt the mind. Bringing on the FORM as "just" MATTER is the achievement of incarnation of the notion of autonomy itself. Nothing is ( fully ) autonomous, but this is. To use the phrase: "What is the MATTER with you?!", as one of the sound hysterisations of the subjectivity, as in asking 'what is you?', 'who are you?' and ultimately, 'what is all of/to this?!'- we can assess the importance of this matter. It materializes the notion and that is the sublime work of art. And the subject would respond:"I am NOT MATTER", hence the subject is in the room that matters( materializes- verbalizes itself in/through MATTER ).
 
 **THE ROOM OF ABSENCE- the room of NOT MATTER.**\*\*\*
+
+![Elena Greta Falcini — dark matter suspended in space, installation view](/assets/images/elena/elena-matter.webp)
 
 ---
 
