@@ -1,11 +1,12 @@
 ---
-title: "El agua nos llama — VSG Exhibition at The Local Air, Valencia"
+title: El agua nos llama — VSG Exhibition at The Local Air, Valencia
 date: 2026-03-12
 section: Exhibitions and Encounters
-excerpt: "The first exhibition of Virtual Studio Groups artists in Spain — fifteen artists, fifteen relationships with water. A review of El agua nos llama at The Local Air, Valencia, February 2026."
+excerpt: The first exhibition of Virtual Studio Groups artists in Spain —
+  fifteen artists, fifteen relationships with water. A review of El agua nos
+  llama at The Local Air, Valencia, February 2026.
 cover: /assets/images/exhibitions/el-agua-nos-llama-cover.jpg
 ---
-
 *El agua nos llama* opened on 18 February 2026 at The Local Air in Valencia — the first exhibition of Virtual Studio Groups artists in Spain, and a significant moment for a community that has, until now, existed almost entirely online.
 
 Fifteen artists. Fifteen relationships with water. The breadth of that relationship is what strikes you first as you move through the space.
@@ -22,7 +23,7 @@ In the window display, landscape works hang pinned to a teal wall, visible from 
 
 The show ran through 28 February. *El agua nos llama* is curated from within the VSG community, with exhibition text by Seb Bradshaw ([@artbyseb138](https://www.instagram.com/artbyseb138/)).
 
----
+- - -
 
-**Participating artists:**  
-[Bosko Begovic](https://www.instagram.com/mark_a_fish/) · [Gordana Zikic](https://www.instagram.com/gotza_gotza/) · [Sarah-Jane Mason](https://www.instagram.com/sarahjanemasonartist/) · [Kai Rennes](https://www.instagram.com/r_e_n_n_e_s/) · [Patricia Chow](https://www.instagram.com/patricia.sketches/) · Raymond Watson · [Ylva Eklöf](https://www.instagram.com/ylvaeklof/) · [Theresa Wilshusen](https://www.instagram.com/wilshusen.fine.arts/) · [Anna Likhina](https://www.instagram.com/ganyalikhina/) · [Åsa Ekman](https://www.instagram.com/asaekmanart/) · [Louise Norström](https://www.instagram.com/_ruth.louise_/) · [Cassandra Stubbington](https://www.instagram.com/casstubbs/) · [River Reishi](https://www.instagram.com/riverreishi/) · [Seb Bradshaw](https://www.instagram.com/artbyseb138/) · [Yann Courte](https://www.instagram.com/memoire.courte/)
+**Participating artists:**\
+[Bosko Begovic](https://www.instagram.com/mark_a_fish/) · [Gordana Zikic](https://www.instagram.com/gotza_gotza/) · [Sarah-Jane Mason](https://www.instagram.com/sarahjanemasonartist/) · [Kai Rennes](https://www.instagram.com/r_e_n_n_e_s/) · [Patricia Chow](https://www.instagram.com/patricia.sketches/) · [Raymond Watson](https://thehandsofhistory.com) · [Ylva Eklöf](https://www.instagram.com/ylvaeklof/) · [Theresa Wilshusen](https://www.instagram.com/wilshusen.fine.arts/) · [Anna Likhina](https://www.instagram.com/ganyalikhina/) · [Åsa Ekman](https://www.instagram.com/asaekmanart/) · [Louise Norström](https://www.instagram.com/_ruth.louise_/) · [Cassandra Stubbington](https://www.instagram.com/casstubbs/) · [River Reishi](https://www.instagram.com/riverreishi/) · [Seb Bradshaw](https://www.instagram.com/artbyseb138/) · [Yann Courte](https://www.instagram.com/memoire.courte/)
