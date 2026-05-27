@@ -455,6 +455,110 @@ function buildArtists(artists) {
   });
 }
 
+// ---- BOOK PAGE ----
+
+function buildBookPage(book) {
+  const body = `
+<div class="article-body">
+  <div class="article-header">
+    <p class="section-label"><a href="/magazine/books-and-ideas/" style="color:inherit">Books &amp; Ideas</a></p>
+    <h1>${book.title}</h1>
+    <div class="article-meta">
+      <span class="article-meta-item">${book.author}</span>
+    </div>
+  </div>
+  <div class="article-text">
+    ${book.body}
+  </div>
+</div>
+`;
+  return baseTemplate({
+    title: book.title,
+    description: book.excerpt || '',
+    body,
+    activePage: 'magazine'
+  });
+}
+
+// ---- COLOR HUB ----
+
+function buildColorHub() {
+  const body = `
+<div class="magazine-section">
+  <div class="container">
+    <div class="section-tabs">
+      <a href="/magazine/" class="section-tab">All</a>
+      <a href="/magazine/exhibitions-and-encounters/" class="section-tab">Exhibitions &amp; Encounters</a>
+      <a href="/magazine/books-and-ideas/" class="section-tab">Books &amp; Ideas</a>
+      <a href="/magazine/projects-and-research/" class="section-tab">Projects &amp; Research</a>
+      <a href="/magazine/reflections/" class="section-tab">Reflections</a>
+      <a href="/magazine/artist-presentations/" class="section-tab">Artist Presentations</a>
+      <a href="/magazine/color/" class="section-tab active">Color</a>
+    </div>
+
+    <div style="max-width:760px;margin-top:2.5rem">
+
+      <p style="font-family:var(--font-serif);font-size:1.1rem;line-height:1.8;margin-bottom:3rem">Color is a recurring subject in VSG — in practice, in conversation, and in the questions members keep returning to. Not color theory as a system to master, but color as something that resists mastery: culturally loaded, historically shifting, materially unpredictable. This page collects the threads — conversations, books, resources — that have come up across VSG sessions.</p>
+
+      <h2 style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-text);margin-bottom:1.5rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem">Conversations</h2>
+
+      <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;margin-bottom:0.5rem"><a href="/magazine/artist-presentations/yann-kai-weight-of-what-you-make/" style="color:inherit;border-bottom:1px solid currentColor">The Weight of What You Make</a></p>
+      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7;color:var(--gray-text);margin-bottom:3rem">A VSG session with Yann Courte and Kai Rennes — on color in painting and photography, the tension between control and accident, and what it means to commit to a visual language over years.</p>
+
+      <h2 style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-text);margin-bottom:1.5rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem">Books</h2>
+
+      <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;margin-bottom:0.75rem;font-style:italic">Michel Pastoureau — A Cultural History of Color series</p>
+      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7;color:var(--gray-text);margin-bottom:1.5rem">Each volume by the French medieval historian Michel Pastoureau traces a single color across Western history — art, heraldry, religion, fashion, language, and science. Not a color theory textbook, but a cultural archaeology: how colors acquired their meanings, lost them, and acquired new ones. Recommended for anyone interested in why colors mean what they mean. <a href="/magazine/books-and-ideas/blue-history-of-a-color/" style="color:inherit;border-bottom:1px solid currentColor">Blue</a> is usually the entry point.</p>
+
+      <ul style="list-style:none;padding:0;margin:0 0 2rem 0;font-family:var(--font-serif);font-size:0.95rem;line-height:2">
+        <li><a href="/magazine/books-and-ideas/blue-history-of-a-color/" style="color:inherit;border-bottom:1px solid currentColor">Blue: The History of a Color</a> — where Western color culture begins, and why blue was invisible for so long</li>
+        <li><a href="/magazine/books-and-ideas/red-history-of-a-color/" style="color:inherit;border-bottom:1px solid currentColor">Red: The History of a Color</a> — the oldest color in human culture, and the most socially charged</li>
+        <li><a href="/magazine/books-and-ideas/green-history-of-a-color/" style="color:inherit;border-bottom:1px solid currentColor">Green: The History of a Color</a> — unstable, ambivalent, the color of the marginal</li>
+        <li><a href="/magazine/books-and-ideas/yellow-history-of-a-color/" style="color:inherit;border-bottom:1px solid currentColor">Yellow: The History of a Color</a> — from gold to betrayal, the most ambiguous in the series</li>
+        <li><a href="/magazine/books-and-ideas/black-history-of-a-color/" style="color:inherit;border-bottom:1px solid currentColor">Black: The History of a Color</a> — on the color that absorbs all others, and what that meant</li>
+        <li><a href="/magazine/books-and-ideas/white-history-of-a-color/" style="color:inherit;border-bottom:1px solid currentColor">White: The History of a Color</a> — purity, mourning, emptiness — the color that means everything and nothing</li>
+        <li><a href="/magazine/books-and-ideas/pink-history-of-a-color/" style="color:inherit;border-bottom:1px solid currentColor">Pink: The History of a Color</a> — a recent addition to the series, on the youngest color in Western culture</li>
+      </ul>
+
+      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7;margin-bottom:2.5rem"><a href="/magazine/books-and-ideas/the-gray-book/" style="color:inherit;border-bottom:1px solid currentColor"><strong>The Gray Book</strong></a> by Aris Fioretos — not a color history, but a philosophical essay written in the mode of gray itself: the color of vagueness, suspension, and literary language. A companion to Pastoureau rather than a continuation.</p>
+
+      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7;margin-bottom:0.75rem"><a href="/magazine/books-and-ideas/dictionary-of-color-combinations/" style="color:inherit;border-bottom:1px solid currentColor"><strong>Dictionary of Color Combinations</strong></a> and <a href="/magazine/books-and-ideas/dictionary-of-color-combinations-vol2/" style="color:inherit;border-bottom:1px solid currentColor"><strong>Vol. 2</strong></a> by Sanzo Wada — 348 and 237 color combinations drawn from early twentieth-century Japanese art, fashion, kimono, and graphic design. A working reference, not a history. Came up in the VSG color session alongside Kai Rennes's work and the <em>Chromosphere</em> podcast.</p>
+
+      <h2 style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-text);margin:3rem 0 1.5rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem">Resources</h2>
+
+      <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;margin-bottom:0.5rem"><strong>Chromosphere</strong></p>
+      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7;color:var(--gray-text);margin-bottom:2.5rem">A podcast on color in art and design. Came up in the VSG color session as a practical listening companion — accessible without being shallow. Available wherever you listen to podcasts.</p>
+
+      <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;margin-bottom:1rem"><strong>Sanzo Wada — Dictionary of Color Combinations (video overviews)</strong></p>
+
+      <p style="font-family:var(--font-serif);font-size:0.9rem;line-height:1.6;color:var(--gray-text);margin-bottom:1rem">Volume 1</p>
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-bottom:1.5rem">
+        <iframe src="https://www.youtube.com/embed/d4qjACFO1H8" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p style="font-family:var(--font-serif);font-size:0.9rem;line-height:1.6;color:var(--gray-text);margin-bottom:1rem">Volume 2</p>
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-bottom:2rem">
+        <iframe src="https://www.youtube.com/embed/YNRP0q5x9vA" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7;color:var(--gray-text);margin-bottom:3rem">An interactive version of the Wada combinations is available at <a href="https://sanzo-wada.dmbk.io" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid currentColor">sanzo-wada.dmbk.io</a> — useful for exploring before buying, or for working with the combinations directly on screen.</p>
+
+      <h2 style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-text);margin-bottom:1.5rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem">Coming up</h2>
+
+      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.75;color:var(--gray-text);margin-bottom:3rem">More sessions on color are planned. The Pastoureau volumes on orange, gray, and purple are not yet in print in English — when they appear, they will be added here.</p>
+
+    </div>
+  </div>
+</div>
+`;
+  return baseTemplate({
+    title: 'Color',
+    description: 'Color as a recurring subject in VSG — conversations, books, and resources on how color works in art and culture.',
+    body,
+    activePage: 'magazine'
+  });
+}
+
 // ---- MAGAZINE INDEX ----
 
 function buildMagazineIndex(exhibitions, booksAndIdeas, projectsResearch, reflections, presentations) {
@@ -510,6 +614,7 @@ function buildMagazineIndex(exhibitions, booksAndIdeas, projectsResearch, reflec
       <a href="/magazine/projects-and-research/" class="section-tab">Projects & Research</a>
       <a href="/magazine/reflections/" class="section-tab">Reflections</a>
       <a href="/magazine/artist-presentations/" class="section-tab">Artist Presentations</a>
+      <a href="/magazine/color/" class="section-tab">Color</a>
     </div>
 
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem">
@@ -588,6 +693,7 @@ function buildMagazineSection({ sectionTitle, sectionSlug, articles, intro }) {
       <a href="/magazine/projects-and-research/" class="section-tab${sectionSlug === 'projects-and-research' ? ' active' : ''}">Projects & Research</a>
       <a href="/magazine/reflections/" class="section-tab${sectionSlug === 'reflections' ? ' active' : ''}">Reflections</a>
       <a href="/magazine/artist-presentations/" class="section-tab${sectionSlug === 'artist-presentations' ? ' active' : ''}">Artist Presentations</a>
+      <a href="/magazine/color/" class="section-tab">Color</a>
     </div>
 
     <div style="margin-top:1rem;margin-bottom:2rem;text-align:right">
@@ -635,6 +741,7 @@ function buildBooksAndIdeas(books) {
       <a href="/magazine/projects-and-research/" class="section-tab">Projects & Research</a>
       <a href="/magazine/reflections/" class="section-tab">Reflections</a>
       <a href="/magazine/artist-presentations/" class="section-tab">Artist Presentations</a>
+      <a href="/magazine/color/" class="section-tab">Color</a>
     </div>
 
     <div style="margin-top:1rem;margin-bottom:2.5rem;text-align:right">
@@ -728,6 +835,7 @@ function buildReflections(reflections) {
       <a href="/magazine/projects-and-research/" class="section-tab">Projects & Research</a>
       <a href="/magazine/reflections/" class="section-tab active">Reflections</a>
       <a href="/magazine/artist-presentations/" class="section-tab">Artist Presentations</a>
+      <a href="/magazine/color/" class="section-tab">Color</a>
     </div>
 
     ${reflections.length > 0
@@ -1449,6 +1557,15 @@ function build() {
     writeFile(`dist/magazine/artist-presentations/${article.slug}/index.html`, buildArticle(article, 'artist-presentations'));
     console.log(`  ✓ magazine/artist-presentations/${article.slug}/`);
   }
+
+  for (const book of booksAndIdeas) {
+    writeFile(`dist/magazine/books-and-ideas/${book.slug}/index.html`, buildBookPage(book));
+    console.log(`  ✓ magazine/books-and-ideas/${book.slug}/`);
+  }
+
+  // Color hub
+  writeFile('dist/magazine/color/index.html', buildColorHub());
+  console.log('  ✓ magazine/color/index.html');
 
   // Projects
   writeFile('dist/projects/index.html', buildProjects(reflections));
