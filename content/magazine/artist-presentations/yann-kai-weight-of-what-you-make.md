@@ -27,8 +27,7 @@ In the second register: a garbage bin weighted with a rock during a storm, a rop
 
 He framed them deliberately: black frames for the natural wind images, white frames for the human response. Not to label the division but to create rhythm. Fifty by fifty centimetres, all the same format. The alternation of black and white frames across the wall gave the series a visual beat that worked independently of the images — something closer to a score than a sequence.
 
-For the festival he also made small prints at €10 each, sold in plastic sleeves. He came back having covered his costs, with a little left over. A modest result by commercial measure; not modest at all by the measure of what it meant to see the work in front of a thousand people over four days. The building photographs — harbour structures, a boat, something from the neighbourhood — kept stopping people who recognised them. "That's my grandfather's boat." "I know that place." An image of accidental erosion looks like Mars. An image of a counterweight system looks like home.
-
+For the festival he also made small prints at €10 each, sold in plastic sleeves. He came back having covered his costs, with a little left over. A modest result by commercial measure; not modest at all by the measure of what it meant to see the work in front of a thousand people over four days.
 ![Yann Courté — wind series, *Artistes à suivre*, France 2026. Natural wind traces and human responses, framed alternately in black and white.](/assets/images/yann-kai/yann-wind-grid.jpeg)
 
 ## Fifteen Years of Questions
