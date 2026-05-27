@@ -541,7 +541,13 @@ function buildColorHub() {
         <iframe src="https://www.youtube.com/embed/YNRP0q5x9vA" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
-      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7;color:var(--gray-text);margin-bottom:3rem">An interactive version of the Wada combinations is available at <a href="https://sanzo-wada.dmbk.io" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid currentColor">sanzo-wada.dmbk.io</a> — useful for exploring before buying, or for working with the combinations directly on screen.</p>
+      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7;color:var(--gray-text);margin-bottom:2.5rem">An interactive version of the Wada combinations is available at <a href="https://sanzo-wada.dmbk.io" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid currentColor">sanzo-wada.dmbk.io</a> — useful for exploring before buying, or for working with the combinations directly on screen.</p>
+
+      <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;margin-bottom:0.5rem"><strong><a href="https://www.img2color.com" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid currentColor">img2color.com</a></strong></p>
+      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7;color:var(--gray-text);margin-bottom:2.5rem">Upload any image and extract its color palette. Useful for identifying exact colors in a photograph, a painting, or a reference image — and for building palettes from work you already have.</p>
+
+      <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;margin-bottom:0.5rem"><strong><a href="https://colorhunt.co/palettes/sea" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid currentColor">Color Hunt — Sea palettes</a></strong></p>
+      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7;color:var(--gray-text);margin-bottom:3rem">A large collection of curated color palettes, browsable by theme. The sea collection is a good starting point — four-color combinations drawn from coastal, oceanic, and water-adjacent tones.</p>
 
       <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.75;color:var(--gray-text);margin-bottom:3rem">VSG will return to color as a dedicated session theme. Members interested in contributing references or organizing around this topic, get in touch.</p>
 
