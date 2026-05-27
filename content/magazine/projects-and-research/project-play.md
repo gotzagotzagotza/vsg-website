@@ -5,6 +5,7 @@ section: Projects & Research
 author: Bosko Begovic (Mark Fish)
 excerpt: "Three texts by Mark Fish responding to Project PLAY — Juan Antonio Cerezuela's residency in Belgrade, and the question of whether an artist can quit being an artist."
 cover: /assets/images/projects/img_6612.jpg
+instagram: "https://www.instagram.com/p/CcT8L8vqcZd/"
 ---
 
 *3 texts by [Mark Fish](https://www.instagram.com/mark_a_fish/?hl=en) as reactions to Project P L A Y*
@@ -104,6 +105,20 @@ What happens when you insert the ball into the group of people, individuals in a
 Moving surplus means becoming of relationship that becomes only in relation to this surplus and quickly fades away, for it never was solid or lasting, because it is directly dependent on unpredictable shape- an impossible relationship, that has it stakes on something that last only for the moment of balance. Whoever was in possession of balance, remembers it, for you posses it only in memory.
 
 But than, something happens and that ball, that surplus, finds its way through the structure and into the game in a way that impossible relationship becomes evident and evidently unique, almost possible. It becomes a pass, something new, an impossibility that found its way into the world. Something that for a moment structures the world in a way more meaningful that any structure ever could. The pass is like falling in love- contingent event that makes up for the meaning of it all.
+
+---
+
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CcT8L8vqcZd/" data-instgrm-version="14"></blockquote>
+
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CcUE4rJKqZU/" data-instgrm-version="14"></blockquote>
+
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CcUD2TCqBh9/" data-instgrm-version="14"></blockquote>
+
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CcVEGPMj87t/" data-instgrm-version="14"></blockquote>
+
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CcTPPcuoV3l/" data-instgrm-version="14"></blockquote>
+
+<script async src="//www.instagram.com/embed.js"></script>
 
 ---
 
