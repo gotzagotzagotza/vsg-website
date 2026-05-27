@@ -64,6 +64,6 @@ Now, that we covered NOTHING, we can go to something- the MATTER that lingers in
 
 ---
 
-![Mark Fish](/assets/images/bosko-logo.webp)
+<img src="/assets/images/bosko-logo.webp" alt="Mark Fish" style="width:60%;max-width:240px;">
 
 *[Mark Fish](https://www.instagram.com/mark_a_fish/) · [thephilosopherscomic424.wordpress.com](https://thephilosopherscomic424.wordpress.com)*

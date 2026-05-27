@@ -107,6 +107,6 @@ But than, something happens and that ball, that surplus, finds its way through t
 
 ---
 
-![Mark Fish](/assets/images/bosko-logo.webp)
+<img src="/assets/images/bosko-logo.webp" alt="Mark Fish" style="width:60%;max-width:240px;">
 
 *[Mark Fish](https://www.instagram.com/mark_a_fish/) · [thephilosopherscomic424.wordpress.com](https://thephilosopherscomic424.wordpress.com)*
