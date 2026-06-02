@@ -322,6 +322,13 @@ function buildCommunity(aboutContent, meetings) {
 </div>
 
 <div class="section-block">
+  <div class="container" style="max-width:760px">
+    <p style="font-family:var(--font-serif);font-size:1.1rem;line-height:1.85;margin-bottom:1.5rem">A community like VSG doesn't grow linearly. Every artist who joins, speaks honestly, and shares generously adds value not just for themselves — but for every other member in the group. Every conversation that becomes part of our archive, every connection made across time zones, every question asked in a Sunday session compounds into something larger than any single practice. This is what we are building together: a network whose depth and intelligence grows with every person who takes it seriously. Your presence here is not a small thing.</p>
+    <a href="/magazine/reflections/the-value-we-make-together/" style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;color:inherit;border-bottom:1px solid currentColor">Read more: The Value We Make Together →</a>
+  </div>
+</div>
+
+<div class="section-block">
   <div class="container">
     <div class="join-block">
       <h2>Join the community</h2>
