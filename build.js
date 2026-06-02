@@ -880,7 +880,7 @@ function buildReflections(reflections) {
 
 function buildArticle(article, sectionSlug) {
   const coverHtml = article.cover
-    ? `<div class="article-cover"><img src="${article.cover}" alt="${article.title}"></div>`
+    ? `<div class="article-cover"><img src="${article.cover}" alt="${article.title}">${article.cover_caption ? `<p style="font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.04em;color:var(--gray-text);margin-top:0.6rem">${article.cover_caption}</p>` : ''}</div>`
     : '';
 
   // Auto-gallery: scan for main gallery and named sub-galleries
