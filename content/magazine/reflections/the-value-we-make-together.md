@@ -4,7 +4,7 @@ author: "Gordana Zikic"
 date: 2026-06-02
 section: Reflections
 excerpt: "On networks, presence, and what grows when artists gather with intention — a reflection from VSG co-founder Gordana Zikic on what we are actually building together."
-cover: /assets/images/reflections/port-vell.jpeg
+cover: /assets/images/reflections/barceloneta-port-vell-gordana-zikic.jpeg
 cover_caption: "Barcelona, Port Vell, photograph by Gordana Zikic"
 ---
 
