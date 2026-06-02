@@ -4,9 +4,15 @@ author: "Gordana Zikic"
 date: 2026-06-02
 section: Reflections
 excerpt: "On networks, presence, and what grows when artists gather with intention — a reflection from VSG co-founder Gordana Zikic on what we are actually building together."
+cover: /assets/images/reflections/port-vell.jpeg
 ---
 
 *On networks, presence, and what grows when artists gather with intention*
+
+<figure style="margin:2rem 0 2.5rem">
+<img src="/assets/images/reflections/port-vell.jpeg" alt="Barcelona, Port Vell" style="width:100%;max-width:540px;display:block">
+<figcaption style="font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.04em;color:var(--gray-text);margin-top:0.6rem">Barcelona, Port Vell, photograph by Gordana Zikic</figcaption>
+</figure>
 
 I want to tell you something I have been thinking about for a while — not as an announcement, but as an honest reflection from someone who has been holding this space since 2021 and watching what actually happens inside it.
 
