@@ -524,6 +524,8 @@ function buildColorHub() {
 
       <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7;margin-bottom:0.75rem"><a href="/magazine/books-and-ideas/dictionary-of-color-combinations/" style="color:inherit;border-bottom:1px solid currentColor"><strong>Dictionary of Color Combinations</strong></a> and <a href="/magazine/books-and-ideas/dictionary-of-color-combinations-vol2/" style="color:inherit;border-bottom:1px solid currentColor"><strong>Vol. 2</strong></a> by Sanzo Wada — 348 and 237 color combinations drawn from early twentieth-century Japanese art, fashion, kimono, and graphic design. A working reference, not a history. Came up in the VSG color session alongside Kai Rennes's work and the <em>Chromosphere</em> podcast.</p>
 
+      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7;margin-bottom:3rem"><a href="/magazine/books-and-ideas/rgb-colorspace-atlas/" style="color:inherit;border-bottom:1px solid currentColor"><strong>RGB Colorspace Atlas</strong></a> by Tauba Auerbach — three cube-shaped books mapping the entire RGB color space as a continuous printed gradient. Every digital color combination possible, made physical. One of the most extraordinary artist's books made around the subject of color.</p>
+
       <h2 style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray-text);margin:3rem 0 1.5rem;border-bottom:1px solid var(--border);padding-bottom:0.5rem">Resources</h2>
 
       <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;margin-bottom:0.5rem"><strong>Chromosphere</strong></p>
@@ -547,7 +549,10 @@ function buildColorHub() {
       <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7;color:var(--gray-text);margin-bottom:2.5rem">Upload any image and extract its color palette. Useful for identifying exact colors in a photograph, a painting, or a reference image — and for building palettes from work you already have.</p>
 
       <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;margin-bottom:0.5rem"><strong><a href="https://colorhunt.co/palettes/sea" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid currentColor">Color Hunt — Sea palettes</a></strong></p>
-      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7;color:var(--gray-text);margin-bottom:3rem">A large collection of curated color palettes, browsable by theme. The sea collection is a good starting point — four-color combinations drawn from coastal, oceanic, and water-adjacent tones.</p>
+      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7;color:var(--gray-text);margin-bottom:2.5rem">A large collection of curated color palettes, browsable by theme. The sea collection is a good starting point — four-color combinations drawn from coastal, oceanic, and water-adjacent tones.</p>
+
+      <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;margin-bottom:0.5rem"><strong><a href="https://en.wikipedia.org/wiki/Grisaille" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid currentColor">Grisaille</a></strong></p>
+      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7;color:var(--gray-text);margin-bottom:3rem">A painting technique executed entirely in shades of grey or another neutral tone — used both as an autonomous aesthetic choice and as underpainting before colour glazing. Grisaille trains the eye to read value and form independently of hue, making it a useful practice for anyone working with colour who wants to understand what colour is actually doing in an image.</p>
 
       <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.75;color:var(--gray-text);margin-bottom:3rem">VSG will return to color as a dedicated session theme. Members interested in contributing references or organizing around this topic, get in touch.</p>
 
