@@ -1266,9 +1266,12 @@ function buildNetwork() {
   <div class="container">
     <div class="network-org">
       <div class="network-org-header">
-        <div>
-          <p class="section-label">Co-founded by VSG · Belgrade, Serbia · Est. 2012</p>
-          <h2 class="section-title">Belgrade Artist in Residence (BAIR)</h2>
+        <div style="display:flex;align-items:center;gap:1.5rem">
+          <img src="/assets/images/bair-logo.jpg" alt="BAIR logo" style="width:80px;height:80px;object-fit:contain;flex-shrink:0">
+          <div>
+            <p class="section-label">Co-founded by VSG · Belgrade, Serbia · Est. 2012</p>
+            <h2 class="section-title">Belgrade Artist in Residence (BAIR)</h2>
+          </div>
         </div>
         <a href="https://belgradeartistinresidence.wordpress.com" class="btn btn-outline" target="_blank" rel="noopener">Visit BAIR →</a>
       </div>
@@ -1307,9 +1310,12 @@ function buildNetwork() {
   <div class="container">
     <div class="network-org">
       <div class="network-org-header">
-        <div>
-          <p class="section-label">Exhibition partner · Valencia, Spain</p>
-          <h2 class="section-title">The Local AIR Valencia</h2>
+        <div style="display:flex;align-items:center;gap:1.5rem">
+          <img src="/assets/images/the-local-air-logo.jpg" alt="The Local AIR logo" style="width:80px;height:80px;object-fit:contain;flex-shrink:0">
+          <div>
+            <p class="section-label">Exhibition partner · Valencia, Spain</p>
+            <h2 class="section-title">The Local AIR Valencia</h2>
+          </div>
         </div>
         <a href="https://thelocalairvalencia.weebly.com" class="btn btn-outline" target="_blank" rel="noopener">Visit The Local AIR →</a>
       </div>
