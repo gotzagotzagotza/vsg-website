@@ -250,5 +250,12 @@
     "instagram": "el_todo_extrano",
     "website": null,
     "photo": null
+  },
+  {
+    "name": "Joshua Goode",
+    "country": null,
+    "instagram": "joshua_goode",
+    "website": "joshuagoode.com",
+    "photo": "/assets/images/artists/joshua-goode.jpg"
   }
 ]
