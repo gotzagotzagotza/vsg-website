@@ -362,7 +362,7 @@ function buildCommunity(aboutContent, meetings) {
         <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.8;color:var(--gray-text);margin-bottom:1.5rem">This is different from directories, mailing lists, and institutional networks. It is a live, ongoing conversation — not a database, not a conference, not a broadcast channel. The value is in the dialogue itself.</p>
         <div class="air-exchange-meta">
           <span class="air-exchange-meta-item">Monthly meetings — first Wednesday of each month, 18:00 CET</span>
-          <span class="air-exchange-meta-item">Online via Zoom &nbsp;·&nbsp; Open to residency organizers and artist-run space directors</span>
+          <span class="air-exchange-meta-item">Online via Jitsi &nbsp;·&nbsp; Open to residency organizers and artist-run space directors</span>
           <span class="air-exchange-meta-item">Contact: virtualstudiogroups@gmail.com</span>
         </div>
         <a href="https://airexchangenetwork.wordpress.com" class="btn btn-primary" style="margin-top:1.75rem;display:inline-block" target="_blank" rel="noopener">Visit AIR Exchange Network →</a>
@@ -1349,7 +1349,7 @@ function buildNetwork() {
       <p style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.8;color:var(--gray-text);margin-bottom:1.5rem">We meet online once a month to exchange experiences, share working methods, and discuss the questions many of us are facing: from sustainability and funding to artist care, programming, and the long-term impact of what we build. This is a live, ongoing conversation — not a database, not a conference, not a broadcast channel.</p>
 
       <div class="network-meta">
-        <p>Monthly meetings — first Wednesday of each month, 18:00 CET. Online via Zoom. Open to residency organizers and artist-run space directors.</p>
+        <p>Monthly meetings — first Wednesday of each month, 18:00 CET. Online via Jitsi. Open to residency organizers and artist-run space directors.</p>
         <p style="margin-top:0.75rem"><strong>Contact:</strong> <a href="mailto:virtualstudiogroups@gmail.com">virtualstudiogroups@gmail.com</a></p>
       </div>
     </div>

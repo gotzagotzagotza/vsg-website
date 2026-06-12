@@ -3,15 +3,11 @@ title: About
 description: Virtual Studio Groups — an international artist community founded during the pandemic
 ---
 
-What began as an experimental virtual residency during the pandemic has become an ongoing international network of artists, curators, writers, and cultural professionals — a space for dialogue, peer feedback, and long-term artistic development.
+VSG grew from an experimental virtual residency during the pandemic into an ongoing international network of artists, curators, and cultural professionals.
 
-Our Sunday meetings are only one part of the ecosystem. Through artist presentations, interviews, publications, exhibition projects, and VSG Magazine, we build ongoing opportunities for visibility, reflection, collaboration, and professional growth.
+Our Sunday meetings are one part of a larger ecosystem — alongside artist presentations, interviews, publications, exhibition projects, and VSG Magazine. Presentations are informal and discussion-based. Artists participate voluntarily, and the community gives back through feedback, visibility, and real connection.
 
-VSG is free to join and open to artists at any stage of their practice. It is peer-run and volunteer-led. When artists present here, they are contributing to a shared space — and the community gives back through feedback, visibility, connections, and dialogue.
-
-There are no predetermined outcomes and no institutional hierarchy. Members engage at different levels and at different times — depending on their work, their availability, and where they are in their practice. What connects us is a shared belief that artistic development happens through dialogue, generosity, and sustained exchange over time.
-
-VSG is not simply a meeting. It is a growing platform for artists who value thoughtful discussion, mutual support, and long-term connection across borders.
+VSG is free to join and artist-led. There is no hierarchy and no fixed agenda. Members engage when it's right for them, at whatever level fits their practice.
 
 This is a space for artistic growth, experimentation, and collective knowledge-sharing, without the constraints of physical location. It is a space for meaningful exchange. Our platform provides a flexible, process-driven environment where artists, curators, and cultural professionals can share ideas, receive constructive feedback, and develop their projects with an engaged international art community.
 
