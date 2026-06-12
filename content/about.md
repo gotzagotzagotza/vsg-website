@@ -3,9 +3,13 @@ title: About
 description: Virtual Studio Groups — an international artist community founded during the pandemic
 ---
 
-The Virtual Studio Groups project evolved from our virtual residency program, initiated during the pandemic when travel was restricted. With a decade-long history of art residency in Belgrade and a vast artist network, the project grew organically.
+What began as an experimental virtual residency during the pandemic has become an ongoing international network of artists, curators, writers, and cultural professionals — a space for dialogue, peer feedback, and long-term artistic development.
 
-Virtual Studio Groups is a new model for artistic connection and peer support — born from our experience running residencies, where we saw that what artists value most is feedback, dialogue, and a sense of community.
+Our Sunday meetings are only one part of the ecosystem. Through artist presentations, interviews, publications, exhibition projects, and VSG Magazine, we build ongoing opportunities for visibility, reflection, collaboration, and professional growth.
+
+There are no predetermined outcomes and no institutional hierarchy. Members engage at different levels and at different times — depending on their work, their availability, and where they are in their practice. What connects us is a shared belief that artistic development happens through dialogue, generosity, and sustained exchange over time.
+
+VSG is not simply a meeting. It is a growing platform for artists who value thoughtful discussion, mutual support, and long-term connection across borders.
 
 This is a space for artistic growth, experimentation, and collective knowledge-sharing, without the constraints of physical location. It is a space for meaningful exchange. Our platform provides a flexible, process-driven environment where artists, curators, and cultural professionals can share ideas, receive constructive feedback, and develop their projects with an engaged international art community.
 

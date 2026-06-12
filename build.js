@@ -246,6 +246,7 @@ ${eventHtml}
     <h2 class="section-title">Peer support for artists, everywhere</h2>
     <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;color:var(--gray-text);margin:1rem 0 1.5rem">The Virtual Studio Groups project evolved from our virtual residency program, initiated during the pandemic. With a decade-long history of art residency in Belgrade and a vast artist network, the project grew organically.</p>
     <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;color:var(--gray-text);margin-bottom:1.75rem">We meet every Sunday evening. No hierarchy, no predetermined outcomes. Just artists, talking honestly about their work.</p>
+    <p style="font-family:var(--font-serif);font-size:1rem;line-height:1.75;color:var(--gray-text);margin-bottom:1.75rem">Virtual Studio Groups is more than a meeting. Through artist presentations, interviews, publications, exhibition projects, and our online magazine, we create space for visibility, reflection, collaboration, and long-term artistic development. Every conversation, every connection, every article adds to a growing archive and network that benefits everyone in it.</p>
     <a href="/community/" class="btn btn-primary">Learn more</a>
   </div>
 </div>
