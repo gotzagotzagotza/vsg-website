@@ -7,6 +7,8 @@ What began as an experimental virtual residency during the pandemic has become a
 
 Our Sunday meetings are only one part of the ecosystem. Through artist presentations, interviews, publications, exhibition projects, and VSG Magazine, we build ongoing opportunities for visibility, reflection, collaboration, and professional growth.
 
+VSG is free to join and open to artists at any stage of their practice. It is peer-run and volunteer-led. When artists present here, they are contributing to a shared space — and the community gives back through feedback, visibility, connections, and dialogue.
+
 There are no predetermined outcomes and no institutional hierarchy. Members engage at different levels and at different times — depending on their work, their availability, and where they are in their practice. What connects us is a shared belief that artistic development happens through dialogue, generosity, and sustained exchange over time.
 
 VSG is not simply a meeting. It is a growing platform for artists who value thoughtful discussion, mutual support, and long-term connection across borders.
