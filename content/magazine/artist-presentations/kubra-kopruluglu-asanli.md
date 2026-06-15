@@ -74,4 +74,8 @@ That, perhaps, is also a kind of portraiture.
 
 **Kübra's life in the woods:** [Watch on YouTube](https://youtu.be/r97Wmdx6QXo)
 
-**VSG artist presentation:** [Watch on YouTube](https://youtu.be/XfrqaBt9HrA?si=z9biYQ4AXGATHl1E)
+**VSG artist presentation**
+
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:1rem 0">
+<iframe src="https://www.youtube.com/embed/XfrqaBt9HrA" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allowfullscreen loading="lazy"></iframe>
+</div>
