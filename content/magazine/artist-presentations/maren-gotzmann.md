@@ -72,3 +72,5 @@ The VSG group itself was named as a possible ground for this kind of practice â€
 ---
 
 *This article is based on a presentation and discussion from a Virtual Studio Groups session on 19 April 2026.*
+
+**VSG artist presentation:** [Watch on YouTube](https://youtu.be/JEoQaXw-_Aw?si=ja7JNbxuUBPWZyRf)
