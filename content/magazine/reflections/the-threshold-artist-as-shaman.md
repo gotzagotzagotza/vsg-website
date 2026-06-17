@@ -102,6 +102,12 @@ Studying the philosophy of the Chinese garden, I found a way of thinking about t
 
 The masks I made for that exhibition — a rabbit, a deer, a raven, bird wings, a lioness in gold leaf — I had first photographed myself wearing, only as references for the drawings. But a mask is a technology for becoming something other than yourself for as long as a crossing takes, and then returning, and it wanted more than to be drawn. I knew even then that performance was waiting inside the work. The exhibition demanded I set that knowledge aside; only once the doctorate was finished could I follow it. Performance emerged from the practice the way it had been trying to, and it has continued and expanded since — the body itself becoming the place where the crossing happens.
 
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.75rem;margin:2rem 0">
+<img src="/assets/images/reflections/threshold-rabbit-standing-rock.jpg" alt="Performance — rabbit mask, rocks by the sea" style="width:100%;height:260px;object-fit:cover">
+<img src="/assets/images/reflections/threshold-rabbit-path.jpg" alt="Performance — rabbit mask on stone path" style="width:100%;height:260px;object-fit:cover">
+<img src="/assets/images/reflections/threshold-rabbit-lying.jpg" alt="Performance — rabbit mask lying on rock by the sea" style="width:100%;height:260px;object-fit:cover">
+</div>
+
 ![Large black hanging sculpture, PhD exhibition 2018](/assets/images/reflections/threshold-phd-black-sculpture.jpg)
 
 ---
@@ -111,12 +117,6 @@ The masks I made for that exhibition — a rabbit, a deer, a raven, bird wings, 
 Lately the work has gathered at the edge of the water, and this is where the next essay in this series will begin, so I will only open the door here.
 
 For more than fifteen years, a large part of my practice has consisted of standing on a pier in Barcelona, looking straight down at the surface of the sea. I am afraid of deep water; I do not swim where I cannot see the bottom, and for as long as I can remember, I have dreamt of enormous waves and of sharks, dreams more vivid and more vast than anything the calm Mediterranean has ever shown me. So the relationship is not simple fascination. There is something unresolved in it, and the unresolved quality is precisely what keeps me returning. To stand above the thing that frightens me, attending to it closely — photographing it, painting it, year after year — is a way of approaching a threshold without being swallowed by it. In nearly every shamanic cosmology, the sea is exactly this: not water but a living being, an ancestor realm, the underworld one descends into and returns from changed. I did not plan that resemblance, but I noticed it.
-
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.75rem;margin:2rem 0">
-<img src="/assets/images/reflections/threshold-rabbit-standing-rock.jpg" alt="Performance — rabbit mask, rocks by the sea" style="width:100%;height:260px;object-fit:cover">
-<img src="/assets/images/reflections/threshold-rabbit-path.jpg" alt="Performance — rabbit mask on stone path" style="width:100%;height:260px;object-fit:cover">
-<img src="/assets/images/reflections/threshold-rabbit-lying.jpg" alt="Performance — rabbit mask lying on rock by the sea" style="width:100%;height:260px;object-fit:cover">
-</div>
 
 That sustained attention at the water's edge is its own kind of tuning, and the sea turns out to be one of the strongest frequencies I have ever tried to receive. But that is the subject of the next essay. For now it is enough to have named the resemblance and to have suggested where, in one artist's practice, it might lead.
 
