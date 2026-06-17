@@ -75,12 +75,6 @@ Among the drawings hung an installation of objects gathered during life — smal
 ![Installation with visitor, PhD exhibition 2018](/assets/images/reflections/threshold-phd-installation-figure.jpg)
 
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.75rem;margin:2rem 0">
-<img src="/assets/images/reflections/threshold-phd-feathers-wall.jpg" alt="Feathers installation" style="width:100%;height:200px;object-fit:cover">
-<img src="/assets/images/reflections/threshold-phd-masks-raven-lioness.jpg" alt="Raven and lioness masks" style="width:100%;height:200px;object-fit:cover">
-<img src="/assets/images/reflections/threshold-phd-star-red-antler.jpg" alt="Star and red antler objects" style="width:100%;height:200px;object-fit:cover">
-</div>
-
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.75rem;margin:2rem 0">
 <img src="/assets/images/reflections/threshold-object-blue-bird.jpg" alt="Object — blue bird figure" style="width:100%;height:200px;object-fit:cover">
 <img src="/assets/images/reflections/threshold-object-stone-key.jpg" alt="Object — black stone and copper key" style="width:100%;height:200px;object-fit:cover">
 <img src="/assets/images/reflections/threshold-object-felt-creature.jpg" alt="Object — felted creature" style="width:100%;height:200px;object-fit:cover">
@@ -103,13 +97,14 @@ Studying the philosophy of the Chinese garden, I found a way of thinking about t
 The masks I made for that exhibition — a rabbit, a deer, a raven, bird wings, a lioness in gold leaf — I had first photographed myself wearing, only as references for the drawings. But a mask is a technology for becoming something other than yourself for as long as a crossing takes, and then returning, and it wanted more than to be drawn. I knew even then that performance was waiting inside the work. The exhibition demanded I set that knowledge aside; only once the doctorate was finished could I follow it. Performance emerged from the practice the way it had been trying to, and it has continued and expanded since — the body itself becoming the place where the crossing happens.
 
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:2rem 0">
-<img src="/assets/images/reflections/threshold-rabbit-standing-rock.jpg" alt="Performance — rabbit mask, rocks by the sea" style="width:100%;height:320px;object-fit:cover">
-<img src="/assets/images/reflections/threshold-rabbit-path.jpg" alt="Performance — rabbit mask on stone path" style="width:100%;height:320px;object-fit:cover">
+<img src="/assets/images/reflections/threshold-phd-feathers-wall.jpg" alt="Feathers, PhD exhibition 2018" style="width:100%;height:300px;object-fit:cover">
+<img src="/assets/images/reflections/threshold-phd-black-sculpture.jpg" alt="Large black hanging sculpture, PhD exhibition 2018" style="width:100%;height:300px;object-fit:cover">
 </div>
 
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:2rem 0">
-<img src="/assets/images/reflections/threshold-rabbit-lying.jpg" alt="Performance — rabbit mask lying on rock by the sea" style="width:100%;height:320px;object-fit:cover">
-<img src="/assets/images/reflections/threshold-phd-black-sculpture.jpg" alt="Large black hanging sculpture, PhD exhibition 2018" style="width:100%;height:320px;object-fit:cover">
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.75rem;margin:2rem 0">
+<img src="/assets/images/reflections/threshold-rabbit-standing-rock.jpg" alt="Performance — rabbit mask, rocks by the sea" style="width:100%;height:260px;object-fit:cover">
+<img src="/assets/images/reflections/threshold-rabbit-path.jpg" alt="Performance — rabbit mask on stone path" style="width:100%;height:260px;object-fit:cover">
+<img src="/assets/images/reflections/threshold-rabbit-lying.jpg" alt="Performance — rabbit mask lying on rock by the sea" style="width:100%;height:260px;object-fit:cover">
 </div>
 
 ---
