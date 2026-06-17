@@ -123,4 +123,4 @@ That sustained attention at the water's edge is its own kind of tuning, and the 
 
 ---
 
-*Gordana Zikic is a visual artist and PhD in Art based in Barcelona. Her work spans painting, installation, and performance. [gordanazikic.wordpress.com](https://gordanazikic.wordpress.com) · [@gotza_gotza](https://www.instagram.com/gotza_gotza/)*
+*Gordana Zikic is an interdisciplinary artist, researcher, and curator based in Barcelona. Working across drawing, installation, performance, and painting, she explores the contemporary artist as a shaman-like figure — a mediator between worlds — grounded in her doctoral research at the Faculty of Fine Arts in Belgrade. Alongside her own artwork, she builds structures that support other artists, co-directing Belgrade Artist in Residence and Virtual Studio Groups, an international community of artists. [gordanazikic.wordpress.com](https://gordanazikic.wordpress.com) · [@gotza_gotza](https://www.instagram.com/gotza_gotza/)*
