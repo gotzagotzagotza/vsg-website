@@ -74,10 +74,9 @@ Among the drawings hung an installation of objects gathered during life — smal
 
 ![Installation with visitor, PhD exhibition 2018](/assets/images/reflections/threshold-phd-installation-visitor-v2.jpg)
 
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin:2rem 0">
-<img src="/assets/images/reflections/threshold-phd-masks-raven-lioness-v2.jpg" alt="Raven and lioness masks, PhD exhibition 2018" style="width:100%;height:300px;object-fit:cover">
-<img src="/assets/images/reflections/threshold-phd-star-red-antler-v2.jpg" alt="Star and red antler objects, PhD exhibition 2018" style="width:100%;height:300px;object-fit:cover">
-</div>
+![Raven and lioness masks, PhD exhibition 2018](/assets/images/reflections/threshold-phd-masks-raven-lioness-v2.jpg)
+
+![Star and red antler objects, PhD exhibition 2018](/assets/images/reflections/threshold-phd-star-red-antler-v2.jpg)
 
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.75rem;margin:2rem 0">
 <img src="/assets/images/reflections/threshold-object-blue-bird.jpg" alt="Object — blue bird figure" style="width:100%;height:200px;object-fit:cover">
