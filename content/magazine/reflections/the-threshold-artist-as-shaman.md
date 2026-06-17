@@ -60,19 +60,7 @@ My doctoral exhibition, shown in Belgrade in 2018, was where this method first b
 
 Charcoal and watercolour figures were drawn directly onto the walls, without background or perspective, so that the white of the wall became infinite space — the same logic by which the interior of a church is built to dissolve its own boundaries. When the exhibition closed, the drawings were painted over and lost. The impermanence was deliberate. A crossing is not meant to last.
 
-![Wall drawing detail — figure with candle, PhD exhibition 2018](/assets/images/reflections/threshold-phd-drawing-figure-candle.jpg)
-
-![Wall drawing detail — raven, figures, objects, PhD exhibition 2018](/assets/images/reflections/threshold-phd-wall-full.jpg)
-
-![Wall drawing detail — birds and figure with antler headdress](/assets/images/reflections/threshold-phd-drawing-birds-antlers.jpg)
-
 Among the drawings hung an installation of objects gathered during life — small sculptures, papier-mâché, copper wire, antlers, feathers, shells, minerals, my own hair in the colours of different years, the combed-out then felted fur of my cats. Ordinary things transformed and placed with intention become what older cultures would call sacred objects, containers of presence and memory. Visitors feel the change without needing a word for it.
-
-![Installation detail — objects on wall, PhD exhibition 2018](/assets/images/reflections/threshold-phd-objects-wall-1.jpg)
-
-![Installation detail — objects on wall, PhD exhibition 2018](/assets/images/reflections/threshold-phd-objects-wall-2.jpg)
-
-![Installation with visitor, PhD exhibition 2018](/assets/images/reflections/threshold-phd-installation-figure.jpg)
 
 <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.75rem;margin:2rem 0">
 <img src="/assets/images/reflections/threshold-object-blue-bird.jpg" alt="Object — blue bird figure" style="width:100%;height:200px;object-fit:cover">
