@@ -167,11 +167,12 @@ function articleCard({ title, date, section, excerpt, cover, url }) {
 
 // ---- HOME PAGE ----
 
-function buildHome(exhibitions, projects, events, presentations) {
+function buildHome(exhibitions, projects, events, presentations, reflections) {
   const allArticles = [
     ...exhibitions.map(a => ({ ...a, _sectionSlug: 'exhibitions-and-encounters' })),
     ...projects.map(a => ({ ...a, _sectionSlug: 'projects-and-research' })),
     ...presentations.map(a => ({ ...a, _sectionSlug: 'artist-presentations' })),
+    ...reflections.map(a => ({ ...a, _sectionSlug: 'reflections' })),
   ].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 3);
 
   const latestEvent = events[0];
@@ -1514,7 +1515,7 @@ function build() {
   copyDir('assets', 'dist/assets');
 
   // Home
-  writeFile('dist/index.html', buildHome(exhibitions, projectsResearch, events, presentations));
+  writeFile('dist/index.html', buildHome(exhibitions, projectsResearch, events, presentations, reflections));
   console.log('  ✓ index.html');
 
   // Community
