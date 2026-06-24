@@ -99,4 +99,4 @@ At nearly 90, Madeleine is still in the studio, still receiving visitors, still 
 **About the author**\
 [yanncourte.fr](https://yanncourte.fr) · [@memoire.courte](https://www.instagram.com/memoire.courte/) on Instagram
 
-**Visit the collection:** Association des Amis de la Maison Musée Sergio Molinier
+**Visit the collection:** [Association des Amis de la Maison Musée Sergio Molinier](https://www.instagram.com/association_sergio_molinier/)
