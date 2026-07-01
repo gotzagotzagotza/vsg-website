@@ -4,6 +4,8 @@ author: "Gordana Zikic"
 date: 2026-07-01
 section: Artist Presentations
 excerpt: "The second in VSG's ongoing series on color — on the rainbow as a road between worlds, the theology of blue, the price of heaven, and why the body that approaches the sacred has always been dressed in color."
+cover: /assets/images/reflections/lapis-cover.png
+cover_caption: "Lapis lazuli · #1B3A6B · lazurite · ultramarine"
 ---
 
 *VSG Magazine · Color series · No. 02*
@@ -155,71 +157,25 @@ From Siberia to Arnhem Land, from Byzantine Constantinople to medieval Serbian m
   </div>
 </div>
 
-<p class="lapis-grid-title">Blue pigments — mineral and plant origin</p>
+<style>
+.blue-swatches-label { font-size: 12px; font-weight: 500; color: #666; letter-spacing: 0.08em; margin: 1.5rem 0 0.5rem; text-transform: uppercase; font-family: 'Courier New', monospace; }
+.blue-swatch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; padding: 0.5rem 0 1rem; }
+.blue-swatch { border-radius: 4px; border: 1px solid #d0ccc8; overflow: hidden; }
+.blue-swatch-color { height: 56px; }
+.blue-swatch-body { padding: 10px 12px 12px; background: #fff; }
+.blue-swatch-name { font-size: 15px; font-weight: 500; color: #111; margin: 0 0 2px; font-family: Georgia, serif; display: block; }
+.blue-swatch-origin { font-size: 12px; color: #444; margin: 0 0 4px; font-family: 'Courier New', monospace; display: block; }
+.blue-swatch-note { font-size: 12px; color: #666; margin: 0; line-height: 1.4; font-family: Georgia, serif; display: block; }
+</style>
 
-<div class="lapis-pigments">
-  <div class="lapis-pigment-item">
-    <div class="lapis-dot" style="background: #1B3A6B;"></div>
-    <div class="lapis-pigment-text">
-      <span class="lapis-pigment-name">Ultramarine</span>
-      <span class="lapis-pigment-origin">Latin · ultramarinus · beyond the sea</span>
-      <span class="lapis-pigment-desc">Purified from lapis lazuli. The most expensive pigment in history.</span>
-    </div>
-  </div>
-  <div class="lapis-pigment-item">
-    <div class="lapis-dot" style="background: #1C6EA4;"></div>
-    <div class="lapis-pigment-text">
-      <span class="lapis-pigment-name">Azurite</span>
-      <span class="lapis-pigment-origin">French · azur · copper carbonate mineral</span>
-      <span class="lapis-pigment-desc">The affordable substitute. Unstable — fades to green over centuries.</span>
-    </div>
-  </div>
-  <div class="lapis-pigment-item">
-    <div class="lapis-dot" style="background: #4169A0;"></div>
-    <div class="lapis-pigment-text">
-      <span class="lapis-pigment-name">Egyptian blue</span>
-      <span class="lapis-pigment-origin">cuprorivaite · calcium copper silicate</span>
-      <span class="lapis-pigment-desc">The oldest synthetic pigment. Made since 3,000 BCE. Never fades.</span>
-    </div>
-  </div>
-  <div class="lapis-pigment-item">
-    <div class="lapis-dot" style="background: #1F4E8C;"></div>
-    <div class="lapis-pigment-text">
-      <span class="lapis-pigment-name">Smalt</span>
-      <span class="lapis-pigment-origin">German · schmelzen · to melt · cobalt glass</span>
-      <span class="lapis-pigment-desc">Ground cobalt-blue glass. Renaissance Europe's practical blue.</span>
-    </div>
-  </div>
-  <div class="lapis-pigment-item">
-    <div class="lapis-dot" style="background: #234E80;"></div>
-    <div class="lapis-pigment-text">
-      <span class="lapis-pigment-name">Indigo</span>
-      <span class="lapis-pigment-origin">Greek · indikon · from India · Indigofera plant</span>
-      <span class="lapis-pigment-desc">Used in manuscripts, textiles, illumination. The dyer's blue.</span>
-    </div>
-  </div>
-  <div class="lapis-pigment-item">
-    <div class="lapis-dot" style="background: #2B4F81;"></div>
-    <div class="lapis-pigment-text">
-      <span class="lapis-pigment-name">Woad</span>
-      <span class="lapis-pigment-origin">Old English · wād · Isatis tinctoria · Europe</span>
-      <span class="lapis-pigment-desc">The European peasant indigo. Same molecule, weaker concentration.</span>
-    </div>
-  </div>
-  <div class="lapis-pigment-item">
-    <div class="lapis-dot" style="background: #3B5FA0;"></div>
-    <div class="lapis-pigment-text">
-      <span class="lapis-pigment-name">Lapis lazuli</span>
-      <span class="lapis-pigment-origin">Persian · lāzhward · blue stone · Afghanistan</span>
-      <span class="lapis-pigment-desc">The raw stone, before purification. Flecked with gold pyrite.</span>
-    </div>
-  </div>
-  <div class="lapis-pigment-item">
-    <div class="lapis-dot" style="background: #1A3A5C;"></div>
-    <div class="lapis-pigment-text">
-      <span class="lapis-pigment-name">Prussian blue</span>
-      <span class="lapis-pigment-origin">Berlin, 1704 · first modern synthetic pigment</span>
-      <span class="lapis-pigment-desc">Discovered by accident. Ended the reign of ultramarine.</span>
-    </div>
-  </div>
+<p class="blue-swatches-label">Blue pigments — mineral and plant origin</p>
+<div class="blue-swatch-grid">
+  <div class="blue-swatch"><div class="blue-swatch-color" style="background:#1B3A6B"></div><div class="blue-swatch-body"><span class="blue-swatch-name">Ultramarine</span><span class="blue-swatch-origin">Latin · ultramarinus · beyond the sea</span><span class="blue-swatch-note">Purified from lapis lazuli. The most expensive pigment in history.</span></div></div>
+  <div class="blue-swatch"><div class="blue-swatch-color" style="background:#1C6EA4"></div><div class="blue-swatch-body"><span class="blue-swatch-name">Azurite</span><span class="blue-swatch-origin">French · azur · copper carbonate mineral</span><span class="blue-swatch-note">The affordable substitute. Unstable — fades to green over centuries.</span></div></div>
+  <div class="blue-swatch"><div class="blue-swatch-color" style="background:#4169A0"></div><div class="blue-swatch-body"><span class="blue-swatch-name">Egyptian blue</span><span class="blue-swatch-origin">cuprorivaite · calcium copper silicate</span><span class="blue-swatch-note">The oldest synthetic pigment. Made since 3,000 BCE. Never fades.</span></div></div>
+  <div class="blue-swatch"><div class="blue-swatch-color" style="background:#1F4E8C"></div><div class="blue-swatch-body"><span class="blue-swatch-name">Smalt</span><span class="blue-swatch-origin">German · schmelzen · to melt · cobalt glass</span><span class="blue-swatch-note">Ground cobalt-blue glass. Renaissance Europe's practical blue.</span></div></div>
+  <div class="blue-swatch"><div class="blue-swatch-color" style="background:#234E80"></div><div class="blue-swatch-body"><span class="blue-swatch-name">Indigo</span><span class="blue-swatch-origin">Greek · indikon · from India · Indigofera plant</span><span class="blue-swatch-note">Used in manuscripts, textiles, illumination. The dyer's blue.</span></div></div>
+  <div class="blue-swatch"><div class="blue-swatch-color" style="background:#2B4F81"></div><div class="blue-swatch-body"><span class="blue-swatch-name">Woad</span><span class="blue-swatch-origin">Old English · wād · Isatis tinctoria · Europe</span><span class="blue-swatch-note">The European peasant indigo. Same molecule, weaker concentration.</span></div></div>
+  <div class="blue-swatch"><div class="blue-swatch-color" style="background:#3B5FA0"></div><div class="blue-swatch-body"><span class="blue-swatch-name">Lapis lazuli</span><span class="blue-swatch-origin">Persian · lāzhward · blue stone · Afghanistan</span><span class="blue-swatch-note">The raw stone, before purification. Flecked with gold pyrite.</span></div></div>
+  <div class="blue-swatch"><div class="blue-swatch-color" style="background:#1A3A5C"></div><div class="blue-swatch-body"><span class="blue-swatch-name">Prussian blue</span><span class="blue-swatch-origin">Berlin, 1704 · first modern synthetic pigment</span><span class="blue-swatch-note">Discovered by accident. Ended the reign of ultramarine.</span></div></div>
 </div>
