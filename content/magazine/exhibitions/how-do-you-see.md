@@ -6,7 +6,8 @@ excerpt: "A day walking the Itinérances Foto festival in Sète with photographe
 cover: /assets/images/exhibitions/how-do-you-see/if-one-day/01.jpg
 ---
 
-*Text and photographs by Yann Courté · [@memoire.courte](https://www.instagram.com/memoire.courte/) on Instagram*
+*Text by Yann Courté · [@memoire.courte](https://www.instagram.com/memoire.courte/) on Instagram*\
+*Photographs by Yann Courté & Étienne Pons*
 
 ---
 
@@ -24,7 +25,7 @@ How do you see? I mean that as a real question, not a rhetorical one. Not how do
 
 ---
 
-## IF One Day
+## IF One Day — Yann Courté
 
 ![](/assets/images/exhibitions/how-do-you-see/if-one-day/01.jpg)
 
@@ -84,7 +85,7 @@ How do you see? I mean that as a real question, not a rhetorical one. Not how do
 
 ---
 
-## Si à Sète...
+## Si à Sète... — Étienne Pons
 
 ![](/assets/images/exhibitions/how-do-you-see/si-a-sete/01.jpg)
 
