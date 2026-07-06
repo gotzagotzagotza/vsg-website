@@ -88,7 +88,7 @@
     "country": "Sweden",
     "instagram": "ylvaeklof",
     "website": "ylvaeklof.com",
-    "photo": null
+    "photo": "/assets/images/artists/ylva-eklof.jpeg"
   },
   {
     "name": "Raymond Watson",
@@ -264,5 +264,12 @@
     "instagram": "mrs.horowitz",
     "website": "bentblue.com",
     "photo": "/assets/images/artists/sarah-horowitz.jpeg"
+  },
+  {
+    "name": "Melih Aşanlı",
+    "country": null,
+    "instagram": "melihasanli.art",
+    "website": "melihasanliart.myportfolio.com",
+    "photo": "/assets/images/artists/melih-asanli.jpeg"
   }
 ]
