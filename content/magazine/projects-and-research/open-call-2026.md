@@ -42,7 +42,7 @@ Artists working in contemporary art, at any stage, with a project or body of wor
 
 ## How to apply
 
-Send us:
+Send us an email at [virtualstudiogroups@gmail.com](mailto:virtualstudiogroups@gmail.com) with:
 
 - Visual material for the specific project or work you'd like to discuss
 - A link to your website, Instagram, and/or portfolio
