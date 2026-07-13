@@ -9,15 +9,9 @@ cover_caption: "El Mar Hirviendo — 220 Surfaces. From the solo exhibition El M
 
 *By Gordana Zikic · The second in a series on shamanism and contemporary art*
 
----
-
-![El Mar Hirviendo — 220 Surfaces](/assets/images/reflections/sea-that-cannot-die/el-mar-hirviendo-220-surfaces.jpeg)
-
-*El Mar Hirviendo — 220 Surfaces. From the solo exhibition El Mar Hirviendo, The Local AIR, Valencia, 2026.*
-
 <div style="border:1px solid var(--border);padding:1rem 1.25rem;margin:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap">
 <span style="font-family:var(--font-serif);font-size:0.95rem;color:var(--gray-text)"><em>El Mar Hirviendo — 220 Surfaces</em></span>
-<a href="https://objkt.com/tokens/KT1KLazRW4sEq7FrbLEq88EzgkDP5ovUz7DB/0?ref=tz1gr5s22hZhHQc1Q5bR9onwrBeSPX81tzJD" style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;color:inherit;border-bottom:1px solid currentColor;white-space:nowrap" target="_blank" rel="noopener">Collect on objkt →</a>
+<a href="https://objkt.com/tokens/KT1KLazRW4sEq7FrbLEq88EzgkDP5ovUz7DB/2?ref=tz1gr5s22hZhHQc1Q5bR9onwrBeSPX81tzJD" style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;color:inherit;border-bottom:1px solid currentColor;white-space:nowrap" target="_blank" rel="noopener">Collect on objkt →</a>
 </div>
 
 Most people who live near the sea take it for granted. They walk past it, photograph it, complain when it is cold. They do not wonder about it. What is surprising, when you start to look, is how recently that indifference was learned and how different, across most of human history and most of the world, the relationship with the sea has actually been.
