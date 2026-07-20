@@ -179,7 +179,7 @@
     "country": "Spain",
     "instagram": null,
     "website": "unjuan.com",
-    "photo": null
+    "photo": "/assets/images/artists/juan-david-galindo.jpg"
   },
   {
     "name": "Juan Antonio Cerezuela",
@@ -271,5 +271,12 @@
     "instagram": "melihasanli.art",
     "website": "melihasanliart.myportfolio.com",
     "photo": "/assets/images/artists/melih-asanli.jpeg"
+  },
+  {
+    "name": "Abigail Smithson",
+    "country": null,
+    "instagram": "abigailsmithson",
+    "website": null,
+    "photo": null
   }
 ]
