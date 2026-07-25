@@ -11,7 +11,7 @@ cover: /assets/images/reflections/blockchain-art-img6375.jpg
 ---
 
 <div style="border:1px solid var(--border);padding:1rem 1.25rem;margin:1.5rem 0;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap">
-<span style="font-family:var(--font-serif);font-size:0.95rem;color:var(--gray-text)"><em>El Mar Hirviendo — Gordana Zikic</em></span>
+<span style="font-family:var(--font-serif);font-size:0.95rem;color:var(--gray-text)"><em>Pink Bug — Gordana Zikic</em></span>
 <a href="https://objkt.com/tokens/KT1NA6XrFkHZ4qGW1mB8aGKim7bpW536rdtn/1?ref=tz1gr5s22hZhHQc1Q5bR9onwrBeSPX81tzJD" style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;color:inherit;border-bottom:1px solid currentColor;white-space:nowrap" target="_blank" rel="noopener">Collect on objkt →</a>
 </div>
 
