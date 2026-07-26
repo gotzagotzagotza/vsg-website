@@ -90,7 +90,7 @@ function baseTemplate({ title, description = '', body, activePage = '' }) {
       <a href="/artists/"${activePage === 'artists' ? ' class="active"' : ''}>Artists</a>
       <a href="/magazine/"${activePage === 'magazine' ? ' class="active"' : ''}>Magazine</a>
       <a href="/projects/"${activePage === 'projects' ? ' class="active"' : ''}>Projects</a>
-      <a href="/events/"${activePage === 'events' ? ' class="active"' : ''}>Events</a>
+      <a href="/events/"${activePage === 'events' ? ' class="active"' : ''}>Exhibitions</a>
       <a href="/network/"${activePage === 'network' ? ' class="active"' : ''}>Network</a>
       <a href="/resources/"${activePage === 'resources' ? ' class="active"' : ''}>Resources</a>
     </nav>
@@ -115,7 +115,7 @@ ${body}
         <li><a href="/artists/">Artists</a></li>
         <li><a href="/magazine/">Magazine</a></li>
         <li><a href="/projects/">Projects</a></li>
-        <li><a href="/events/">Events</a></li>
+        <li><a href="/events/">Exhibitions</a></li>
         <li><a href="/network/">Network</a></li>
         <li><a href="/resources/">Resources</a></li>
       </ul>
@@ -1196,71 +1196,112 @@ function buildEvents(events) {
   const upcoming = events.filter(e => e.status === 'upcoming');
   const past = events.filter(e => e.status === 'past');
 
-  function eventCard(e) {
+  function dateRange(e) {
     const d = new Date(e.date_start);
-    const month = d.toLocaleDateString('en-GB', { month: 'short' }).toUpperCase();
-    const year = d.getFullYear();
-    const dateRange = e.date_end
-      ? `${d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long' })} – ${new Date(e.date_end).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}`
-      : formatDate(e.date_start);
-
-    const imageHtml = e.image
-      ? `<div class="event-card-image"><img src="${e.image}" alt="${e.title}" loading="lazy"></div>`
-      : '';
-
-    const inner = `
-  ${imageHtml}
-  <div class="event-card-body">
-    <div class="event-date-block">
-      <span class="month">${month}</span>
-      <span class="year">${year}</span>
-    </div>
-    <div>
-      <div class="event-title">${e.title}</div>
-      <div class="event-location">${e.venue} &nbsp;·&nbsp; ${e.location}</div>
-      <p class="event-desc">${e.description}</p>
-      <p style="font-family:var(--font-mono);font-size:0.72rem;color:var(--gray-text);margin-top:0.4rem">${dateRange}${e.artists_count ? ` &nbsp;·&nbsp; ${e.artists_count} artists` : ''}</p>
-      <span class="event-status ${e.status}">${e.status}</span>
-      ${e.article_link ? `<br><span style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--accent);margin-top:0.5rem;display:inline-block">Read review →</span>` : ''}
-    </div>
-  </div>`;
-
-    return e.article_link
-      ? `<a href="${e.article_link}" class="event-card event-card-link">${inner}</a>`
-      : `<div class="event-card">${inner}</div>`;
+    if (!e.date_end) return formatDate(e.date_start);
+    return `${d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long' })} – ${new Date(e.date_end).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}`;
   }
 
-  const upcomingHtml = upcoming.length > 0
-    ? upcoming.map(eventCard).join('')
-    : '<p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--gray-text)">No upcoming events currently scheduled. Check back soon or follow us on Instagram.</p>';
+  // Hero for a single upcoming/featured exhibition
+  function featuredHero(e) {
+    const range = dateRange(e);
+    const imgHtml = e.image
+      ? `<img src="${e.image}" alt="${e.title}" style="width:100%;height:100%;object-fit:cover;display:block">`
+      : `<div style="width:100%;height:100%;background:var(--gray-mid)"></div>`;
+    const onlineTag = e.online_link
+      ? `<a href="${e.online_link}" style="display:inline-block;font-family:var(--font-mono);font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;background:var(--accent);color:#fff;padding:0.2rem 0.6rem;margin-bottom:1rem">● Online Exhibition</a>`
+      : '';
+    return `
+<div style="background:var(--gray-light);border-bottom:1px solid var(--gray-mid)">
+  <div class="container" style="padding-top:0;padding-bottom:0">
+    <div style="display:grid;grid-template-columns:1fr 1fr;min-height:420px">
+      <div style="overflow:hidden;background:#eee">${imgHtml}</div>
+      <div style="padding:3rem 2.5rem;display:flex;flex-direction:column;justify-content:center">
+        ${onlineTag}
+        <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-text);margin-bottom:0.75rem">${e.venue} · ${e.location}</p>
+        <h2 style="font-family:var(--font-serif);font-size:clamp(1.4rem,3vw,2rem);font-weight:400;line-height:1.2;margin-bottom:1rem">${e.title}</h2>
+        <p style="font-family:var(--font-mono);font-size:0.78rem;letter-spacing:0.06em;color:var(--gray-text);margin-bottom:1.25rem">${range}</p>
+        <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.75;color:var(--gray-text);margin-bottom:2rem">${e.description}</p>
+        ${e.online_link ? `<a href="${e.online_link}" style="display:inline-block;font-family:var(--font-mono);font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;background:var(--accent);color:#fff;padding:0.75rem 1.5rem;min-height:48px;line-height:1.8;align-self:flex-start">Enter the online exhibition →</a>` : (e.article_link ? `<a href="${e.article_link}" style="display:inline-block;font-family:var(--font-mono);font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;background:var(--accent);color:#fff;padding:0.75rem 1.5rem;min-height:48px;line-height:1.8;align-self:flex-start">Read more →</a>` : '')}
+      </div>
+    </div>
+  </div>
+</div>`;
+  }
 
-  const pastHtml = past.map(eventCard).join('');
+  // Card for past exhibitions
+  function pastCard(e) {
+    const range = dateRange(e);
+    const imgHtml = e.image
+      ? `<div style="aspect-ratio:4/3;overflow:hidden;background:var(--gray-light)"><img src="${e.image}" alt="${e.title}" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>`
+      : `<div style="aspect-ratio:4/3;background:var(--gray-light)"></div>`;
+    const onlineTag = e.online_link
+      ? `<span style="display:inline-block;font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;background:var(--accent);color:#fff;padding:0.15rem 0.5rem;margin-left:0.5rem;vertical-align:middle">Online</span>`
+      : '';
+    const inner = `
+  ${imgHtml}
+  <div style="padding:1rem 0 0.5rem">
+    <p style="font-family:var(--font-sans);font-size:0.95rem;font-weight:600;margin-bottom:0.25rem">${e.title}${onlineTag}</p>
+    <p style="font-family:var(--font-mono);font-size:0.72rem;color:var(--gray-text);margin-bottom:0.2rem">${e.venue} · ${e.location}</p>
+    <p style="font-family:var(--font-mono);font-size:0.7rem;color:var(--gray-text)">${range}${e.artists_count ? ` · ${e.artists_count} artists` : ''}</p>
+  </div>`;
+    const href = e.online_link || e.article_link;
+    return href
+      ? `<a href="${href}" style="display:block;color:inherit;border:1px solid var(--gray-mid);padding:0;text-decoration:none;transition:border-color 0.15s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--gray-mid)'">${inner}</a>`
+      : `<div style="border:1px solid var(--gray-mid)">${inner}</div>`;
+  }
+
+  const featuredHtml = upcoming.length > 0
+    ? upcoming.map(featuredHero).join('')
+    : '';
+
+  const pastHtml = past.length > 0
+    ? `<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem">
+        ${past.map(pastCard).join('')}
+       </div>`
+    : '<p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--gray-text)">No past exhibitions yet.</p>';
 
   const body = `
+<style>
+@media (max-width: 720px) {
+  .exh-featured-grid { grid-template-columns: 1fr !important; }
+  .exh-featured-grid > div:first-child { min-height: 240px !important; }
+  .exh-past-grid { grid-template-columns: 1fr 1fr !important; }
+}
+@media (max-width: 480px) {
+  .exh-past-grid { grid-template-columns: 1fr !important; }
+}
+</style>
+
 <div class="page-hero">
   <div class="container">
-    <p class="section-label">Events</p>
-    <h1>Exhibitions & Events</h1>
-    <p class="intro">From Denmark to Spain, from Stockholm to Valencia — VSG artists meet online but exhibit worldwide.</p>
+    <p class="section-label">Exhibitions</p>
+    <h1>Exhibitions</h1>
+    <p class="intro">From Denmark to Spain, from Stockholm to Los Angeles — VSG artists meet online but exhibit worldwide.</p>
   </div>
 </div>
 
+${featuredHtml ? `
+<div class="section-block" style="padding:0">
+  <div class="container" style="padding-top:0;padding-bottom:0">
+    <p class="section-label" style="padding-top:2rem">Current &amp; Upcoming</p>
+  </div>
+  ${featuredHtml}
+</div>` : ''}
+
 <div class="section-block">
   <div class="container">
-    <h2 class="section-title" style="font-size:1.25rem;margin-bottom:1.5rem">Upcoming</h2>
-    ${upcomingHtml}
-
-    <hr class="divider" style="margin:3rem 0">
-
-    <h2 class="section-title" style="font-size:1.25rem;margin-bottom:1.5rem">Archive</h2>
-    ${pastHtml}
+    <p class="section-label" style="margin-bottom:1.5rem">Past Exhibitions</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem" class="exh-past-grid">
+      ${past.map(pastCard).join('')}
+    </div>
   </div>
 </div>
 `;
 
   return baseTemplate({
-    title: 'Events',
-    description: 'VSG exhibitions and events — from Denmark to Spain, online and worldwide.',
+    title: 'Exhibitions',
+    description: 'VSG exhibitions — from Denmark to Spain, from Stockholm to Los Angeles. Group shows, art fairs, and hybrid exhibitions worldwide.',
     body,
     activePage: 'events'
   });

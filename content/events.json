@@ -9,7 +9,8 @@
     "description": "VSG participates in TRYST, the world's largest international art fair dedicated to artist-run spaces, collectives, and independent organizations. Our presentation includes a hybrid exhibition: physical works in the booth alongside an online component showing works by artists who could not travel.",
     "artists_count": null,
     "image": "/assets/images/exhibitions/works-beyond-the-walls/tryst-logo.webp",
-    "article_link": "/projects/works-beyond-the-walls/"
+    "article_link": "/projects/works-beyond-the-walls/",
+    "online_link": "/projects/works-beyond-the-walls/"
   },
   {
     "title": "El agua nos llama — VSG Group Exhibition",
