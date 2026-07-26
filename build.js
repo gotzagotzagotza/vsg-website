@@ -1623,9 +1623,8 @@ function buildWorksPage(artists) {
       </div>
       <div style="background:#fff;padding:0.5rem 1rem;flex-shrink:0;display:flex;align-items:center;margin-top:0.25rem"><img src="/assets/images/exhibitions/works-beyond-the-walls/tryst-logo.webp" alt="TRYST Art Fair" style="height:44px;width:auto;display:block"></div>
     </div>
-    <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:1.75rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem">
-      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.8;opacity:0.8;margin:0">This is a live online exhibition, not documentation. The works shown here are the exhibition — presented digitally in the VSG booth at TRYST alongside physical works, and open to anyone online.</p>
-      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.8;opacity:0.8;margin:0">TRYST is the world's largest international art fair dedicated to artist-run spaces, collectives, and independent organizations — a global gathering centered on exchange and collaboration over commercial structures.</p>
+    <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:1.75rem;max-width:720px">
+      <p style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.85;opacity:0.9;margin:0">Works Beyond the Walls brings together artists taking part from across the world — installations, sculpture, and moving image shown online and inside the gallery at once. At TRYST in Los Angeles you'll find them on screen beside the physical works; here, they're open to everyone.</p>
     </div>
   </div>
 </div>
