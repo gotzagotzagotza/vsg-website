@@ -1775,7 +1775,7 @@ function buildWorksPage(artists) {
     } else if (a.kind === 'images' && a.images && a.images.length) {
       var imgs = a.images.map(function(img, i) {
         return '<div class="wbtw-stage-img' + (i === 0 ? ' active' : '') + '" data-img="' + i + '" role="img" aria-label="' + escHtml(img.caption || a.work) + '">'
-          + '<img src="' + img.src + '" alt="' + escHtml(img.caption || a.work) + '" loading="lazy">'
+          + '<img src="' + img.src + '" alt="' + escHtml(img.caption || a.work) + '">'
           + '</div>';
       }).join('');
 
