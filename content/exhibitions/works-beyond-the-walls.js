@@ -130,6 +130,29 @@ module.exports = [
     }
   }
 
+  ,{
+    name: "Kübra Köprülüoğlu Aşanlı",
+    country: "Türkiye",
+    work: "Reveal",
+    type: "Video",
+    materials: "Single channel video",
+    quote: "",
+    statement: [
+      "Kübra Köprülüoğlu Aşanlı (b. 1984) is a contemporary artist based in Türkiye whose research-driven practice explores ecological relationships, indigenous knowledge systems, and regenerative futures. Working across painting, installation, video, and sound, she investigates how cultural memory and human–nature connections can be reimagined through contemporary art.",
+      "Through layered imagery, fragmented textures, organic forms, and bold colors, her work navigates the tension between visibility and erasure. Her visual language is defined by fluid transitions between forms, dissolving fixed boundaries and building compositions rooted in symbolic realism. By challenging extractive modes of representation, her practice repositions indigenous perspectives and non-human narratives as active agents rather than passive subjects.",
+      "Her multidisciplinary practice brings together artistic research, ecological thinking, and visual storytelling to explore alternative models of coexistence. Rather than treating identity, nature, and culture as separate subjects, she approaches them as interconnected systems shaped by memory, reciprocity, and continuous transformation.",
+      "This photograph by Yann Courté immediately awakened a profound sensation within Kübra Köprülüoğlu Aşanlı, bringing to light the invisible, silent bond that exists between the artwork, the artist, and the viewer. The fluidly shifting colors became a vivid metaphor for the transience of time and subject, reminding her that every gaze reveals a uniquely personal emotion. Captivated by this dynamic interplay, she felt an undeniable impulse to breathe life into the still image and transform it into a moving visual journey that captures the ever-changing nature of our perception."
+    ],
+    note: "Named Top 10 Artist at the BIEAF World Artist Award (2024). Steering Committee Member, 23rd Busan International Environment Art Festival (2026). Exhibited in South Korea, Japan, Greece, and North Macedonia.",
+    website: "https://kubrakopruluogluasanli.myportfolio.com/",
+    instagram: "https://www.instagram.com/noooneelsebutme/",
+    kind: "video",
+    video: {
+      embed: "https://www.youtube.com/embed/ZhDxSBJxI9M",
+      poster: "/assets/images/exhibitions/works-beyond-the-walls/kubra-poster.png"
+    }
+  }
+
   // ─── PASTE NEW VIDEO ARTIST HERE ─────────────────────────────────────────
   // {
   //   name: "",
