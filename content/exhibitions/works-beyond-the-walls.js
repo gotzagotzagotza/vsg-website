@@ -107,6 +107,29 @@ module.exports = [
   //   ]
   // },
 
+  ,{
+    name: "Juan David Galindo Guarin",
+    country: "Spain",
+    work: "Get into The Zone",
+    type: "Video",
+    materials: "Single channel video, 25'12min, 2022",
+    quote: "",
+    statement: [
+      "Juan David Galindo Guarin is an artist, educator, and cultural mediator based in Barcelona. His practice moves across performance, video, installation, and archive, exploring the processes of subjectivation within Western capitalist culture — using his own body as case study through autoethnography, performance, and fiction. His work examines identity consumption, hyperproductivity, and self-image in the digital age, seeking points of encounter and collective recognition.",
+      "He holds a degree in Fine Arts and Design from Escola Massana, Barcelona, and completed the Independent Studies Programme at MACBA. He has participated in residencies at Hangar Barcelona and La Escocesa, and has exhibited internationally including at MACBA Barcelona, Blueproject Foundation, Fabra i Coats, and Centro Cultural Las Cigarreras Alicante, with solo shows in Barcelona, Belgrade, and L'Hospitalet.",
+      "Get into The Zone explores the neuro-morphogenesis derived from semiotic capitalism in which (in)attention is the center of the (im)productive capacity of the cognitariat. The work makes a narrative and conceptual journey through ADHD, its treatments derived from amphetamines, mild stimulants (coffee, tea, taurine, mate) and their colonial origin, video games, work in front of the screen, techno, anxiety and depression.",
+      "Approaching from personal experience a broader social and historical process, the work examines the relationship of interconnected screens, overstimulation, immaterial overproduction, leisure, partying, anxiety, depression and addiction."
+    ],
+    note: "More on this work: unjuan.com/get-into-the-zone",
+    website: "https://www.unjuan.com",
+    instagram: "https://www.instagram.com/juandavidgalindoguarin/",
+    kind: "video",
+    video: {
+      embed: "https://www.youtube.com/embed/x2m21N8tYZc",
+      poster: "/assets/images/exhibitions/works-beyond-the-walls/juan-david-poster.jpg"
+    }
+  }
+
   // ─── PASTE NEW VIDEO ARTIST HERE ─────────────────────────────────────────
   // {
   //   name: "",
