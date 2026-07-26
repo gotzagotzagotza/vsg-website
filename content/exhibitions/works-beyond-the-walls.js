@@ -34,7 +34,7 @@ module.exports = [
     ]
   },
 
-  ,{
+  {
     name: "Radina Kordova",
     country: "Bulgaria / Netherlands",
     work: "From the source to the mouth and everything in between",
