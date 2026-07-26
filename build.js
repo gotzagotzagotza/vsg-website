@@ -1206,7 +1206,7 @@ function buildEvents(events) {
   function featuredHero(e) {
     const range = dateRange(e);
     const imgHtml = e.image
-      ? `<img src="${e.image}" alt="${e.title}" style="width:100%;height:100%;object-fit:cover;display:block">`
+      ? `<img src="${e.image}" alt="${e.title}" style="width:100%;height:100%;object-fit:contain;object-position:center;display:block;padding:2rem;box-sizing:border-box">`
       : `<div style="width:100%;height:100%;background:var(--gray-mid)"></div>`;
     const onlineTag = e.online_link
       ? `<a href="${e.online_link}" style="display:inline-block;font-family:var(--font-mono);font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;background:var(--accent);color:#fff;padding:0.2rem 0.6rem;margin-bottom:1rem">● Online Exhibition</a>`
@@ -1215,7 +1215,7 @@ function buildEvents(events) {
 <div style="background:var(--gray-light);border-bottom:1px solid var(--gray-mid)">
   <div class="container" style="padding-top:0;padding-bottom:0">
     <div style="display:grid;grid-template-columns:1fr 1fr;min-height:420px">
-      <div style="overflow:hidden;background:#eee">${imgHtml}</div>
+      <div style="background:#fff;display:flex;align-items:center;justify-content:center">${imgHtml}</div>
       <div style="padding:3rem 2.5rem;display:flex;flex-direction:column;justify-content:center">
         ${onlineTag}
         <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-text);margin-bottom:0.75rem">${e.venue} · ${e.location}</p>
@@ -1233,7 +1233,7 @@ function buildEvents(events) {
   function pastCard(e) {
     const range = dateRange(e);
     const imgHtml = e.image
-      ? `<div style="aspect-ratio:4/3;overflow:hidden;background:var(--gray-light)"><img src="${e.image}" alt="${e.title}" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"></div>`
+      ? `<div style="aspect-ratio:4/3;background:var(--gray-light);display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="${e.image}" alt="${e.title}" loading="lazy" style="width:100%;height:100%;object-fit:contain;display:block;padding:0.75rem;box-sizing:border-box"></div>`
       : `<div style="aspect-ratio:4/3;background:var(--gray-light)"></div>`;
     const onlineTag = e.online_link
       ? `<span style="display:inline-block;font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;background:var(--accent);color:#fff;padding:0.15rem 0.5rem;margin-left:0.5rem;vertical-align:middle">Online</span>`
