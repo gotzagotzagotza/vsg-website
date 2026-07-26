@@ -84,6 +84,30 @@ module.exports = [
     ]
   }
 
+  ,{
+    name: "Zeynep Öztaşdelen",
+    country: "Türkiye",
+    work: "Cherry Pie / Burnt Sugar / Raspberry Mist",
+    type: "Painting",
+    materials: "Oil on canvas",
+    quote: "",
+    statement: [
+      "Zeynep Öztaşdelen is a contemporary artist whose practice explores emotion, memory, and the subconscious through atmospheric abstraction. Working primarily with oil on canvas, she creates immersive compositions where color, depth, and organic forms blur the boundary between the familiar and the unknown.",
+      "Cherry Pie (100 × 120 cm, 2026) explores desire as something both seductive and consuming. Layers of crimson, burgundy, and luminous pink dissolve into one another, creating an atmospheric space suspended between intimacy, memory, and longing.",
+      "Burnt Sugar (70 × 100 cm, 2026) explores the tension between warmth and decay, where sweetness transforms into something darker and more visceral. Layers of earthy browns, amber, and shadowy tones dissolve into one another, evoking a landscape shaped by memory, erosion, and time.",
+      "Raspberry Mist (70 × 100 cm, 2026) explores the delicate space between presence and disappearance, where color seems to emerge and dissolve like a fading memory. Soft layers of raspberry, blush, and muted rose create a dreamlike atmosphere suspended between intimacy and distance."
+    ],
+    note: "",
+    website: "",
+    instagram: "https://www.instagram.com/zoztasdelenstudio/",
+    kind: "images",
+    images: [
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/zey-oztasdelen-1.jpg", caption: "Cherry Pie — oil on canvas, 100 × 120 cm, 2026" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/zey-oztasdelen-2.jpg", caption: "Burnt Sugar — oil on canvas, 70 × 100 cm, 2026" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/zey-oztasdelen-3.jpg", caption: "Raspberry Mist — oil on canvas, 70 × 100 cm, 2026" }
+    ]
+  }
+
   // ─── PASTE NEW IMAGE-BASED ARTIST HERE ───────────────────────────────────
   // {
   //   name: "",
