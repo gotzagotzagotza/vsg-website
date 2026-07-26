@@ -58,6 +58,30 @@ module.exports = [
     ]
   }
 
+  ,{
+    name: "Juan Antonio Cerezuela",
+    country: "Spain",
+    work: "El instante de peligro",
+    type: "Installation",
+    materials: "Mixed media installation",
+    quote: "La meta es el origen — the goal is the origin.",
+    statement: [
+      "Juan Antonio Cerezuela (Cartagena, 1982) is a visual artist, researcher and lecturer based in Barcelona, Spain. He holds a PhD in Visual Arts and Intermedia from the Universitat Politècnica de València. His practice encompasses installation, performance and site-specific intervention.",
+      "His work has been presented at institutions including Arts Santa Mònica, Born Centre de Cultura i Memòria, Fabra i Coats and Espronceda Institute of Art & Culture (Barcelona), Centro Párraga and Fundación Gabarrón (Murcia), and Centro de Arte Tomás y Valiente (Madrid). His projects have also been included in the Biennal del Pensament (Barcelona) and the Biennal de Mislata (Valencia).",
+      "El instante de peligro is a group of works that explores moments of social and political conflict through the ideas of Walter Benjamin, Roland Barthes, Edgar Morin and Karl Kraus. The exhibition highlights the importance of cultural actions and media manipulation as primary forces in the formation of both old and new authoritarian politics.",
+      "La meta es el origen, the central work framing the project, takes us back to Kraus at his most devastating — when he sees the future as something disconcerting and threatening, proposing a return to the origin as a foothold from which it might once again be possible to decide almost everything. Curated by Nora Ancarola. Photography: Vacío Estudio."
+    ],
+    note: "Centro Párraga, Murcia, Spain, 2024. Exhibition video: https://www.youtube.com/watch?v=S4GN1BeSpac",
+    website: "",
+    instagram: "",
+    kind: "images",
+    images: [
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/juan-antonio-1.jpg", caption: "El instante de peligro — installation view, Centro Párraga, Murcia, 2024" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/juan-antonio-2.jpg", caption: "El instante de peligro — installation detail" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/juan-antonio-3.jpg", caption: "El instante de peligro — installation detail" }
+    ]
+  }
+
   // ─── PASTE NEW IMAGE-BASED ARTIST HERE ───────────────────────────────────
   // {
   //   name: "",
