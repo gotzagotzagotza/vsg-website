@@ -1738,12 +1738,12 @@ function buildWorksPage(artists) {
     currentImage = 0;
     var a = artists[idx];
     counter.textContent = String(idx + 1).padStart(2, '0') + ' / ' + String(artists.length).padStart(2, '0');
-    renderStage(a);
-    renderPanel(a);
     if (!overlay.classList.contains('open')) {
       overlay.classList.add('open');
       document.body.style.overflow = 'hidden';
     }
+    renderStage(a);
+    renderPanel(a);
     panel.scrollTop = 0;
     panel.focus();
   }
