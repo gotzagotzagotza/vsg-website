@@ -1495,6 +1495,287 @@ ${items}
 
 // ---- MAIN BUILD ----
 
+// ---- WORKS BEYOND THE WALLS — hybrid exhibition online component ----
+
+function buildWorksPage(artists) {
+  const artistsJson = JSON.stringify(artists);
+
+  const gridCards = artists.map((a, i) => {
+    const thumb = a.kind === 'images' && a.images && a.images[0]
+      ? `<img src="${a.images[0].src}" alt="${a.images[0].caption || a.work}" loading="lazy">`
+      : a.kind === 'video' && a.video && a.video.poster
+        ? `<img src="${a.video.poster}" alt="${a.work}" loading="lazy">`
+        : `<div class="wbtw-thumb-placeholder">${a.name.split(' ').map(w => w[0]).join('')}</div>`;
+    const videoBadge = a.kind === 'video' ? `<span class="wbtw-video-badge">▶ Video</span>` : '';
+    return `<button class="wbtw-card" data-index="${i}" aria-label="Open ${a.name} — ${a.work}">
+  <div class="wbtw-card-image">${thumb}${videoBadge}</div>
+  <div class="wbtw-card-info">
+    <span class="wbtw-card-num">${String(i + 1).padStart(2, '0')}</span>
+    <span class="wbtw-card-name">${a.name}</span>
+    <em class="wbtw-card-work">${a.work}</em>
+  </div>
+</button>`;
+  }).join('\n');
+
+  const body = `
+<style>
+/* ── Page hero ── */
+.wbtw-hero { padding: 4rem 0 3rem; border-bottom: 1px solid var(--gray-mid); }
+.wbtw-hero .section-label { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gray-text); margin-bottom: 0.75rem; }
+.wbtw-hero h1 { font-family: var(--font-serif); font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 400; margin-bottom: 1.25rem; }
+.wbtw-hero .intro { font-family: var(--font-serif); font-size: 1rem; line-height: 1.8; color: var(--gray-text); max-width: 640px; }
+
+/* ── Grid ── */
+.wbtw-section { padding: 3rem 0 5rem; }
+.wbtw-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+@media (max-width: 900px) { .wbtw-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 540px) { .wbtw-grid { grid-template-columns: 1fr; } }
+
+.wbtw-card { background: none; border: 1px solid var(--gray-mid); padding: 0; cursor: pointer; text-align: left; display: block; width: 100%; transition: border-color 0.15s; }
+.wbtw-card:hover, .wbtw-card:focus-visible { border-color: var(--accent); outline: none; }
+.wbtw-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.wbtw-card-image { aspect-ratio: 1; overflow: hidden; background: var(--gray-light); position: relative; }
+.wbtw-card-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.wbtw-thumb-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 1.5rem; color: var(--gray-mid); }
+.wbtw-video-badge { position: absolute; top: 0.6rem; left: 0.6rem; background: var(--accent); color: #fff; font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.06em; padding: 0.2rem 0.5rem; }
+.wbtw-card-info { padding: 0.75rem 1rem; display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto; gap: 0 0.6rem; }
+.wbtw-card-num { font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray-text); grid-row: 1; align-self: center; }
+.wbtw-card-name { font-family: var(--font-sans); font-size: 0.9rem; font-weight: 600; grid-row: 1; }
+.wbtw-card-work { font-family: var(--font-serif); font-size: 0.82rem; color: var(--gray-text); grid-column: 2; grid-row: 2; display: block; }
+
+/* ── Overlay ── */
+.wbtw-overlay { position: fixed; inset: 0; z-index: 2000; background: #fff; display: none; flex-direction: column; }
+.wbtw-overlay.open { display: flex; }
+.wbtw-overlay-header { display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 1.25rem; border-bottom: 1px solid var(--gray-mid); flex-shrink: 0; min-height: 52px; }
+.wbtw-overlay-nav { display: flex; align-items: center; gap: 0.5rem; }
+.wbtw-nav-btn { background: none; border: 1px solid var(--gray-mid); padding: 0.4rem 0.9rem; font-family: var(--font-mono); font-size: 0.75rem; cursor: pointer; letter-spacing: 0.06em; transition: border-color 0.15s, background 0.15s; min-width: 44px; min-height: 44px; }
+.wbtw-nav-btn:hover, .wbtw-nav-btn:focus-visible { border-color: var(--accent); background: var(--gray-light); outline: none; }
+.wbtw-nav-btn:focus-visible { outline: 2px solid var(--accent); }
+.wbtw-close-btn { background: none; border: 1px solid var(--gray-mid); padding: 0.4rem 0.9rem; font-family: var(--font-mono); font-size: 0.85rem; cursor: pointer; min-width: 44px; min-height: 44px; }
+.wbtw-close-btn:hover, .wbtw-close-btn:focus-visible { border-color: var(--accent); background: var(--gray-light); outline: none; }
+.wbtw-artist-counter { font-family: var(--font-mono); font-size: 0.75rem; color: var(--gray-text); letter-spacing: 0.06em; }
+.wbtw-split { display: flex; flex: 1; overflow: hidden; }
+
+/* ── Stage (left/artwork side) ── */
+.wbtw-stage { flex: 0 0 60%; position: relative; background: #111; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.wbtw-stage-img { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+.wbtw-stage-img.active { opacity: 1; pointer-events: auto; }
+@media (prefers-reduced-motion: reduce) { .wbtw-stage-img { transition: none; } }
+.wbtw-stage-img img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+.wbtw-stage video, .wbtw-stage iframe { width: 100%; height: 100%; display: block; }
+.wbtw-img-nav { position: absolute; inset: 0; display: flex; align-items: stretch; pointer-events: none; }
+.wbtw-img-zone { flex: 1; cursor: pointer; pointer-events: auto; opacity: 0; }
+.wbtw-img-zone:focus-visible { opacity: 1; outline: 2px solid var(--accent); outline-offset: -4px; }
+.wbtw-img-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 0.6rem 1rem; background: rgba(0,0,0,0.55); font-family: var(--font-mono); font-size: 0.7rem; color: rgba(255,255,255,0.85); letter-spacing: 0.04em; }
+.wbtw-dots { position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%); display: flex; gap: 0.4rem; }
+.wbtw-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,0.4); border: none; cursor: pointer; padding: 0; transition: background 0.15s; }
+.wbtw-dot.active { background: #fff; }
+.wbtw-dot:focus-visible { outline: 2px solid #fff; }
+
+/* ── Info panel (right side) ── */
+.wbtw-panel { flex: 0 0 40%; overflow-y: auto; padding: 2rem 2.5rem; border-left: 1px solid var(--gray-mid); }
+.wbtw-panel-num { font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray-text); letter-spacing: 0.1em; margin-bottom: 0.5rem; }
+.wbtw-panel-name { font-family: var(--font-sans); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.2rem; }
+.wbtw-panel-country { font-family: var(--font-mono); font-size: 0.75rem; color: var(--gray-text); margin-bottom: 1.25rem; }
+.wbtw-panel-work { font-family: var(--font-serif); font-style: italic; font-size: 1rem; margin-bottom: 0.25rem; }
+.wbtw-panel-type { font-family: var(--font-mono); font-size: 0.72rem; color: var(--gray-text); letter-spacing: 0.06em; margin-bottom: 1.5rem; }
+.wbtw-panel-quote { font-family: var(--font-serif); font-style: italic; font-size: 1rem; line-height: 1.65; color: var(--accent-dark); border-left: 2px solid var(--accent); padding-left: 1rem; margin-bottom: 1.5rem; }
+.wbtw-panel-statement p { font-family: var(--font-serif); font-size: 0.9rem; line-height: 1.75; color: var(--gray-text); margin-bottom: 1rem; }
+.wbtw-panel-note { font-family: var(--font-mono); font-size: 0.72rem; color: var(--gray-text); border-top: 1px solid var(--gray-mid); padding-top: 1rem; margin-top: 0.5rem; margin-bottom: 1rem; }
+.wbtw-panel-links { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1rem; }
+.wbtw-panel-links a { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.06em; color: inherit; border-bottom: 1px solid currentColor; padding-bottom: 1px; }
+.wbtw-panel-links a:hover { color: var(--accent); }
+
+/* ── Mobile / touch stacking ── */
+@media (max-width: 720px) {
+  .wbtw-split { flex-direction: column; }
+  .wbtw-stage { flex: 0 0 50vw; min-height: 50vw; max-height: 55vw; }
+  .wbtw-panel { flex: 1; border-left: none; border-top: 1px solid var(--gray-mid); padding: 1.25rem 1rem; }
+  .wbtw-nav-btn, .wbtw-close-btn { min-width: 48px; min-height: 48px; }
+}
+</style>
+
+<div class="wbtw-hero">
+  <div class="container">
+    <p class="section-label">Projects &amp; Exhibitions</p>
+    <h1>Works Beyond the Walls</h1>
+    <p class="intro">This is the online component of a hybrid exhibition. These artists could not send physical works to the gallery — their pieces are presented here and shown on a screen in the exhibition space alongside the physical works. Select any artist to view the work and read their statement.</p>
+  </div>
+</div>
+
+<div class="wbtw-section">
+  <div class="container">
+    <div class="wbtw-grid" id="wbtw-grid">
+      ${gridCards}
+    </div>
+  </div>
+</div>
+
+<!-- Lightbox overlay -->
+<div class="wbtw-overlay" id="wbtw-overlay" role="dialog" aria-modal="true" aria-label="Artist works viewer">
+  <div class="wbtw-overlay-header">
+    <div class="wbtw-overlay-nav">
+      <button class="wbtw-nav-btn" id="wbtw-prev-artist" aria-label="Previous artist">← Prev</button>
+      <span class="wbtw-artist-counter" id="wbtw-counter" aria-live="polite"></span>
+      <button class="wbtw-nav-btn" id="wbtw-next-artist" aria-label="Next artist">Next →</button>
+    </div>
+    <button class="wbtw-close-btn" id="wbtw-close" aria-label="Close viewer">✕ Close</button>
+  </div>
+  <div class="wbtw-split">
+    <div class="wbtw-stage" id="wbtw-stage" aria-label="Artwork display"></div>
+    <div class="wbtw-panel" id="wbtw-panel" tabindex="-1"></div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var artists = ${artistsJson};
+  var overlay = document.getElementById('wbtw-overlay');
+  var stage = document.getElementById('wbtw-stage');
+  var panel = document.getElementById('wbtw-panel');
+  var counter = document.getElementById('wbtw-counter');
+  var currentArtist = 0;
+  var currentImage = 0;
+  var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Open from grid
+  document.getElementById('wbtw-grid').addEventListener('click', function(e) {
+    var btn = e.target.closest('.wbtw-card');
+    if (!btn) return;
+    openArtist(parseInt(btn.dataset.index, 10));
+  });
+
+  document.getElementById('wbtw-close').addEventListener('click', closeOverlay);
+  document.getElementById('wbtw-prev-artist').addEventListener('click', function() { openArtist((currentArtist - 1 + artists.length) % artists.length); });
+  document.getElementById('wbtw-next-artist').addEventListener('click', function() { openArtist((currentArtist + 1) % artists.length); });
+
+  document.addEventListener('keydown', function(e) {
+    if (!overlay.classList.contains('open')) return;
+    if (e.key === 'Escape') { closeOverlay(); }
+    else if (e.key === 'ArrowLeft') { stepImage(-1); }
+    else if (e.key === 'ArrowRight') { stepImage(1); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); openArtist((currentArtist - 1 + artists.length) % artists.length); }
+    else if (e.key === 'ArrowDown') { e.preventDefault(); openArtist((currentArtist + 1) % artists.length); }
+  });
+
+  function openArtist(idx) {
+    currentArtist = idx;
+    currentImage = 0;
+    var a = artists[idx];
+    counter.textContent = String(idx + 1).padStart(2, '0') + ' / ' + String(artists.length).padStart(2, '0');
+    renderStage(a);
+    renderPanel(a);
+    if (!overlay.classList.contains('open')) {
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    panel.scrollTop = 0;
+    panel.focus();
+  }
+
+  function closeOverlay() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function stepImage(dir) {
+    var a = artists[currentArtist];
+    if (a.kind !== 'images' || !a.images || a.images.length < 2) return;
+    currentImage = (currentImage + dir + a.images.length) % a.images.length;
+    setActiveImage(currentImage);
+  }
+
+  function renderStage(a) {
+    stage.innerHTML = '';
+    if (a.kind === 'video' && a.video) {
+      // Poster + iframe on demand
+      var poster = a.video.poster
+        ? '<img src="' + a.video.poster + '" alt="' + escHtml(a.work) + ' — video poster" style="width:100%;height:100%;object-fit:cover;display:block;cursor:pointer" id="wbtw-poster">'
+        : '';
+      var playBtn = '<button style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:var(--accent);color:#fff;border:none;font-size:1.5rem;padding:0.75rem 1.5rem;cursor:pointer;font-family:var(--font-mono)" id="wbtw-play-btn" aria-label="Play video">▶ Play</button>';
+      stage.innerHTML = '<div style="position:relative;width:100%;height:100%">' + poster + playBtn + '</div>';
+      stage.querySelector('#wbtw-play-btn').addEventListener('click', function() {
+        stage.innerHTML = '<iframe src="' + a.video.embed + '?autoplay=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen style="width:100%;height:100%;display:block" title="' + escHtml(a.name) + ' — ' + escHtml(a.work) + '"></iframe>';
+      });
+    } else if (a.kind === 'images' && a.images && a.images.length) {
+      var imgs = a.images.map(function(img, i) {
+        return '<div class="wbtw-stage-img' + (i === 0 ? ' active' : '') + '" data-img="' + i + '" role="img" aria-label="' + escHtml(img.caption || a.work) + '">'
+          + '<img src="' + img.src + '" alt="' + escHtml(img.caption || a.work) + '" loading="lazy">'
+          + '</div>';
+      }).join('');
+
+      var dots = a.images.length > 1 ? '<div class="wbtw-dots" role="tablist" aria-label="Image navigation">'
+        + a.images.map(function(_, i) {
+          return '<button class="wbtw-dot' + (i === 0 ? ' active' : '') + '" data-dot="' + i + '" role="tab" aria-label="Image ' + (i+1) + '" aria-selected="' + (i === 0) + '"></button>';
+        }).join('') + '</div>' : '';
+
+      var caption = '<div class="wbtw-img-caption" id="wbtw-caption">' + escHtml(a.images[0].caption || '') + '</div>';
+
+      var zones = a.images.length > 1
+        ? '<div class="wbtw-img-nav"><button class="wbtw-img-zone" aria-label="Previous image" id="wbtw-img-prev"></button><button class="wbtw-img-zone" aria-label="Next image" id="wbtw-img-next"></button></div>'
+        : '';
+
+      stage.innerHTML = imgs + zones + dots + caption;
+
+      if (a.images.length > 1) {
+        stage.querySelector('#wbtw-img-prev').addEventListener('click', function() { stepImage(-1); });
+        stage.querySelector('#wbtw-img-next').addEventListener('click', function() { stepImage(1); });
+        stage.querySelectorAll('.wbtw-dot').forEach(function(dot) {
+          dot.addEventListener('click', function() { setActiveImage(parseInt(dot.dataset.dot, 10)); });
+        });
+      }
+    }
+  }
+
+  function setActiveImage(idx) {
+    currentImage = idx;
+    var a = artists[currentArtist];
+    stage.querySelectorAll('.wbtw-stage-img').forEach(function(el, i) {
+      el.classList.toggle('active', i === idx);
+    });
+    stage.querySelectorAll('.wbtw-dot').forEach(function(dot, i) {
+      dot.classList.toggle('active', i === idx);
+      dot.setAttribute('aria-selected', i === idx);
+    });
+    var cap = stage.querySelector('#wbtw-caption');
+    if (cap && a.images[idx]) cap.textContent = a.images[idx].caption || '';
+  }
+
+  function renderPanel(a) {
+    var html = '';
+    html += '<p class="wbtw-panel-num">' + String(currentArtist + 1).padStart(2, '0') + ' / ' + String(artists.length).padStart(2, '0') + '</p>';
+    html += '<p class="wbtw-panel-name">' + escHtml(a.name) + '</p>';
+    if (a.country) html += '<p class="wbtw-panel-country">' + escHtml(a.country) + '</p>';
+    html += '<p class="wbtw-panel-work">' + escHtml(a.work) + '</p>';
+    var typeLabel = [a.type, a.materials].filter(Boolean).join(' · ');
+    if (typeLabel) html += '<p class="wbtw-panel-type">' + escHtml(typeLabel) + '</p>';
+    if (a.quote) html += '<blockquote class="wbtw-panel-quote">' + escHtml(a.quote) + '</blockquote>';
+    if (a.statement && a.statement.length) {
+      html += '<div class="wbtw-panel-statement">' + a.statement.map(function(p) { return '<p>' + escHtml(p) + '</p>'; }).join('') + '</div>';
+    }
+    if (a.note) html += '<p class="wbtw-panel-note">' + escHtml(a.note) + '</p>';
+    var links = [];
+    if (a.website) links.push('<a href="' + escHtml(a.website) + '" target="_blank" rel="noopener">Website</a>');
+    if (a.instagram) links.push('<a href="' + escHtml(a.instagram) + '" target="_blank" rel="noopener">Instagram</a>');
+    if (links.length) html += '<div class="wbtw-panel-links">' + links.join('') + '</div>';
+    panel.innerHTML = html;
+  }
+
+  function escHtml(str) {
+    if (!str) return '';
+    return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+})();
+</script>`;
+
+  return baseTemplate({
+    title: 'Works Beyond the Walls',
+    description: 'The online component of a hybrid VSG exhibition — artists whose works are presented digitally in the gallery alongside physical works.',
+    body,
+    activePage: 'projects'
+  });
+}
+
 function build() {
   console.log('Building VSG website...');
 
@@ -1510,6 +1791,7 @@ function build() {
   const meetings = readMarkdownFiles('content/meetings');
   const artists = JSON.parse(readFile('content/artists.json'));
   const events = JSON.parse(readFile('content/events.json'));
+  const worksArtists = require('./content/exhibitions/works-beyond-the-walls.js');
 
   // Copy assets
   copyDir('assets', 'dist/assets');
@@ -1600,6 +1882,10 @@ function build() {
   // Projects
   writeFile('dist/projects/index.html', buildProjects(reflections));
   console.log('  ✓ projects/index.html');
+
+  // Works Beyond the Walls — hybrid exhibition online component
+  writeFile('dist/projects/works-beyond-the-walls/index.html', buildWorksPage(worksArtists));
+  console.log('  ✓ projects/works-beyond-the-walls/index.html');
 
   // Meetings
   writeFile('dist/meetings/index.html', buildMeetings(meetings));
