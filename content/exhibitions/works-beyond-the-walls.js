@@ -78,7 +78,9 @@ module.exports = [
     images: [
       { src: "/assets/images/exhibitions/works-beyond-the-walls/juan-antonio-1.jpg", caption: "El instante de peligro — installation view, Centro Párraga, Murcia, 2024" },
       { src: "/assets/images/exhibitions/works-beyond-the-walls/juan-antonio-2.jpg", caption: "El instante de peligro — installation detail" },
-      { src: "/assets/images/exhibitions/works-beyond-the-walls/juan-antonio-3.jpg", caption: "El instante de peligro — installation detail" }
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/juan-antonio-3.jpg", caption: "El instante de peligro — installation detail" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/juan-antonio-4.jpg", caption: "El instante de peligro — installation detail" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/juan-antonio-5.jpg", caption: "El instante de peligro — exhibition view" }
     ]
   }
 
