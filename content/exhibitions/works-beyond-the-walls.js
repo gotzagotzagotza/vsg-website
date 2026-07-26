@@ -13,18 +13,17 @@ module.exports = [
 
   {
     name: "River Reishi",
-    country: "Rooted along the Baltic, North, and Mediterranean coasts",
+    country: "USA",
     work: "Surface Tension",
     type: "Installation",
     materials: "Black sand, amber, LED light, wool, epoxy clay, acrylic paint",
-    quote: "Dreaming is a practice that taps into the shared language between nature and spirit.",
+    quote: "",
     statement: [
-      "For River Reishi, dreaming is a practice that taps into the shared language between nature and spirit. Her art visually articulates this language, while also weaving in stories, mythologies, and symbols from the collective unconscious.",
-      "River draws inspiration from the syncretism between Indigenous traditions and religions such as Buddhism and Christianity, seeing syncretism as a means of cultural survival and art as a conduit for stories and ways of knowing to be brought back into our collective consciousness.",
-      "River is a mixed media artist, sculptor, digital painter, and installation artist. In addition to a mode of expression, art has always been her primary way of coping with the strain of being neurodivergent in neurotypical contexts. As a healing modality, she practices art as a way to transmute sadness and trauma into hope. A common theme in her work is imagining ancient worlds that recognize the sacredness of queer and sapphic connection, and the power of femme identities outside of their fertility. River then creates new myths, symbols, and artifacts from these imagined worlds.",
-      "Just as rivers shape and are shaped by multiple topographies, she grounds these experiences through her own traditions and roots. All of this is most notable in her study of sand art — a Slavic blessing with similar iterations found in both Buddhist and Mexican traditions, such as mandalas and tapetes."
+      "River Reishi is a mixed media artist whose work explores the intersection of ecology, mythology, and cultural memory. Through sculpture, installation, and ephemeral materials such as sand and amber, she creates contemporary myths that invite viewers to reconsider their relationship with the natural world.",
+      "Surface Tension is a site-responsive installation that reflects on the shifting boundary between land and sea. Inspired by traditions of ephemeral sand art and coastal folklore, the work embraces impermanence as an essential part of its meaning. At the close of each exhibition, visitors are invited to help dismantle the installation and return the sand to the sea from which it was gathered, transforming the work from a static object into a shared ritual of release and renewal.",
+      "Across her practice, River creates works that evolve with each landscape they inhabit, exploring how natural materials carry memory, identity, and stories across time while reminding us that some forms of art are meant to be experienced, transformed, and ultimately returned to the living world."
     ],
-    note: "Previously shown at the Baton Rouge Gallery, Jan 2 – Jan 25, for the Surreal Salon.",
+    note: "Previously shown at the Baton Rouge Gallery Dec 27 – Jan 25, and Coos Art Museum May 2 – July 18.",
     website: "https://riverreishi.com/work",
     instagram: "",
     kind: "images",

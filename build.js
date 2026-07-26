@@ -1098,6 +1098,17 @@ function buildProjects(reflections) {
   </div>
 </div>
 
+<div class="section-block" style="background:var(--accent);color:#fff;padding:2rem 0">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
+    <div>
+      <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;opacity:0.75;margin-bottom:0.4rem">Upcoming · August 7–9, 2026 · Los Angeles</p>
+      <p style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.25rem"><strong>Works Beyond the Walls</strong> — VSG at TRYST Art Fair</p>
+      <p style="font-family:var(--font-serif);font-size:0.9rem;opacity:0.85">Our hybrid exhibition at TRYST, the world's largest art fair for artist-run spaces. View the online component here.</p>
+    </div>
+    <a href="/projects/works-beyond-the-walls/" style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,0.6);padding:0.65rem 1.25rem;white-space:nowrap;flex-shrink:0">View Exhibition →</a>
+  </div>
+</div>
+
 <div class="section-block">
   <div class="container">
     <div class="grid-2" style="gap:4rem;align-items:start">
@@ -1557,11 +1568,11 @@ function buildWorksPage(artists) {
 .wbtw-split { display: flex; flex: 1; overflow: hidden; }
 
 /* ── Stage (left/artwork side) ── */
-.wbtw-stage { flex: 0 0 60%; position: relative; background: #111; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.wbtw-stage { flex: 0 0 60%; position: relative; background: var(--gray-light); overflow: hidden; display: flex; align-items: center; justify-content: center; }
 .wbtw-stage-img { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
 .wbtw-stage-img.active { opacity: 1; pointer-events: auto; }
 @media (prefers-reduced-motion: reduce) { .wbtw-stage-img { transition: none; } }
-.wbtw-stage-img img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+.wbtw-stage-img img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .wbtw-stage video, .wbtw-stage iframe { width: 100%; height: 100%; display: block; }
 .wbtw-img-nav { position: absolute; inset: 0; display: flex; align-items: stretch; pointer-events: none; }
 .wbtw-img-zone { flex: 1; cursor: pointer; pointer-events: auto; opacity: 0; }
@@ -1597,9 +1608,10 @@ function buildWorksPage(artists) {
 
 <div class="wbtw-hero">
   <div class="container">
-    <p class="section-label">Projects &amp; Exhibitions</p>
+    <p class="section-label">Projects &amp; Exhibitions · <a href="/events/" style="color:var(--accent);border-bottom:1px solid currentColor">TRYST Art Fair, Los Angeles · August 7–9, 2026</a></p>
     <h1>Works Beyond the Walls</h1>
-    <p class="intro">This is the online component of a hybrid exhibition. These artists could not send physical works to the gallery — their pieces are presented here and shown on a screen in the exhibition space alongside the physical works. Select any artist to view the work and read their statement.</p>
+    <p class="intro" style="margin-bottom:1.25rem">Virtual Studio Groups participates in <strong>TRYST Art Fair</strong> — the world's largest international art fair dedicated exclusively to artist-run spaces, collectives, and independent organizations. Now in its fourth edition, TRYST prioritizes collaboration, experimentation, and cultural dialogue over commercial art structures.</p>
+    <p class="intro">This page is the online component of our hybrid exhibition. These artists could not send physical works to Los Angeles — their pieces are shown here and displayed on a screen in the VSG booth alongside the physical works. Select any artist to view the work and read their statement.</p>
   </div>
 </div>
 
