@@ -72,8 +72,8 @@ module.exports = [
       "La meta es el origen, the central work framing the project, takes us back to Kraus at his most devastating — when he sees the future as something disconcerting and threatening, proposing a return to the origin as a foothold from which it might once again be possible to decide almost everything. Curated by Nora Ancarola. Photography: Vacío Estudio."
     ],
     note: "Centro Párraga, Murcia, Spain, 2024. Exhibition video: https://www.youtube.com/watch?v=S4GN1BeSpac",
-    website: "",
-    instagram: "",
+    website: "https://www.juanantoniocerezuela.com/",
+    instagram: "https://www.instagram.com/juan_antonio_cerezuela/",
     kind: "images",
     images: [
       { src: "/assets/images/exhibitions/works-beyond-the-walls/juan-antonio-1.jpg", caption: "El instante de peligro — installation view, Centro Párraga, Murcia, 2024" },
