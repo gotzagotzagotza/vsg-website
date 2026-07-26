@@ -1611,7 +1611,7 @@ function buildWorksPage(artists) {
     <p class="section-label">Projects &amp; Exhibitions · <a href="/events/" style="color:var(--accent);border-bottom:1px solid currentColor">TRYST Art Fair, Los Angeles · August 7–9, 2026</a></p>
     <h1>Works Beyond the Walls</h1>
     <p class="intro" style="margin-bottom:1.25rem">Virtual Studio Groups participates in <strong>TRYST Art Fair</strong> — the world's largest international art fair dedicated exclusively to artist-run spaces, collectives, and independent organizations. Now in its fourth edition, TRYST prioritizes collaboration, experimentation, and cultural dialogue over commercial art structures.</p>
-    <p class="intro">This page is the online component of our hybrid exhibition. These artists could not send physical works to Los Angeles — their pieces are shown here and displayed on a screen in the VSG booth alongside the physical works. Select any artist to view the work and read their statement.</p>
+    <p class="intro">This page is the online component of our hybrid exhibition. A selection of VSG community artists present their pieces here, displayed on a screen in the VSG booth alongside the physical works. Select any artist to view the work and read their statement.</p>
   </div>
 </div>
 
