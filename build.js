@@ -1100,10 +1100,13 @@ function buildProjects(reflections) {
 
 <div class="section-block" style="background:var(--accent);color:#fff;padding:2rem 0">
   <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
-    <div>
-      <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;opacity:0.75;margin-bottom:0.4rem">Upcoming · August 7–9, 2026 · Los Angeles</p>
-      <p style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.25rem"><strong>Works Beyond the Walls</strong> — VSG at TRYST Art Fair</p>
-      <p style="font-family:var(--font-serif);font-size:0.9rem;opacity:0.85">Our hybrid exhibition at TRYST, the world's largest art fair for artist-run spaces. View the online component here.</p>
+    <div style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap">
+      <img src="/assets/images/exhibitions/works-beyond-the-walls/tryst-logo.webp" alt="TRYST Art Fair" style="height:48px;width:auto;filter:brightness(0) invert(1);flex-shrink:0">
+      <div>
+        <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;opacity:0.75;margin-bottom:0.4rem">August 7–9, 2026 · Los Angeles</p>
+        <p style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.25rem"><strong>Works Beyond the Walls</strong> — VSG at TRYST Art Fair</p>
+        <p style="font-family:var(--font-serif);font-size:0.9rem;opacity:0.85">Our hybrid exhibition at TRYST, the world's largest art fair for artist-run spaces. View the online component here.</p>
+      </div>
     </div>
     <a href="/projects/works-beyond-the-walls/" style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,0.6);padding:0.65rem 1.25rem;white-space:nowrap;flex-shrink:0">View Exhibition →</a>
   </div>
@@ -1597,6 +1600,10 @@ function buildWorksPage(artists) {
 .wbtw-panel-links a { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.06em; color: inherit; border-bottom: 1px solid currentColor; padding-bottom: 1px; }
 .wbtw-panel-links a:hover { color: var(--accent); }
 
+/* ── Dark hero two-col → single col on mobile ── */
+@media (max-width: 600px) {
+  [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+}
 /* ── Mobile / touch stacking ── */
 @media (max-width: 720px) {
   .wbtw-split { flex-direction: column; }
@@ -1606,12 +1613,26 @@ function buildWorksPage(artists) {
 }
 </style>
 
-<div class="wbtw-hero">
+<div style="background:#111;color:#fff;padding:3rem 0 2.5rem">
   <div class="container">
-    <p class="section-label">Projects &amp; Exhibitions · <a href="/events/" style="color:var(--accent);border-bottom:1px solid currentColor">TRYST Art Fair, Los Angeles · August 7–9, 2026</a></p>
-    <h1>Works Beyond the Walls</h1>
-    <p class="intro" style="margin-bottom:1.25rem">Virtual Studio Groups participates in <strong>TRYST Art Fair</strong> — the world's largest international art fair dedicated exclusively to artist-run spaces, collectives, and independent organizations. Now in its fourth edition, TRYST prioritizes collaboration, experimentation, and cultural dialogue over commercial art structures.</p>
-    <p class="intro">This page is the online component of our hybrid exhibition. A selection of VSG community artists present their pieces here, displayed on a screen in the VSG booth alongside the physical works. Select any artist to view the work and read their statement.</p>
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:2rem;flex-wrap:wrap;margin-bottom:2rem">
+      <div>
+        <p style="font-family:var(--font-mono);font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;opacity:0.55;margin-bottom:1rem">Online Exhibition · August 7–9, 2026 · Los Angeles</p>
+        <h1 style="font-family:var(--font-serif);font-size:clamp(2rem,5vw,3.25rem);font-weight:400;line-height:1.15;margin-bottom:0.5rem">Works Beyond the Walls</h1>
+        <p style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.06em;opacity:0.6;margin-bottom:0">Virtual Studio Groups</p>
+      </div>
+      <img src="/assets/images/exhibitions/works-beyond-the-walls/tryst-logo.webp" alt="TRYST Art Fair" style="height:56px;width:auto;filter:brightness(0) invert(1);opacity:0.85;flex-shrink:0;margin-top:0.25rem">
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:1.75rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem">
+      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.8;opacity:0.8;margin:0">This is a live online exhibition, not documentation. The works shown here are the exhibition — presented digitally in the VSG booth at TRYST alongside physical works, and open to anyone online.</p>
+      <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.8;opacity:0.8;margin:0">TRYST is the world's largest international art fair dedicated to artist-run spaces, collectives, and independent organizations — a global gathering centered on exchange and collaboration over commercial structures.</p>
+    </div>
+  </div>
+</div>
+<div style="background:var(--gray-light);border-bottom:1px solid var(--gray-mid);padding:0.9rem 0">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.75rem">
+    <span style="font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.08em;color:var(--gray-text)">${artists.length} artist${artists.length !== 1 ? 's' : ''} · Select any card to view work and statement</span>
+    <span style="font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.08em;color:var(--accent)">● Online now</span>
   </div>
 </div>
 
