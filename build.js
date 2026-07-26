@@ -1624,7 +1624,8 @@ function buildWorksPage(artists) {
       <div style="background:#fff;padding:0.5rem 1rem;flex-shrink:0;display:flex;align-items:center;margin-top:0.25rem"><img src="/assets/images/exhibitions/works-beyond-the-walls/tryst-logo.webp" alt="TRYST Art Fair" style="height:44px;width:auto;display:block"></div>
     </div>
     <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:1.75rem;max-width:720px">
-      <p style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.85;opacity:0.9;margin:0">Works Beyond the Walls brings together artists taking part from across the world — installations, sculpture, and moving image shown online and inside the gallery at once. At TRYST in Los Angeles you'll find them on screen beside the physical works; here, they're open to everyone.</p>
+      <p style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.85;opacity:0.9;margin:0 0 0.75rem">Works Beyond the Walls brings together artists taking part from across the world — installations, sculpture, and moving image shown online and inside the gallery at once. At TRYST in Los Angeles you'll find them on screen beside the physical works; here, they're open to everyone.</p>
+      <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.08em;opacity:0.55;margin:0">Online Exhibition · August 7–9, 2026 · TRYST, Los Angeles</p>
     </div>
   </div>
 </div>
@@ -1640,6 +1641,7 @@ function buildWorksPage(artists) {
     <div class="wbtw-grid" id="wbtw-grid">
       ${gridCards}
     </div>
+    <p style="font-family:var(--font-mono);font-size:0.7rem;color:var(--gray-text);margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--gray-mid);max-width:640px">TRYST is the world's largest international art fair dedicated to artist-run spaces, collectives, and independent organizations — now in its fourth edition, prioritizing collaboration, experimentation, and cultural dialogue over commercial structures.</p>
   </div>
 </div>
 
@@ -1802,7 +1804,7 @@ function buildWorksPage(artists) {
 
   return baseTemplate({
     title: 'Works Beyond the Walls',
-    description: 'The online component of a hybrid VSG exhibition — artists whose works are presented digitally in the gallery alongside physical works.',
+    description: 'Works Beyond the Walls — a VSG online exhibition at TRYST Art Fair, Los Angeles, August 7–9, 2026. Installations, sculpture, and moving image from artists around the world.',
     body,
     activePage: 'projects'
   });
