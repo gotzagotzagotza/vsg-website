@@ -108,6 +108,30 @@ module.exports = [
     ]
   }
 
+  ,{
+    name: "Katarina Rasic",
+    country: "Serbia / Ivory Coast",
+    work: "Echoes of the Pineal",
+    type: "Performance",
+    materials: "Ritual performance, embodied research, symbolic materials",
+    quote: "Echoes of the Pineal invites us to enter a space where intuition, memory, and symbolic action become pathways toward inner clarity.",
+    statement: [
+      "Katarina Rasic is a multidisciplinary Serbian artist and international art educator whose practice moves across performance, installation, painting, drawing, and participatory methodologies. Her work spans and reflects her experience of over a decade spent across Asia and Latin America. Currently working between Serbia and Ivory Coast, she explores memory, belonging, intuition, and transformation through embodied rituals that bridge personal experience with collective reflection. Her works emerge from cross-cultural dialogue and investigate how symbolic actions can reconnect us with sensory knowledge and the more-than-human world.",
+      "Echoes of the Pineal is a ritual performance exploring the relationship between intuition, consciousness, and the symbolic resonance of the pinecone. Through a minimal vocabulary of gestures and materials — including pinecones, mirrors, sweets, and tape — the work reflects on the ways contemporary life fragments our connection to inner knowing while proposing ritual as a space for remembrance and renewal.",
+      "Part of the ongoing Pineal Series, the performance investigates intuition as an embodied form of knowledge rather than a mystical abstraction. Moving between vulnerability and presence, Rasic invites audiences into a shared contemplation of perception, memory, and the quiet intelligence of the body, asking what it means to trust the inner landscapes that continue to echo beneath the noise of everyday life."
+    ],
+    note: "",
+    website: "https://katarinarasic.com/",
+    instagram: "",
+    kind: "images",
+    images: [
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/katarina-rasic-1.jpg", caption: "Echoes of the Pineal — performance view" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/katarina-rasic-2.jpg", caption: "Echoes of the Pineal — performance view" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/katarina-rasic-3.jpg", caption: "Echoes of the Pineal — performance view" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/katarina-rasic-4.jpg", caption: "Echoes of the Pineal — performance view" }
+    ]
+  }
+
   // ─── PASTE NEW IMAGE-BASED ARTIST HERE ───────────────────────────────────
   // {
   //   name: "",
