@@ -1828,7 +1828,7 @@ function buildWorksPage(artists) {
     if (a.statement && a.statement.length) {
       html += '<div class="wbtw-panel-statement">' + a.statement.map(function(p) { return '<p>' + escHtml(p) + '</p>'; }).join('') + '</div>';
     }
-    if (a.note) html += '<p class="wbtw-panel-note">' + escHtml(a.note) + '</p>';
+    if (a.note) html += '<p class="wbtw-panel-note">' + a.note + '</p>';
     var links = [];
     if (a.website) links.push('<a href="' + escHtml(a.website) + '" target="_blank" rel="noopener">Website</a>');
     if (a.instagram) links.push('<a href="' + escHtml(a.instagram) + '" target="_blank" rel="noopener">Instagram</a>');

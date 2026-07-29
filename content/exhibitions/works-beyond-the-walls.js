@@ -236,7 +236,7 @@ module.exports = [
       "Ivana Ehrensvärd is a curator and artist based in Belgrade, Serbia, working across painting and the digital and blockchain space. Her work has been shown internationally in group exhibitions, and she is the founder of Hartverse Gallery, a blockchain native gallery and community active on Tezos. Transformation is the recurring theme across her practice.",
       "It's Difficult captures a moment of stuckness, an unease with no clear way out, held together by the faith that it will pass. The work speaks to transformation not as a single shift, but as the slow, uncertain space in between. The piece has been included in several curations on Objkt."
     ],
-    note: "View more of her work on Objkt: objkt.com/users/tz1X7e7KNmwihTDm2ZEBWN5AYYMpS8ikAQG4/created",
+    note: 'View more of her work on <a href="https://objkt.com/users/tz1X7e7KNmwihTDm2ZEBWN5AYYMpS8ikAQG4/created" target="_blank" rel="noopener">Objkt</a>.',
     website: "https://ivanaontheblock.art/",
     instagram: "",
     kind: "video",
