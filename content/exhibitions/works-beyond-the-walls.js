@@ -132,6 +132,30 @@ module.exports = [
   // },
 
   ,{
+    name: "Juan Antonio Cerezuela",
+    country: "Spain",
+    work: "I'm Still an Artist",
+    type: "Performance / Video",
+    materials: "Video documentation of performance, Fabra i Coats, Barcelona, 2019",
+    quote: "",
+    statement: [
+      "Juan Antonio Cerezuela (Cartagena, 1982) is a visual artist, researcher and lecturer based in Barcelona, Spain. He holds a PhD in Visual Arts and Intermedia from the Universitat Politècnica de València. His practice encompasses installation, performance and site-specific intervention. His work has been presented at institutions including Arts Santa Mónica, Born Centre de Cultura i Memòria, Fabra i Coats and Espronceda Institute of Art & Culture (Barcelona), Centro Párraga and Fundación Gabarrón (Murcia), and Centro de Arte Tomás y Valiente (Madrid).",
+      "In 2022, he took part in the Homesession Exchange programme with BelgradeAIR and completed a residency at Center 424 (Belgrade, Serbia). He has also undertaken residencies at Casa Tres Patios (Medellín, Colombia) and OCAD University (Toronto, Canada). In 2024, he led the artistic training and research workshop Relámpagos y luminiscencias: Manifestaciones del contrarrelato at Centro de Bellas Artes de Maracaibo (Venezuela), with the support of a grant from the Spanish Agency for International Development Cooperation (AECID).",
+      "His awards include the Alfonso X Culture Award in the New Media Art category (2025), First Prize at Encuentros de Arte Contemporáneo awarded by Fundación Juan Gil-Albert (2024), a Special Mention at the Ashurst Emerging Artist Prize (London, 2018), and First Prize at the 31st La Rioja Young Art Exhibition (2015).",
+      "Over the course of a long journey through the streets of Barcelona, two performers dressed in suit jackets carry an enormous canvas bearing the words \"I'M STILL AN ARTIST\" in oversized lettering. The action evokes the transportation of an artwork from one place to another, perhaps from an artist's studio to a gallery or museum. At the same time, the message displayed on the canvas can be understood as a personal statement made publicly by the artist — an act of resistance, both within and through art, prompting reflection on the perseverance and determination required of artists in the face of the professional precarity that defines the cultural sector.",
+      "As the performers make their way through the city, the statement enters into dialogue with Barcelona's streets and architecture, while engaging with passers-by and the people who inhabit these spaces. The performers embark on an ultimately unsuccessful attempt to find an art institution willing to house a work signed by an unknown artist. Through humour, this futile search raises questions about the boundaries of the art world and those who remain at its margins. In a world governed by capital and productivity, what place do art and artists occupy in contemporary society?"
+    ],
+    note: "",
+    website: "https://www.juanantoniocerezuela.com/",
+    instagram: "https://www.instagram.com/juan_antonio_cerezuela/",
+    kind: "video",
+    video: {
+      embed: "https://www.youtube.com/embed/7I1r_yriBN0",
+      poster: "/assets/images/exhibitions/works-beyond-the-walls/juan-antonio-video-poster.jpg"
+    }
+  }
+
+  ,{
     name: "Juan David Galindo Guarin",
     country: "Spain",
     work: "Get into The Zone",
