@@ -122,7 +122,7 @@ module.exports = [
     ],
     note: "",
     website: "https://katarinarasic.com/",
-    instagram: "",
+    instagram: "https://www.instagram.com/katarinarasicart/",
     kind: "images",
     images: [
       { src: "/assets/images/exhibitions/works-beyond-the-walls/katarina-rasic-1.jpg", caption: "Echoes of the Pineal — performance view" },
