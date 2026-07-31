@@ -1621,8 +1621,9 @@ function buildWorksPage(artists) {
 .wbtw-img-nav { position: absolute; inset: 0; display: flex; align-items: stretch; pointer-events: none; }
 .wbtw-img-zone { flex: 1; cursor: pointer; pointer-events: auto; opacity: 0; }
 .wbtw-img-zone:focus-visible { opacity: 1; outline: 2px solid var(--accent); outline-offset: -4px; }
+.wbtw-dots { position: absolute; bottom: 0.75rem; left: 50%; transform: translateX(-50%); display: flex; gap: 0.4rem; }
 .wbtw-img-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 0.6rem 1rem; background: rgba(0,0,0,0.55); font-family: var(--font-mono); font-size: 0.7rem; color: rgba(255,255,255,0.85); letter-spacing: 0.04em; }
-.wbtw-dots { position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%); display: flex; gap: 0.4rem; }
+.wbtw-caption-bar { display: none; }
 .wbtw-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,0.4); border: none; cursor: pointer; padding: 0; transition: background 0.15s; }
 .wbtw-dot.active { background: #fff; }
 .wbtw-dot:focus-visible { outline: 2px solid #fff; }
@@ -1650,6 +1651,8 @@ function buildWorksPage(artists) {
   .wbtw-overlay { overflow-y: auto; }
   .wbtw-split { flex-direction: column; overflow: visible; flex: 0 0 auto; }
   .wbtw-stage { flex: 0 0 90vw; width: calc(100% - 32px); margin: 0 16px; min-height: 220px; }
+  .wbtw-img-caption { display: none; }
+  .wbtw-caption-bar { display: block; font-family: var(--font-mono); font-size: 0.7rem; color: var(--gray-text); letter-spacing: 0.04em; padding: 0.5rem 1.25rem; border-top: 1px solid var(--gray-mid); }
   .wbtw-panel { flex: 0 0 auto; overflow-y: visible; border-left: none; border-top: 1px solid var(--gray-mid); padding: 1.25rem 1rem; }
   .wbtw-nav-btn, .wbtw-close-btn { min-width: 48px; min-height: 48px; }
 }
@@ -1701,6 +1704,7 @@ function buildWorksPage(artists) {
     <div class="wbtw-stage" id="wbtw-stage" aria-label="Artwork display"></div>
     <div class="wbtw-panel" id="wbtw-panel" tabindex="-1"></div>
   </div>
+  <div class="wbtw-caption-bar" id="wbtw-caption-bar"></div>
 </div>
 
 <script>
@@ -1708,6 +1712,7 @@ function buildWorksPage(artists) {
   var artists = ${artistsJson};
   var overlay = document.getElementById('wbtw-overlay');
   var stage = document.getElementById('wbtw-stage');
+  var captionBar = document.getElementById('wbtw-caption-bar');
   var panel = document.getElementById('wbtw-panel');
   var counter = document.getElementById('wbtw-counter');
   var currentArtist = 0;
@@ -1745,8 +1750,8 @@ function buildWorksPage(artists) {
     }
     renderStage(a);
     renderPanel(a);
-    overlay.scrollTop = 0;
     panel.scrollTop = 0;
+    setTimeout(function() { overlay.scrollTop = 0; }, 0);
     panel.focus();
   }
 
@@ -1764,6 +1769,7 @@ function buildWorksPage(artists) {
 
   function renderStage(a) {
     stage.innerHTML = '';
+    captionBar.textContent = '';
     if (a.kind === 'video' && a.video) {
       // Poster + iframe on demand
       var poster = a.video.poster
@@ -1786,13 +1792,13 @@ function buildWorksPage(artists) {
           return '<button class="wbtw-dot' + (i === 0 ? ' active' : '') + '" data-dot="' + i + '" role="tab" aria-label="Image ' + (i+1) + '" aria-selected="' + (i === 0) + '"></button>';
         }).join('') + '</div>' : '';
 
-      var caption = '<div class="wbtw-img-caption" id="wbtw-caption">' + escHtml(a.images[0].caption || '') + '</div>';
-
       var zones = a.images.length > 1
         ? '<div class="wbtw-img-nav"><button class="wbtw-img-zone" aria-label="Previous image" id="wbtw-img-prev"></button><button class="wbtw-img-zone" aria-label="Next image" id="wbtw-img-next"></button></div>'
         : '';
 
+      var caption = '<div class="wbtw-img-caption" id="wbtw-caption">' + escHtml(a.images[0].caption || '') + '</div>';
       stage.innerHTML = imgs + zones + dots + caption;
+      captionBar.textContent = a.images[0].caption || '';
 
       if (a.images.length > 1) {
         stage.querySelector('#wbtw-img-prev').addEventListener('click', function() { stepImage(-1); });
@@ -1816,6 +1822,7 @@ function buildWorksPage(artists) {
     });
     var cap = stage.querySelector('#wbtw-caption');
     if (cap && a.images[idx]) cap.textContent = a.images[idx].caption || '';
+    if (a.images[idx]) captionBar.textContent = a.images[idx].caption || '';
   }
 
   function renderPanel(a) {
