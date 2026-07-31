@@ -1214,9 +1214,9 @@ function buildEvents(events) {
     return `
 <div style="background:var(--gray-light);border-bottom:1px solid var(--gray-mid)">
   <div class="container" style="padding-top:0;padding-bottom:0">
-    <div style="display:grid;grid-template-columns:1fr 1fr;min-height:420px">
-      <div style="background:#fff;display:flex;align-items:center;justify-content:center">${imgHtml}</div>
-      <div style="padding:3rem 2.5rem;display:flex;flex-direction:column;justify-content:center">
+    <div class="exh-hero-grid">
+      <div class="exh-hero-img" style="background:#fff;display:flex;align-items:center;justify-content:center">${imgHtml}</div>
+      <div class="exh-hero-text">
         ${onlineTag}
         <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-text);margin-bottom:0.75rem">${e.venue} · ${e.location}</p>
         <h2 style="font-family:var(--font-serif);font-size:clamp(1.4rem,3vw,2rem);font-weight:400;line-height:1.2;margin-bottom:1rem">${e.title}</h2>
@@ -1263,9 +1263,14 @@ function buildEvents(events) {
 
   const body = `
 <style>
+.exh-hero-grid { display: grid; grid-template-columns: 1fr 1fr; min-height: 420px; }
+.exh-hero-img { min-height: 200px; }
+.exh-hero-text { padding: 3rem 2.5rem; display: flex; flex-direction: column; justify-content: center; }
 @media (max-width: 720px) {
-  .exh-featured-grid { grid-template-columns: 1fr !important; }
-  .exh-featured-grid > div:first-child { min-height: 240px !important; }
+  .exh-hero-grid { grid-template-columns: 1fr; min-height: 0; }
+  .exh-hero-img { min-height: 0; height: auto; padding: 1.5rem 2rem; box-sizing: border-box; }
+  .exh-hero-img img { width: auto !important; max-width: 100%; height: 60px !important; object-fit: contain !important; padding: 0 !important; }
+  .exh-hero-text { padding: 1.5rem 1.25rem 2rem; }
   .exh-past-grid { grid-template-columns: 1fr 1fr !important; }
 }
 @media (max-width: 480px) {
