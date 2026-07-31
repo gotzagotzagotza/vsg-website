@@ -1691,7 +1691,7 @@ function buildWorksPage(artists) {
     <div class="wbtw-grid" id="wbtw-grid">
       ${gridCards}
     </div>
-    <p style="font-family:var(--font-mono);font-size:0.7rem;color:var(--gray-text);margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--gray-mid);max-width:640px">TRYST is the world's largest international art fair dedicated to artist-run spaces, collectives, and independent organizations — now in its fourth edition, prioritizing collaboration, experimentation, and cultural dialogue over commercial structures.</p>
+    <p style="font-family:var(--font-mono);font-size:0.95rem;color:var(--gray-text);margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--gray-mid);max-width:640px">TRYST is the world's largest international art fair dedicated to artist-run spaces, collectives, and independent organizations — now in its fourth edition, prioritizing collaboration, experimentation, and cultural dialogue over commercial structures.</p>
   </div>
 </div>
 
