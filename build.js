@@ -70,7 +70,7 @@ function baseTemplate({ title, description = '', body, activePage = '' }) {
   <title>${title}${title !== 'Virtual Studio Groups' ? ' — Virtual Studio Groups' : ''}</title>
   <meta name="description" content="${description || 'Virtual Studio Groups — an international online community of artists.'}">
   <link rel="icon" type="image/png" href="/assets/images/vsg_logo_black-1.png">
-  <link rel="stylesheet" href="/assets/css/style.css?v=2">
+  <link rel="stylesheet" href="/assets/css/style.css?v=3">
   <link rel="alternate" type="application/rss+xml" title="Virtual Studio Groups Magazine" href="/feed.xml">
 </head>
 <body>
@@ -1209,8 +1209,11 @@ function buildEvents(events) {
       ? `<img src="${e.image}" alt="${e.title}" style="width:100%;height:100%;object-fit:contain;object-position:center;display:block;padding:2rem;box-sizing:border-box">`
       : `<div style="width:100%;height:100%;background:var(--gray-mid)"></div>`;
     const onlineTag = e.online_link
-      ? `<a href="${e.online_link}" style="display:inline-block;font-family:var(--font-mono);font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;background:var(--accent);color:#fff;padding:0.2rem 0.6rem;margin-bottom:1rem">● Online Exhibition</a>`
+      ? `<a href="${e.online_link}" class="exh-online-tag">● Online Exhibition</a>`
       : '';
+    const ctaBtn = e.online_link
+      ? `<a href="${e.online_link}" class="exh-cta-btn">Enter the online exhibition →</a>`
+      : (e.article_link ? `<a href="${e.article_link}" class="exh-cta-btn">Read more →</a>` : '');
     return `
 <div style="background:var(--gray-light);border-bottom:1px solid var(--gray-mid)">
   <div class="container" style="padding-top:0;padding-bottom:0">
@@ -1218,11 +1221,11 @@ function buildEvents(events) {
       <div class="exh-hero-img" style="background:#fff;display:flex;align-items:center;justify-content:center">${imgHtml}</div>
       <div class="exh-hero-text">
         ${onlineTag}
-        <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-text);margin-bottom:0.75rem">${e.venue} · ${e.location}</p>
+        <p class="exh-hero-venue">${e.venue} · ${e.location}</p>
         <h2 style="font-family:var(--font-serif);font-size:clamp(1.4rem,3vw,2rem);font-weight:400;line-height:1.2;margin-bottom:1rem">${e.title}</h2>
-        <p style="font-family:var(--font-mono);font-size:0.78rem;letter-spacing:0.06em;color:var(--gray-text);margin-bottom:1.25rem">${range}</p>
-        <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.75;color:var(--gray-text);margin-bottom:2rem">${e.description}</p>
-        ${e.online_link ? `<a href="${e.online_link}" style="display:inline-block;font-family:var(--font-mono);font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;background:var(--accent);color:#fff;padding:0.75rem 1.5rem;min-height:48px;line-height:1.8;align-self:flex-start">Enter the online exhibition →</a>` : (e.article_link ? `<a href="${e.article_link}" style="display:inline-block;font-family:var(--font-mono);font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;background:var(--accent);color:#fff;padding:0.75rem 1.5rem;min-height:48px;line-height:1.8;align-self:flex-start">Read more →</a>` : '')}
+        <p class="exh-hero-date">${range}</p>
+        <p class="exh-hero-desc">${e.description}</p>
+        ${ctaBtn}
       </div>
     </div>
   </div>
@@ -1266,11 +1269,21 @@ function buildEvents(events) {
 .exh-hero-grid { display: grid; grid-template-columns: 1fr 1fr; min-height: 420px; }
 .exh-hero-img { min-height: 200px; }
 .exh-hero-text { padding: 3rem 2.5rem; display: flex; flex-direction: column; justify-content: center; }
+.exh-online-tag { display:inline-block;font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;background:var(--accent);color:#fff;padding:0.25rem 0.7rem;margin-bottom:1rem;text-decoration:none; }
+.exh-hero-venue { font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-text);margin-bottom:0.75rem; }
+.exh-hero-date { font-family:var(--font-mono);font-size:0.78rem;letter-spacing:0.06em;color:var(--gray-text);margin-bottom:1.25rem; }
+.exh-hero-desc { font-family:var(--font-serif);font-size:0.95rem;line-height:1.75;color:var(--gray-text);margin-bottom:2rem; }
+.exh-cta-btn { display:inline-block;font-family:var(--font-mono);font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;background:var(--accent);color:#fff;padding:0.75rem 1.5rem;min-height:48px;line-height:1.8;align-self:flex-start;text-decoration:none; }
 @media (max-width: 720px) {
   .exh-hero-grid { grid-template-columns: 1fr; min-height: 0; }
   .exh-hero-img { min-height: 0; height: auto; padding: 1.5rem 2rem; box-sizing: border-box; }
   .exh-hero-img img { width: auto !important; max-width: 100%; height: 60px !important; object-fit: contain !important; padding: 0 !important; }
   .exh-hero-text { padding: 1.5rem 1.25rem 2rem; }
+  .exh-online-tag { font-size:0.85rem; padding:0.35rem 0.9rem; margin-bottom:1.25rem; }
+  .exh-hero-venue { font-size:0.85rem; color:#444; }
+  .exh-hero-date { font-size:0.9rem; color:#444; }
+  .exh-hero-desc { font-size:1rem; color:#333; }
+  .exh-cta-btn { font-size:0.95rem; padding:0.9rem 1.75rem; }
   .exh-past-grid { grid-template-columns: 1fr 1fr !important; }
 }
 @media (max-width: 480px) {
