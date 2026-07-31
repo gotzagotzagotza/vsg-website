@@ -1649,7 +1649,7 @@ function buildWorksPage(artists) {
 @media (max-width: 720px) {
   .wbtw-overlay { overflow-y: auto; }
   .wbtw-split { flex-direction: column; overflow: visible; flex: 0 0 auto; }
-  .wbtw-stage { flex: 0 0 65vw; width: calc(100% - 32px); margin: 0 16px; min-height: 180px; }
+  .wbtw-stage { flex: 0 0 80vw; width: calc(100% - 32px); margin: 0 16px; min-height: 220px; }
   .wbtw-panel { flex: 0 0 auto; overflow-y: visible; border-left: none; border-top: 1px solid var(--gray-mid); padding: 1.25rem 1rem; }
   .wbtw-nav-btn, .wbtw-close-btn { min-width: 48px; min-height: 48px; }
 }
