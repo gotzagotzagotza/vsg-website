@@ -70,7 +70,7 @@ function baseTemplate({ title, description = '', body, activePage = '' }) {
   <title>${title}${title !== 'Virtual Studio Groups' ? ' — Virtual Studio Groups' : ''}</title>
   <meta name="description" content="${description || 'Virtual Studio Groups — an international online community of artists.'}">
   <link rel="icon" type="image/png" href="/assets/images/vsg_logo_black-1.png">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css?v=2">
   <link rel="alternate" type="application/rss+xml" title="Virtual Studio Groups Magazine" href="/feed.xml">
 </head>
 <body>
