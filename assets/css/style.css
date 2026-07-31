@@ -1245,9 +1245,12 @@ nav.main-nav a.active {
   nav.main-nav.open { display: flex; }
 
   nav.main-nav a {
-    padding: 0.6rem 0;
+    padding: 0.75rem 0;
     width: 100%;
-    border-bottom: none;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--gray-mid);
   }
 
   .page-hero { padding: 2.5rem 1.5rem 2rem; }
