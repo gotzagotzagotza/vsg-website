@@ -1637,8 +1637,15 @@ function buildWorksPage(artists) {
 .wbtw-stage-img img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .wbtw-stage video, .wbtw-stage iframe { width: 100%; height: 100%; display: block; }
 .wbtw-img-nav { position: absolute; inset: 0; display: flex; align-items: stretch; pointer-events: none; }
-.wbtw-img-zone { flex: 1; cursor: pointer; pointer-events: auto; opacity: 0; }
-.wbtw-img-zone:focus-visible { opacity: 1; outline: 2px solid var(--accent); outline-offset: -4px; }
+.wbtw-img-zone { flex: 1; cursor: pointer; pointer-events: auto; position: relative; background: none; border: none; padding: 0; }
+.wbtw-img-zone:focus-visible { outline: 2px solid var(--accent); outline-offset: -4px; }
+.wbtw-img-arrow { position: absolute; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%; background: rgba(0,0,0,0.4); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1rem; opacity: 0.65; transition: opacity 0.15s, background 0.15s; }
+.wbtw-img-zone:hover .wbtw-img-arrow, .wbtw-img-zone:focus-visible .wbtw-img-arrow { opacity: 1; background: rgba(0,0,0,0.6); }
+#wbtw-img-prev .wbtw-img-arrow { left: 0.75rem; }
+#wbtw-img-next .wbtw-img-arrow { right: 0.75rem; }
+@media (max-width: 720px) {
+  .wbtw-img-arrow { opacity: 0.8; width: 32px; height: 32px; }
+}
 .wbtw-dots { position: absolute; bottom: 0.75rem; left: 50%; transform: translateX(-50%); display: flex; gap: 0.4rem; }
 .wbtw-img-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 0.6rem 1rem; background: rgba(0,0,0,0.55); font-family: var(--font-mono); font-size: 0.7rem; color: rgba(255,255,255,0.85); letter-spacing: 0.04em; }
 .wbtw-caption-bar { display: none; }
@@ -1811,7 +1818,7 @@ function buildWorksPage(artists) {
         }).join('') + '</div>' : '';
 
       var zones = a.images.length > 1
-        ? '<div class="wbtw-img-nav"><button class="wbtw-img-zone" aria-label="Previous image" id="wbtw-img-prev"></button><button class="wbtw-img-zone" aria-label="Next image" id="wbtw-img-next"></button></div>'
+        ? '<div class="wbtw-img-nav"><button class="wbtw-img-zone" aria-label="Previous image" id="wbtw-img-prev"><span class="wbtw-img-arrow">&#8592;</span></button><button class="wbtw-img-zone" aria-label="Next image" id="wbtw-img-next"><span class="wbtw-img-arrow">&#8594;</span></button></div>'
         : '';
 
       var caption = '<div class="wbtw-img-caption" id="wbtw-caption">' + escHtml(a.images[0].caption || '') + '</div>';
