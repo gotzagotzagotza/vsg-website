@@ -89,6 +89,14 @@ a:hover { text-decoration: underline; }
   line-height: 1.2;
 }
 
+@media (max-width: 640px) {
+  .site-logo-text {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--black);
+  }
+}
+
 nav.main-nav {
   display: flex;
   align-items: center;
