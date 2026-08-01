@@ -132,6 +132,29 @@ module.exports = [
     ]
   }
 
+  ,{
+    name: "Natalia Carminati",
+    country: "Argentina / Spain",
+    work: "Edible plant-powered skin",
+    type: "Performance",
+    materials: "Organic wheatgrass on textile design",
+    quote: "",
+    statement: [
+      "Natalia Carminati (Buenos Aires–Barcelona) is an artist whose research and conceptual work focuses on the critical study of contemporary culture, postcolonial theory, biotechnology, and food sovereignty. Her projects materialize in the creation of multisensory devices that integrate video games, installation, painting, audiovisual languages, living organisms, food or performance.",
+      "She has participated in solo and group exhibitions and performances in museums and art centers in Spain, Argentina, Australia, the United States and Germany.",
+      "Edible plant-powered skin (2024) is a performance for one interpreter, 10 minutes, in organic wheatgrass on textile design. What's displaced by the hegemonic agri-food system? The colonized bodies of seeds reflect the movements of deterritorialization that destroy the knowledge and lives — human and non-human — linked to their cultivation. As a basic food, wheat encapsulates the issues related to the politics and management of life, as well as the resistance and resilience of life itself."
+    ],
+    note: "",
+    website: "https://www.nataliacarminati.com",
+    instagram: "https://www.instagram.com/nat_carminati/",
+    kind: "images",
+    images: [
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/natalia-carminati-1.jpg", caption: "Edible plant-powered skin — performance, 2024" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/natalia-carminati-2.jpg", caption: "Edible plant-powered skin — performance, 2024" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/natalia-carminati-3.jpg", caption: "Edible plant-powered skin — performance, 2024" }
+    ]
+  }
+
   // ─── PASTE NEW IMAGE-BASED ARTIST HERE ───────────────────────────────────
   // {
   //   name: "",
