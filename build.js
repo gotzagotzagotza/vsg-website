@@ -1775,9 +1775,9 @@ function buildWorksPage(artists) {
     }
     renderStage(a);
     renderPanel(a);
+    overlay.scrollTop = 0;
     panel.scrollTop = 0;
-    setTimeout(function() { overlay.scrollTop = 0; }, 0);
-    panel.focus();
+    panel.focus({ preventScroll: true });
   }
 
   function closeOverlay() {
