@@ -1639,12 +1639,12 @@ function buildWorksPage(artists) {
 .wbtw-img-nav { position: absolute; inset: 0; display: flex; align-items: stretch; pointer-events: none; }
 .wbtw-img-zone { flex: 1; cursor: pointer; pointer-events: auto; position: relative; background: none; border: none; padding: 0; }
 .wbtw-img-zone:focus-visible { outline: 2px solid var(--accent); outline-offset: -4px; }
-.wbtw-img-arrow { position: absolute; top: 50%; transform: translateY(-50%); width: 36px; height: 36px; border-radius: 50%; background: rgba(0,0,0,0.4); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1rem; opacity: 0.65; transition: opacity 0.15s, background 0.15s; }
-.wbtw-img-zone:hover .wbtw-img-arrow, .wbtw-img-zone:focus-visible .wbtw-img-arrow { opacity: 1; background: rgba(0,0,0,0.6); }
-#wbtw-img-prev .wbtw-img-arrow { left: 0.75rem; }
-#wbtw-img-next .wbtw-img-arrow { right: 0.75rem; }
+.wbtw-img-arrow { position: absolute; top: 50%; transform: translateY(-50%); width: 26px; height: 26px; border-radius: 50%; background: rgba(0,0,0,0.22); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 300; opacity: 0.5; transition: opacity 0.15s, background 0.15s; }
+.wbtw-img-zone:hover .wbtw-img-arrow, .wbtw-img-zone:focus-visible .wbtw-img-arrow { opacity: 0.9; background: rgba(0,0,0,0.45); }
+#wbtw-img-prev .wbtw-img-arrow { left: 0.5rem; }
+#wbtw-img-next .wbtw-img-arrow { right: 0.5rem; }
 @media (max-width: 720px) {
-  .wbtw-img-arrow { opacity: 0.8; width: 32px; height: 32px; }
+  .wbtw-img-arrow { opacity: 0.55; width: 24px; height: 24px; font-size: 0.7rem; }
 }
 .wbtw-dots { position: absolute; bottom: 0.75rem; left: 50%; transform: translateX(-50%); display: flex; gap: 0.4rem; }
 .wbtw-img-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 0.6rem 1rem; background: rgba(0,0,0,0.55); font-family: var(--font-mono); font-size: 0.7rem; color: rgba(255,255,255,0.85); letter-spacing: 0.04em; }
