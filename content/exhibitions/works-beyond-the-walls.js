@@ -155,6 +155,31 @@ module.exports = [
     ]
   }
 
+  ,{
+    name: "Fiona Fell",
+    country: "Australia / Spain",
+    work: "Regrets that keep growing in the fields of family con/fusions",
+    type: "Sculpture / Ceramics",
+    materials: "Stoneware glazed ceramic, childhood shoes, leather, growing potatoes",
+    quote: "",
+    statement: [
+      "Dr Fiona Fell is an Australian-born artist, curator, and artistic researcher based in Barcelona. Through sculpture, unfired clay, found materials, moving image, installation, and performance, her practice investigates material agency, embodiment, care, and relationality. Her research explores how unstable materials challenge fixed ideas of permanence, vulnerability, and the boundaries between bodies and environments.",
+      "Fell is the founder and director of CasCaDas ArtSpace, an independent hybrid contemporary art space that supports international artistic research, exhibitions, and residencies. Alongside her studio and curatorial practice, she mentors artists at different stages of their careers, with a particular focus on supporting practitioners returning to creative practice. Her work is grounded in collaboration, material enquiry, and the creation of conditions in which artistic research can flourish.",
+      "Regrets that keep growing in the fields of family con/fusions uses childhood shoes, leather, and growing potatoes to trace the slow accumulation of inherited family tensions. Available as prints, 40 × 50 cm.",
+      "The Patient is a 155 × 58 × 65 cm stoneware glazed ceramic figure made at a residency at ECWC, Netherlands. The Patient has performed and has become one of the main recurring characters in Fell's installations and moving image work."
+    ],
+    note: "",
+    website: "https://www.fionafellart.com/",
+    instagram: "https://www.instagram.com/fionafellart/",
+    kind: "images",
+    images: [
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/fiona-fell-1.jpg", caption: "Regrets that keep growing in the fields of family con/fusions" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/fiona-fell-2.jpg", caption: "Regrets that keep growing in the fields of family con/fusions" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/fiona-fell-3.jpg", caption: "The Patient — stoneware glazed ceramic, 155 × 58 × 65 cm" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/fiona-fell-4.jpg", caption: "The Patient — stoneware glazed ceramic, 155 × 58 × 65 cm" }
+    ]
+  }
+
   // ─── PASTE NEW IMAGE-BASED ARTIST HERE ───────────────────────────────────
   // {
   //   name: "",
