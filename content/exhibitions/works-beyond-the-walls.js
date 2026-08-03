@@ -201,6 +201,30 @@ module.exports = [
     ]
   }
 
+  ,{
+    name: "Louise Norström",
+    country: "Sweden",
+    work: "Waiting Room",
+    type: "Painting",
+    materials: "Oil and acrylic",
+    quote: "",
+    statement: [
+      "Ruth Louise Norström is a Swedish artist working primarily in oil and acrylic. Her artistic background includes studies at Valand Academy and Fornby Folk High School. She was awarded the Ludvika Municipality Cultural Scholarship in 2023.",
+      "Her work draws on a neo-figurative tradition with expressionist elements, where the figurative meets the abstract. She explores atmospheric and emotionally charged motifs, often featuring empty chairs, solitary figures, animals and barren landscapes. Through these recurring symbols, she creates spaces for reflection on relationships and existence.",
+      "Featured paintings: Waiting Room, Frans' Garden, Respite, Snowmelt."
+    ],
+    note: "",
+    website: "https://www.ruthlouise.se/",
+    instagram: "https://www.instagram.com/_ruth.louise_/",
+    kind: "images",
+    images: [
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/louise-norstrom-1.jpg", caption: "Waiting Room — oil and acrylic" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/louise-norstrom-2.jpg", caption: "Frans' Garden — oil and acrylic" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/louise-norstrom-3.jpg", caption: "Respite — oil and acrylic" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/louise-norstrom-4.jpg", caption: "Snowmelt — oil and acrylic" }
+    ]
+  }
+
   // ─── PASTE NEW IMAGE-BASED ARTIST HERE ───────────────────────────────────
   // {
   //   name: "",
