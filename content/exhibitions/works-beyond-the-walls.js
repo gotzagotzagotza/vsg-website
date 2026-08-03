@@ -232,9 +232,9 @@ module.exports = [
   ,{
     name: "Annie Mo Kjellberg",
     country: "Sweden",
-    work: "Waiting as material",
-    type: "Installation / Performance",
-    materials: "Installation, text, performance, sculpture, participatory methods",
+    work: "Sensory Overload",
+    type: "Multi-sensory installation",
+    materials: "Multi-sensory installation, Gallery Möbius, Bergen, Norway, 2025",
     quote: "",
     statement: [
       "Annie Mo Kjellberg is a Swedish interdisciplinary artist based in Bergen, Norway. Her practice spans installation, text, performance, video, and social practice, exploring intimacy, waiting, labour, and emotional regulation through participatory and spatial works. She is currently completing her MFA in Fine Art at the Bergen Academy of Art and Design.",
@@ -246,7 +246,7 @@ module.exports = [
     instagram: "https://www.instagram.com/anniemo.ppt/",
     kind: "images",
     images: [
-      { src: "/assets/images/exhibitions/works-beyond-the-walls/annie-mo-kjellberg-1.jpg", caption: "" }
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/annie-mo-kjellberg-1.jpg", caption: "Sensory Overload — multi-sensory installation, Gallery Möbius, Bergen, Norway, 2025" }
     ]
   }
 
