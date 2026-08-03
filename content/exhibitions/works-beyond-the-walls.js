@@ -229,6 +229,27 @@ module.exports = [
     ]
   }
 
+  ,{
+    name: "Annie Mo Kjellberg",
+    country: "Sweden",
+    work: "Waiting as material",
+    type: "Installation / Performance",
+    materials: "Installation, text, performance, sculpture, participatory methods",
+    quote: "",
+    statement: [
+      "Annie Mo Kjellberg is a Swedish interdisciplinary artist based in Bergen, Norway. Her practice spans installation, text, performance, video, and social practice, exploring intimacy, waiting, labour, and emotional regulation through participatory and spatial works. She is currently completing her MFA in Fine Art at the Bergen Academy of Art and Design.",
+      "Kjellberg's artistic practice explores how people navigate vulnerability, intimacy, labour, and belonging through everyday rituals and social encounters. Working across installation, text, performance, sculpture, and participatory methods, she creates situations that invite reflection on emotional and relational experiences. She is interested in waiting as both sculptural and emotional material, and in how softness, humour, and sensory experience can function as critical tools rather than forms of escape.",
+      "Her work often draws from lived experience while remaining open-ended, allowing audiences to enter through their own memories, bodies, and relationships. Through interdisciplinary and socially engaged approaches, she investigates how private experiences can unfold within shared spaces."
+    ],
+    note: "",
+    website: "https://www.anniemokjellberg.com",
+    instagram: "https://www.instagram.com/anniemo.ppt/",
+    kind: "images",
+    images: [
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/annie-mo-kjellberg-1.jpg", caption: "" }
+    ]
+  }
+
   // ─── PASTE NEW IMAGE-BASED ARTIST HERE ───────────────────────────────────
   // {
   //   name: "",
