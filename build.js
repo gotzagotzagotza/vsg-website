@@ -1630,7 +1630,7 @@ function buildWorksPage(artists) {
 .wbtw-split { display: flex; flex: 1; overflow: hidden; }
 
 /* ── Stage (left/artwork side) ── */
-.wbtw-stage { flex: 0 0 60%; position: relative; background: var(--gray-light); overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.wbtw-stage { flex: 0 0 60%; position: relative; background: var(--white); overflow: hidden; display: flex; align-items: center; justify-content: center; }
 .wbtw-stage-img { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
 .wbtw-stage-img.active { opacity: 1; pointer-events: auto; }
 @media (prefers-reduced-motion: reduce) { .wbtw-stage-img { transition: none; } }
