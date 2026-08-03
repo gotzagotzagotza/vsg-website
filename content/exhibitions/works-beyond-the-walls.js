@@ -190,14 +190,18 @@ module.exports = [
     statement: [
       "Sally Burch graduated from Central St Martins, London with a BA (Hons) in Contemporary Fine Art after initially studying Graphic Design at Brighton School of Art. She combines the skills from her graphic roots stirring the paint pot with ever evolving ideas from her fine art education.",
       "An abstract painter and self-described 'Collector of Colour', Sally explores shifting geometric forms, drawing inspiration from an experience, or memory linked usually to a specific time or location. Her work balances colour, form and composition to create vibrant, evocative paintings triggering emotion in the viewer.",
-      "Bloomin' Summer (2025) — colour pigment and polymers on wood panel, 80 × 100 cm."
+      "Bloomin' Summer (2025) — colour pigment and polymers on wood panel, 80 × 100 cm.",
+      "Summer Day Dream (2026) — pigment & polymers on wood panel, 82 × 82 cm.",
+      "Falling (2026) — pigment & polymers on wood panel, 102 × 102 cm."
     ],
     note: "",
     website: "https://www.sallyburch.org",
     instagram: "https://www.instagram.com/sally.burch/",
     kind: "images",
     images: [
-      { src: "/assets/images/exhibitions/works-beyond-the-walls/sally-burch-1.jpg", caption: "Bloomin' Summer — colour pigment and polymers on wood panel, 80 × 100 cm, 2025" }
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/sally-burch-1.jpg", caption: "Bloomin' Summer — colour pigment and polymers on wood panel, 80 × 100 cm, 2025" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/sally-burch-2.jpg", caption: "Summer Day Dream — pigment & polymers on wood panel, 82 × 82 cm, 2026" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/sally-burch-3.jpg", caption: "Falling — pigment & polymers on wood panel, 102 × 102 cm, 2026" }
     ]
   }
 
