@@ -1069,7 +1069,7 @@ function buildProjects(reflections) {
     'ab6254b1-1137-4834-a95c-86b76d4b7ff1.jpeg',
     '868c658e-88b6-4c33-8ae8-0ba4321df2eb_1_201_a.jpeg',
     'eef98f48-fc68-4616-ad22-53a89602672f_1_102_o.jpeg',
-    '15f9bdb8-b172-4869-a24e-1228af3ccc14.jpg',
+    '20-river-reishi.jpeg',
     'b9f2caf1-b116-4bc8-9eb8-34d4181a0404.jpg',
     'b3ffd139-99b2-4cc6-9ea9-4b954f57e13a.jpg',
   ];
