@@ -246,7 +246,11 @@ module.exports = [
     instagram: "https://www.instagram.com/anniemo.ppt/",
     kind: "images",
     images: [
-      { src: "/assets/images/exhibitions/works-beyond-the-walls/annie-mo-kjellberg-1.jpg", caption: "Sensory Overload — multi-sensory installation, Gallery Möbius, Bergen, Norway, 2025" }
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/annie-mo-kjellberg-1.jpg", caption: "Sensory Overload — multi-sensory installation, Gallery Möbius, Bergen, Norway, 2025" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/annie-mo-kjellberg-2.jpg", caption: "Sensory Overload — multi-sensory installation, Gallery Möbius, Bergen, Norway, 2025" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/annie-mo-kjellberg-3.jpg", caption: "Sensory Overload — multi-sensory installation, Gallery Möbius, Bergen, Norway, 2025" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/annie-mo-kjellberg-4.jpg", caption: "Sensory Overload — multi-sensory installation, Gallery Möbius, Bergen, Norway, 2025" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/annie-mo-kjellberg-5.jpg", caption: "Sensory Overload — multi-sensory installation, Gallery Möbius, Bergen, Norway, 2025" }
     ]
   }
 
