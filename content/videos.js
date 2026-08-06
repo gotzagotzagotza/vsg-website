@@ -48,7 +48,25 @@ module.exports = [
       { title: "Vesuhely Americaan Interview", person: "Vesuhely Americaan", embed: "https://www.youtube.com/embed/trbI7878iCo", poster: "", description: "May 2022" },
       { title: "Kayla Griffin Interview", person: "Kayla Griffin", embed: "https://www.youtube.com/embed/P7LCo_RI1tE", poster: "", description: "April 2022" },
       { title: "Abigail Smithson Interview — Center424", person: "Abigail Smithson", embed: "https://www.youtube.com/embed/ra5-IlJ0QOY", poster: "", description: "April 2022" },
-      { title: "Natalia Carminati Interview", person: "Natalia Carminati", embed: "https://www.youtube.com/embed/Yv7KH_N7uko", poster: "", description: "February 2022" }
+      { title: "Natalia Carminati Interview", person: "Natalia Carminati", embed: "https://www.youtube.com/embed/Yv7KH_N7uko", poster: "", description: "February 2022" },
+      { title: "Amble Skuse Interview", person: "Amble Skuse", embed: "https://www.youtube.com/embed/RgiW8W5qQ8g", poster: "", description: "" },
+      { title: "Alexandra Papademetriou Interview", person: "Alexandra Papademetriou", embed: "https://www.youtube.com/embed/8lwDQeMy1N8", poster: "", description: "" },
+      { title: "Eriz Moreno Interview", person: "Eriz Moreno", embed: "https://www.youtube.com/embed/wPvlgRIrsHQ", poster: "", description: "" },
+      { title: "Gabriel Llinàs Interview", person: "Gabriel Llinàs", embed: "https://www.youtube.com/embed/5om3INjVZuU", poster: "", description: "" },
+      { title: "Alison Farrelly Interview", person: "Alison Farrelly", embed: "https://www.youtube.com/embed/Ii8iq7Sd5tA", poster: "", description: "" },
+      { title: "Interview with Natalia Carminati", person: "Natalia Carminati", embed: "https://www.youtube.com/embed/7NjuEBU4v-o", poster: "", description: "" },
+      { title: "Yuko Amano Interview", person: "Yuko Amano", embed: "https://www.youtube.com/embed/dPwKv4ORad8", poster: "", description: "" },
+      { title: "Artist Talk — Ira Ferris and Fanny Hellgren", person: "Ira Ferris, Fanny Hellgren", embed: "https://www.youtube.com/embed/Sfn0diZleUg", poster: "", description: "" },
+      { title: "Ira Ferris Interview", person: "Ira Ferris", embed: "https://www.youtube.com/embed/Q88j9kO12IE", poster: "", description: "" },
+      { title: "Homesession", person: "", embed: "https://www.youtube.com/embed/VSS4eQZTVg8", poster: "", description: "" },
+      { title: "Rachel Klipa Interview", person: "Rachel Klipa", embed: "https://www.youtube.com/embed/w1CF5Xk_hAE", poster: "", description: "" },
+      { title: "Interview — Juan David Galindo", person: "Juan David Galindo", embed: "https://www.youtube.com/embed/eWcXU2JOKcs", poster: "", description: "" },
+      { title: "Juan David Galindo", person: "Juan David Galindo", embed: "https://www.youtube.com/embed/zhCWMdGhrrw", poster: "", description: "" },
+      { title: "Eriz Moreno", person: "Eriz Moreno", embed: "https://www.youtube.com/embed/CXbTaFPCiYY", poster: "", description: "" },
+      { title: "Marla Jacarilla", person: "Marla Jacarilla", embed: "https://www.youtube.com/embed/8ApRD_FH_Hk", poster: "", description: "" },
+      { title: "Artist Talk — Marla Jacarilla, Mari Jo Ribas, Eriz Moreno", person: "Marla Jacarilla, Mari Jo Ribas, Eriz Moreno", embed: "https://www.youtube.com/embed/Ul9U0rQS6ZM", poster: "", description: "" },
+      { title: "Mari Jo Ribas", person: "Mari Jo Ribas", embed: "https://www.youtube.com/embed/uKpVU9BYzjk", poster: "", description: "" },
+      { title: "Bosko Begovic Interview", person: "Bosko Begovic", embed: "https://www.youtube.com/embed/kUpl2dmIZdY", poster: "", description: "" }
     ]
   },
 
