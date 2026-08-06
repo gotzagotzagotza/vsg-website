@@ -92,6 +92,7 @@ function baseTemplate({ title, description = '', body, activePage = '' }) {
       <a href="/projects/"${activePage === 'projects' ? ' class="active"' : ''}>Projects</a>
       <a href="/events/"${activePage === 'events' ? ' class="active"' : ''}>Exhibitions</a>
       <a href="/network/"${activePage === 'network' ? ' class="active"' : ''}>Network</a>
+      <a href="/videos/"${activePage === 'videos' ? ' class="active"' : ''}>Videos</a>
       <a href="/resources/"${activePage === 'resources' ? ' class="active"' : ''}>Resources</a>
     </nav>
   </div>
@@ -1515,6 +1516,86 @@ function buildResources() {
   });
 }
 
+// ---- VIDEOS PAGE ----
+
+function buildVideosPage(videoCategories) {
+  function escHtml(str) {
+    if (!str) return '';
+    return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function youtubeId(embedUrl) {
+    const m = String(embedUrl || '').match(/embed\/([a-zA-Z0-9_-]+)/);
+    return m ? m[1] : null;
+  }
+
+  let cardIndex = 0;
+  const categoriesHtml = videoCategories
+    .filter(cat => cat.videos && cat.videos.length)
+    .map(cat => {
+      const cardsHtml = cat.videos.map(v => {
+        const id = 'video-card-' + (cardIndex++);
+        const ytId = youtubeId(v.embed);
+        const poster = v.poster || (ytId ? `https://img.youtube.com/vi/${ytId}/hqdefault.jpg` : '');
+        return `
+    <div class="video-card" id="${id}">
+      <div class="video-card-media" data-embed="${escHtml(v.embed)}" tabindex="0" role="button" aria-label="Play ${escHtml(v.title)}">
+        ${poster ? `<img src="${escHtml(poster)}" alt="${escHtml(v.title)}" loading="lazy">` : ''}
+        <span class="video-play-btn" aria-hidden="true">▶</span>
+      </div>
+      <div class="video-card-info">
+        <p class="video-card-title">${escHtml(v.title)}</p>
+        ${v.person ? `<p class="video-card-person">${escHtml(v.person)}</p>` : ''}
+        ${v.description ? `<p class="video-card-desc">${escHtml(v.description)}</p>` : ''}
+      </div>
+    </div>`;
+      }).join('');
+
+      return `
+<div class="video-category">
+  <h2 class="video-category-title">${escHtml(cat.category)}</h2>
+  <div class="video-grid">${cardsHtml}</div>
+</div>`;
+    }).join('');
+
+  const hasVideos = videoCategories.some(cat => cat.videos && cat.videos.length);
+
+  const body = `
+<div class="page-hero">
+  <div class="container">
+    <p class="section-label">Videos</p>
+    <h1>The VSG video archive</h1>
+    <p class="intro">Artist interviews, Sunday meeting presentations, resident artist conversations from Belgrade AIR, and a tour of Juxtapose Art Fair — from our YouTube channel.</p>
+  </div>
+</div>
+
+<div class="section-block">
+  <div class="container">
+    ${hasVideos ? categoriesHtml : '<p style="font-family:var(--font-serif);color:var(--gray-text)">Videos coming soon.</p>'}
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.video-card-media').forEach(function(el) {
+  function play() {
+    var embed = el.getAttribute('data-embed');
+    if (!embed) return;
+    el.innerHTML = '<iframe src="' + embed + '?autoplay=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen style="width:100%;height:100%;display:block"></iframe>';
+  }
+  el.addEventListener('click', play);
+  el.addEventListener('keydown', function(e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); play(); } });
+});
+</script>
+`;
+
+  return baseTemplate({
+    title: 'Videos',
+    description: 'The VSG video archive — artist interviews, Sunday meeting presentations, Belgrade AIR conversations, and Juxtapose Art Fair.',
+    body,
+    activePage: 'videos'
+  });
+}
+
 // ---- RSS FEED ----
 
 function buildRSS(allArticles) {
@@ -1901,6 +1982,7 @@ function build() {
   const artists = JSON.parse(readFile('content/artists.json'));
   const events = JSON.parse(readFile('content/events.json'));
   const worksArtists = require('./content/exhibitions/works-beyond-the-walls.js');
+  const videoCategories = require('./content/videos.js');
 
   // Copy assets
   copyDir('assets', 'dist/assets');
@@ -2015,6 +2097,10 @@ function build() {
   // Resources
   writeFile('dist/resources/index.html', buildResources());
   console.log('  ✓ resources/index.html');
+
+  // Videos
+  writeFile('dist/videos/index.html', buildVideosPage(videoCategories));
+  console.log('  ✓ videos/index.html');
 
   // RSS feed
   const allArticles = [...exhibitions, ...booksAndIdeas, ...projectsResearch, ...reflections, ...presentations];
