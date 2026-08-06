@@ -254,6 +254,26 @@ module.exports = [
     ]
   }
 
+  ,{
+    name: "Abigail Smithson",
+    country: "United States",
+    work: "Close to Home",
+    type: "Cyanotype",
+    materials: "Cyanotype print, archival photograph, added color",
+    quote: "",
+    statement: [
+      "Abigail Smithson is an artist and educator living and working in Northern California. Her work looks at the cultural value of sports, particularly basketball. She explores this in her visuals and her podcast Dear Adam Silver.",
+      "After scouring the archives in my hometown library, I came away with many yearbook photos of women's sports teams from the early 20th century. I reprinted the images as Cyanotypes, studying them as documents and then adding various colors, including the shape of a net which symbolizes a sense of support, strength and guidance. I am roughly 100 years removed from the women in this photo and use my manipulations of the photo as a way of feeling connected to them, across time."
+    ],
+    note: "",
+    website: "https://abigailsmithson.com",
+    instagram: "https://www.instagram.com/abigailsmithson/",
+    kind: "images",
+    images: [
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/abigail-smithson-1.jpg", caption: "Close to Home — cyanotype" }
+    ]
+  }
+
   // ─── PASTE NEW IMAGE-BASED ARTIST HERE ───────────────────────────────────
   // {
   //   name: "",
