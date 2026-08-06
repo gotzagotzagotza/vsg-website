@@ -1529,10 +1529,15 @@ function buildVideosPage(videoCategories) {
     return m ? m[1] : null;
   }
 
+  function slugify(str) {
+    return String(str).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  }
+
+  const activeCategories = videoCategories.filter(cat => cat.videos && cat.videos.length);
+
   let cardIndex = 0;
-  const categoriesHtml = videoCategories
-    .filter(cat => cat.videos && cat.videos.length)
-    .map(cat => {
+  const categoriesHtml = activeCategories
+    .map((cat, catIdx) => {
       const cardsHtml = cat.videos.map(v => {
         const id = 'video-card-' + (cardIndex++);
         const ytId = youtubeId(v.embed);
@@ -1552,25 +1557,31 @@ function buildVideosPage(videoCategories) {
       }).join('');
 
       return `
-<div class="video-category">
-  <h2 class="video-category-title">${escHtml(cat.category)}</h2>
+<div class="video-category" id="video-cat-${slugify(cat.category)}"${catIdx > 0 ? ' hidden' : ''}>
+  <h2 class="video-category-title">${escHtml(cat.category)} <span class="video-category-count">(${cat.videos.length})</span></h2>
   <div class="video-grid">${cardsHtml}</div>
 </div>`;
     }).join('');
 
-  const hasVideos = videoCategories.some(cat => cat.videos && cat.videos.length);
+  const tabsHtml = activeCategories.map((cat, i) => {
+    const slug = slugify(cat.category);
+    return `<button class="video-tab${i === 0 ? ' active' : ''}" data-target="video-cat-${slug}">${escHtml(cat.category)}</button>`;
+  }).join('');
+
+  const hasVideos = activeCategories.length > 0;
 
   const body = `
 <div class="page-hero">
   <div class="container">
     <p class="section-label">Videos</p>
     <h1>The VSG video archive</h1>
-    <p class="intro">Artist interviews, Sunday meeting presentations, resident artist conversations from Belgrade AIR, and a tour of Juxtapose Art Fair — from our YouTube channel.</p>
+    <p class="intro">Artist interviews, Sunday meeting presentations, resident artist conversations from Belgrade AIR, and art fair tours — from our YouTube channel.</p>
   </div>
 </div>
 
 <div class="section-block">
   <div class="container">
+    ${hasVideos ? `<div class="video-tabs">${tabsHtml}</div>` : ''}
     ${hasVideos ? categoriesHtml : '<p style="font-family:var(--font-serif);color:var(--gray-text)">Videos coming soon.</p>'}
   </div>
 </div>
@@ -1585,12 +1596,20 @@ document.querySelectorAll('.video-card-media').forEach(function(el) {
   el.addEventListener('click', play);
   el.addEventListener('keydown', function(e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); play(); } });
 });
+document.querySelectorAll('.video-tab').forEach(function(tab) {
+  tab.addEventListener('click', function() {
+    document.querySelectorAll('.video-tab').forEach(function(t) { t.classList.remove('active'); });
+    document.querySelectorAll('.video-category').forEach(function(c) { c.hidden = true; });
+    tab.classList.add('active');
+    document.getElementById(tab.getAttribute('data-target')).hidden = false;
+  });
+});
 </script>
 `;
 
   return baseTemplate({
     title: 'Videos',
-    description: 'The VSG video archive — artist interviews, Sunday meeting presentations, Belgrade AIR conversations, and Juxtapose Art Fair.',
+    description: 'The VSG video archive — artist interviews, Sunday meeting presentations, Belgrade AIR conversations, and art fair tours.',
     body,
     activePage: 'videos'
   });
