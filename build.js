@@ -94,6 +94,7 @@ function baseTemplate({ title, description = '', body, activePage = '' }) {
       <a href="/network/"${activePage === 'network' ? ' class="active"' : ''}>Network</a>
       <a href="/videos/"${activePage === 'videos' ? ' class="active"' : ''}>Videos</a>
       <a href="/resources/"${activePage === 'resources' ? ' class="active"' : ''}>Resources</a>
+      <a href="/support/"${activePage === 'support' ? ' class="active"' : ''}>Support</a>
     </nav>
   </div>
 </header>
@@ -134,6 +135,7 @@ ${body}
       <h4>Stay Connected</h4>
       <p style="font-size:0.85rem;line-height:1.5;margin-bottom:1rem;opacity:0.8">New articles and exhibition reports delivered to your inbox.</p>
       <a href="https://vsgartmagazine.substack.com" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.8rem;padding:0.5rem 1rem">Subscribe on Substack</a>
+      <p style="margin-top:1rem;font-size:0.85rem;line-height:1.5;opacity:0.8">Like what we do? <a href="/support/" style="color:inherit;text-decoration:underline">Support VSG on Ko-fi →</a></p>
       <p style="margin-top:0.75rem;font-size:0.75rem;opacity:0.6"><a href="/feed.xml" style="color:inherit">RSS feed</a></p>
     </div>
   </div>
@@ -630,6 +632,16 @@ function buildMagazineIndex(exhibitions, booksAndIdeas, projectsResearch, reflec
     <p class="section-label">VSG Digital Art Magazine</p>
     <h1>Art, process, and ideas — by artists, for artists</h1>
     <p class="intro">An evolving platform for exhibition reviews, artistic research, book recommendations, and reflections on practice. Contributions welcome from all artists.</p>
+  </div>
+</div>
+
+<div class="section-block" style="background:var(--accent);color:#fff;padding:1.5rem 0">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
+    <p style="font-family:var(--font-serif);font-size:1rem;margin:0">Get new articles straight to your inbox — free.</p>
+    <div style="display:flex;gap:0.75rem;flex-wrap:wrap">
+      <a href="https://vsgartmagazine.substack.com" target="_blank" rel="noopener" style="font-family:var(--font-mono);font-size:0.78rem;letter-spacing:0.06em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,0.6);padding:0.6rem 1.1rem;white-space:nowrap">Subscribe on Substack</a>
+      <a href="/support/" style="font-family:var(--font-mono);font-size:0.78rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--accent);background:#fff;padding:0.6rem 1.1rem;white-space:nowrap">Support VSG →</a>
+    </div>
   </div>
 </div>
 
@@ -1516,6 +1528,81 @@ function buildResources() {
   });
 }
 
+// ---- SUPPORT PAGE ----
+
+function buildSupportPage() {
+  const tiers = [
+    {
+      name: 'One-Time Support',
+      price: 'Any amount',
+      perks: ['A thank-you from VSG', 'Listed as a VSG supporter, if you\'d like']
+    },
+    {
+      name: 'Studio Circle',
+      price: '€5 / month',
+      perks: ['Access to a members-only studio visit video, each month/quarter']
+    },
+    {
+      name: 'Patron',
+      price: '€15 / month',
+      perks: ['Everything in Studio Circle', 'A digital artwork dedicated to you, made by a VSG artist (rotating)']
+    },
+    {
+      name: 'Inner Circle',
+      price: '€40 / month',
+      perks: ['Everything in Patron', 'An invite to a special online event, or a live VSG Sunday meeting']
+    }
+  ];
+
+  const tiersHtml = tiers.map(t => `
+  <div class="support-tier">
+    <p class="support-tier-name">${t.name}</p>
+    <p class="support-tier-price">${t.price}</p>
+    <ul class="support-tier-perks">${t.perks.map(p => `<li>${p}</li>`).join('')}</ul>
+  </div>`).join('');
+
+  const body = `
+<div class="page-hero">
+  <div class="container">
+    <p class="section-label">Support</p>
+    <h1>Support Virtual Studio Groups</h1>
+    <p class="intro">VSG is built by artists, for artists — a free, peer-run community with no institutional funding. If our Sunday meetings, magazine, and exhibitions have been useful to you, here are two ways to stay close and help keep it going.</p>
+  </div>
+</div>
+
+<div class="section-block">
+  <div class="container" style="max-width:900px">
+    <div class="support-grid">
+      <div class="support-card">
+        <p class="section-label">Free</p>
+        <h2>Subscribe to the Newsletter</h2>
+        <p class="support-card-desc">New magazine articles, exhibition reports, and artist presentations — delivered to your inbox. No cost, unsubscribe any time.</p>
+        <a href="https://vsgartmagazine.substack.com" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on Substack</a>
+      </div>
+      <div class="support-card">
+        <p class="section-label">Support</p>
+        <h2>Become a Supporter on Ko-fi</h2>
+        <p class="support-card-desc">One-time or monthly support that goes directly toward keeping VSG running — hosting, artist honorariums, and event costs. In return, a few things back from us.</p>
+        <a href="https://ko-fi.com/gotzagotza" target="_blank" rel="noopener" class="btn btn-primary">Support on Ko-fi</a>
+      </div>
+    </div>
+
+    <p class="section-label" style="margin-top:3.5rem;margin-bottom:1.5rem">Ko-fi Tiers</p>
+    <div class="support-tiers-grid">${tiersHtml}</div>
+
+    <p style="margin-top:2rem;font-family:var(--font-serif);font-style:italic;font-size:0.875rem;color:var(--gray-text)">A printed piece, for larger annual support, is in the works — coming soon.</p>
+  </div>
+</div>
+`;
+
+  return baseTemplate({
+    title: 'Support VSG',
+    description: 'Support Virtual Studio Groups — subscribe to the free newsletter or become a Ko-fi supporter.',
+    body,
+    activePage: 'support'
+  });
+}
+
 // ---- VIDEOS PAGE ----
 
 function buildVideosPage(videoCategories) {
@@ -2120,6 +2207,10 @@ function build() {
   // Videos
   writeFile('dist/videos/index.html', buildVideosPage(videoCategories));
   console.log('  ✓ videos/index.html');
+
+  // Support
+  writeFile('dist/support/index.html', buildSupportPage());
+  console.log('  ✓ support/index.html');
 
   // RSS feed
   const allArticles = [...exhibitions, ...booksAndIdeas, ...projectsResearch, ...reflections, ...presentations];

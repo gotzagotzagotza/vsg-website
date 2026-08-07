@@ -1081,6 +1081,74 @@ nav.main-nav a.active {
   white-space: nowrap;
 }
 
+/* ---- Support ---- */
+
+.support-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.support-card {
+  border: 1px solid var(--gray-mid);
+  padding: 2rem;
+}
+
+.support-card h2 { font-size: 1.3rem; margin: 0.4rem 0 0.75rem; }
+
+.support-card-desc {
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--gray-text);
+  margin-bottom: 1.5rem;
+}
+
+.support-tiers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.support-tier {
+  border: 1px solid var(--gray-mid);
+  padding: 1.5rem;
+}
+
+.support-tier-name {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.support-tier-price {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--accent-dark);
+  margin-bottom: 1rem;
+}
+
+.support-tier-perks {
+  font-size: 0.82rem;
+  color: var(--gray-text);
+  padding-left: 1.1em;
+  line-height: 1.6;
+}
+
+@media (max-width: 860px) {
+  .support-grid { grid-template-columns: 1fr; }
+  .support-tiers-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .support-tiers-grid { grid-template-columns: 1fr; }
+}
+
 /* ---- Books & Ideas ---- */
 
 .book-card {
