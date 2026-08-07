@@ -274,6 +274,28 @@ module.exports = [
     ]
   }
 
+  ,{
+    name: "Cassandra Stubbington",
+    country: "Canada",
+    work: "Telders Pond",
+    type: "Pastel / Digital Photography",
+    materials: "Pastel and digital photography",
+    quote: "",
+    statement: [
+      "Cassandra Stubbington is a visual artist who works with pastels and digital photography to create psychedelic images of objects and nature. She received a Bachelor of Fine Art from NSCAD University in 2022 and currently lives and works in Halifax, Nova Scotia.",
+      "Telders Pond — morning mist rising from a pond near my childhood home.",
+      "Ripples — the surface of a lake in Autumn where fish are catching insects."
+    ],
+    note: "",
+    website: "",
+    instagram: "https://www.instagram.com/casstubbs/",
+    kind: "images",
+    images: [
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/cassandra-stubbington-1.jpg", caption: "Telders Pond — morning mist rising from a pond near my childhood home" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/cassandra-stubbington-2.jpg", caption: "Ripples — the surface of a lake in Autumn where fish are catching insects" }
+    ]
+  }
+
   // ─── PASTE NEW IMAGE-BASED ARTIST HERE ───────────────────────────────────
   // {
   //   name: "",
