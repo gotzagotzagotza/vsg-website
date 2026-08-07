@@ -9,6 +9,8 @@ cover_caption: "Kai Rennes, All Things Shining (detail) — hundreds of transpar
 
 *A series introduction from VSG Magazine*
 
+[View Kai Rennes' paintings →](https://www.32gray.com/paintings)
+
 ---
 
 Beginning with this issue, VSG presents a series of six texts by Mark Fish, each written in response to a work by the artist Kai Rennes. We publish them one per week, and we publish them with a caution: they are not reviews, not essays about the works, not explanations of them. They are something rarer — texts written alongside the works, in their manner, at their speed. Rennes paints in hundreds of transparent layers; Fish writes in them. The texts are, in a real sense, artworks themselves: a written layer added to each piece.
