@@ -296,6 +296,37 @@ module.exports = [
     ]
   }
 
+  ,{
+    name: "Gris García",
+    country: "Mexico",
+    work: "Había mucha neblina o humo o smog o no se qué",
+    type: "Painting",
+    materials: "Oil on telephone card",
+    quote: "The image of the severely scarred Topo Chico haunted me. I began to dream of the mountain. I wondered what had happened to all the parts it had lost.",
+    statement: [
+      "Gris García (b. 1986, Monterrey, Mexico) works at the intersection of artistic, curatorial and pedagogical practices that emerge from dialogues and correspondences with others to produce site-specific and unpublished projects. She holds a BFA in Visual Arts from UANL, Mexico, and has exhibited her work in Mexico, Spain, Colombia, Greece, Russia, and Canada.",
+      "She also holds an MA in Artistic Research and Production from the University of Barcelona and MACBA's PEI, recognized as an MA in Advanced Museum Studies and Critical Theory. García was curator at the project space Lugar a dudas (September 2014–March 2015) in Colombia, and taught curatorial and critical studies at ITM University in Medellín, Colombia in 2016. In 2017 she was part of Capacete Residency, a guest project by Documenta 14, between Kassel and Athens. In 2019 she received the Curatorial Research Jumex Foundation Grant. From 2018 to 2020 she was Academic Program Coordinator at SOMA in Mexico City, and at Metáfora Studio Arts between 2021 and 2023. She is currently a candidate for the PhD in Practice at the Academy of Fine Arts in Vienna.",
+      "\"Había mucha neblina o humo o smog o no se qué\" (There was a lot of fog or smoke or smog or who knows what), 2026, oil on telephone card. García's work departs from the archive of miniature paintings left by her grandfather, Laureano García, which depict the mountains of Monterrey in northern Mexico — today one of the world's largest cement production hubs. Here, the archive works as a parameter to look into the landscape's transformation caused by long-standing extractivism.",
+      "Her return to Monterrey to organize her grandfather's archive — and think alongside him — came with a new landscape. The present, filled with smoke, smog, or who knows what, makes it hard to see the mountains clearly. The hills, wounded and mutilated by cement industries. \"The image of the severely scarred Topo Chico haunted me. I began to dream of the mountain. I wondered what had happened to all the parts it had lost: Where its stones, earth, and dust had gone? Had they become a house? The asphalt we walk on? The cement that supports the walls of dams or makes up the bridges over which we travel?\"",
+      "This reflection extends into Laureano's paintings on Ladatel telephone cards. On one side, the cards carry images of mountains; on the other, advertisements for Infonavit (government housing institute), telecommunications, and 1990s internet services. These surfaces reveal a tension between different materialities, echoed in the electronic chips embedded within the cards themselves — composed of selenium and metals extracted from the earth through mining.",
+      "Today, Gris returns to the Cerro de la Silla, walking its terrain, searching for traces, and shifting toward a closer perspective that opens new reflections on territory and material transformation. Hidden behind a toxic curtain of smog or mutilated by cement factories over the course of a century, the hills Laureano painted begin to fade away, and Gris wonders: will the mountains her grandfather painted soon become nothing more than ghosts?"
+    ],
+    note: "",
+    website: "https://grisgarcia.net/",
+    instagram: "https://www.instagram.com/perrosyarte/",
+    kind: "images",
+    images: [
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/gris-garcia-1.png", caption: "Había mucha neblina o humo o smog o no se qué — oil on telephone card, 2026" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/gris-garcia-2.png", caption: "Había mucha neblina o humo o smog o no se qué — oil on telephone card, 2026" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/gris-garcia-3.png", caption: "Había mucha neblina o humo o smog o no se qué — oil on telephone card, 2026" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/gris-garcia-4.jpg", caption: "Había mucha neblina o humo o smog o no se qué — oil on telephone card, 2026" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/gris-garcia-5.jpg", caption: "Había mucha neblina o humo o smog o no se qué — oil on telephone card, 2026" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/gris-garcia-6.jpg", caption: "Había mucha neblina o humo o smog o no se qué — oil on telephone card, 2026" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/gris-garcia-7.jpg", caption: "Había mucha neblina o humo o smog o no se qué — oil on telephone card, 2026" },
+      { src: "/assets/images/exhibitions/works-beyond-the-walls/gris-garcia-8.jpg", caption: "Había mucha neblina o humo o smog o no se qué — oil on telephone card, 2026" }
+    ]
+  }
+
   // ─── PASTE NEW IMAGE-BASED ARTIST HERE ───────────────────────────────────
   // {
   //   name: "",
