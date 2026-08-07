@@ -3,7 +3,7 @@ title: "Layered: Mark Fish on the Works of Kai Rennes"
 date: 2026-08-07
 section: Reflections
 excerpt: "Introducing a new six-part series in VSG Magazine: texts written by Mark Fish alongside the paintings of artist Kai Rennes — not reviews, not explanations, but a written layer added to each work."
-cover: /assets/images/exhibitions/kai-rennes-all-things-shining.jpg
+cover: /assets/images/exhibitions/kai-rennes-all-things-shining-2.jpg
 cover_caption: "Kai Rennes, All Things Shining (detail) — hundreds of transparent layers of paint."
 ---
 
