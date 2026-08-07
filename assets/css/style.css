@@ -1105,18 +1105,28 @@ nav.main-nav a.active {
   margin-bottom: 1.5rem;
 }
 
-.support-tiers-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+.support-table-wrap { overflow-x: auto; }
+
+.support-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
 }
 
-.support-tier {
-  border: 1px solid var(--gray-mid);
-  padding: 1.5rem;
+.support-table th, .support-table td {
+  padding: 1rem 1.25rem;
+  text-align: center;
+  border-bottom: 1px solid var(--gray-mid);
 }
 
-.support-tier-name {
+.support-table thead th {
+  border-bottom: 2px solid var(--black);
+  vertical-align: bottom;
+  padding-bottom: 1.25rem;
+}
+
+.support-table-tier-name {
+  display: block;
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 700;
@@ -1125,28 +1135,49 @@ nav.main-nav a.active {
   margin-bottom: 0.4rem;
 }
 
-.support-tier-price {
+.support-table-tier-price {
+  display: block;
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: var(--accent-dark);
-  margin-bottom: 1rem;
 }
 
-.support-tier-perks {
-  font-size: 0.82rem;
+.support-table-tier-period {
+  font-size: 0.75rem;
+  font-style: normal;
   color: var(--gray-text);
-  padding-left: 1.1em;
-  line-height: 1.6;
+  margin-left: 0.15rem;
 }
+
+.support-table-perk {
+  text-align: left;
+  font-family: var(--font-serif);
+  font-size: 0.88rem;
+  color: var(--gray-text);
+  line-height: 1.5;
+  max-width: 260px;
+}
+
+.support-table-check {
+  font-size: 1rem;
+  color: var(--gray-mid);
+}
+
+.support-table-yes { color: var(--accent); font-weight: 700; }
+
+.support-table-highlight {
+  background: var(--gray-light);
+}
+
+.support-table thead th.support-table-highlight {
+  border-bottom: 2px solid var(--accent);
+}
+
+.support-table-cta-row td { border-bottom: none; padding-top: 1.5rem; }
 
 @media (max-width: 860px) {
   .support-grid { grid-template-columns: 1fr; }
-  .support-tiers-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 560px) {
-  .support-tiers-grid { grid-template-columns: 1fr; }
 }
 
 /* ---- Books & Ideas ---- */

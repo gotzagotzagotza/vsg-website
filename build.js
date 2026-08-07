@@ -1531,35 +1531,41 @@ function buildResources() {
 // ---- SUPPORT PAGE ----
 
 function buildSupportPage() {
-  const tiers = [
-    {
-      name: 'One-Time Support',
-      price: 'Any amount',
-      perks: ['A thank-you from VSG', 'Listed as a VSG supporter, if you\'d like']
-    },
-    {
-      name: 'Studio Circle',
-      price: '€5 / month',
-      perks: ['Access to a members-only studio visit video, each month/quarter']
-    },
-    {
-      name: 'Patron',
-      price: '€15 / month',
-      perks: ['Everything in Studio Circle', 'A digital artwork dedicated to you, made by a VSG artist (rotating)']
-    },
-    {
-      name: 'Inner Circle',
-      price: '€40 / month',
-      perks: ['Everything in Patron', 'An invite to a special online event, or a live VSG Sunday meeting']
-    }
+  const monthlyTiers = [
+    { name: 'Studio Circle', price: '€5', highlight: false },
+    { name: 'Patron', price: '€15', highlight: true },
+    { name: 'Inner Circle', price: '€40', highlight: false }
   ];
 
-  const tiersHtml = tiers.map(t => `
-  <div class="support-tier">
-    <p class="support-tier-name">${t.name}</p>
-    <p class="support-tier-price">${t.price}</p>
-    <ul class="support-tier-perks">${t.perks.map(p => `<li>${p}</li>`).join('')}</ul>
-  </div>`).join('');
+  // Each row: [perk label, which tiers include it as booleans matching monthlyTiers order]
+  const perkRows = [
+    ['Members-only studio visit video, each month/quarter', [true, true, true]],
+    ['A digital artwork dedicated to you, made by a rotating VSG artist', [false, true, true]],
+    ['Invite to a special online event, or a live VSG Sunday meeting', [false, false, true]]
+  ];
+
+  const checkCell = (included, highlight) => {
+    const classes = ['support-table-check', included ? 'support-table-yes' : '', highlight ? 'support-table-highlight' : ''].filter(Boolean).join(' ');
+    return `<td class="${classes}">${included ? '✓' : '—'}</td>`;
+  };
+
+  const tableHeaderCells = monthlyTiers.map(t => `
+    <th class="${t.highlight ? 'support-table-highlight' : ''}">
+      <span class="support-table-tier-name">${t.name}</span>
+      <span class="support-table-tier-price">${t.price}<span class="support-table-tier-period">/mo</span></span>
+    </th>`).join('');
+
+  const tableRows = perkRows.map(([label, included]) => `
+    <tr>
+      <td class="support-table-perk">${label}</td>
+      ${included.map((inc, i) => checkCell(inc, monthlyTiers[i].highlight)).join('')}
+    </tr>`).join('');
+
+  const ctaRow = `
+    <tr class="support-table-cta-row">
+      <td></td>
+      ${monthlyTiers.map(t => `<td class="${t.highlight ? 'support-table-highlight' : ''}"><a href="https://ko-fi.com/gotzagotza" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.75rem;padding:0.5rem 0.9rem">Join ${t.name}</a></td>`).join('')}
+    </tr>`;
 
   const body = `
 <div class="page-hero">
@@ -1580,15 +1586,25 @@ function buildSupportPage() {
         <a href="https://vsgartmagazine.substack.com" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on Substack</a>
       </div>
       <div class="support-card">
-        <p class="section-label">Support</p>
-        <h2>Become a Supporter on Ko-fi</h2>
-        <p class="support-card-desc">One-time or monthly support that goes directly toward keeping VSG running — hosting, artist honorariums, and event costs. In return, a few things back from us.</p>
+        <p class="section-label">One-Time</p>
+        <h2>Buy VSG a Coffee</h2>
+        <p class="support-card-desc">Any amount, any time — goes directly toward hosting, artist honorariums, and event costs. You'll get a thank-you from us, and can be listed as a VSG supporter if you'd like.</p>
         <a href="https://ko-fi.com/gotzagotza" target="_blank" rel="noopener" class="btn btn-primary">Support on Ko-fi</a>
       </div>
     </div>
 
-    <p class="section-label" style="margin-top:3.5rem;margin-bottom:1.5rem">Ko-fi Tiers</p>
-    <div class="support-tiers-grid">${tiersHtml}</div>
+    <p class="section-label" style="margin-top:3.5rem;margin-bottom:0.5rem">Monthly Memberships</p>
+    <p style="font-family:var(--font-serif);font-size:0.9rem;color:var(--gray-text);margin-bottom:1.75rem">Each tier includes everything in the one below it.</p>
+
+    <div class="support-table-wrap">
+      <table class="support-table">
+        <thead><tr><th></th>${tableHeaderCells}</tr></thead>
+        <tbody>
+          ${tableRows}
+          ${ctaRow}
+        </tbody>
+      </table>
+    </div>
 
     <p style="margin-top:2rem;font-family:var(--font-serif);font-style:italic;font-size:0.875rem;color:var(--gray-text)">A printed piece, for larger annual support, is in the works — coming soon.</p>
   </div>
