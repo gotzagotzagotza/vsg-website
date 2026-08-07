@@ -135,7 +135,8 @@ ${body}
       <h4>Stay Connected</h4>
       <p style="font-size:0.85rem;line-height:1.5;margin-bottom:1rem;opacity:0.8">New articles and exhibition reports delivered to your inbox.</p>
       <a href="https://vsgartmagazine.substack.com" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.8rem;padding:0.5rem 1rem">Subscribe on Substack</a>
-      <p style="margin-top:1rem;font-size:0.85rem;line-height:1.5;opacity:0.8">Like what we do? <a href="/support/" style="color:inherit;text-decoration:underline">Support VSG on Ko-fi →</a></p>
+      <p style="margin-top:1.25rem;margin-bottom:0.5rem;font-size:0.85rem;line-height:1.5;opacity:0.8">Like what we do?</p>
+      <a href="/support/" class="btn btn-primary" style="font-size:0.8rem;padding:0.5rem 1rem;background:var(--accent)">Support VSG on Ko-fi →</a>
       <p style="margin-top:0.75rem;font-size:0.75rem;opacity:0.6"><a href="/feed.xml" style="color:inherit">RSS feed</a></p>
     </div>
   </div>
