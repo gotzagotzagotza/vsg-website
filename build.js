@@ -61,7 +61,7 @@ function readMarkdownFiles(dir) {
 
 // ---- Base template ----
 
-function baseTemplate({ title, description = '', body, activePage = '' }) {
+function baseTemplate({ title, description = '', body, activePage = '', canonical = '', noindex = false }) {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,6 +69,8 @@ function baseTemplate({ title, description = '', body, activePage = '' }) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${title}${title !== 'Virtual Studio Groups' ? ' — Virtual Studio Groups' : ''}</title>
   <meta name="description" content="${description || 'Virtual Studio Groups — an international online community of artists.'}">
+  ${canonical ? `<link rel="canonical" href="${canonical}">` : ''}
+  ${noindex ? `<meta name="robots" content="noindex, nofollow">` : ''}
   <link rel="icon" type="image/png" href="/assets/images/vsg_logo_black-1.png">
   <link rel="stylesheet" href="/assets/css/style.css?v=3">
   <link rel="alternate" type="application/rss+xml" title="Virtual Studio Groups Magazine" href="/feed.xml">
@@ -973,6 +975,7 @@ function buildArticle(article, sectionSlug) {
   <div class="article-header">
     <p class="section-label"><a href="/magazine/${sectionSlug}/" style="color:inherit">${article.section}</a></p>
     <h1>${article.title}</h1>
+    ${article.deck ? `<p class="article-deck" style="font-family:var(--font-serif);font-size:1.15rem;line-height:1.6;font-style:italic;color:var(--gray-text);margin-top:0.75rem;max-width:640px">${article.deck}</p>` : ''}
     <div class="article-meta">
       ${article.author ? `<span class="article-meta-item">By ${article.author}</span>` : ''}
       <time class="article-meta-item" datetime="${article.date}">${formatDate(article.date)}</time>
@@ -996,7 +999,9 @@ ${galleryHtml}
     title: article.title,
     description: article.excerpt || '',
     body,
-    activePage: 'magazine'
+    activePage: 'magazine',
+    canonical: article.canonical || '',
+    noindex: !!article.unlisted
   });
 }
 
@@ -2096,11 +2101,21 @@ function build() {
   const aboutRaw = fm(readFile('content/about.md'));
   const aboutContent = marked(aboutRaw.body);
 
-  const exhibitions = readMarkdownFiles('content/magazine/exhibitions');
-  const booksAndIdeas = readMarkdownFiles('content/magazine/books-and-ideas');
-  const projectsResearch = readMarkdownFiles('content/magazine/projects-and-research');
-  const reflections = readMarkdownFiles('content/magazine/reflections');
-  const presentations = readMarkdownFiles('content/magazine/artist-presentations');
+  // Articles marked `unlisted: true` still get their own page, but are kept out of
+  // every index, section listing, home page and the RSS feed (Stage 1 review pages).
+  const listed = arr => arr.filter(a => !a.unlisted);
+
+  const exhibitionsAll = readMarkdownFiles('content/magazine/exhibitions');
+  const booksAndIdeasAll = readMarkdownFiles('content/magazine/books-and-ideas');
+  const projectsResearchAll = readMarkdownFiles('content/magazine/projects-and-research');
+  const reflectionsAll = readMarkdownFiles('content/magazine/reflections');
+  const presentationsAll = readMarkdownFiles('content/magazine/artist-presentations');
+
+  const exhibitions = listed(exhibitionsAll);
+  const booksAndIdeas = listed(booksAndIdeasAll);
+  const projectsResearch = listed(projectsResearchAll);
+  const reflections = listed(reflectionsAll);
+  const presentations = listed(presentationsAll);
   const meetings = readMarkdownFiles('content/meetings');
   const artists = JSON.parse(readFile('content/artists.json'));
   const events = JSON.parse(readFile('content/events.json'));
@@ -2164,27 +2179,27 @@ function build() {
     reflections: 'reflections',
   };
 
-  for (const article of exhibitions) {
+  for (const article of exhibitionsAll) {
     writeFile(`dist/magazine/exhibitions-and-encounters/${article.slug}/index.html`, buildArticle(article, 'exhibitions-and-encounters'));
-    console.log(`  ✓ magazine/exhibitions-and-encounters/${article.slug}/`);
+    console.log(`  ✓ magazine/exhibitions-and-encounters/${article.slug}/${article.unlisted ? ' (unlisted)' : ''}`);
   }
 
-  for (const article of projectsResearch) {
+  for (const article of projectsResearchAll) {
     writeFile(`dist/magazine/projects-and-research/${article.slug}/index.html`, buildArticle(article, 'projects-and-research'));
-    console.log(`  ✓ magazine/projects-and-research/${article.slug}/`);
+    console.log(`  ✓ magazine/projects-and-research/${article.slug}/${article.unlisted ? ' (unlisted)' : ''}`);
   }
 
-  for (const article of reflections) {
+  for (const article of reflectionsAll) {
     writeFile(`dist/magazine/reflections/${article.slug}/index.html`, buildArticle(article, 'reflections'));
-    console.log(`  ✓ magazine/reflections/${article.slug}/`);
+    console.log(`  ✓ magazine/reflections/${article.slug}/${article.unlisted ? ' (unlisted)' : ''}`);
   }
 
-  for (const article of presentations) {
+  for (const article of presentationsAll) {
     writeFile(`dist/magazine/artist-presentations/${article.slug}/index.html`, buildArticle(article, 'artist-presentations'));
-    console.log(`  ✓ magazine/artist-presentations/${article.slug}/`);
+    console.log(`  ✓ magazine/artist-presentations/${article.slug}/${article.unlisted ? ' (unlisted)' : ''}`);
   }
 
-  for (const book of booksAndIdeas) {
+  for (const book of booksAndIdeasAll) {
     writeFile(`dist/magazine/books-and-ideas/${book.slug}/index.html`, buildBookPage(book));
     console.log(`  ✓ magazine/books-and-ideas/${book.slug}/`);
   }
