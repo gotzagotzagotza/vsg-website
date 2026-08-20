@@ -1481,7 +1481,7 @@ function buildNetwork() {
         <a href="https://tarantulaauthorsandart.substack.com" class="btn btn-outline" target="_blank" rel="noopener">Visit Tarantula &rarr;</a>
       </div>
 
-      <p style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.8;color:var(--gray-text);margin-bottom:1.5rem">Writer and filmmaker based in Stockholm, and publisher of <em>Tarantula: Authors and Art</em>. Featured Gordana Zikic as the magazine's October 2025 artist. Her essay <em>It's Never Too Late to Say Goodbye (or Hello)</em> appears in VSG Magazine.</p>
+      <p style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.8;color:var(--gray-text);margin-bottom:1.5rem">Writer and editor based in Stockholm, and publisher of <em>Tarantula: Authors and Art</em>. Featured Gordana Zikic as the magazine's October 2025 artist. Her essay <em>It's Never Too Late to Say Goodbye (or Hello)</em> appears in VSG Magazine.</p>
 
       <div class="network-meta">
         <p><strong>Read the essay:</strong> <a href="/magazine/reflections/never-too-late-to-say-goodbye/">It's Never Too Late to Say Goodbye (or Hello)</a></p>

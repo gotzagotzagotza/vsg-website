@@ -179,7 +179,7 @@ Not blowing out candles in a spiritual context is often due to the candle's symb
 
 <div class="closing-credit">
 This essay was originally published in <strong>Tarantula: Authors and Art</strong> on October 16, 2025, and appears here with the author's permission.<br>
-Maja Milanovic is a writer and filmmaker based in Stockholm and the publisher of <em>Tarantula: Authors and Art</em>.<br>
+Maja Milanovic is a writer and editor based in Stockholm and the publisher of <em>Tarantula: Authors and Art</em>.<br>
 The interview that prompted this essay — <em>Invisibilia: Weaving Ancient Practices, Memory, and Modern Expression</em>, a conversation with Gordana Zikic — appeared in Tarantula on October 1, 2025.<br>
 <a href="https://tarantulaauthorsandart.substack.com/p/invisibilia-weaving-ancient-practices" target="_blank" rel="noopener">Read the interview →</a><br>
 <a href="https://substack.com/home/post/p-176219168" target="_blank" rel="noopener">Read Tarantula →</a>
