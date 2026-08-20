@@ -61,7 +61,7 @@ function readMarkdownFiles(dir) {
 
 // ---- Base template ----
 
-function baseTemplate({ title, description = '', body, activePage = '', canonical = '', noindex = false }) {
+function baseTemplate({ title, description = '', body, activePage = '', canonical = '', noindex = false, og = null }) {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,6 +71,13 @@ function baseTemplate({ title, description = '', body, activePage = '', canonica
   <meta name="description" content="${description || 'Virtual Studio Groups — an international online community of artists.'}">
   ${canonical ? `<link rel="canonical" href="${canonical}">` : ''}
   ${noindex ? `<meta name="robots" content="noindex, nofollow">` : ''}
+  ${og ? `<meta property="og:type" content="article">
+  <meta property="og:title" content="${og.title}">
+  <meta property="og:description" content="${og.description}">
+  <meta property="og:url" content="${og.url}">${og.image ? `
+  <meta property="og:image" content="${og.image}">
+  <meta name="twitter:card" content="summary_large_image">` : ''}${og.author ? `
+  <meta property="article:author" content="${og.author}">` : ''}` : ''}
   <link rel="icon" type="image/png" href="/assets/images/vsg_logo_black-1.png">
   <link rel="stylesheet" href="/assets/css/style.css?v=3">
   <link rel="alternate" type="application/rss+xml" title="Virtual Studio Groups Magazine" href="/feed.xml">
@@ -188,7 +195,7 @@ function buildHome(exhibitions, projects, events, presentations, reflections) {
     date: a.date,
     section: a.section,
     excerpt: a.excerpt,
-    cover: a.cover || null,
+    cover: a.cover || a.card_image || null,
     url: `/magazine/${a._sectionSlug}/${a.slug}/`
   })).join('\n');
 
@@ -618,7 +625,7 @@ function buildMagazineIndex(exhibitions, booksAndIdeas, projectsResearch, reflec
     date: a.date,
     section: a.section,
     excerpt: a.excerpt,
-    cover: a.cover || null,
+    cover: a.cover || a.card_image || null,
     url: `/magazine/${a._sectionSlug}/${a.slug}/`
   })).join('\n');
 
@@ -714,7 +721,7 @@ function buildMagazineSection({ sectionTitle, sectionSlug, articles, intro }) {
     date: a.date,
     section: a.section,
     excerpt: a.excerpt,
-    cover: a.cover || null,
+    cover: a.cover || a.card_image || null,
     url: `/magazine/${sectionSlug}/${a.slug}/`
   })).join('\n');
 
@@ -815,7 +822,7 @@ function buildReflections(reflections) {
     date: a.date,
     section: a.section,
     excerpt: a.excerpt,
-    cover: a.cover || null,
+    cover: a.cover || a.card_image || null,
     url: `/magazine/reflections/${a.slug}/`
   })).join('\n');
 
@@ -1001,7 +1008,14 @@ ${galleryHtml}
     body,
     activePage: 'magazine',
     canonical: article.canonical || '',
-    noindex: !!article.unlisted
+    noindex: !!article.unlisted,
+    og: article.unlisted ? null : {
+      title: article.title,
+      description: article.deck || article.excerpt || '',
+      url: `https://virtualstudiogroups.com/magazine/${sectionSlug}/${article.slug}/`,
+      image: (article.cover || article.card_image) ? `https://virtualstudiogroups.com${article.cover || article.card_image}` : '',
+      author: article.author || ''
+    }
   });
 }
 
@@ -1192,7 +1206,7 @@ function buildProjects(reflections) {
           date: a.date,
           section: a.section,
           excerpt: a.excerpt,
-          cover: a.cover || null,
+          cover: a.cover || a.card_image || null,
           url: '/magazine/reflections/' + a.slug + '/'
         })).join('') + '</div>'
       : ''
@@ -1451,6 +1465,27 @@ function buildNetwork() {
 
 <div class="section-block" style="background:var(--gray-light)">
   <div class="container">
+    <div class="network-org">
+      <div class="network-org-header">
+        <div>
+          <p class="section-label">Magazine collaboration &middot; Stockholm, Sweden</p>
+          <h2 class="section-title">Maja Milanovic</h2>
+        </div>
+        <a href="https://tarantulaauthorsandart.substack.com" class="btn btn-outline" target="_blank" rel="noopener">Visit Tarantula &rarr;</a>
+      </div>
+
+      <p style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.8;color:var(--gray-text);margin-bottom:1.5rem">Writer and filmmaker based in Stockholm, and publisher of <em>Tarantula: Authors and Art</em>. Featured Gordana Zikic as the magazine's October 2025 artist. Her essay <em>It's Never Too Late to Say Goodbye (or Hello)</em> appears in VSG Magazine.</p>
+
+      <div class="network-meta">
+        <p><strong>Read the essay:</strong> <a href="/magazine/reflections/never-too-late-to-say-goodbye/">It's Never Too Late to Say Goodbye (or Hello)</a></p>
+        <p style="margin-top:0.75rem"><strong>Read the interview:</strong> <a href="https://tarantulaauthorsandart.substack.com/p/invisibilia-weaving-ancient-practices" target="_blank" rel="noopener">Invisibilia: Weaving Ancient Practices, Memory, and Modern Expression</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-block">
+  <div class="container">
     <div class="join-block">
       <h2>Interested in collaborating?</h2>
       <p>If you run an artist-run space, residency, or peer network and are interested in exchange — we would like to hear from you.</p>
@@ -1462,7 +1497,7 @@ function buildNetwork() {
 
   return baseTemplate({
     title: 'Network',
-    description: 'VSG partner organisations — Belgrade Artist in Residence (BAIR) and The Local AIR Valencia.',
+    description: 'VSG partner organisations and collaborations — Belgrade Artist in Residence (BAIR), The Local AIR Valencia, AIR Exchange Network, and Tarantula: Authors and Art.',
     body,
     activePage: 'network'
   });

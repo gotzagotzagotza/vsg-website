@@ -6,7 +6,7 @@ date: 2025-10-16
 section: Reflections
 excerpt: "A meditation on home, memory, and the art of letting go. Originally published in Tarantula: Authors and Art, and republished here with the author's permission."
 canonical: "https://substack.com/home/post/p-176219168"
-unlisted: true
+card_image: /assets/images/tarantula/01.jpg
 ---
 
 <div class="republication-credit">
@@ -17,13 +17,13 @@ Republished with the author's permission.<br>
 
 <div class="editors-note">
 <p class="note-label">Editor's note</p>
-<p>In October 2025, Gordana Zikic was the featured artist in <em>Tarantula: Authors and Art</em>, the magazine of writer Maja Milanovic. What followed the interview was unexpected: rather than a profile, Maja wrote her own essay — a walk through twenty homes, and the goodbyes never said. She closed it with the ritual recipe from Gordana's performance <em>Thank You and Goodbye</em>. We are grateful to Maja for allowing us to give the piece a second home here.</p>
+<p>In October 2025, Gordana Zikic was the featured artist in <em>Tarantula: Authors and Art</em>, the magazine of writer and editor Maja Milanovic. What followed was unexpected: rather than a profile, Maja wrote her own essay — a walk through twenty homes and the goodbyes never said. She ended the essay with the ritual recipe from Gordana's performance <em>Thank You and Goodbye</em>. We are grateful to Maja for allowing us to give the piece a second home here.</p>
 <p class="note-sign">— VSG Magazine</p>
 </div>
 
 If you are a regular or have just discovered Tarantula: Authors and Art, welcome. Inspired by our featured artist of October, Gordana Zikic, in this piece we explore the subtle courage of farewell — the idea that endings can open space for something new. As the article unfolds, you'll be invited to reflect on how goodbyes function in our lives, our art, and our memory.
 
-If a friend forwarded you this article, welcome; and if it resonates, share it — or better yet, subscribe.
+If a friend forwarded you this article, welcome; and if it resonates, share it — or better yet, [subscribe](https://tarantulaauthorsandart.substack.com/).
 
 <figure class="article-figure">
 <img src="/assets/images/tarantula/01.jpg" alt="Gordana Zikic, Thank You and Goodbye Performance, 2021" loading="lazy">
