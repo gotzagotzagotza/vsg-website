@@ -40,6 +40,12 @@ function formatDate(dateStr) {
   return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 }
 
+function isoDate(dateStr) {
+  if (!dateStr) return '';
+  const d = new Date(dateStr);
+  return isNaN(d) ? String(dateStr) : d.toISOString().slice(0, 10);
+}
+
 function formatMonthYear(dateStr) {
   if (!dateStr) return '';
   const d = new Date(dateStr);
@@ -174,7 +180,7 @@ function articleCard({ title, date, section, excerpt, cover, url }) {
   <div class="article-card-section">${section}</div>
   <h3 class="article-card-title"><a href="${url}">${title}</a></h3>
   <p class="article-card-excerpt">${excerpt || ''}</p>
-  <time class="article-card-date" datetime="${date}">${formatDate(date)}</time>
+  <time class="article-card-date" datetime="${isoDate(date)}">${formatDate(date)}</time>
 </article>`;
 }
 
@@ -985,7 +991,8 @@ function buildArticle(article, sectionSlug) {
     ${article.deck ? `<p class="article-deck" style="font-family:var(--font-serif);font-size:1.15rem;line-height:1.6;font-style:italic;color:var(--gray-text);margin-top:0.75rem;max-width:640px">${article.deck}</p>` : ''}
     <div class="article-meta">
       ${article.author ? `<span class="article-meta-item">By ${article.author}</span>` : ''}
-      <time class="article-meta-item" datetime="${article.date}">${formatDate(article.date)}</time>
+      <time class="article-meta-item" datetime="${isoDate(article.date)}">${article.date_label ? `${article.date_label} ` : ''}${formatDate(article.date)}</time>
+      ${article.original_date ? `<span class="article-meta-item">Originally published ${formatDate(article.original_date)}</span>` : ''}
     </div>
   </div>
 

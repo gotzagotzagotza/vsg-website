@@ -2,7 +2,9 @@
 title: "It's Never Too Late to Say Goodbye (or Hello)"
 deck: "A meditation on home, memory, and the art of letting go"
 author: "Maja Milanovic"
-date: 2025-10-16
+date: 2026-08-20
+date_label: Republished
+original_date: 2025-10-16
 section: Reflections
 excerpt: "A meditation on home, memory, and the art of letting go. Originally published in Tarantula: Authors and Art, and republished here with the author's permission."
 canonical: "https://substack.com/home/post/p-176219168"
