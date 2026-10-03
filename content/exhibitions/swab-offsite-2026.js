@@ -123,20 +123,23 @@ module.exports = [
     }
   }
 
-  // River's bio, title and materials are hers as supplied. Still to come: the
-  // text about the work, and the year. The statement holds only her bio.
+  // Bio paragraph 1 and the two work paragraphs are hers as supplied; the
+  // second bio paragraph is condensed from her CV (she asked for it short).
   ,{
     name: "River Reishi",
     country: "USA",
     work: "The Land Gives Way",
     type: "Sculpture & Installation",
-    materials: "Raku-fired ceramic, sand from the beach near Coos Bay, copper seaweed aged with Coos Bay seawater",
-    quote: "",
+    materials: "Raku-fired ceramic, copper patinated in Oregon seawater, local beach sand, 2026",
+    quote: "Giving way is both an act of loss and transformation.",
     statement: [
-      "River Reishi is a mixed media artist whose work explores the intersection of ecology, mythology, and cultural memory. Through sculpture, installation, and ephemeral materials such as sand and amber, she creates contemporary myths that invite viewers to reconsider their relationship with the natural world."
+      "River Reishi is a mixed media artist whose work explores the intersection of ecology, mythology, and cultural memory. Through sculpture, installation, and ephemeral materials such as sand and amber, she creates contemporary myths that invite viewers to reconsider their relationship with the natural world.",
+      "Recent exhibitions include From Forest to Sea, a solo show at RAF Gallery in Reykjav\u00edk, and Best in Show at both the Surreal Salon at Baton Rouge Gallery \u2014 juried by Caledonia Curry (Swoon) \u2014 and the Surge Maritime Art Exhibition at the Coos Art Museum, Oregon. She has shown with Virtual Studio Groups at Juxtapose in Aarhus and Supermarket Art Fair in Stockholm. Her public work includes the sculptural mural Mother of Waters at the Foss Waterway Seaport Museum, Tacoma, and installations for the Tacoma Light Trail; her Destruction Ceremony has been performed at the Coos Art Museum and at Menningarn\u00f3tt Culture Night in Reykjav\u00edk.",
+      "The Land Gives Way gives the coastline a body. Formed from materials of the Oregon coast, the work reflects a landscape continually reshaped by water, erosion, and time. Here, giving way is both an act of loss and transformation: the land yields to forces larger than itself, and in doing so, becomes something new.",
+      "The sand will go back to the ocean after the conclusion of the exhibition, closing the circle of creation and destruction with intention."
     ],
-    note: "",
-    website: "https://riverreishi.com/work",
+    note: "Created in Coos Bay, Oregon for the Coos Art Museum Biennial.",
+    website: "https://www.riverreishi.com",
     instagram: "https://www.instagram.com/riverreishi/",
     kind: "images",
     images: [
