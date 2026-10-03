@@ -262,20 +262,28 @@ module.exports = [
     ]
   }
 
-  // CONFIRM THE BILLING: the video is titled "WISDOM KEEPERS Igorot and Romani
-  // Video Art Installation — Melih Aşanlı & Kübra Köprülüoğlu Aşanlı", so it is
-  // credited to BOTH artists, not to Kübra alone. Entered as a joint work.
-  // Still to come: the text about the work, both bios, materials, year.
+  // Joint work, confirmed by Gordana. Roles per the artists' own PDF: Melih —
+  // video art and interpretation; Kübra — paintings. Their document lists Melih
+  // first; kept Kübra first here as Gordana presented it, with both roles named
+  // in `note` so the credit is unambiguous either way.
   ,{
     name: "K\u00fcbra K\u00f6pr\u00fcl\u00fco\u011flu A\u015fanl\u0131 & Melih A\u015fanl\u0131",
     country: "T\u00fcrkiye",
-    work: "Wisdom Keepers",
+    work: "Wisdom Keepers Igorot and Romani",
     type: "Video art installation",
-    materials: "",
-    quote: "",
-    statement: [],
-    note: "Igorot and Romani.",
-    website: "https://kubrakopruluogluasanli.myportfolio.com",
+    materials: "Video art installation, 04:26 min, 2026",
+    quote: "Not a single narrative, but a layered wholeness \u2014 where the visible and invisible, stillness and transformation coexist.",
+    statement: [
+      "K\u00fcbra K\u00f6pr\u00fcl\u00fco\u011flu A\u015fanl\u0131 (b. 1984) is a contemporary artist based in T\u00fcrkiye whose research-driven practice explores ecological relationships, indigenous knowledge systems, cultural memory, and regenerative futures. Working across painting, installation, video, and sound, she investigates human\u2013nature connections and alternative models of coexistence through layered imagery, organic forms, and fluid visual narratives. She holds a BFA in Graphic Design from Marmara University and co-founded the ecological design studio HARMONIA in 2012. Her work has been exhibited internationally across South Korea, Japan, Greece, and North Macedonia, and she was named a Top 10 Artist at the BIEAF World Artist Award (2024). In 2026 she serves as a Steering Committee Member of the 23rd Busan International Environment Art Festival and participates as a selected artist in ICAD16 \u2014 Indonesia Contemporary Art & Design Festival.",
+      "Melih A\u015fanl\u0131 (b. 1980) is a multidisciplinary artist based in T\u00fcrkiye whose practice explores digitalism, cultural identity, memory, and human\u2013machine relationships. Working across 3D modeling, video, sound, light, and spatial installation, he investigates the intersections of physical and virtual realities, urban layers, and contemporary existential experience. He studied at Marmara University Faculty of Fine Arts and has worked across sculpture, restoration, traditional building techniques, design, and digital media. He is the author of four books on ecological design, most recently Ecological Design Theory.",
+      "Built around the idea of making the invisible visible, this work invites the viewer beyond surface imagery into a space shaped by memory, emotion, and collective presence. The portraits may appear individual, yet they carry traces of shared histories \u2014 silent witnesses to Indigenous wisdom that endures through both erasure and resistance.",
+      "Through moving image, these forms dissolve into a shifting flow of color and texture, suggesting not disappearance but continuity. Fragments disperse and reassemble, revealing creation as an ongoing process rather than a fixed result \u2014 much like culture itself, shaped through repetition, labor, and time.",
+      "Sound deepens this experience, connecting inner and collective memory through vibration and rhythm. What emerges is not a single narrative, but a layered wholeness \u2014 where the visible and invisible, stillness and transformation coexist, inviting the work to be not only seen, but felt.",
+      "In creating this work, our motivation was to revisit an existing artwork that explores a shared theme, approaching it from a different perspective and through a different material language. Rather than reproducing the original, we sought to create a new work that enters into a dialogue with it.",
+      "By placing the two works together within the exhibition space, we aimed to extend the experience of the original painting beyond its static form. Movement and sound become additional layers through which the emotions and atmosphere embedded in the image can be perceived differently. This spatial dialogue invites the viewer to encounter the painting from another perspective, allowing its emotional dimension to unfold through a more immersive and multisensory experience."
+    ],
+    note: "Melih A\u015fanl\u0131 \u2014 video art and interpretation \u00b7 K\u00fcbra K\u00f6pr\u00fcl\u00fco\u011flu A\u015fanl\u0131 \u2014 paintings.",
+    website: "https://kubrakopruluogluasanli.myportfolio.com/wisdomkeepers",
     instagram: "https://www.instagram.com/noooneelsebutme/",
     kind: "video",
     video: {
