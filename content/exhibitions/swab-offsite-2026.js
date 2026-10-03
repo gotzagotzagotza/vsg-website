@@ -353,6 +353,38 @@ module.exports = [
     ]
   }
 
+  // Bio is Gordana's own. The four work paragraphs are drawn from her essay
+  // "El Mar Hirviendo — 220 Surfaces" (second in her series on shamanism and
+  // contemporary art) and angled toward OFF-Site: the overlooked everyday site,
+  // the refusal of the landscape frame, the grid as adaptation rather than
+  // expansion, reciprocity rather than extraction. EDIT FREELY — this is a
+  // draft built from her words, not her final text. Year still to confirm.
+  ,{
+    name: "Gordana Zikic",
+    country: "Spain / Serbia",
+    work: "El Mar Hirviendo",
+    type: "Painting & Photography",
+    materials: "Oil on canvas; photographic grid, 220 surfaces",
+    quote: "A surface in constant movement, agitated from within by forces that never become visible.",
+    statement: [
+      "Gordana Zikic is an interdisciplinary artist, residency director, and community builder based in Barcelona. Over twenty years her practice has moved across painting, installation, performance, photography, and wearable technology \u2014 always at the threshold of embodied experience, shamanic research, and contemporary life.",
+      "She co-directs Belgrade Artist in Residence (BAIR, est. 2012), which has hosted artists from over thirty countries, and Virtual Studio Groups (VSG, est. 2021), an international peer community of sixty-plus artists that publishes VSG Magazine. She is co-founder of the AIR Exchange Network, a peer structure for residency organizers, and Whatzart Lab. Her current research explores oracle systems, shamanic technology, and the archaeological memory of place. She holds a doctorate in fine arts from the Faculty of Fine Arts, Belgrade.",
+      "For more than fifteen years I have gone to the same pier in Barcelona to photograph the surface of the sea, always straight down, never toward the horizon \u2014 no sky, no shore, no framing device except the water itself. Most people who live beside the sea walk past it. It is among the most looked-at surfaces in the city and among the least seen.",
+      "Without horizon or scale, the water stops functioning as landscape. What remains is a surface in constant movement, agitated from within by forces that never become visible \u2014 the effect that gives the series its title, the boiling sea. The tourist\u2019s sea arrives as a picture already held in the mind and then gone looking for. This is the other sea: one that refuses the postcard, and has to be met with the body rather than the eye.",
+      "The sea exceeds attention. It is too large, too mobile, too information-dense to face whole. So I divide the photograph into a grid and paint each square as its own abstraction, entering the uncontainable piece by piece \u2014 the way a ritual builds a container for an experience that would otherwise overwhelm. The grid is a technology for approach. And like any ritual, the technique eventually becomes the thing you have to escape: you surface from an hour inside one square to find the method has enclosed you, and you step back and ask whether the painting feels like the water rather than looks like it.",
+      "El Mar Hirviendo \u2014 220 Surfaces gathers the photographic archive the paintings come from: fifteen years of the same few square metres of water, taken from the same pier. The work stays with one overlooked place rather than reaching for new ones, and holds a posture closer to reciprocity than to ownership \u2014 attentive to what the sea is doing rather than prescribing what it ought to look like."
+    ],
+    note: "",
+    website: "https://gordanazikic.wordpress.com",
+    instagram: "https://www.instagram.com/gotza_gotza/",
+    kind: "images",
+    images: [
+      { src: "/assets/images/exhibitions/swab-offsite-2026/gordana-zikic-1.jpg", caption: "El Mar Hirviendo \u2014 220 Surfaces, photographs" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/gordana-zikic-2.jpg", caption: "El Mar Hirviendo \u2014 oil on canvas" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/gordana-zikic-3.jpg", caption: "El Mar Hirviendo \u2014 oil on canvas, tondo" }
+    ]
+  }
+
 ];
 
 /* ─────────────────────────────────────────────────────────────
