@@ -391,6 +391,35 @@ module.exports = [
     ]
   }
 
+  // Yann's text is his own, kept in first person as he wrote it. Image 2 is the
+  // installation layout of all 28 panels — a very wide strip (3600×379), so it
+  // renders as a thin band in the viewer. It is second so the square photograph
+  // makes the card thumbnail. No year supplied.
+  ,{
+    name: "Yann Court\u00e9",
+    country: "France",
+    work: "Rivages",
+    type: "Photography",
+    materials: "28 panels printed on dibond, mounted unframed",
+    quote: "The landscapes I once took for natural turn out to be just as man-made as anything urban. Nothing here is truly wild.",
+    statement: [
+      "Photographer and filmmaker based in France, my work grows out of places and the movement between them. In the field, I work with a candid eye and an openly subjective view.",
+      "My work sits between a documentary attitude, rooted in the everyday and the unremarkable, and a pull toward more poetic, lyrical forms \u2014 an eye for what is delicate in the ordinary, without grandeur in subject or in form. This way of looking feeds my questions about human cultures, social structures, and how they change.",
+      "Rivages follows the Orb river from B\u00e9ziers to the sea, through the ponds of la Malhaute \u2014 former sand quarries turned natural habitat \u2014 the Canal du Midi, the protected wetlands of Les Orpelli\u00e8res, all the way to the beaches of S\u00e9rignan and Valras.",
+      "The series grew slowly, out of images gathered in a place I\u2019ve known my whole life: family fishing trips to la Malhaute as a kid, beach evenings in my first years of driving.",
+      "The landscapes I once took for natural, once you strip away the everyday gloss and the nostalgia, turn out to be just as man-made as anything urban. This is a corner of the Anthropocene. Nothing here is truly wild.",
+      "The exhibition project opens with a triptych of the Canal du Midi, the Orb river and the Mediterranean \u2014 the three bodies of water it moves through \u2014 then follows the water\u2019s course down to the sea. It takes the form of an installation of 28 panels, printed on dibond and mounted unframed, arranged in a continuous line whose density and rhythm shift along the way, echoing the uneven pace of a river."
+    ],
+    note: "",
+    website: "https://yanncourte.fr",
+    instagram: "https://www.instagram.com/memoire.courte/",
+    kind: "images",
+    images: [
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-1.jpg", caption: "Rivages \u2014 the ponds of la Malhaute, former sand quarries" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-2.jpg", caption: "Rivages \u2014 installation of 28 panels, the full line" }
+    ]
+  }
+
 ];
 
 /* ─────────────────────────────────────────────────────────────
