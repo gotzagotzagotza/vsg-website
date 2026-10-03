@@ -177,19 +177,20 @@ module.exports = [
     ]
   }
 
-  // Title taken from Seb's filenames ("Stone Compass") — CONFIRM with him.
-  // Still to come: his BIO/CV, the text about the work, materials, and year.
-  // `materials` and `type` below are read off the photographs, not supplied.
-  // Image captions are descriptive only.
+  // Joint work with Heera Gul (@ammipesca). Statement is Seb's as supplied.
+  // Still to come: bios/CVs for both.
   ,{
-    name: "Seb Bradshaw",
+    name: "Seb Bradshaw & Heera Gul",
     country: "UK",
     work: "Stone Compass",
-    type: "Textile & Installation",
-    materials: "",
-    quote: "",
-    statement: [],
-    note: "",
+    type: "Textile collage",
+    materials: "Card, recycled fabric, oil pastels and paints on recycled fabric, 2023",
+    quote: "Stone circles are sites of enduring connection to the natural world, both ancient and modern.",
+    statement: [
+      "Stone circles are sites of enduring connection to the natural world, both ancient and modern. Whilst many sites remain a mystery, they signify human connection and ritual in land; modern installations of stone circles are used to mark protected spaces of community value.",
+      "But I think what\u2019s in this piece is not only the joy of collaboratively assembling a textile collage based on ancient to modern spirituality, but Heera\u2019s interest in migration and belonging \u2014 via Islamic decorative motifs \u2014 and my interest in land use and close observation of nature, as the colourful backgrounds of the compass reference aerial maps, wood grain, lichen and moss."
+    ],
+    note: "Seb Bradshaw @artbyseb138 \u00b7 Heera Gul @ammipesca",
     website: "",
     instagram: "https://www.instagram.com/artbyseb138/",
     kind: "images",
@@ -242,8 +243,12 @@ module.exports = [
     website: "https://achegaleria.com/copia-de-lpdlp",
     instagram: "",
     kind: "images",
-    images: [],
-    placeholder: "Images to follow"
+    images: [
+      { src: "/assets/images/exhibitions/swab-offsite-2026/juan-pablo-meneses-1.jpg", caption: "RGB + Dead Pixel \u2014 installation view, with the neon EL PIXEL HA MUERTO" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/juan-pablo-meneses-2.jpg", caption: "Pixelated intervention \u2014 sunlight on water" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/juan-pablo-meneses-3.jpg", caption: "RGB intervention over an archive photograph" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/juan-pablo-meneses-4.jpg", caption: "EL PIXEL HA MUERTO \u2014 neon" }
+    ]
   }
 
   // CONFIRM THE BILLING: the video is titled "WISDOM KEEPERS Igorot and Romani
