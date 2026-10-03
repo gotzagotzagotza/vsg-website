@@ -91,12 +91,9 @@ module.exports = [
     }
   }
 
-  // Melih's video lives on his Adobe Portfolio page, on Adobe's own player — not
-  // Vimeo/YouTube, and not safely embeddable long-term. Waiting on a Vimeo or
-  // YouTube link from him, plus a still for the card thumbnail. To add it:
-  //   kind: "video", video: { embed: "https://player.vimeo.com/video/XXXXXXXXX",
-  //                           poster: "/assets/images/exhibitions/swab-offsite-2026/melih-asanli-poster.jpg" }
-  // and delete `kind: "images"`, `images: []` and `placeholder` below.
+  // Poster is YouTube's own still for the video, saved locally rather than
+  // hotlinked. Keep the embed URL clean of query strings — the builder appends
+  // ?autoplay=1 when the viewer presses play.
   ,{
     name: "Melih A\u015fanl\u0131",
     country: "T\u00fcrkiye",
@@ -116,9 +113,11 @@ module.exports = [
     note: "Awarded 3rd Prize and exhibited at the Necat Nas\u0131ro\u011flu Digital Art and Mapping Competition, Batman University, T\u00fcrkiye.",
     website: "https://melihasanliart.myportfolio.com/dev-i-alem",
     instagram: "https://www.instagram.com/melihasanli.art/",
-    kind: "images",
-    images: [],
-    placeholder: "Video to follow"
+    kind: "video",
+    video: {
+      embed: "https://www.youtube.com/embed/dE3-IzSh8jc",
+      poster: "/assets/images/exhibitions/swab-offsite-2026/melih-asanli-poster.jpg"
+    }
   }
 
   // River's bio and materials are hers as supplied. Still to come: the work's
@@ -222,6 +221,78 @@ module.exports = [
     kind: "images",
     images: [],
     placeholder: "Images to follow"
+  }
+
+  // Statement and bio are his as supplied; "exhibition" replaced with "project"
+  // throughout, per Gordana. No images yet, and no year given.
+  ,{
+    name: "Juan Pablo Meneses",
+    country: "Mexico",
+    work: "RGB + Dead Pixel",
+    type: "Photography, video & installation",
+    materials: "Intervention, installation, video and photography",
+    quote: "",
+    statement: [
+      "Juan Pablo Meneses (Mexico, 1982) is a Level 1 member of the National System of Researchers. He is based in the city of San Luis Potos\u00ed, where he works as a full-time research professor at the Faculty of Habitat (UASLP). He holds a PhD in Art, Production, and Research from the Polytechnic University of Valencia, Spain.",
+      "As an artist, he has participated in over 30 group exhibitions in Mexico, Spain, Argentina, Denmark, the United States, and England, and has held eight solo exhibitions in Mexico, Serbia, Croatia, and Spain. His work is featured on the Contemporary Image Platform (PICS) of the Centro de la Imagen.",
+      "RGB + Dead Pixel is a project conceived from two concepts: RGB and Pixel. RGB is the most widely used color mode in digital photography, based on the addition of the primary colors of light, a process known as additive synthesis. A pixel, on the other hand, is the smallest element of a digitally reproduced image.",
+      "From these concepts, this project is generated with pixelated images, videos with glitches and white noise, and photographic interventions using the red, green, and blue (RGB) colors. It employs various artistic strategies such as intervention, installation, video, and photography."
+    ],
+    note: "",
+    website: "https://achegaleria.com/copia-de-lpdlp",
+    instagram: "",
+    kind: "images",
+    images: [],
+    placeholder: "Images to follow"
+  }
+
+  // CONFIRM THE BILLING: the video is titled "WISDOM KEEPERS Igorot and Romani
+  // Video Art Installation — Melih Aşanlı & Kübra Köprülüoğlu Aşanlı", so it is
+  // credited to BOTH artists, not to Kübra alone. Entered as a joint work.
+  // Still to come: the text about the work, both bios, materials, year.
+  ,{
+    name: "K\u00fcbra K\u00f6pr\u00fcl\u00fco\u011flu A\u015fanl\u0131 & Melih A\u015fanl\u0131",
+    country: "T\u00fcrkiye",
+    work: "Wisdom Keepers",
+    type: "Video art installation",
+    materials: "",
+    quote: "",
+    statement: [],
+    note: "Igorot and Romani.",
+    website: "https://kubrakopruluogluasanli.myportfolio.com",
+    instagram: "https://www.instagram.com/noooneelsebutme/",
+    kind: "video",
+    video: {
+      embed: "https://www.youtube.com/embed/Km-gqHSswVI",
+      poster: "/assets/images/exhibitions/swab-offsite-2026/wisdom-keepers-poster.jpg"
+    }
+  }
+
+  // CHECK THE VIDEO: the work text describes "Discovery of the Ancient Texas
+  // Civilization", Hilmsen, GERMANY, 2013 — but the linked YouTube video
+  // (5oYbJn2_H4w) is titled "Ancient Texas Pyramids in BELGIUM". Either the
+  // link is for a different piece in the series, or the YouTube title is loose.
+  // Confirm with Joshua. Bio and statement below are his as supplied.
+  ,{
+    name: "Joshua Goode",
+    country: "USA",
+    work: "Discovery of the Ancient Texas Civilization",
+    type: "Video",
+    materials: "Hilmsen, Germany, 2013",
+    quote: "",
+    statement: [
+      "Joshua Goode is an interdisciplinary artist based in the Dallas\u2013Fort Worth area whose work explores how history is constructed, mythologized, and remembered. Trained as both an archaeologist and artist, he holds an MFA from Boston University and stages performative excavations that blur fact and fiction, presenting pop culture and local myths as archaeological artifacts. His work has been exhibited internationally at museums and institutions across Europe, Asia, the Middle East, and the U.S., and is held in major public collections worldwide. Goode is a recipient of the Dallas Museum of Art\u2019s Dozier Award and has contributed to archaeological research with the University of T\u00fcbingen in Germany.",
+      "This video documents an excavation conducted by the Aurora-Rhoman Institute of Archaeology and Cultural Relics at a site in Hilmsen, Germany. Among the institute\u2019s most significant discoveries are the remains of a Mammoth Cowboy, an unprecedented fusion of human and megafaunal iconography, and a remarkably preserved Unicorn Tyrannosaurus rex skull, evidence of a species long absent from the paleontological record.",
+      "Presented through the conventions of archaeological documentary and museum scholarship, the work investigates the ways in which history is constructed, authenticated, and transmitted through cultural institutions, material evidence, and collective belief."
+    ],
+    note: "",
+    website: "https://joshuagoode.com",
+    instagram: "https://www.instagram.com/joshua_goode/",
+    kind: "video",
+    video: {
+      embed: "https://www.youtube.com/embed/5oYbJn2_H4w",
+      poster: "/assets/images/exhibitions/swab-offsite-2026/joshua-goode-poster.jpg"
+    }
   }
 
 ];
