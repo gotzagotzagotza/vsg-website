@@ -321,10 +321,10 @@ module.exports = [
 
   // Joint work with composer Amble Skuse. Credit line as given by the artists
   // puts Amble first ("Amble Skuse & Boško Begović, Aras Nam Fir Chlis,
-  // 19-23 September 2024") — kept that order. Only Bosko's bio was supplied;
-  // Amble's still to come. Bosko signs his artistic practice Mark Fish, which
-  // the bio explains; the entry uses his own name because the work is credited
-  // that way. Source images are low-resolution (833×472) — not upscaled.
+  // 19-23 September 2024") — kept that order, and her bio leads to match.
+  // Bosko signs his artistic practice Mark Fish, which the bio explains; the
+  // entry uses his own name because the work is credited that way.
+  // Source images are low-resolution (833×472) — not upscaled.
   ,{
     name: "Amble Skuse & Bosko Begovic",
     country: "UK / Serbia / Spain",
@@ -333,6 +333,8 @@ module.exports = [
     materials: "Burden suit, stones, body sensors, sound and film \u2014 Mealasta beach, Isle of Lewis, 2024",
     quote: "Who is Mark Fish? Nobody. And it is precisely in that nothing \u2014 in giving form to what has no fixed identity \u2014 that the work locates itself.",
     statement: [
+      "Amble Skuse is a composer and sound artist who uses disability theory, body sensor technology, spoken word interviews and electronics to create unique sound works. She is interested in the interface between the disabled body and the exterior world, and has explored this through numerous sound walks using her wheelchair. She is a Royal Philharmonic Society Composer 24/25, recently won a Special Commendation Daphne Oram Award for her work in electronic music, and was selected as Scotland\u2019s representative for the International Society for Contemporary Music Festival 2024.",
+      "She recently wrote Divergent Sounds in collaboration with King\u2019s College London. The piece uses interviews with NeuroDivergent people, electronics, body sensors and a 13-piece orchestral ensemble, and was premiered at the Queen Elizabeth Hall at the Southbank. She was one of five Creative Scotland International Creative Entrepreneurship Fellows, a BBC Performing Arts Fellow and a BBC alumni fellow, has gained several large-scale grants from Creative Scotland to produce work, and was a MiMU Glove research resident in 2022.",
       "Bosko Begovic is a writer, conceptual artist, and curator based in Barcelona. His work moves between performance, movement, and text, and is anchored in a single idea he returns to across two decades: formalizing the nothing. His artistic practice is signed Mark Fish. Mark Fish is not a character he plays or a mask he puts on \u2014 it is the name the work carries. Who is Mark Fish? Nobody. And it is precisely in that nothing \u2014 in giving form to what has no fixed identity \u2014 that the work locates itself, triangulating between theory, movement, and writing to trace the many ways nothing can appear.",
       "Movement is the ground of the practice. For over twenty years Begovic trained and taught in Japanese movement disciplines \u2014 Aikido, Judo, and Tatami Ryu \u2014 approaching them not as sport or competition but as a long apprenticeship in attention: how weight, timing, contact, and intention organize a body in space. He no longer teaches. That accumulated bodily knowledge has instead become the material of his movement research and performance practice, where the body is treated as a site of inquiry rather than demonstration.",
       "Since 2020 this research has developed through an ongoing collaboration with composer Amble Skuse, culminating in Interdependent Intersections \u2014 a non-hierarchical work for movement, sound, and video built around MiMU sensor gloves. Rather than having sound accompany movement in the usual way, the collaboration inverts the relationship: sound and technology are used to impede movement, and from that friction a different theory of how movement is made and known begins to emerge. The work explores interdependence, power, and co-operation, and has been developed across residencies and shown in France, Sweden, and beyond, with further chapters realized in Northern Ireland and Scotland.",
