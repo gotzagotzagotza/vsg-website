@@ -33,17 +33,20 @@ module.exports = [
     ]
   }
 
-  // Kai's statement is his own text, used verbatim as he supplied it — the
-  // Britannica entry on Dasein is what he uses to explain the work. Do not
-  // paraphrase it. CV / bio still to come from him.
+  // Both the bio and the work statement are Kai's own text. The Britannica entry
+  // on Dasein is what HE uses to explain the work — do not paraphrase it.
+  // Only obvious typos were corrected in the bio.
   ,{
     name: "Kai Rennes",
-    country: "Sweden",
+    country: "Sweden / Spain",
     work: "Dasein (Stockholm)",
     type: "Photography",
     materials: "C-print, 2022",
     quote: "",
     statement: [
+      "Kai Rennes is an artist of Nordic origin living in Stockholm and Barcelona. He has studied art, architecture, history of art, philosophy, aesthetics and semantics. He works with several different media, from video to installations, objects, photo and painting. His works have been shown in many European countries, the USA, Mexico, Cuba and Japan.",
+      "His works are phenomenological notes on human knowledge in different manifestations: what kind of knowledge is science, art or religion. Some years ago religions and spiritual life were regarded as part of the private sphere; now they are back in focus. Many religions are collections of practical knowledge, ethical principles, dogma, rites and deeper understanding of human nature \u2014 wisdom from thousands of years back. New beliefs and religious structures are created, for instance, in Europe and Japan.",
+      "There is a connection between the different fields of human knowledge. Sometimes the scientific world connects with different beliefs or contemporary art practices. The world is shown to us with an endless network of meanings. Kai Rennes\u2019 aim is unveiling these networks.",
       "One of the photos from a series of Glory Holes, 34 images of holes that are a part of gay underworld.",
       "What is Dasein in philosophy?",
       "In the philosophy of Martin Heidegger, Dasein (literally, \u201cbeing-there\u201d) represents the unique existence of the human individual. Heidegger introduces Dasein in Being and Time (1927) to explore fundamental questions about Being.",
