@@ -1141,14 +1141,14 @@ function buildProjects(reflections) {
 <div class="section-block" style="background:var(--accent);color:#fff;padding:2rem 0">
   <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
     <div style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap">
-      <div style="background:#fff;padding:0.4rem 0.75rem;flex-shrink:0;display:flex;align-items:center"><img src="/assets/images/exhibitions/works-beyond-the-walls/tryst-logo.webp" alt="TRYST Art Fair" style="height:36px;width:auto;display:block"></div>
+      <div style="background:#fff;padding:0.5rem 0.9rem;flex-shrink:0;display:flex;align-items:center"><img src="/assets/images/exhibitions/swab-offsite-2026/swab-logo.png" alt="Swab Barcelona" style="height:40px;width:auto;display:block"></div>
       <div>
-        <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;opacity:0.75;margin-bottom:0.4rem">August 7–9, 2026 · Los Angeles</p>
-        <p style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.25rem"><strong>Works Beyond the Walls</strong> — VSG at TRYST Art Fair</p>
-        <p style="font-family:var(--font-serif);font-size:0.9rem;opacity:0.85">Our hybrid exhibition at TRYST, the world's largest art fair for artist-run spaces. View the online component here.</p>
+        <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;opacity:0.75;margin-bottom:0.4rem">8–11 October 2026 · Barcelona</p>
+        <p style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.25rem"><strong>VSG at Swab OFF-Site</strong> — with Cascadas Gallery</p>
+        <p style="font-family:var(--font-serif);font-size:0.9rem;opacity:0.85">VSG joins Cascadas Gallery in OFF-Site, Swab Barcelona's programme for independent art spaces built through reuse and adaptation. Our presentation is online — enter it here, or by QR code at the fair.</p>
       </div>
     </div>
-    <a href="/projects/works-beyond-the-walls/" style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,0.6);padding:0.65rem 1.25rem;white-space:nowrap;flex-shrink:0">View Exhibition →</a>
+    <a href="/projects/swab-offsite-2026/" style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,0.6);padding:0.65rem 1.25rem;white-space:nowrap;flex-shrink:0">View Exhibition →</a>
   </div>
 </div>
 
@@ -1821,7 +1821,7 @@ ${items}
 
 // ---- WORKS BEYOND THE WALLS — hybrid exhibition online component ----
 
-function buildWorksPage(artists) {
+function buildExhibitionPage(artists, meta) {
   const artistsJson = JSON.stringify(artists);
 
   const gridCards = artists.map((a, i) => {
@@ -1887,6 +1887,7 @@ function buildWorksPage(artists) {
 @media (prefers-reduced-motion: reduce) { .wbtw-stage-img { transition: none; } }
 .wbtw-stage-img img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .wbtw-stage video, .wbtw-stage iframe { width: 100%; height: 100%; display: block; }
+.wbtw-stage video.wbtw-local-video { width: auto; height: auto; max-width: min(100%, 420px); max-height: 100%; }
 .wbtw-img-nav { position: absolute; inset: 0; display: flex; align-items: stretch; pointer-events: none; }
 .wbtw-img-zone { flex: 1; cursor: pointer; pointer-events: auto; position: relative; background: none; border: none; padding: 0; }
 .wbtw-img-zone:focus-visible { outline: 2px solid var(--accent); outline-offset: -4px; }
@@ -1938,31 +1939,39 @@ function buildWorksPage(artists) {
   <div class="container">
     <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:2rem;flex-wrap:wrap;margin-bottom:2rem">
       <div>
-        <p style="font-family:var(--font-mono);font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;opacity:0.55;margin-bottom:1rem">Online Exhibition · August 7–9, 2026 · Los Angeles</p>
-        <h1 style="font-family:var(--font-serif);font-size:clamp(2rem,5vw,3.25rem);font-weight:400;line-height:1.15;margin-bottom:0.5rem">Works Beyond the Walls</h1>
-        <p style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.06em;opacity:0.6;margin-bottom:0">Virtual Studio Groups</p>
+        <p style="font-family:var(--font-mono);font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;opacity:0.55;margin-bottom:1rem">${meta.kicker}</p>
+        <h1 style="font-family:var(--font-serif);font-size:clamp(2rem,5vw,3.25rem);font-weight:400;line-height:1.15;margin-bottom:0.5rem">${meta.title}</h1>
+        <p style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.06em;opacity:0.6;margin-bottom:0">${meta.subtitle}</p>
       </div>
-      <div style="background:#fff;padding:0.5rem 1rem;flex-shrink:0;display:flex;align-items:center;margin-top:0.25rem"><img src="/assets/images/exhibitions/works-beyond-the-walls/tryst-logo.webp" alt="TRYST Art Fair" style="height:44px;width:auto;display:block"></div>
+      ${meta.logo ? `<div style="background:#fff;padding:0.5rem 1rem;flex-shrink:0;display:flex;align-items:center;margin-top:0.25rem"><img src="${meta.logo.src}" alt="${meta.logo.alt}" style="height:44px;width:auto;display:block"></div>` : ''}
     </div>
     <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:1.75rem;max-width:720px">
-      <p style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.85;opacity:0.9;margin:0 0 0.75rem">Works Beyond the Walls brings together artists taking part from across the world — installations, sculpture, and moving image shown online and inside the gallery at once. At TRYST in Los Angeles you'll find them on screen beside the physical works; here, they're open to everyone.</p>
-      <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.08em;opacity:0.55;margin:0">Online Exhibition · August 7–9, 2026 · TRYST, Los Angeles</p>
+      ${meta.intro.map(t => `<p style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.85;opacity:0.9;margin:0 0 0.75rem">${t}</p>`).join('\n      ')}
+      <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.08em;opacity:0.55;margin:0">${meta.credit}</p>
     </div>
   </div>
 </div>
 <div style="background:var(--gray-light);border-bottom:1px solid var(--gray-mid);padding:0.9rem 0">
   <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.75rem">
-    <span style="font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.08em;color:var(--gray-text)">${artists.length} artist${artists.length !== 1 ? 's' : ''} · Select any card to view work and statement</span>
-    <span style="font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.08em;color:var(--accent)">● Online now</span>
+    <span style="font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.08em;color:var(--gray-text)">${artists.length ? `${artists.length} artist${artists.length !== 1 ? 's' : ''} · Select any card to view work and statement` : 'Artists announced soon'}</span>
+    <span style="font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.08em;color:var(--accent)">${meta.statusLabel}</span>
   </div>
 </div>
+
+${meta.curatorial && meta.curatorial.length ? `
+<div style="border-bottom:1px solid var(--gray-mid);padding:3.5rem 0">
+  <div class="container" style="max-width:720px">
+    ${meta.curatorialLabel ? `<p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-text);margin-bottom:1.25rem">${meta.curatorialLabel}</p>` : ''}
+    ${meta.curatorial.map(t => `<p style="font-family:var(--font-serif);font-size:1rem;line-height:1.85;color:var(--gray-text);margin:0 0 1.1rem">${t}</p>`).join('\n    ')}
+  </div>
+</div>` : ''}
 
 <div class="wbtw-section">
   <div class="container">
     <div class="wbtw-grid" id="wbtw-grid">
       ${gridCards}
     </div>
-    <p style="font-family:var(--font-mono);font-size:0.95rem;color:#111;font-weight:500;margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--gray-mid);max-width:640px">TRYST is the world's largest international art fair dedicated to artist-run spaces, collectives, and independent organizations — now in its fourth edition, prioritizing collaboration, experimentation, and cultural dialogue over commercial structures.</p>
+    ${meta.footerNote ? `<p style="font-family:var(--font-mono);font-size:0.95rem;color:#111;font-weight:500;margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--gray-mid);max-width:640px">${meta.footerNote}</p>` : ''}
   </div>
 </div>
 
@@ -2046,7 +2055,16 @@ function buildWorksPage(artists) {
   function renderStage(a) {
     stage.innerHTML = '';
     captionBar.textContent = '';
-    if (a.kind === 'video' && a.video) {
+    if (a.kind === 'video' && a.video && a.video.file) {
+      // Self-hosted file — native controls, plays inline on iPad/iPhone
+      stage.innerHTML = '<video class="wbtw-local-video" controls playsinline preload="metadata"'
+        + (a.video.poster ? ' poster="' + a.video.poster + '"' : '')
+        + ' aria-label="' + escHtml(a.name) + ' \u2014 ' + escHtml(a.work) + '">'
+        + '<source src="' + a.video.file + '" type="video/mp4">'
+        + 'Your browser cannot play this video.'
+        + '</video>';
+      captionBar.textContent = a.video.caption || '';
+    } else if (a.kind === 'video' && a.video) {
       // Poster + iframe on demand
       var poster = a.video.poster
         ? '<img src="' + a.video.poster + '" alt="' + escHtml(a.work) + ' — video poster" style="width:100%;height:100%;object-fit:cover;display:block;cursor:pointer" id="wbtw-poster">'
@@ -2083,6 +2101,10 @@ function buildWorksPage(artists) {
           dot.addEventListener('click', function() { setActiveImage(parseInt(dot.dataset.dot, 10)); });
         });
       }
+    } else {
+      // No media supplied yet — say so rather than showing an empty stage
+      stage.innerHTML = '<p style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.06em;color:var(--gray-text);text-align:center;padding:2rem">'
+        + escHtml(a.placeholder || 'Work to follow') + '</p>';
     }
   }
 
@@ -2117,6 +2139,7 @@ function buildWorksPage(artists) {
     var links = [];
     if (a.website) links.push('<a href="' + escHtml(a.website) + '" target="_blank" rel="noopener">Website</a>');
     if (a.instagram) links.push('<a href="' + escHtml(a.instagram) + '" target="_blank" rel="noopener">Instagram</a>');
+    if (a.youtube) links.push('<a href="' + escHtml(a.youtube) + '" target="_blank" rel="noopener">YouTube</a>');
     if (links.length) html += '<div class="wbtw-panel-links">' + links.join('') + '</div>';
     panel.innerHTML = html;
   }
@@ -2129,8 +2152,8 @@ function buildWorksPage(artists) {
 </script>`;
 
   return baseTemplate({
-    title: 'Works Beyond the Walls',
-    description: 'Works Beyond the Walls — a VSG online exhibition at TRYST Art Fair, Los Angeles, August 7–9, 2026. Installations, sculpture, and moving image from artists around the world.',
+    title: meta.title,
+    description: meta.description,
     body,
     activePage: 'projects'
   });
@@ -2162,6 +2185,21 @@ function build() {
   const artists = JSON.parse(readFile('content/artists.json'));
   const events = JSON.parse(readFile('content/events.json'));
   const worksArtists = require('./content/exhibitions/works-beyond-the-walls.js');
+  const swabArtists = require('./content/exhibitions/swab-offsite-2026.js');
+  const swabText = require('./content/exhibitions/swab-offsite-2026.text.js');
+
+  const worksMeta = {
+    kicker: 'Online Exhibition · August 7–9, 2026 · Los Angeles',
+    title: 'Works Beyond the Walls',
+    subtitle: 'Virtual Studio Groups',
+    logo: { src: '/assets/images/exhibitions/works-beyond-the-walls/tryst-logo.webp', alt: 'TRYST Art Fair' },
+    intro: ["Works Beyond the Walls brings together artists taking part from across the world — installations, sculpture, and moving image shown online and inside the gallery at once. At TRYST in Los Angeles you'll find them on screen beside the physical works; here, they're open to everyone."],
+    credit: 'Online Exhibition · August 7–9, 2026 · TRYST, Los Angeles',
+    statusLabel: '● Online now',
+    curatorial: [],
+    footerNote: "TRYST is the world's largest international art fair dedicated to artist-run spaces, collectives, and independent organizations — now in its fourth edition, prioritizing collaboration, experimentation, and cultural dialogue over commercial structures.",
+    description: 'Works Beyond the Walls — a VSG online exhibition at TRYST Art Fair, Los Angeles, August 7–9, 2026. Installations, sculpture, and moving image from artists around the world.'
+  };
   const videoCategories = require('./content/videos.js');
 
   // Copy assets
@@ -2255,8 +2293,11 @@ function build() {
   console.log('  ✓ projects/index.html');
 
   // Works Beyond the Walls — hybrid exhibition online component
-  writeFile('dist/projects/works-beyond-the-walls/index.html', buildWorksPage(worksArtists));
+  writeFile('dist/projects/works-beyond-the-walls/index.html', buildExhibitionPage(worksArtists, worksMeta));
   console.log('  ✓ projects/works-beyond-the-walls/index.html');
+
+  writeFile('dist/projects/swab-offsite-2026/index.html', buildExhibitionPage(swabArtists, swabText));
+  console.log('  ✓ projects/swab-offsite-2026/index.html');
 
   // Meetings
   writeFile('dist/meetings/index.html', buildMeetings(meetings));

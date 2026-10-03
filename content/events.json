@@ -1,11 +1,24 @@
 [
   {
+    "title": "VSG at Swab OFF-Site — with Cascadas Gallery",
+    "venue": "Swab Barcelona Art Fair · OFF-Site",
+    "location": "Barcelona, Spain",
+    "date_start": "2026-10-08",
+    "date_end": "2026-10-11",
+    "status": "upcoming",
+    "description": "VSG joins Cascadas Gallery in OFF-Site, Swab Barcelona's programme dedicated to independent art spaces that emerge through reuse and adaptation. The VSG presentation is this online exhibition, reached by QR code from the Cascadas booth at the fair and open to everyone online.",
+    "artists_count": null,
+    "image": "/assets/images/exhibitions/swab-offsite-2026/swab-lockup-combined.png",
+    "article_link": "/projects/swab-offsite-2026/",
+    "online_link": "/projects/swab-offsite-2026/"
+  },
+  {
     "title": "Works Beyond the Walls — VSG at TRYST Art Fair",
     "venue": "TRYST Art Fair",
     "location": "Los Angeles, USA",
     "date_start": "2026-08-07",
     "date_end": "2026-08-09",
-    "status": "upcoming",
+    "status": "past",
     "description": "VSG participates in TRYST, the world's largest international art fair dedicated to artist-run spaces, collectives, and independent organizations. Our presentation includes a hybrid exhibition: physical works in the booth alongside an online component showing works by artists who could not travel.",
     "artists_count": null,
     "image": "/assets/images/exhibitions/works-beyond-the-walls/tryst-logo.webp",
