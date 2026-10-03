@@ -201,9 +201,10 @@ module.exports = [
     ]
   }
 
-  // Radina's statement and bio are verbatim from her PDF. IMAGES TO COME — the
-  // photo in the PDF is a grant-announcement snapshot, deliberately not used.
-  // To add images: fill `images` and delete `placeholder`.
+  // Radina's statement and bio are verbatim from her PDF. Image captions are
+  // her own file titles, kept in her lower-case style; order follows the
+  // journey downriver. (The photo in her PDF is a grant-announcement snapshot
+  // and is deliberately not used.)
   ,{
     name: "Radina Kordova",
     country: "Bulgaria / Netherlands",
@@ -221,8 +222,17 @@ module.exports = [
     website: "https://radinakordova.com",
     instagram: "https://www.instagram.com/radina_kordova/",
     kind: "images",
-    images: [],
-    placeholder: "Images to follow"
+    images: [
+      { src: "/assets/images/exhibitions/swab-offsite-2026/radina-kordova-1.jpg", caption: "crossing the bridge at Pfohren, start of the journey" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/radina-kordova-2.jpg", caption: "score for standing still in moving water" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/radina-kordova-3.jpg", caption: "scores for standing still in moving water" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/radina-kordova-4.jpg", caption: "hiding in the shade" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/radina-kordova-5.jpg", caption: "danubian clay" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/radina-kordova-6.jpg", caption: "final resting place" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/radina-kordova-7.jpg", caption: "\u201cI am only but a shadow made of water\u201d" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/radina-kordova-8.jpg", caption: "flood of 1784 in vienna" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/radina-kordova-9.jpg", caption: "i cannot hold her even if i tried" }
+    ]
   }
 
   // Statement and bio are his as supplied; "exhibition" replaced with "project"
