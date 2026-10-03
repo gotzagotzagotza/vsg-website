@@ -319,6 +319,40 @@ module.exports = [
     }
   }
 
+  // Joint work with composer Amble Skuse. Credit line as given by the artists
+  // puts Amble first ("Amble Skuse & Boško Begović, Aras Nam Fir Chlis,
+  // 19-23 September 2024") — kept that order. Only Bosko's bio was supplied;
+  // Amble's still to come. Bosko signs his artistic practice Mark Fish, which
+  // the bio explains; the entry uses his own name because the work is credited
+  // that way. Source images are low-resolution (833×472) — not upscaled.
+  ,{
+    name: "Amble Skuse & Bosko Begovic",
+    country: "UK / Serbia / Spain",
+    work: "All who are weary and heavy-laden, I will give you rest",
+    type: "Performance & Film",
+    materials: "Burden suit, stones, body sensors, sound and film \u2014 Mealasta beach, Isle of Lewis, 2024",
+    quote: "Who is Mark Fish? Nobody. And it is precisely in that nothing \u2014 in giving form to what has no fixed identity \u2014 that the work locates itself.",
+    statement: [
+      "Bosko Begovic is a writer, conceptual artist, and curator based in Barcelona. His work moves between performance, movement, and text, and is anchored in a single idea he returns to across two decades: formalizing the nothing. His artistic practice is signed Mark Fish. Mark Fish is not a character he plays or a mask he puts on \u2014 it is the name the work carries. Who is Mark Fish? Nobody. And it is precisely in that nothing \u2014 in giving form to what has no fixed identity \u2014 that the work locates itself, triangulating between theory, movement, and writing to trace the many ways nothing can appear.",
+      "Movement is the ground of the practice. For over twenty years Begovic trained and taught in Japanese movement disciplines \u2014 Aikido, Judo, and Tatami Ryu \u2014 approaching them not as sport or competition but as a long apprenticeship in attention: how weight, timing, contact, and intention organize a body in space. He no longer teaches. That accumulated bodily knowledge has instead become the material of his movement research and performance practice, where the body is treated as a site of inquiry rather than demonstration.",
+      "Since 2020 this research has developed through an ongoing collaboration with composer Amble Skuse, culminating in Interdependent Intersections \u2014 a non-hierarchical work for movement, sound, and video built around MiMU sensor gloves. Rather than having sound accompany movement in the usual way, the collaboration inverts the relationship: sound and technology are used to impede movement, and from that friction a different theory of how movement is made and known begins to emerge. The work explores interdependence, power, and co-operation, and has been developed across residencies and shown in France, Sweden, and beyond, with further chapters realized in Northern Ireland and Scotland.",
+      "Alongside his own practice, Begovic builds and sustains structures for other artists. In 2012 he co-founded and continues to direct Center424, a gallery and non-profit artist-run organization in Belgrade, and the Belgrade Artist in Residence program. He went on to co-found Virtual Studio Groups, an international online community of artists; the AIR Exchange Network, a monthly gathering of artist-run spaces; and Whatzart Lab, where he leads the technical architecture. His own writing appears in VSG Magazine, the publication of Virtual Studio Groups. As a curator his projects include 5 Years Collaboration \u2013 6 Spanish Artists (Center424, 2023) and Retrospective BAIR (Center424, 2021).",
+      "He has performed and exhibited internationally, and has participated in residencies at Pervasive Media Studio (Bristol), Konstepidemin (Gothenburg), APO33 (Nantes), An Lanntair (Isle of Lewis), and others. He works in long-term collaboration with Gordana Zikic, most recently on Oracle Birds, a project bringing together artificial intelligence, generative image systems, and embedded hardware.",
+      "Amble and Bosko visited the island of Lewis to develop their work All who are weary and heavy-laden, I will give you rest. The work explores the concept of burden as it relates to disabled people and uses stones as a metaphor. Bosko wears a suit loaded with stones, each representing a burden; as the burden suit becomes weighted his movement changes and his balance is unsettled. His movements are tracked by body sensors which trigger interviews from disabled people around the topic.",
+      "During their stay, Amble and Bo\u0161ko presented their work at one of An Lanntair\u2019s monthly Artist Gatherings, as well as creating a film of the piece at Mealasta beach."
+    ],
+    note: "Aras Nam Fir Chlis, 19\u201323 September 2024 \u00b7 Artist Gathering, An Lanntair, 20 September 2024.",
+    website: "",
+    instagram: "https://www.instagram.com/mark_a_fish/",
+    kind: "images",
+    images: [
+      { src: "/assets/images/exhibitions/swab-offsite-2026/bosko-begovic-1.jpg", caption: "All who are weary and heavy-laden, I will give you rest \u2014 Mealasta beach, Isle of Lewis" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/bosko-begovic-2.jpg", caption: "The burden suit, loaded with stones" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/bosko-begovic-3.jpg", caption: "All who are weary and heavy-laden, I will give you rest" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/bosko-begovic-4.jpg", caption: "Gathering stones from the beach" }
+    ]
+  }
+
 ];
 
 /* ─────────────────────────────────────────────────────────────
