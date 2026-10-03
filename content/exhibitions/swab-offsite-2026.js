@@ -276,11 +276,11 @@ module.exports = [
     }
   }
 
-  // CHECK THE VIDEO: the work text describes "Discovery of the Ancient Texas
-  // Civilization", Hilmsen, GERMANY, 2013 — but the linked YouTube video
-  // (5oYbJn2_H4w) is titled "Ancient Texas Pyramids in BELGIUM". Either the
-  // link is for a different piece in the series, or the YouTube title is loose.
-  // Confirm with Joshua. Bio and statement below are his as supplied.
+  // Video confirmed: D-_9hvbMNQc "Discovery of Ancient Texas Civilization",
+  // uploaded 2013, described as the Bronze Age Texas ruins found in Northern
+  // Germany. (The earlier link, 5oYbJn2_H4w, is the 2014 BELGIUM piece —
+  // Kortrijk, with BUDA — a different work in the same series.)
+  // Bio and statement are his as supplied.
   ,{
     name: "Joshua Goode",
     country: "USA",
@@ -298,7 +298,7 @@ module.exports = [
     instagram: "https://www.instagram.com/joshua_goode/",
     kind: "video",
     video: {
-      embed: "https://www.youtube.com/embed/5oYbJn2_H4w",
+      embed: "https://www.youtube.com/embed/D-_9hvbMNQc",
       poster: "/assets/images/exhibitions/swab-offsite-2026/joshua-goode-poster.jpg"
     }
   }
