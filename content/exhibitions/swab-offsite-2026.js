@@ -330,7 +330,7 @@ module.exports = [
   // Source images are low-resolution (833×472) — not upscaled.
   ,{
     name: "Amble Skuse & Bosko Begovic",
-    country: "UK / Serbia / Spain",
+    country: "UK / Spain",
     work: "All who are weary and heavy-laden, I will give you rest",
     type: "Performance & Film",
     materials: "Burden suit, stones, body sensors, sound and film \u2014 Mealasta beach, Isle of Lewis, 2024",
@@ -366,7 +366,7 @@ module.exports = [
   // draft built from her words, not her final text.
   ,{
     name: "Gordana Zikic",
-    country: "Spain / Serbia",
+    country: "Spain",
     work: "El Mar Hirviendo",
     type: "Painting & Photography",
     materials: "Oil on canvas, 2024 and 2025; photographic grid, 220 surfaces, 2011\u20132026",
@@ -413,6 +413,7 @@ module.exports = [
     note: "",
     website: "https://yanncourte.fr",
     instagram: "https://www.instagram.com/memoire.courte/",
+    pdf: { href: "/assets/docs/yann-courte-rivages.pdf", label: "Exhibition PDF" },
     kind: "images",
     images: [
       { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-1.jpg", caption: "Rivages \u2014 the ponds of la Malhaute, former sand quarries" },
