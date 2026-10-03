@@ -123,14 +123,12 @@ module.exports = [
     }
   }
 
-  // River's bio and materials are hers as supplied. Still to come: the work's
-  // TITLE, the text about the work, and the year — `work` is a placeholder and
-  // the statement holds only her bio. Image captions are descriptive only;
-  // replace them once the title is known.
+  // River's bio, title and materials are hers as supplied. Still to come: the
+  // text about the work, and the year. The statement holds only her bio.
   ,{
     name: "River Reishi",
     country: "USA",
-    work: "Title to come",
+    work: "The Land Gives Way",
     type: "Sculpture & Installation",
     materials: "Raku-fired ceramic, sand from the beach near Coos Bay, copper seaweed aged with Coos Bay seawater",
     quote: "",
@@ -142,8 +140,8 @@ module.exports = [
     instagram: "https://www.instagram.com/riverreishi/",
     kind: "images",
     images: [
-      { src: "/assets/images/exhibitions/swab-offsite-2026/river-reishi-1.jpg", caption: "Installation view" },
-      { src: "/assets/images/exhibitions/swab-offsite-2026/river-reishi-2.jpg", caption: "Installation view from above" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/river-reishi-1.jpg", caption: "The Land Gives Way \u2014 installation view" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/river-reishi-2.jpg", caption: "The Land Gives Way \u2014 view from above" },
       { src: "/assets/images/exhibitions/swab-offsite-2026/river-reishi-3.jpg", caption: "Detail \u2014 figure on driftwood, shell, sand" },
       { src: "/assets/images/exhibitions/swab-offsite-2026/river-reishi-4.jpg", caption: "Detail \u2014 raked sand and copper seaweed" },
       { src: "/assets/images/exhibitions/swab-offsite-2026/river-reishi-5.jpg", caption: "Detail \u2014 reverse view" }
