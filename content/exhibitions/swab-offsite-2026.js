@@ -396,13 +396,13 @@ module.exports = [
   // Yann's text is his own, kept in first person as he wrote it. The 28 images
   // are his files YC_rivages_01-28, in his numbering — the order of the panels
   // in the installation. The final image is the layout of the full line, a very
-  // wide strip (3600×379) that renders as a thin band. No year supplied.
+  // wide strip (3600×379) that renders as a thin band.
   ,{
     name: "Yann Court\u00e9",
     country: "France",
     work: "Rivages",
     type: "Photography",
-    materials: "28 panels printed on dibond, mounted unframed",
+    materials: "28 panels printed on dibond, mounted unframed \u2014 photographs 2021\u20132026",
     quote: "The landscapes I once took for natural turn out to be just as man-made as anything urban. Nothing here is truly wild.",
     statement: [
       "Photographer and filmmaker based in France, my work grows out of places and the movement between them. In the field, I work with a candid eye and an openly subjective view.",
