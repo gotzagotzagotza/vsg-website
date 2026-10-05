@@ -181,8 +181,8 @@ module.exports = [
     ]
   }
 
-  // Joint work with Heera Gul (@ammipesca). Statement is Seb's as supplied.
-  // Still to come: bios/CVs for both.
+  // Joint work with Heera Gul (@ammipesca). Both bios and the work statement
+  // are theirs as supplied; bio order follows the billing in the entry name.
   ,{
     name: "Seb Bradshaw & Heera Gul",
     country: "UK",
@@ -191,6 +191,8 @@ module.exports = [
     materials: "Card, recycled fabric, oil pastels and paints on recycled fabric, 2023",
     quote: "Stone circles are sites of enduring connection to the natural world, both ancient and modern.",
     statement: [
+      "Seb Bradshaw is a multidisciplinary artist and facilitator, exploring human occupation of land, and entangled relationships with nature. Drawing from English and Scottish folklore, she is fascinated by the way myths tell the stories of a place and its people, adapting and changing as society does.",
+      "Heera Gul is a multidisciplinary artist and facilitator whose practice explores visual articulations of hybrid and dual identities. With an interest in DIY practices and the regenerative use of scrap materials, she experiments with the layering of imagery, mediums and processes, often drawn from familial history and childhood, to produce records of memory and myth \u2014 forming an imagined archive that is anti-chronological and refuses classification.",
       "Stone circles are sites of enduring connection to the natural world, both ancient and modern. Whilst many sites remain a mystery, they signify human connection and ritual in land; modern installations of stone circles are used to mark protected spaces of community value.",
       "But I think what\u2019s in this piece is not only the joy of collaboratively assembling a textile collage based on ancient to modern spirituality, but Heera\u2019s interest in migration and belonging \u2014 via Islamic decorative motifs \u2014 and my interest in land use and close observation of nature, as the colourful backgrounds of the compass reference aerial maps, wood grain, lichen and moss."
     ],
