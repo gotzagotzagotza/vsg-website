@@ -20,6 +20,7 @@ module.exports = {
   // Drop the file into assets/images/exhibitions/swab-offsite-2026/ and
   // uncomment. Leave commented out and nothing is shown.
   logos: [
+    { src: '/assets/images/exhibitions/swab-offsite-2026/vsg-logo.png', alt: 'Virtual Studio Groups', height: 48 },
     { src: '/assets/images/exhibitions/swab-offsite-2026/swab-logo.png', alt: 'Swab Barcelona', height: 44 },
     { src: '/assets/images/exhibitions/swab-offsite-2026/cascadas-logo.png', alt: 'CasCaDas ArtSpace', height: 56 }
   ],
