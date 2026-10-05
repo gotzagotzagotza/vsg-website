@@ -450,6 +450,44 @@ module.exports = [
     ]
   }
 
+  // Bio and statement are hers, ENGLISH ONLY as Gordana asked — the docx also
+  // carries a Spanish version, deliberately not used. Images are in the order
+  // she sent them. The two .MOV files in her folder are deliberately not used.
+  // Captions are generic: individual works are untitled within the series.
+  ,{
+    name: "Theresa Wilshusen",
+    country: "USA / Spain",
+    work: "Extrinsic Observations",
+    type: "Mixed media & Installation",
+    materials: "Found objects in resin, collected materials and documentation, 2026",
+    quote: "Identity emerges through accumulation rather than a single defining image.",
+    statement: [
+      "Theresa Wilshusen (b. 1984) is an American, multidisciplinary artist. She holds a PhD in Art Production from the Universidad Polit\u00e9cnica de Valencia (Valencia, 2025). She received a technical degree in Ceramic Decoration from L\u2019Escola d\u2019Art La Industrial (Barcelona, 2019). She achieved a Master of Contemporary Artistic Creation at the Universitat de Barcelona (2016). Theresa graduated with a Bachelor of Fine Arts in painting and a Bachelor of Arts in Spanish Communication from Northwest Missouri State University (Maryville, 2008).",
+      "My practice investigates how identity is formed, perceived, and remembered through place, culture, and environment. Emerging from my doctoral research, which examined the expression of identity in death, my work has evolved toward a broader exploration of how individuals and locations leave traces that can be collected, interpreted, and translated into artistic form. I am interested in the fragments \u2014 material, visual, linguistic, and emotional \u2014 that together construct an authentic sense of identity.",
+      "I work through a process of investigation and collection. Landscapes, local materials, documentation, and personal encounters become components of a growing archive that reflects the character of a place or community. These elements are not treated as isolated artifacts, but as interconnected parts of a larger narrative. By combining multiple media and methods of documentation, I build layered works that function like mixed-media collages, allowing identity to emerge through accumulation rather than a single defining image.",
+      "Travel has been a crucial catalyst in my recent work. Having completed my PhD, I have become increasingly attentive to my immediate surroundings \u2014 particularly landscapes, entropic walking practices, language, and niche cultural traditions. As an immigrant living in Spain, I experience these environments through both familiarity and distance. This dual position allows me to observe how local communities express pride in their customs, while also questioning how these identities are perceived by outsiders.",
+      "My current series focuses on lesser-known places with strong, distinctive cultures. Extrinsic Observations aims to document and interpret how environment shapes collective beliefs and self-perception, and how exposure to a place can gradually construct an understanding of its identity. The final works bring together collected materials and documentation to reflect the layered, evolving nature of place-based identity. Through this process, I seek to create works that honor local specificity while acknowledging the subjective lens through which identity is always formed."
+    ],
+    note: "",
+    website: "https://twilshusen.com",
+    instagram: "https://www.instagram.com/wilshusen.fine.arts/",
+    kind: "images",
+    images: [
+      { src: "/assets/images/exhibitions/swab-offsite-2026/theresa-wilshusen-01.jpg", caption: "Extrinsic Observations \u2014 installation view" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/theresa-wilshusen-02.jpg", caption: "Extrinsic Observations \u2014 installation view" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/theresa-wilshusen-03.jpg", caption: "Extrinsic Observations \u2014 installation view" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/theresa-wilshusen-04.jpg", caption: "Extrinsic Observations \u2014 installation view" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/theresa-wilshusen-05.jpg", caption: "Extrinsic Observations \u2014 installation view" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/theresa-wilshusen-06.jpg", caption: "Extrinsic Observations \u2014 installation view" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/theresa-wilshusen-07.jpg", caption: "Extrinsic Observations \u2014 installation view" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/theresa-wilshusen-08.jpg", caption: "Extrinsic Observations \u2014 installation view" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/theresa-wilshusen-09.jpg", caption: "Extrinsic Observations \u2014 installation view" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/theresa-wilshusen-10.jpg", caption: "Extrinsic Observations \u2014 installation view" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/theresa-wilshusen-11.jpg", caption: "Extrinsic Observations \u2014 installation view" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/theresa-wilshusen-12.jpg", caption: "Extrinsic Observations \u2014 installation view" }
+    ]
+  }
+
 ];
 
 /* ─────────────────────────────────────────────────────────────
