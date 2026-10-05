@@ -1144,8 +1144,8 @@ function buildProjects(reflections) {
       <div style="background:#fff;padding:0.5rem 0.9rem;flex-shrink:0;display:flex;align-items:center"><img src="/assets/images/exhibitions/swab-offsite-2026/swab-logo.png" alt="Swab Barcelona" style="height:40px;width:auto;display:block"></div>
       <div>
         <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;opacity:0.75;margin-bottom:0.4rem">8–11 October 2026 · Barcelona</p>
-        <p style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.25rem"><strong>VSG at Swab OFF-Site</strong> — with Cascadas Gallery</p>
-        <p style="font-family:var(--font-serif);font-size:0.9rem;opacity:0.85">VSG joins Cascadas Gallery in OFF-Site, Swab Barcelona's programme for independent art spaces built through reuse and adaptation. Our presentation is online — enter it here, or by QR code at the fair.</p>
+        <p style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.25rem"><strong>VSG at Swab OFF-Site</strong> — with CasCaDas ArtSpace</p>
+        <p style="font-family:var(--font-serif);font-size:0.9rem;opacity:0.85">VSG joins CasCaDas ArtSpace in OFF-Site, Swab Barcelona's programme for independent art spaces built through reuse and adaptation. Our presentation is online — enter it here, or by QR code at Stand OFF3.</p>
       </div>
     </div>
     <a href="/projects/swab-offsite-2026/" style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,0.6);padding:0.65rem 1.25rem;white-space:nowrap;flex-shrink:0">View Exhibition →</a>
@@ -1938,12 +1938,12 @@ function buildExhibitionPage(artists, meta) {
 <div style="background:var(--accent);color:#fff;padding:3rem 0 2.5rem">
   <div class="container">
     <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:2rem;flex-wrap:wrap;margin-bottom:2rem">
-      <div>
+      <div style="flex:1 1 320px">
         <p style="font-family:var(--font-mono);font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;opacity:0.55;margin-bottom:1rem">${meta.kicker}</p>
         <h1 style="font-family:var(--font-serif);font-size:clamp(2rem,5vw,3.25rem);font-weight:400;line-height:1.15;margin-bottom:0.5rem">${meta.title}</h1>
         <p style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.06em;opacity:0.6;margin-bottom:0">${meta.subtitle}</p>
       </div>
-      ${meta.logo ? `<div style="background:#fff;padding:0.5rem 1rem;flex-shrink:0;display:flex;align-items:center;margin-top:0.25rem"><img src="${meta.logo.src}" alt="${meta.logo.alt}" style="height:44px;width:auto;display:block"></div>` : ''}
+      ${(meta.logos || (meta.logo ? [meta.logo] : [])).map(l => `<div style="background:#fff;padding:0.5rem 1rem;flex-shrink:0;display:flex;align-items:center;margin-top:0.25rem"><img src="${l.src}" alt="${l.alt}" style="height:${l.height || 44}px;width:auto;display:block"></div>`).join('')}
     </div>
     <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:1.75rem;max-width:720px">
       ${meta.intro.map(t => `<p style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.85;opacity:0.9;margin:0 0 0.75rem">${t}</p>`).join('\n      ')}
