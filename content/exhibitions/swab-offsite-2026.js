@@ -393,10 +393,10 @@ module.exports = [
     ]
   }
 
-  // Yann's text is his own, kept in first person as he wrote it. Image 2 is the
-  // installation layout of all 28 panels — a very wide strip (3600×379), so it
-  // renders as a thin band in the viewer. It is second so the square photograph
-  // makes the card thumbnail. No year supplied.
+  // Yann's text is his own, kept in first person as he wrote it. The 28 images
+  // are his files YC_rivages_01-28, in his numbering — the order of the panels
+  // in the installation. The final image is the layout of the full line, a very
+  // wide strip (3600×379) that renders as a thin band. No year supplied.
   ,{
     name: "Yann Court\u00e9",
     country: "France",
@@ -418,8 +418,35 @@ module.exports = [
     pdf: { href: "/assets/docs/yann-courte-rivages.pdf", label: "Exhibition PDF" },
     kind: "images",
     images: [
-      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-1.jpg", caption: "Rivages \u2014 the ponds of la Malhaute, former sand quarries" },
-      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-2.jpg", caption: "Rivages \u2014 installation of 28 panels, the full line" }
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-01.jpg", caption: "Rivages \u2014 1 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-02.jpg", caption: "Rivages \u2014 2 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-03.jpg", caption: "Rivages \u2014 3 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-04.jpg", caption: "Rivages \u2014 4 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-05.jpg", caption: "Rivages \u2014 5 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-06.jpg", caption: "Rivages \u2014 6 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-07.jpg", caption: "Rivages \u2014 7 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-08.jpg", caption: "Rivages \u2014 8 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-09.jpg", caption: "Rivages \u2014 9 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-10.jpg", caption: "Rivages \u2014 10 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-11.jpg", caption: "Rivages \u2014 11 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-12.jpg", caption: "Rivages \u2014 12 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-13.jpg", caption: "Rivages \u2014 13 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-14.jpg", caption: "Rivages \u2014 14 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-15.jpg", caption: "Rivages \u2014 15 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-16.jpg", caption: "Rivages \u2014 16 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-17.jpg", caption: "Rivages \u2014 17 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-18.jpg", caption: "Rivages \u2014 18 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-19.jpg", caption: "Rivages \u2014 19 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-20.jpg", caption: "Rivages \u2014 20 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-21.jpg", caption: "Rivages \u2014 21 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-22.jpg", caption: "Rivages \u2014 22 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-23.jpg", caption: "Rivages \u2014 23 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-24.jpg", caption: "Rivages \u2014 24 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-25.jpg", caption: "Rivages \u2014 25 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-26.jpg", caption: "Rivages \u2014 26 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-27.jpg", caption: "Rivages \u2014 27 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-28.jpg", caption: "Rivages \u2014 28 / 28" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/yann-courte-29-layout.jpg", caption: "Rivages \u2014 the installation, 28 panels in a continuous line" }
     ]
   }
 
