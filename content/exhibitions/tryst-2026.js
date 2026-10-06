@@ -41,9 +41,21 @@ module.exports = [
     statement: [
       "Bosko Begovic is a writer, conceptual artist, and curator based in Barcelona, working across performance, movement, and text under the name Mark Fish. His practice is anchored in the idea of formalizing the nothing — giving form to what has no fixed identity. Movement is its ground: more than 25 years of teaching in Japanese movement disciplines — Aikido, Judo, and Tatami Ryu — now feed a research practice that treats the body as a site of inquiry rather than display.",
       "Since 2020 he has collaborated with composer Amble Skuse on Interdependent Intersections, using MiMU gloves and sound to impede rather than accompany movement. In 2012 he co-founded and directs Center424 and the Belgrade Artist in Residence program, and has since co-founded Virtual Studio Groups, the AIR Exchange Network, and Whatzart Lab. His writing appears in VSG Magazine.",
-      "The work exists as a set of written instructions. At TRYST, visitors read the manual and carried it out themselves on the spot, using assorted cardboard boxes and a Sharpie — the piece completed by whoever chose to perform it."
+      "The work exists as a set of written instructions. At TRYST, visitors read the manual and carried it out themselves on the spot, using assorted cardboard boxes and a Sharpie — the piece completed by whoever chose to perform it.",
+      "[ RECIPE FOR PERFORMANCE ] Manual on how to beat the snake with the thunderbolt to produce rain.",
+      "1. Take the box, any box on your disposal, and write the word snake on it. Use a marker, or any kind of tool that would be suitable enough to produce written content/text.",
+      "2. Use another box to write thunderbolt on it, using the same or a different tool, both necessarily sufficient to produce written content — or, the text.",
+      "3. Now that you have the word snake and the word thunderbolt, take the thunderbolt and beat the snake with the bolt. How is this to be done? Take the box that has thunderbolt written on it and hit 10 times the box with the word snake.",
+      "4. As a result, write rain on a piece of paper, using the same or similar tool that can provide you with the function of producing text.",
+      "5. If you want more rain, repeat the procedure explained under section 3 and write rain on another piece of paper. Repeat the procedure depending on how much rain you would like.",
+      "6. Feel free to engage more people in the ritual, if you want to produce more rain.",
+      "7. This remedy is for general use and can be taken without the supervision of the shaman.",
+      "8. For help contact the nearest accredited shaman, or the nearest artist."
     ],
     note: "",
+    extraLinks: [
+      { label: "Watch the audience perform it →", href: "https://youtu.be/sdqPQ2-OUHQ" }
+    ],
     website: "https://thephilosopherscomic424.wordpress.com/",
     instagram: "https://www.instagram.com/mark_a_fish/",
     pdf: { href: "/assets/docs/tryst-2026-bosko-recipe.pdf", label: "The instructions" },
@@ -70,8 +82,10 @@ module.exports = [
     website: "https://www.ylvaeklof-com7.webnode.se",
     instagram: "https://www.instagram.com/ylvaeklof/",
     kind: "images",
-    images: []
-    , placeholder: "Photograph to follow"
+    images: [
+      { src: "/assets/images/exhibitions/tryst-2026/ylva-my-little-horse-47.jpg", caption: "My Little Horse — fir and wool, installed at TRYST" },
+      { src: "/assets/images/exhibitions/tryst-2026/ylva-my-little-horse-48.jpg", caption: "My Little Horse — the braided tail, 120 cm" }
+    ]
   }
 
   ,{
@@ -88,9 +102,11 @@ module.exports = [
     note: "",
     website: "https://yanncourte.fr",
     instagram: "https://www.instagram.com/memoire.courte/",
+    pdf: { href: "/assets/docs/tryst-2026-yann-lieu-commun.pdf", label: "The full series" },
     kind: "images",
-    images: []
-    , placeholder: "Photographs to follow"
+    images: [
+      { src: "/assets/images/exhibitions/tryst-2026/yann-lieu-commun-1.jpg", caption: "Lieu Commun (Commonplace) — all twelve photographs" }
+    ]
   }
 
   ,{
@@ -151,8 +167,9 @@ module.exports = [
     instagram: "",
     pdf: { href: "/assets/docs/tryst-2026-stuart-mayes-glitter-carpet.pdf", label: "The text" },
     kind: "images",
-    images: []
-    , placeholder: "The work is the text — open it below"
+    images: [
+      { src: "/assets/images/exhibitions/tryst-2026/stuart-mayes-text.jpg", caption: "Take Me With You (glitter carpet) — text on paper" }
+    ]
   }
 
   ,{
@@ -305,20 +322,22 @@ module.exports = [
   ,{
     name: "Juan Antonio Cerezuela",
     country: "Spain",
-    work: "",
-    type: "",
-    materials: "",
+    work: "I’m Still an Artist",
+    type: "Performance / Video",
+    materials: "Video documentation of performance, Fabra i Coats, Barcelona, 2019",
     quote: "",
     statement: [
       "Juan Antonio Cerezuela (Cartagena, 1982) is a visual artist, researcher and lecturer based in Barcelona. He holds a PhD in Visual Arts and Intermedia from the Universitat Politècnica de València. His practice encompasses installation, performance and site-specific intervention. His work has been presented at Arts Santa Mònica, Born Centre de Cultura i Memòria, Fabra i Coats and Espronceda Institute of Art & Culture (Barcelona), Centro Párraga and Fundación Gabarrón (Murcia), and Centro de Arte Tomás y Valiente (Madrid).",
       "In 2022 he took part in the Homesession Exchange programme with BelgradeAIR and completed a residency at Center 424 (Belgrade). He has also undertaken residencies at Casa Tres Patios (Medellín) and OCAD University (Toronto). His awards include the Alfonso X Culture Award in the New Media Art category (2025) and First Prize at Encuentros de Arte Contemporáneo (2024)."
     ],
-    note: "Wall tag not yet recovered — work title, medium and image to come.",
+    note: "Also shown in the online component, Works Beyond the Walls.",
     website: "https://www.juanantoniocerezuela.com/",
     instagram: "https://www.instagram.com/juan_antonio_cerezuela/",
-    kind: "images",
-    images: []
-    , placeholder: "Work details to follow"
+    kind: "video",
+    video: {
+      embed: "https://www.youtube.com/embed/7I1r_yriBN0",
+      poster: "/assets/images/exhibitions/works-beyond-the-walls/juan-antonio-video-poster.jpg"
+    }
   }
 
   ,{
@@ -332,12 +351,14 @@ module.exports = [
       "Kübra Köprülüoğlu Aşanlı (b. 1984) is a contemporary artist based in Türkiye whose research-driven practice explores ecological relationships, indigenous knowledge systems, and regenerative futures. Working across painting, installation, video, and sound, she investigates how cultural memory and human–nature connections can be reimagined through contemporary art.",
       "A photograph by Yann Courté immediately awakened a profound sensation within Kübra Köprülüoğlu Aşanlı, bringing to light the invisible, silent bond that exists between the artwork, the artist, and the viewer. The fluidly shifting colors became a vivid metaphor for the transience of time and subject, reminding her that every gaze reveals a uniquely personal emotion. Captivated by this dynamic interplay, she felt an undeniable impulse to breathe life into the still image and transform it into a moving visual journey that captures the ever-changing nature of our perception."
     ],
-    note: "Made in response to a photograph by Yann Courté, also shown at TRYST.",
+    note: "Made in response to a photograph by Yann Courté, also shown at TRYST. A collaboration between the two artists.",
     website: "https://kubrakopruluogluasanli.myportfolio.com",
     instagram: "https://www.instagram.com/noooneelsebutme/",
-    kind: "images",
-    images: []
-    , placeholder: "Video to follow"
+    kind: "video",
+    video: {
+      embed: "https://www.youtube.com/embed/ZhDxSBJxI9M",
+      poster: "/assets/images/exhibitions/works-beyond-the-walls/kubra-poster.png"
+    }
   }
 
   ,{
@@ -354,9 +375,11 @@ module.exports = [
     note: "",
     website: "https://unjuan.com",
     instagram: "https://www.instagram.com/juandavidgalindoguarin/",
-    kind: "images",
-    images: []
-    , placeholder: "Video to follow"
+    kind: "video",
+    video: {
+      embed: "https://www.youtube.com/embed/x2m21N8tYZc",
+      poster: "/assets/images/exhibitions/works-beyond-the-walls/juan-david-poster.jpg"
+    }
   }
 
 ];
