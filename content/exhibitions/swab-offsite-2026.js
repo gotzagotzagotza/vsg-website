@@ -324,7 +324,7 @@ module.exports = [
   }
 
   // Joint work with composer Amble Skuse. Credit line as given by the artists
-  // puts Amble first ("Amble Skuse & Boško Begović, Aras Nam Fir Chlis,
+  // puts Amble first ("Amble Skuse & Bosko Begovic, Aras Nam Fir Chlis,
   // 19-23 September 2024") — kept that order, and her bio leads to match.
   // Bosko signs his artistic practice Mark Fish, which the bio explains; the
   // entry uses his own name because the work is credited that way.
@@ -345,11 +345,17 @@ module.exports = [
       "Alongside his own practice, Begovic builds and sustains structures for other artists. In 2012 he co-founded and continues to direct Center424, a gallery and non-profit artist-run organization in Belgrade, and the Belgrade Artist in Residence program. He went on to co-found Virtual Studio Groups, an international online community of artists; the AIR Exchange Network, a monthly gathering of artist-run spaces; and Whatzart Lab, where he leads the technical architecture. His own writing appears in VSG Magazine, the publication of Virtual Studio Groups. As a curator his projects include 5 Years Collaboration \u2013 6 Spanish Artists (Center424, 2023) and Retrospective BAIR (Center424, 2021).",
       "He has performed and exhibited internationally, and has participated in residencies at Pervasive Media Studio (Bristol), Konstepidemin (Gothenburg), APO33 (Nantes), An Lanntair (Isle of Lewis), and others. He works in long-term collaboration with Gordana Zikic, most recently on Oracle Birds, a project bringing together artificial intelligence, generative image systems, and embedded hardware.",
       "Amble and Bosko visited the island of Lewis to develop their work All who are weary and heavy-laden, I will give you rest. The work explores the concept of burden as it relates to disabled people and uses stones as a metaphor. Bosko wears a suit loaded with stones, each representing a burden; as the burden suit becomes weighted his movement changes and his balance is unsettled. His movements are tracked by body sensors which trigger interviews from disabled people around the topic.",
-      "During their stay, Amble and Bo\u0161ko presented their work at one of An Lanntair\u2019s monthly Artist Gatherings, as well as creating a film of the piece at Mealasta beach."
+      "During their stay, Amble and Bosko presented their work at one of An Lanntair\u2019s monthly Artist Gatherings, as well as creating a film of the piece at Mealasta beach."
     ],
     note: "Aras Nam Fir Chlis, 19\u201323 September 2024 \u00b7 Artist Gathering, An Lanntair, 20 September 2024.",
     website: "",
-    instagram: "https://www.instagram.com/mark_a_fish/",
+    instagram: "",
+    extraLinks: [
+      { label: "Amble Skuse", href: "https://ambleskuse.net/about/" },
+      { label: "Amble on Instagram", href: "https://www.instagram.com/ambleskuse/" },
+      { label: "Bosko Begovic", href: "https://thephilosopherscomic424.wordpress.com/" },
+      { label: "Bosko on Instagram", href: "https://www.instagram.com/mark_a_fish/" }
+    ],
     kind: "images",
     images: [
       { src: "/assets/images/exhibitions/swab-offsite-2026/bosko-begovic-1.jpg", caption: "All who are weary and heavy-laden, I will give you rest \u2014 Mealasta beach, Isle of Lewis" },

@@ -2143,6 +2143,9 @@ ${meta.curatorial && meta.curatorial.length ? `
     if (a.instagram) links.push('<a href="' + escHtml(a.instagram) + '" target="_blank" rel="noopener">Instagram</a>');
     if (a.youtube) links.push('<a href="' + escHtml(a.youtube) + '" target="_blank" rel="noopener">YouTube</a>');
     if (a.x) links.push('<a href="' + escHtml(a.x) + '" target="_blank" rel="noopener">X</a>');
+    if (a.extraLinks) a.extraLinks.forEach(function(l) {
+      links.push('<a href="' + escHtml(l.href) + '" target="_blank" rel="noopener">' + escHtml(l.label) + '</a>');
+    });
     if (a.pdf) links.push('<a href="' + escHtml(a.pdf.href) + '" download target="_blank" rel="noopener">' + escHtml(a.pdf.label || 'Download PDF') + ' \u2193</a>');
     if (links.length) html += '<div class="wbtw-panel-links">' + links.join('') + '</div>';
     panel.innerHTML = html;
