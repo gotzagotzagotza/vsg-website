@@ -1184,6 +1184,38 @@ function buildProjects(reflections) {
   </div>
 </div>
 
+<div class="section-block">
+  <div class="container">
+    <p class="section-label">Exhibitions</p>
+    <h2 class="section-title" style="margin-bottom:2rem">Where VSG has shown</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem" class="exh-past-grid">
+
+      <a href="/projects/swab-offsite-2026/" style="display:block;color:inherit;border:1px solid var(--gray-mid);padding:1.5rem;text-decoration:none">
+        <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-text);margin-bottom:0.75rem">8–11 October 2026 · Barcelona</p>
+        <p style="font-family:var(--font-serif);font-size:1.15rem;margin-bottom:0.5rem"><strong>What a Place Holds</strong></p>
+        <p style="font-family:var(--font-serif);font-size:0.9rem;line-height:1.7;color:var(--gray-text);margin-bottom:1rem">Swab Barcelona, OFF-Site, within Porous Practices by CasCaDas ArtSpace. Nineteen works, online.</p>
+        <span style="font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.06em;color:var(--accent)">Enter the exhibition →</span>
+      </a>
+
+      <a href="/projects/tryst-2026/" style="display:block;color:inherit;border:1px solid var(--gray-mid);padding:1.5rem;text-decoration:none">
+        <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-text);margin-bottom:0.75rem">7–9 August 2026 · Torrance, California</p>
+        <p style="font-family:var(--font-serif);font-size:1.15rem;margin-bottom:0.5rem"><strong>VSG at TRYST</strong></p>
+        <p style="font-family:var(--font-serif);font-size:0.9rem;line-height:1.7;color:var(--gray-text);margin-bottom:1rem">The physical booth at the TRYST International Alternative Art Fair. Seventeen artists, with photographs and film from the fair.</p>
+        <span style="font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.06em;color:var(--accent)">See the booth →</span>
+      </a>
+
+      <a href="/projects/works-beyond-the-walls/" style="display:block;color:inherit;border:1px solid var(--gray-mid);padding:1.5rem;text-decoration:none">
+        <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-text);margin-bottom:0.75rem">7–9 August 2026 · Online</p>
+        <p style="font-family:var(--font-serif);font-size:1.15rem;margin-bottom:0.5rem"><strong>Works Beyond the Walls</strong></p>
+        <p style="font-family:var(--font-serif);font-size:0.9rem;line-height:1.7;color:var(--gray-text);margin-bottom:1rem">The online component shown alongside the TRYST booth, for artists who could not travel.</p>
+        <span style="font-family:var(--font-mono);font-size:0.75rem;letter-spacing:0.06em;color:var(--accent)">Enter the exhibition →</span>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+
 <div class="section-block" style="background:var(--gray-light)">
   <div class="container">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;margin-bottom:3rem">
@@ -1288,7 +1320,7 @@ function buildEvents(events) {
     <p style="font-family:var(--font-mono);font-size:0.72rem;color:var(--gray-text);margin-bottom:0.2rem">${e.venue} · ${e.location}</p>
     <p style="font-family:var(--font-mono);font-size:0.7rem;color:var(--gray-text)">${range}${e.artists_count ? ` · ${e.artists_count} artists` : ''}</p>
   </div>`;
-    const href = e.online_link || e.article_link;
+    const href = e.article_link || e.online_link;
     return href
       ? `<a href="${href}" style="display:block;color:inherit;border:1px solid var(--gray-mid);padding:0;text-decoration:none;transition:border-color 0.15s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--gray-mid)'">${inner}</a>`
       : `<div style="border:1px solid var(--gray-mid)">${inner}</div>`;
