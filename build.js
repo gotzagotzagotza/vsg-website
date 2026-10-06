@@ -1308,7 +1308,7 @@ function buildEvents(events) {
   function pastCard(e) {
     const range = dateRange(e);
     const imgHtml = e.image
-      ? `<div style="aspect-ratio:4/3;background:var(--gray-light);display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="${e.image}" alt="${e.title}" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;padding:0.75rem;box-sizing:border-box"></div>`
+      ? `<div style="aspect-ratio:4/3;background:var(--gray-light);display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="${e.image}" alt="${e.title}" loading="lazy" style="width:100%;height:100%;object-fit:${e.image_fit || 'cover'};display:block;padding:0.75rem;box-sizing:border-box"></div>`
       : `<div style="aspect-ratio:4/3;background:var(--gray-light)"></div>`;
     const onlineTag = e.online_link
       ? `<span style="display:inline-block;font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;background:var(--accent);color:#fff;padding:0.15rem 0.5rem;margin-left:0.5rem;vertical-align:middle">Online</span>`
