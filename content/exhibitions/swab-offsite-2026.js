@@ -184,7 +184,7 @@ module.exports = [
   // Joint work with Heera Gul (@ammipesca). Both bios and the work statement
   // are theirs as supplied; bio order follows the billing in the entry name.
   ,{
-    name: "Seb Bradshaw & Heera Gul",
+    name: "Seb Bradshaw and Heera Gul",
     country: "UK",
     work: "Stone Compass",
     type: "Textile collage",
@@ -272,7 +272,7 @@ module.exports = [
   // first; kept Kübra first here as Gordana presented it, with both roles named
   // in `note` so the credit is unambiguous either way.
   ,{
-    name: "K\u00fcbra K\u00f6pr\u00fcl\u00fco\u011flu A\u015fanl\u0131 & Melih A\u015fanl\u0131",
+    name: "K\u00fcbra K\u00f6pr\u00fcl\u00fco\u011flu A\u015fanl\u0131 and Melih A\u015fanl\u0131",
     country: "T\u00fcrkiye",
     work: "Wisdom Keepers Igorot and Romani",
     type: "Video art installation",
@@ -331,7 +331,7 @@ module.exports = [
   // entry uses his own name because the work is credited that way.
   // Source images are low-resolution (833×472) — not upscaled.
   ,{
-    name: "Amble Skuse & Bosko Begovic",
+    name: "Amble Skuse and Bosko Begovic",
     country: "UK / Spain",
     work: "All who are weary and heavy-laden, I will give you rest",
     type: "Performance & Film",

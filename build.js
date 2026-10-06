@@ -1941,13 +1941,13 @@ function buildExhibitionPage(artists, meta) {
       <div style="flex:1 1 320px">
         <p style="font-family:var(--font-mono);font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;opacity:0.55;margin-bottom:1rem">${meta.kicker}</p>
         <h1 style="font-family:var(--font-serif);font-size:clamp(2rem,5vw,3.25rem);font-weight:400;line-height:1.15;margin-bottom:0.5rem">${meta.title}</h1>
-        <p style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.06em;opacity:0.6;margin-bottom:0">${meta.subtitle}</p>
+        <p style="font-family:var(--font-mono);font-size:0.95rem;line-height:1.6;letter-spacing:0.04em;opacity:0.92;margin-bottom:0">${meta.subtitle}</p>
       </div>
       ${(meta.logos || (meta.logo ? [meta.logo] : [])).map(l => `<div style="background:#fff;padding:0.5rem 1rem;flex-shrink:0;display:flex;align-items:center;margin-top:0.25rem"><img src="${l.src}" alt="${l.alt}" style="height:${l.height || 44}px;width:auto;display:block"></div>`).join('')}
     </div>
     <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:1.75rem;max-width:720px">
       ${meta.intro.map(t => `<p style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.85;opacity:0.9;margin:0 0 0.75rem">${t}</p>`).join('\n      ')}
-      <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.08em;opacity:0.55;margin:0">${meta.credit}</p>
+      <p style="font-family:var(--font-mono);font-size:0.85rem;line-height:1.6;letter-spacing:0.05em;opacity:0.9;margin:0">${meta.credit}</p>
     </div>
   </div>
 </div>
