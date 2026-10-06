@@ -153,14 +153,13 @@ module.exports = [
 
   // Ylva's work text and materials are theirs as supplied; the opening bio
   // paragraph is their own artist text, the second is condensed from their CV.
-  // Ylva uses they/them. Still to come: the YEAR of the work.
-  // Image captions are descriptive only.
+  // Ylva uses they/them. Image captions are descriptive only.
   ,{
     name: "Ylva Ekl\u00f6f",
     country: "Sweden",
     work: "Comfort / In my own skin",
     type: "Screen print & Installation",
-    materials: "Cotton sateen, water-based textile ink, down duvet and pillow, mattress, outgrown child\u2019s bed",
+    materials: "Cotton sateen, water-based textile ink, down duvet and pillow, mattress, outgrown child\u2019s bed, 2022",
     quote: "By replicating my skin I keep myself safe and sound.",
     statement: [
       "Ylva Ekl\u00f6f (b. 1986, Stockholm) is a multidisciplinary artist based in Stockholm who works in various rural places across Sweden. Nature and human\u2013nature relationships, a sense of loss and longing, childhood memories and a quest to orient themselves in time and space are recurring themes; materiality, and the origins and connotations of materials, is equally central to their practice. Ekl\u00f6f creates works that open the doors to conversations while also offering a moment of rest and comfort.",
@@ -512,6 +511,33 @@ module.exports = [
     video: {
       embed: "https://player.vimeo.com/video/326782961",
       poster: "/assets/images/exhibitions/swab-offsite-2026/juan-david-galindo-poster.jpg"
+    }
+  }
+
+  // YouTube WOnyA2YQOkw, 65s. NOTE: the upload is still auto-titled
+  // "6 oktober 2026" on YouTube, not "Water Lily Women" — worth asking Louise
+  // to rename it, since anyone clicking through sees the placeholder title.
+  // No year supplied for the work; only the duration is stated here.
+  ,{
+    name: "Louise Norstr\u00f6m",
+    country: "Sweden",
+    work: "Water Lily Women",
+    type: "Video",
+    materials: "Video, 1\u201905 min",
+    quote: "In the water a sense of weightlessness emerges, where the body becomes free.",
+    statement: [
+      "Ruth Louise Norstr\u00f6m is a Swedish visual artist, photographer, and filmmaker working across oil, acrylic, photography, and video. Her artistic background includes studies at Valand Academy and Fornby Folk High School, and she was awarded the Ludvika Municipality Cultural Scholarship in 2023.",
+      "Her work draws on a neo-figurative tradition with expressionist elements, where the figurative meets the abstract. She explores atmospheric and emotionally charged motifs, from paintings of solitary figures to video works capturing human presence in nature, creating spaces for reflection on relationships and existence.",
+      "The work was filmed in a warm forest lake during midsummer in Sweden, capturing women of different ages carried by the water. Their bodies are free, moving softly and rhythmically in a dance around the camera.",
+      "My intention with the work is to explore water as a primal and life-giving place, an ancestral environment reminiscent of existence in the womb. In the water, a sense of weightlessness emerges where the body becomes free, allowing women of different ages to meet in a soft, shared flow. The piece is a tribute to the body, security, and the supportive element that connects us all."
+    ],
+    note: "",
+    website: "",
+    instagram: "https://www.instagram.com/_ruth.louise_/",
+    kind: "video",
+    video: {
+      embed: "https://www.youtube.com/embed/WOnyA2YQOkw",
+      poster: "/assets/images/exhibitions/swab-offsite-2026/louise-norstrom-poster.jpg"
     }
   }
 

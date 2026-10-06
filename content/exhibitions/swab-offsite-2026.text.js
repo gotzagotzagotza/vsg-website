@@ -51,7 +51,7 @@ module.exports = {
 
   // Grey note under the artist grid — context on Swab / OFF-Site.
   // Set to '' to hide it.
-  footerNote: 'Artists: Sarah Horowitz, Kai Rennes, Patricia Chow, Melih A\u015fanl\u0131, River Reishi, Ylva Ekl\u00f6f, Seb Bradshaw and Heera Gul, Radina Kordova, Juan Pablo Meneses, Juan David Galindo, K\u00fcbra K\u00f6pr\u00fcl\u00fco\u011flu A\u015fanl\u0131 and Melih A\u015fanl\u0131, Joshua Goode, Amble Skuse and Bosko Begovic, Gordana Zikic, Yann Court\u00e9, Theresa Wilshusen.',
+  footerNote: 'Artists: Sarah Horowitz, Kai Rennes, Patricia Chow, Melih A\u015fanl\u0131, River Reishi, Ylva Ekl\u00f6f, Seb Bradshaw and Heera Gul, Radina Kordova, Juan Pablo Meneses, Juan David Galindo, K\u00fcbra K\u00f6pr\u00fcl\u00fco\u011flu A\u015fanl\u0131 and Melih A\u015fanl\u0131, Joshua Goode, Amble Skuse and Bosko Begovic, Gordana Zikic, Yann Court\u00e9, Theresa Wilshusen, Louise Norstr\u00f6m.',
 
   // Search-engine / social description
   description: 'What a Place Holds \u2014 Virtual Studio Groups at Swab Barcelona 2026, within Porous Practices by CasCaDas ArtSpace, in the OFF-Site programme. Fifteen works that take their material from a site, stay with one place for years, or use space nobody built for art. 8\u201311 October 2026, Stand OFF3.'
