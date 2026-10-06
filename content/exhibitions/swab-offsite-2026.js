@@ -488,6 +488,33 @@ module.exports = [
     ]
   }
 
+  // Vimeo 326782961, confirmed via their API: "Metroata", 379s = 6'19, 2019.
+  // The share link Gordana sent carried a long turnstile query string; the
+  // embed URL is kept clean so the builder can append ?autoplay=1 on play.
+  // Poster is Vimeo's own still, saved locally rather than hotlinked.
+  ,{
+    name: "Juan David Galindo",
+    country: "Spain",
+    work: "Metroata",
+    type: "Video performance",
+    materials: "Video performance, 6\u201919 min, 2019",
+    quote: "A bittersweet declaration of love to subway travelers.",
+    statement: [
+      "Juan David Galindo Guarin is an artist, educator, and cultural mediator based in Barcelona. His practice moves across performance, video, installation, and archive, exploring the processes of subjectivation within Western capitalist culture \u2014 using his own body as case study through autoethnography, performance, and fiction. His work examines identity consumption, hyperproductivity, and self-image in the digital age, seeking points of encounter and collective recognition.",
+      "He holds a degree in Fine Arts and Design from Escola Massana, Barcelona, and completed the Independent Studies Programme at MACBA. He has participated in residencies at Hangar Barcelona and La Escocesa, and has exhibited internationally including at MACBA Barcelona, Blueproject Foundation, Fabra i Coats, and Centro Cultural Las Cigarreras Alicante, with solo shows in Barcelona, Belgrade, and L\u2019Hospitalet.",
+      "Metroata is a performative talk piece that becomes a video performance that Juan David Galindo carries out in the subway cars of Barcelona. It is a bittersweet declaration of love to subway travelers. The speech is made up of singing appropriated songs along with a narration of a personal erotic experience in the subway.",
+      "The act of producing a \u201cwe\u201d is explored from interrupting the \u201cnormal circulation\u201d flows in the public transport system and is intended to transform the discomfort towards the other into complicity. In Metroata lies a question about the forms of socialization while experiencing discomfort and eroticism."
+    ],
+    note: "",
+    website: "https://unjuan.com",
+    instagram: "",
+    kind: "video",
+    video: {
+      embed: "https://player.vimeo.com/video/326782961",
+      poster: "/assets/images/exhibitions/swab-offsite-2026/juan-david-galindo-poster.jpg"
+    }
+  }
+
 ];
 
 /* ─────────────────────────────────────────────────────────────
