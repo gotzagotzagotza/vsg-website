@@ -19,10 +19,9 @@ module.exports = {
   // Optional fair / gallery logo shown top right of the dark header.
   // Drop the file into assets/images/exhibitions/swab-offsite-2026/ and
   // uncomment. Leave commented out and nothing is shown.
+  // One shared white panel holding all three marks: Swab, CasCaDas, VSG.
   logos: [
-    { src: '/assets/images/exhibitions/swab-offsite-2026/vsg-logo.png', alt: 'Virtual Studio Groups', height: 48 },
-    { src: '/assets/images/exhibitions/swab-offsite-2026/swab-logo.png', alt: 'Swab Barcelona', height: 44 },
-    { src: '/assets/images/exhibitions/swab-offsite-2026/cascadas-logo.png', alt: 'CasCaDas ArtSpace', height: 56 }
+    { src: '/assets/images/exhibitions/swab-offsite-2026/logos-combined.png', alt: 'Swab Barcelona · CasCaDas ArtSpace · Virtual Studio Groups', height: 62 }
   ],
 
   // Short opening text inside the dark header. One string per paragraph.
