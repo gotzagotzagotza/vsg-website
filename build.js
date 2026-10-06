@@ -1246,7 +1246,7 @@ function buildEvents(events) {
   function featuredHero(e) {
     const range = dateRange(e);
     const imgHtml = e.image
-      ? `<img src="${e.image}" alt="${e.title}" style="width:100%;height:100%;object-fit:contain;object-position:center;display:block;padding:2rem;box-sizing:border-box">`
+      ? `<img src="${e.image}" alt="${e.title}" style="width:100%;height:100%;object-fit:contain;object-position:center;display:block;padding:0.75rem;box-sizing:border-box">`
       : `<div style="width:100%;height:100%;background:var(--gray-mid)"></div>`;
     const onlineTag = e.online_link
       ? `<a href="${e.online_link}" class="exh-online-tag">● Online Exhibition</a>`
@@ -1316,8 +1316,8 @@ function buildEvents(events) {
 .exh-cta-btn { display:inline-block;font-family:var(--font-mono);font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;background:var(--accent);color:#fff;padding:0.75rem 1.5rem;min-height:48px;line-height:1.8;align-self:flex-start;text-decoration:none; }
 @media (max-width: 720px) {
   .exh-hero-grid { grid-template-columns: 1fr; min-height: 0; }
-  .exh-hero-img { min-height: 0; height: auto; padding: 1.5rem 2rem; box-sizing: border-box; }
-  .exh-hero-img img { width: auto !important; max-width: 100%; height: 60px !important; object-fit: contain !important; padding: 0 !important; }
+  .exh-hero-img { min-height: 0; height: auto; padding: 0.75rem; box-sizing: border-box; }
+  .exh-hero-img img { width: 100% !important; max-width: 100%; height: auto !important; max-height: 60vh; object-fit: contain !important; padding: 0 !important; }
   .exh-hero-text { padding: 1.5rem 1.25rem 2rem; }
   .exh-online-tag { font-size:0.85rem; padding:0.35rem 0.9rem; margin-bottom:1.25rem; }
   .exh-hero-venue { font-size:0.85rem; color:#444; }
