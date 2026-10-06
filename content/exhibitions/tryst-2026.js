@@ -13,12 +13,14 @@ module.exports = [
 
   {
     name: "Gordana Zikic",
-    country: "Spain",
+    country: "Barcelona, Spain",
     work: "Red Deer",
     type: "Installation",
     materials: "Found and collected objects with small sculptures",
     quote: "",
     statement: [
+      "Gordana Zikic is an interdisciplinary artist, researcher, and community builder based in Barcelona. Over twenty years her practice has moved across painting, installation, performance, photography, ritual objects, grounded in doctoral research into the role of the contemporary artist as a shaman-like figure. Her work has been shown internationally, including at Bronx River Art Center New York (2022), Supermarket Stockholm and Juxtapose Aarhus (2025), with solo shows in Stockholm, Valencia, and Barcelona. She has participated in residencies at Konstepidemin Gothenburg, Pervasive Media Studio Bristol, and La Escocesa Barcelona, where she is currently a member.",
+      "She co-directs Belgrade Artist in Residence (BAIR, est. 2012) and Virtual Studio Groups (VSG, est. 2021), an international peer community publishing VSG Magazine. She is co-founder of the AIR Exchange Network, connecting artist residencies and artist-run spaces internationally, and Whatzart Lab, a platform where working artists evaluate each other\u2019s work. She holds a doctorate in fine arts, Faculty of Fine Arts, Belgrade.",
       "A selection of objects from the doctoral installation Red Deer. The work brings together objects found and collected alongside small sculptures. Through the artistic process, these objects are transformed, becoming carriers of personal, symbolic, and mythological meaning where individual narrative meets universal ones.",
       "The research behind Red Deer investigates the contemporary artist as a shaman-like figure, one who transgresses the limits of everyday life and expands consciousness. The concept of the installation was to transform the gallery into a temple, with wall drawings, masks, and objects together creating an immersive space. What is shown here is a fragment of that work."
     ],
@@ -26,7 +28,10 @@ module.exports = [
     website: "https://gordanazikic.wordpress.com",
     instagram: "https://www.instagram.com/gotza_gotza/",
     extraLinks: [
-      { label: "Watch the installation →", href: "https://youtube.com/shorts/jMpVUc0Tf1o" }
+      { label: "Watch the installation →", href: "https://youtube.com/shorts/jMpVUc0Tf1o" },
+      { label: "AIR Exchange Network", href: "https://airexchangenetwork.wordpress.com" },
+      { label: "Whatzart Lab", href: "https://whatzartlab.com" },
+      { label: "Email", href: "mailto:dragon277@gmail.com" }
     ],
     kind: "images",
     images: [

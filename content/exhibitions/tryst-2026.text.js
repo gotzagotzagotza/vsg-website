@@ -23,6 +23,15 @@ module.exports = {
 
   statusLabel: '\u25cf Past exhibition',
 
+  // The other half of the TRYST presentation
+  companion: {
+    label: 'Two parts \u00b7 This is the booth',
+    title: 'There was also an online exhibition',
+    text: 'Sixteen more VSG artists were shown online beside the booth, on an iPad with headphones, for those who could not send work to California. Different artists, different works.',
+    href: '/projects/works-beyond-the-walls/',
+    cta: 'Enter Works Beyond the Walls \u2192'
+  },
+
   curatorialLabel: 'About the fair',
   curatorial: [
     'Sponsored by the Torrance Art Museum and the City of Torrance, TRYST exists to foster connection and collaboration between artist cooperatives around the world. Participation is free to groups \u2014 TRYST even provides free local hotel accommodations for those coming from far away. This year, international groups made up 21% of the fair\u2019s presenters; they came from 13 different countries, from Australia to Ukraine.',

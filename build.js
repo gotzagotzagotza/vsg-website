@@ -1953,6 +1953,16 @@ function buildExhibitionPage(artists, meta) {
 .wbtw-panel-links a { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.06em; color: inherit; border-bottom: 1px solid currentColor; padding-bottom: 1px; }
 .wbtw-panel-links a:hover { color: var(--accent); }
 
+/* ── Companion exhibition band ── */
+.companion { background: var(--accent); color: #fff; padding: 2.25rem 0; }
+.companion-inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
+.companion-label { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 0.6rem; }
+.companion-title { font-family: var(--font-serif); font-size: clamp(1.25rem, 3vw, 1.75rem); font-weight: 400; line-height: 1.25; margin-bottom: 0.5rem; }
+.companion-text { font-family: var(--font-serif); font-size: 1rem; line-height: 1.7; max-width: 620px; margin-bottom: 0; }
+.companion-cta { font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); background: #fff; padding: 1rem 1.75rem; white-space: nowrap; flex-shrink: 0; text-decoration: none; font-weight: 600; }
+.companion-cta:hover, .companion-cta:focus-visible { background: var(--gray-light); }
+@media (max-width: 720px) { .companion-cta { width: 100%; text-align: center; } }
+
 /* ── Documentation: videos + installation photographs ── */
 .doc-section { border-top: 1px solid var(--gray-mid); padding: 3.5rem 0; }
 .doc-label { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gray-text); margin-bottom: 1.25rem; }
@@ -2023,6 +2033,18 @@ ${meta.curatorial && meta.curatorial.length ? `
   <div class="container" style="max-width:720px">
     ${meta.curatorialLabel ? `<p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-text);margin-bottom:1.25rem">${meta.curatorialLabel}</p>` : ''}
     ${meta.curatorial.map(t => `<p style="font-family:var(--font-serif);font-size:1rem;line-height:1.85;color:var(--gray-text);margin:0 0 1.1rem">${t}</p>`).join('\n    ')}
+  </div>
+</div>` : ''}
+
+${meta.companion ? `
+<div class="companion">
+  <div class="container companion-inner">
+    <div>
+      <p class="companion-label">${meta.companion.label}</p>
+      <p class="companion-title">${meta.companion.title}</p>
+      <p class="companion-text">${meta.companion.text}</p>
+    </div>
+    <a href="${meta.companion.href}" class="companion-cta">${meta.companion.cta}</a>
   </div>
 </div>` : ''}
 
@@ -2314,6 +2336,13 @@ function build() {
     intro: ["Works Beyond the Walls brings together artists taking part from across the world — installations, sculpture, and moving image shown online and inside the gallery at once. At TRYST in Los Angeles you'll find them on screen beside the physical works; here, they're open to everyone."],
     credit: 'Online Exhibition · August 7–9, 2026 · TRYST, Los Angeles',
     statusLabel: '● Online now',
+    companion: {
+      label: 'Two parts · This is the online exhibition',
+      title: 'There was also a physical booth at TRYST',
+      text: 'Seventeen VSG artists shipped work to Torrance for the fair itself, installed in space 42. Photographs and film from the three days are on that page.',
+      href: '/projects/tryst-2026/',
+      cta: 'See the booth \u2192'
+    },
     curatorial: [],
     footerNote: "Online exhibition curated by Gordana Zikic. <a href=\"/projects/tryst-2026/\" style=\"color:inherit;border-bottom:1px solid currentColor\">See the physical booth at TRYST \u2192</a> TRYST is the world's largest international art fair dedicated to artist-run spaces, collectives, and independent organizations — now in its fourth edition, prioritizing collaboration, experimentation, and cultural dialogue over commercial structures.",
     description: 'Works Beyond the Walls — a VSG online exhibition at TRYST Art Fair, Los Angeles, August 7–9, 2026. Installations, sculpture, and moving image from artists around the world.'
