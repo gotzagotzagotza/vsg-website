@@ -517,13 +517,13 @@ module.exports = [
   // YouTube WOnyA2YQOkw, 65s. NOTE: the upload is still auto-titled
   // "6 oktober 2026" on YouTube, not "Water Lily Women" — worth asking Louise
   // to rename it, since anyone clicking through sees the placeholder title.
-  // No year supplied for the work; only the duration is stated here.
+  // The work is 2021; the YouTube upload is from 2026.
   ,{
     name: "Louise Norstr\u00f6m",
     country: "Sweden",
     work: "Water Lily Women",
     type: "Video",
-    materials: "Video, 1\u201905 min",
+    materials: "Video, 1\u201905 min, 2021",
     quote: "In the water a sense of weightlessness emerges, where the body becomes free.",
     statement: [
       "Ruth Louise Norstr\u00f6m is a Swedish visual artist, photographer, and filmmaker working across oil, acrylic, photography, and video. Her artistic background includes studies at Valand Academy and Fornby Folk High School, and she was awarded the Ludvika Municipality Cultural Scholarship in 2023.",
