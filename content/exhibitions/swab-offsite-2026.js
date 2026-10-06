@@ -590,7 +590,8 @@ module.exports = [
     ],
     note: "<a href=\"https://objkt.com/tokens/KT1Lt91vWTJeRRXQmot3LLY5JP2nZKAUfiMr/0\" target=\"_blank\" rel=\"noopener\" style=\"color:inherit;border-bottom:1px solid currentColor\">View the token on objkt \u2192</a>",
     website: "https://ivanaontheblock.art/",
-    instagram: "",
+    instagram: "https://www.instagram.com/from.ivana",
+    x: "https://x.com/hashsosahash",
     thumb: "/assets/images/exhibitions/swab-offsite-2026/ivana-ehrensvard-thumb.jpg",
     kind: "images",
     images: [
