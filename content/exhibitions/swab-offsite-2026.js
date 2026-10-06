@@ -541,6 +541,36 @@ module.exports = [
     }
   }
 
+  // Work text is hers verbatim from the docx. The bio is CONDENSED from her
+  // five-paragraph PDF — kept the Fine Art training, what the practice does,
+  // Lacuna, and Next Generation Publications; dropped the yoga, mental health
+  // first aid and Carbon Literate certifications and some detail. Full version
+  // is in SJMason Biography 2025 FAC.pdf if she wants more of it back.
+  // No year or dimensions supplied for the work.
+  ,{
+    name: "Sarah-Jane Mason",
+    country: "UK / Spain",
+    work: "Landscapes of You and I",
+    type: "Mixed media",
+    materials: "Mixed media collage, with thermal paper, ink and alcohol",
+    quote: "The more this paper is exposed to heat and light, the faster the image fades until there is no trace of what was there before.",
+    statement: [
+      "Sarah-Jane Mason is a Creative Practitioner, Facilitator and Educator who specialises in using mixed media approaches to personal and participatory arts projects. She studied BA (Hons) Fine Art at Liverpool John Moores University and DipCipris in Fine Art at the Cyprus College of Art, then focused on creative education with a PGCE (Art & Design) at the University of Leeds. Her practice uses mixed media to encourage dialogue around uncomfortable but important topics, question societal norms, and compare people\u2019s experiences of a particular space or place. Her work often includes elements of mass media or found natural objects, questioning the impact these sources have on our worldviews and everyday lives; humour and colour bring warmth and openness to that dialogue.",
+      "She is co-director, with land artist Simon Turner, of Lacuna Festivals and The Lacuna Studios, an artist studio and residence on an ecologically regenerative olive grove in southern Spain built around notions of care, creation, destruction, cultivation and experimentation. She also runs Next Generation Publications, publishing visual books created by and for their audience; past books are held in the British Library collection as well as in local libraries, schools and community centres.",
+      "Landscapes of You and I is taken from a series of work that explores the development and overdevelopment of Lanzarote, a small Spanish island just off the coast of Morocco. Created during a period of five years when Sarah-Jane lived in a small fishing village in the north of the island, the works are an expression of her lived experiences at that time.",
+      "\u201cThe explosion of package tourism on the southern coast followed by the popularisation of Air BnB exacerbated existing inequalities on the island and created unfathomable new ones. Like the full-time secondary school teacher living out of their car because their monthly salary is no longer enough to cover rent. Or the residents living far away from the tourist areas that have no water for days on end as the tourist accommodation squeezes every last drop available from the desalination plant.",
+      "\u201cThere is also the inherent sadness of the island that in less than 50 years has gone from quiet shores and desolate volcanic wasteland into mega hotels and long traffic jams of sightseers. The sadness of an unprepared government floundering with this unprecedented escalation. The sadness of long-time residents grieving for the unique environment, sentimental for the good old days and full of melancholy that nothing ever lasts.",
+      "\u201cIt is the melancholy of the transient nature of human life and the spaces and places we inhabit that I wanted to capture in this piece. It started with a small \u2018creative spark\u2019, a tiny abstract piece created on thermal paper with ink and alcohol, sent to me by Irish artist Kim-Ling Morris. The more this paper is exposed to heat and light, the faster the image fades until there is no trace of what was there before. This piece of paper was the catalyst and remains the most important part of the piece as it fades out of existence. It leaves behind a blank space for the audience to question, make sense of and ultimately choose to fill or leave as open as a gaping wound.\u201d"
+    ],
+    note: "Contains a work on thermal paper by Irish artist Kim-Ling Morris.",
+    website: "https://www.sarahjanemason.com",
+    instagram: "https://www.instagram.com/sarahjanemasonartist/",
+    kind: "images",
+    images: [
+      { src: "/assets/images/exhibitions/swab-offsite-2026/sarah-jane-mason-1.jpg", caption: "Landscapes of You and I" }
+    ]
+  }
+
 ];
 
 /* ─────────────────────────────────────────────────────────────
