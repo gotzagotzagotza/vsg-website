@@ -1144,8 +1144,8 @@ function buildProjects(reflections) {
       <div style="background:#fff;padding:0.5rem 0.9rem;flex-shrink:0;display:flex;align-items:center"><img src="/assets/images/exhibitions/swab-offsite-2026/swab-logo.png" alt="Swab Barcelona" style="height:40px;width:auto;display:block"></div>
       <div>
         <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;opacity:0.75;margin-bottom:0.4rem">8–11 October 2026 · Barcelona</p>
-        <p style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.25rem"><strong>VSG at Swab OFF-Site</strong> — with CasCaDas ArtSpace</p>
-        <p style="font-family:var(--font-serif);font-size:0.9rem;opacity:0.85">VSG joins CasCaDas ArtSpace in OFF-Site, Swab Barcelona's programme for independent art spaces built through reuse and adaptation. Our presentation is online — enter it here, or by QR code at Stand OFF3.</p>
+        <p style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.25rem"><strong>What a Place Holds</strong> — VSG at Swab Barcelona</p>
+        <p style="font-family:var(--font-serif);font-size:0.9rem;opacity:0.85">Fifteen works that take their material from a site, stay with one place for years, or use space nobody built for art. Within Porous Practices by CasCaDas ArtSpace, in Swab's OFF-Site programme. Enter it here, or by QR code at Stand OFF3.</p>
       </div>
     </div>
     <a href="/projects/swab-offsite-2026/" style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,0.6);padding:0.65rem 1.25rem;white-space:nowrap;flex-shrink:0">View Exhibition →</a>
