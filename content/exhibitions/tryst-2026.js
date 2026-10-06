@@ -270,7 +270,8 @@ module.exports = [
     instagram: "https://www.instagram.com/mrs.horowitz/",
     kind: "images",
     images: [
-      { src: "/assets/images/exhibitions/tryst-2026/sarah-horowitz.jpg", caption: "Secret View from Calle de Sant Andreu — acrylic on panel" }
+      { src: "/assets/images/exhibitions/tryst-2026/sarah-horowitz.jpg", caption: "Secret View from Calle de Sant Andreu — acrylic on panel, 18 × 24 in." },
+      { src: "/assets/images/exhibitions/tryst-2026/sarah-horowitz-rosemont.jpg", caption: "Secret View from Rosemont Street — acrylic on panel, 18 × 24 in." }
     ]
   }
 
