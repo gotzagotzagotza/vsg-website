@@ -1825,7 +1825,9 @@ function buildExhibitionPage(artists, meta) {
   const artistsJson = JSON.stringify(artists);
 
   const gridCards = artists.map((a, i) => {
-    const thumb = a.kind === 'images' && a.images && a.images[0]
+    const thumb = a.thumb
+      ? `<img src="${a.thumb}" alt="${a.work}" loading="lazy">`
+      : a.kind === 'images' && a.images && a.images[0]
       ? `<img src="${a.images[0].src}" alt="${a.images[0].caption || a.work}" loading="lazy">`
       : a.kind === 'video' && a.video && a.video.poster
         ? `<img src="${a.video.poster}" alt="${a.work}" loading="lazy">`
@@ -2198,7 +2200,7 @@ function build() {
     credit: 'Online Exhibition · August 7–9, 2026 · TRYST, Los Angeles',
     statusLabel: '● Online now',
     curatorial: [],
-    footerNote: "TRYST is the world's largest international art fair dedicated to artist-run spaces, collectives, and independent organizations — now in its fourth edition, prioritizing collaboration, experimentation, and cultural dialogue over commercial structures.",
+    footerNote: "Online exhibition curated by Gordana Zikic. TRYST is the world's largest international art fair dedicated to artist-run spaces, collectives, and independent organizations — now in its fourth edition, prioritizing collaboration, experimentation, and cultural dialogue over commercial structures.",
     description: 'Works Beyond the Walls — a VSG online exhibition at TRYST Art Fair, Los Angeles, August 7–9, 2026. Installations, sculpture, and moving image from artists around the world.'
   };
   const videoCategories = require('./content/videos.js');

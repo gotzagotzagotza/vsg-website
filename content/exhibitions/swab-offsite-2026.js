@@ -571,6 +571,33 @@ module.exports = [
     ]
   }
 
+  // The work is the animated GIF (11.6 MB, 204 frames) — it only downloads when
+  // her entry is opened. `thumb` points the grid card at the still JPG instead,
+  // so the index page doesn't pull 11.6 MB. Statement and bio are hers verbatim.
+  ,{
+    name: "Ivana Ehrensv\u00e4rd",
+    country: "Serbia",
+    work: "My Marriage No. 1 \u2014 Whoosh!",
+    type: "Animated GIF \u00b7 on-chain artwork",
+    materials: "Digital reanimation of an acrylic painting on canvas, minted as a 1/1 NFT",
+    quote: "Signal lost. We were free. Now, whoosh to the Earth! where absence holds me.",
+    statement: [
+      "Ivana Ehrensv\u00e4rd is a curator and artist based in Belgrade, Serbia, working across painting and the digital and blockchain space. Her work has been shown internationally in group exhibitions.",
+      "My Marriage No. 1 \u2014 Whoosh! is a digital reanimation of an earlier work: My Marriage No. 1, an acrylic painting on canvas, begun toward the end of a brief marriage and completed in its aftermath. The original painting became a visual record of an inner process moving from turbulence toward stillness.",
+      "Years later, responding to an open call on the theme of Absence, the artist returned to the painting rather than creating a new work. Through glitch and motion, a small sphere emerges from the line and drifts away \u2014 a new element introduced into the painting\u2019s static composition, breaking loose and disappearing. The animation transforms the painting\u2019s earlier state into a gesture of release \u2014 allowing something held within to finally leave it.",
+      "My Marriage No. 1 \u2014 Whoosh! is an on-chain artwork, minted as a 1/1 NFT. It extends the life of the original painting into a new digital form, while the NFT provides a verifiable record of the artwork\u2019s originality and ownership on-chain.",
+      "The work was created for the ACTZ Absence open call and was subsequently sold."
+    ],
+    note: "<a href=\"https://objkt.com/tokens/KT1Lt91vWTJeRRXQmot3LLY5JP2nZKAUfiMr/0\" target=\"_blank\" rel=\"noopener\" style=\"color:inherit;border-bottom:1px solid currentColor\">View the token on objkt \u2192</a>",
+    website: "https://ivanaontheblock.art/",
+    instagram: "",
+    thumb: "/assets/images/exhibitions/swab-offsite-2026/ivana-ehrensvard-thumb.jpg",
+    kind: "images",
+    images: [
+      { src: "/assets/images/exhibitions/swab-offsite-2026/ivana-ehrensvard-whoosh.gif", caption: "My Marriage No. 1 \u2014 Whoosh!" }
+    ]
+  }
+
 ];
 
 /* ─────────────────────────────────────────────────────────────
