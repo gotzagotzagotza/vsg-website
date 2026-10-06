@@ -13,7 +13,7 @@ module.exports = {
 
   subtitle: 'Virtual Studio Groups at the TRYST International Alternative Art Fair, Torrance Art Museum',
 
-  logo: { src: '/assets/images/exhibitions/works-beyond-the-walls/tryst-logo.webp', alt: 'TRYST Art Fair', height: 48 },
+  logo: { src: '/assets/images/exhibitions/tryst-2026/tryst-announcement.jpg', alt: 'VSG participates in TRYST, 7–9 August 2026, Torrance Art Museum', height: 150 },
 
   intro: [
     'Virtual Studio Groups participated in the TRYST International Alternative Art Fair, held in Torrance, California, from 7 to 9 August 2026. It was the fourth year of the fair \u2014 tailored specifically for artist-run spaces, collectives, and independent organizations \u2014 and the first time for VSG.'
@@ -36,7 +36,7 @@ module.exports = {
   // ── Videos and installation photographs ─────────────────────
   documentation: {
     label: 'In the booth',
-    intro: 'Forty-two photographs taken during the fair, and three films: a walk through the VSG booth, the audience performing Bosko Begovic\u2019s rain instructions, and a tour of the whole fair for context.',
+    intro: 'Forty-three photographs taken during the fair, and three films: a walk through the VSG booth, the audience performing Bosko Begovic\u2019s rain instructions, and a tour of the whole fair for context.',
     videos: [
       { embed: 'https://www.youtube.com/embed/1FoRzvpuGnI',
         poster: '/assets/images/exhibitions/tryst-2026/video-booth-poster.jpg',
@@ -93,7 +93,8 @@ module.exports = {
     '/assets/images/exhibitions/tryst-2026/booth/booth-58.jpg',
     '/assets/images/exhibitions/tryst-2026/booth/booth-62.jpg',
     '/assets/images/exhibitions/tryst-2026/booth/booth-63.jpg',
-    '/assets/images/exhibitions/tryst-2026/booth/booth-64.jpg'
+    '/assets/images/exhibitions/tryst-2026/booth/booth-64.jpg',
+    '/assets/images/exhibitions/tryst-2026/booth/booth-65.jpg'
     ]
   },
 

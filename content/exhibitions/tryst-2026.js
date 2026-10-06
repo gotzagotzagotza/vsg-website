@@ -25,9 +25,20 @@ module.exports = [
     note: "",
     website: "https://gordanazikic.wordpress.com",
     instagram: "https://www.instagram.com/gotza_gotza/",
+    extraLinks: [
+      { label: "Watch the installation →", href: "https://youtube.com/shorts/jMpVUc0Tf1o" }
+    ],
     kind: "images",
     images: [
-      { src: "/assets/images/exhibitions/tryst-2026/gordana-red-deer.jpg", caption: "Red Deer — installation at TRYST" }
+      { src: "/assets/images/exhibitions/tryst-2026/gordana-01.jpg", caption: "Red Deer — installation at TRYST" },
+      { src: "/assets/images/exhibitions/tryst-2026/gordana-02.jpg", caption: "Red Deer — installation at TRYST" },
+      { src: "/assets/images/exhibitions/tryst-2026/gordana-03.jpg", caption: "Red Deer — installation at TRYST" },
+      { src: "/assets/images/exhibitions/tryst-2026/gordana-04.jpg", caption: "Red Deer — installation at TRYST" },
+      { src: "/assets/images/exhibitions/tryst-2026/gordana-05.jpg", caption: "Red Deer — installation at TRYST" },
+      { src: "/assets/images/exhibitions/tryst-2026/gordana-06.jpg", caption: "Red Deer — installation at TRYST" },
+      { src: "/assets/images/exhibitions/tryst-2026/gordana-07.jpg", caption: "Red Deer — installation at TRYST" },
+      { src: "/assets/images/exhibitions/tryst-2026/gordana-08.jpg", caption: "Red Deer — installation at TRYST" },
+      { src: "/assets/images/exhibitions/tryst-2026/gordana-09.jpg", caption: "Red Deer — installation at TRYST" }
     ]
   }
 
