@@ -1921,6 +1921,32 @@ function buildExhibitionPage(artists, meta) {
 .wbtw-panel-links a { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.06em; color: inherit; border-bottom: 1px solid currentColor; padding-bottom: 1px; }
 .wbtw-panel-links a:hover { color: var(--accent); }
 
+/* ── Documentation: videos + installation photographs ── */
+.doc-section { border-top: 1px solid var(--gray-mid); padding: 3.5rem 0; }
+.doc-label { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gray-text); margin-bottom: 1.25rem; }
+.doc-intro { font-family: var(--font-serif); font-size: 1rem; line-height: 1.85; color: var(--gray-text); max-width: 720px; margin-bottom: 2.5rem; }
+.doc-videos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; }
+.doc-video { border: 1px solid var(--gray-mid); }
+.doc-video-frame { position: relative; aspect-ratio: 16/9; background: var(--gray-light); cursor: pointer; overflow: hidden; }
+.doc-video-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.doc-play { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); background: var(--accent); color: #fff; border: none; font-family: var(--font-mono); font-size: 0.85rem; padding: 0.6rem 1.2rem; cursor: pointer; }
+.doc-video-cap { padding: 0.75rem 1rem; font-family: var(--font-mono); font-size: 0.78rem; line-height: 1.5; color: var(--gray-text); }
+.doc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+@media (max-width: 900px) { .doc-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 540px) { .doc-grid { grid-template-columns: repeat(2, 1fr); } }
+.doc-shot { aspect-ratio: 1; overflow: hidden; background: var(--gray-light); border: none; padding: 0; cursor: pointer; }
+.doc-shot img { width: 100%; height: 100%; object-fit: cover; display: block; transition: opacity 0.15s; }
+.doc-shot:hover img, .doc-shot:focus-visible img { opacity: 0.82; }
+.doc-shot:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.doc-lightbox { position: fixed; inset: 0; z-index: 2100; background: rgba(0,0,0,0.93); display: none; align-items: center; justify-content: center; }
+.doc-lightbox.open { display: flex; }
+.doc-lightbox img { max-width: 94vw; max-height: 88vh; object-fit: contain; display: block; }
+.doc-lb-close, .doc-lb-prev, .doc-lb-next { position: absolute; background: rgba(255,255,255,0.12); color: #fff; border: none; font-family: var(--font-mono); font-size: 1rem; cursor: pointer; min-width: 48px; min-height: 48px; }
+.doc-lb-close { top: 1rem; right: 1rem; }
+.doc-lb-prev { left: 1rem; top: 50%; transform: translateY(-50%); }
+.doc-lb-next { right: 1rem; top: 50%; transform: translateY(-50%); }
+.doc-lb-count { position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%); font-family: var(--font-mono); font-size: 0.75rem; color: rgba(255,255,255,0.7); }
+
 /* ── Dark hero two-col → single col on mobile ── */
 @media (max-width: 600px) {
   [style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
@@ -1976,6 +2002,57 @@ ${meta.curatorial && meta.curatorial.length ? `
     ${meta.footerNote ? `<p style="font-family:var(--font-mono);font-size:0.95rem;color:#111;font-weight:500;margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--gray-mid);max-width:640px">${meta.footerNote}</p>` : ''}
   </div>
 </div>
+
+${meta.documentation ? `
+<div class="doc-section">
+  <div class="container">
+    <p class="doc-label">${meta.documentation.label || 'Documentation'}</p>
+    ${meta.documentation.intro ? `<p class="doc-intro">${meta.documentation.intro}</p>` : ''}
+    ${(meta.documentation.videos || []).length ? `<div class="doc-videos">${meta.documentation.videos.map(v => `
+      <div class="doc-video">
+        <div class="doc-video-frame" data-embed="${v.embed}"><img src="${v.poster}" alt="${v.title}" loading="lazy"><button class="doc-play" aria-label="Play ${v.title}">\u25b6 Play</button></div>
+        <p class="doc-video-cap"><strong>${v.title}</strong>${v.note ? `<br>${v.note}` : ''}</p>
+      </div>`).join('')}</div>` : ''}
+    ${(meta.documentation.images || []).length ? `<div class="doc-grid">${meta.documentation.images.map((src,i) => `<button class="doc-shot" data-shot="${i}" aria-label="Installation photograph ${i+1}"><img src="${src}" alt="Installation view ${i+1}" loading="lazy"></button>`).join('')}</div>` : ''}
+  </div>
+</div>
+
+<div class="doc-lightbox" id="doc-lightbox" role="dialog" aria-modal="true" aria-label="Installation photographs">
+  <button class="doc-lb-close" id="doc-lb-close" aria-label="Close">\u2715</button>
+  <button class="doc-lb-prev" id="doc-lb-prev" aria-label="Previous">\u2190</button>
+  <img id="doc-lb-img" src="" alt="">
+  <button class="doc-lb-next" id="doc-lb-next" aria-label="Next">\u2192</button>
+  <span class="doc-lb-count" id="doc-lb-count"></span>
+</div>
+<script>
+(function(){
+  var shots = ${JSON.stringify((meta.documentation && meta.documentation.images) || [])};
+  document.querySelectorAll('.doc-video-frame').forEach(function(f){
+    f.addEventListener('click', function(){
+      f.innerHTML = '<iframe src="' + f.dataset.embed + '?autoplay=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen style="width:100%;height:100%;display:block"></iframe>';
+    });
+  });
+  if (!shots.length) return;
+  var lb = document.getElementById('doc-lightbox'), img = document.getElementById('doc-lb-img'),
+      count = document.getElementById('doc-lb-count'), cur = 0;
+  function show(i){ cur = (i + shots.length) % shots.length; img.src = shots[cur];
+    count.textContent = (cur+1) + ' / ' + shots.length; lb.classList.add('open'); document.body.style.overflow='hidden'; }
+  function hide(){ lb.classList.remove('open'); document.body.style.overflow=''; img.src=''; }
+  document.querySelectorAll('.doc-shot').forEach(function(b){
+    b.addEventListener('click', function(){ show(parseInt(b.dataset.shot,10)); });
+  });
+  document.getElementById('doc-lb-close').addEventListener('click', hide);
+  document.getElementById('doc-lb-prev').addEventListener('click', function(e){ e.stopPropagation(); show(cur-1); });
+  document.getElementById('doc-lb-next').addEventListener('click', function(e){ e.stopPropagation(); show(cur+1); });
+  lb.addEventListener('click', function(e){ if (e.target === lb) hide(); });
+  document.addEventListener('keydown', function(e){
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') hide();
+    else if (e.key === 'ArrowLeft') show(cur-1);
+    else if (e.key === 'ArrowRight') show(cur+1);
+  });
+})();
+</script>` : ''}
 
 <!-- Lightbox overlay -->
 <div class="wbtw-overlay" id="wbtw-overlay" role="dialog" aria-modal="true" aria-label="Artist works viewer">
@@ -2193,6 +2270,8 @@ function build() {
   const events = JSON.parse(readFile('content/events.json'));
   const worksArtists = require('./content/exhibitions/works-beyond-the-walls.js');
   const swabArtists = require('./content/exhibitions/swab-offsite-2026.js');
+  const trystArtists = require('./content/exhibitions/tryst-2026.js');
+  const trystText = require('./content/exhibitions/tryst-2026.text.js');
   const swabText = require('./content/exhibitions/swab-offsite-2026.text.js');
 
   const worksMeta = {
@@ -2204,7 +2283,7 @@ function build() {
     credit: 'Online Exhibition · August 7–9, 2026 · TRYST, Los Angeles',
     statusLabel: '● Online now',
     curatorial: [],
-    footerNote: "Online exhibition curated by Gordana Zikic. TRYST is the world's largest international art fair dedicated to artist-run spaces, collectives, and independent organizations — now in its fourth edition, prioritizing collaboration, experimentation, and cultural dialogue over commercial structures.",
+    footerNote: "Online exhibition curated by Gordana Zikic. <a href=\"/projects/tryst-2026/\" style=\"color:inherit;border-bottom:1px solid currentColor\">See the physical booth at TRYST \u2192</a> TRYST is the world's largest international art fair dedicated to artist-run spaces, collectives, and independent organizations — now in its fourth edition, prioritizing collaboration, experimentation, and cultural dialogue over commercial structures.",
     description: 'Works Beyond the Walls — a VSG online exhibition at TRYST Art Fair, Los Angeles, August 7–9, 2026. Installations, sculpture, and moving image from artists around the world.'
   };
   const videoCategories = require('./content/videos.js');
@@ -2305,6 +2384,9 @@ function build() {
 
   writeFile('dist/projects/swab-offsite-2026/index.html', buildExhibitionPage(swabArtists, swabText));
   console.log('  ✓ projects/swab-offsite-2026/index.html');
+
+  writeFile('dist/projects/tryst-2026/index.html', buildExhibitionPage(trystArtists, trystText));
+  console.log('  ✓ projects/tryst-2026/index.html');
 
   // Meetings
   writeFile('dist/meetings/index.html', buildMeetings(meetings));
