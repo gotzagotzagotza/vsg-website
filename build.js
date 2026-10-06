@@ -152,7 +152,7 @@ ${body}
       <a href="https://vsgartmagazine.substack.com" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.8rem;padding:0.5rem 1rem">Subscribe on Substack</a>
       <p style="margin-top:1.25rem;margin-bottom:0.5rem;font-size:0.85rem;line-height:1.5;opacity:0.8">Like what we do?</p>
       <a href="/support/" class="btn btn-primary" style="font-size:0.8rem;padding:0.5rem 1rem;background:var(--accent)">Support VSG on Ko-fi →</a>
-      <p style="margin-top:0.75rem;font-size:0.75rem;opacity:0.6"><a href="/feed.xml" style="color:inherit">RSS feed</a></p>
+      <p style="margin-top:0.75rem;font-size:0.75rem;opacity:0.75"><a href="/feed.xml" style="color:inherit">RSS feed</a></p>
     </div>
   </div>
   <div class="footer-bottom">
@@ -1143,9 +1143,9 @@ function buildProjects(reflections) {
     <div style="display:flex;align-items:center;gap:2rem;flex-wrap:wrap">
       <div style="background:#fff;padding:0.5rem 0.9rem;flex-shrink:0;display:flex;align-items:center"><img src="/assets/images/exhibitions/swab-offsite-2026/swab-logo.png" alt="Swab Barcelona" style="height:40px;width:auto;display:block"></div>
       <div>
-        <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;opacity:0.75;margin-bottom:0.4rem">8–11 October 2026 · Barcelona</p>
+        <p style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.4rem">8–11 October 2026 · Barcelona</p>
         <p style="font-family:var(--font-serif);font-size:1.1rem;margin-bottom:0.25rem"><strong>What a Place Holds</strong> — VSG at Swab Barcelona</p>
-        <p style="font-family:var(--font-serif);font-size:0.9rem;opacity:0.85">Fifteen works that take their material from a site, stay with one place for years, or use space nobody built for art. Within Porous Practices by CasCaDas ArtSpace, in Swab's OFF-Site programme. Enter it here, or by QR code at Stand OFF3.</p>
+        <p style="font-family:var(--font-serif);font-size:0.95rem;line-height:1.7">Fifteen works that take their material from a site, stay with one place for years, or use space nobody built for art. Within Porous Practices by CasCaDas ArtSpace, in Swab's OFF-Site programme. Enter it here, or by QR code at Stand OFF3.</p>
       </div>
     </div>
     <a href="/projects/swab-offsite-2026/" style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,0.6);padding:0.65rem 1.25rem;white-space:nowrap;flex-shrink:0">View Exhibition →</a>
@@ -1939,15 +1939,15 @@ function buildExhibitionPage(artists, meta) {
   <div class="container">
     <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:2rem;flex-wrap:wrap;margin-bottom:2rem">
       <div style="flex:1 1 320px">
-        <p style="font-family:var(--font-mono);font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;opacity:0.55;margin-bottom:1rem">${meta.kicker}</p>
+        <p style="font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1rem">${meta.kicker}</p>
         <h1 style="font-family:var(--font-serif);font-size:clamp(2rem,5vw,3.25rem);font-weight:400;line-height:1.15;margin-bottom:0.5rem">${meta.title}</h1>
-        <p style="font-family:var(--font-mono);font-size:0.95rem;line-height:1.6;letter-spacing:0.04em;opacity:0.92;margin-bottom:0">${meta.subtitle}</p>
+        <p style="font-family:var(--font-mono);font-size:0.95rem;line-height:1.6;letter-spacing:0.04em;margin-bottom:0">${meta.subtitle}</p>
       </div>
       ${(meta.logos || (meta.logo ? [meta.logo] : [])).map(l => `<div style="background:#fff;padding:0.5rem 1rem;flex-shrink:0;display:flex;align-items:center;margin-top:0.25rem"><img src="${l.src}" alt="${l.alt}" style="height:${l.height || 44}px;width:auto;display:block"></div>`).join('')}
     </div>
     <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:1.75rem;max-width:720px">
-      ${meta.intro.map(t => `<p style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.85;opacity:0.9;margin:0 0 0.75rem">${t}</p>`).join('\n      ')}
-      <p style="font-family:var(--font-mono);font-size:0.85rem;line-height:1.6;letter-spacing:0.05em;opacity:0.9;margin:0">${meta.credit}</p>
+      ${meta.intro.map(t => `<p style="font-family:var(--font-serif);font-size:1.05rem;line-height:1.85;margin:0 0 0.75rem">${t}</p>`).join('\n      ')}
+      <p style="font-family:var(--font-mono);font-size:0.85rem;line-height:1.6;letter-spacing:0.05em;margin:0">${meta.credit}</p>
     </div>
   </div>
 </div>
