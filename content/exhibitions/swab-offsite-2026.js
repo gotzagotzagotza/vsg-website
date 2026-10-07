@@ -605,6 +605,37 @@ module.exports = [
     ]
   }
 
+  // Photographs by Kau Lin. Katarina also shows Echoes of the Pineal, from the
+  // same series, in Works Beyond the Walls. Country set to Serbia: her bio says
+  // she returned there in 2025 after a decade abroad (the artist directory
+  // still reads "Serbia / Ivory Coast" — worth syncing). No year supplied.
+  ,{
+    name: "Katarina Rasic",
+    country: "Serbia",
+    work: "Pineal Walk",
+    type: "Durational performance",
+    materials: "Durational performance with pinecone, Ca\u00f1ada del Hoyo, Spain",
+    quote: "The route becomes a negotiation between external geography and internal experience.",
+    statement: [
+      "Katarina Rasic is a Serbian artist and educator whose practice explores belonging, memory, identity and transformation through embodied storytelling and cross-cultural dialogue. Working across performance, drawing, collage and participatory action, she investigates how personal and collective memories are carried through the body, place and everyday experience.",
+      "Katarina spent over a decade living and working across India, Thailand, Brazil and now C\u00f4te d\u2019Ivoire. After more than a decade abroad, she returned to Serbia in 2025, a transition that brought questions of belonging, displacement and rootedness into sharper focus within her practice. Her work considers how we negotiate identity as we move between places, cultures, and states of transformation.",
+      "The Pineal Series is a body of performative works exploring intuition, sensory memory and the relationship between inner and outer landscapes. The series emerged from Katarina\u2019s experience during a residency at Karstica in Ca\u00f1ada del Hoyo, Spain, where the pervasive scent of pine immediately triggered childhood memories and a strong sense of familiarity and grounding. This sensory encounter became the starting point for an exploration of how memory can be activated through the body and environment.",
+      "The series comprises three interconnected works \u2014 Pineal Walk, Pinea and Echoes of the Pineal \u2014 using the pinecone as a recurring material and symbolic form. Rather than treating intuition as something abstract, the works approach it through sensory attention, movement, ritualised gestures and direct engagement with landscape. The pinecone becomes both an object of observation and a guide through which the artist considers navigation, memory and embodied perception.",
+      "Pineal Walk is a durational performance developed at the Karstica residency in Ca\u00f1ada del Hoyo. Beginning at the residency space, the artist walks through the village and toward the surrounding pine-filled lakes, using the pinecone as both a literal object and a conceptual guide.",
+      "The walk functions as a form of sensory mapping. Rather than documenting the landscape through conventional observation alone, the artist attends to smell, texture, movement, memory and bodily response. The route becomes a negotiation between external geography and internal experience, asking how a landscape can be remembered, sensed and mapped through the body. In this way, Pineal Walk becomes an exploration of intuitive navigation and the ways seemingly ordinary natural elements can become carriers of memory and meaning."
+    ],
+    note: "Photographs by Kau Lin. From The Pineal Series; Echoes of the Pineal was shown in Works Beyond the Walls.",
+    website: "https://katarinarasic.com/",
+    instagram: "https://www.instagram.com/katarinarasicart/",
+    kind: "images",
+    images: [
+      { src: "/assets/images/exhibitions/swab-offsite-2026/katarina-rasic-1.jpg", caption: "Pineal Walk \u2014 carrying the pinecone through the village" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/katarina-rasic-2.jpg", caption: "Pineal Walk \u2014 setting the pinecone down on the road" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/katarina-rasic-3.jpg", caption: "Pineal Walk \u2014 the body over the pinecone" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/katarina-rasic-4.jpg", caption: "Pineal Walk \u2014 walking on toward the pine-filled lakes" }
+    ]
+  }
+
 ];
 
 /* ─────────────────────────────────────────────────────────────
