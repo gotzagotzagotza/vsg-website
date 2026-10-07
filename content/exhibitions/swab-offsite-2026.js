@@ -606,15 +606,14 @@ module.exports = [
   }
 
   // Photographs by Kau Lin. Katarina also shows Echoes of the Pineal, from the
-  // same series, in Works Beyond the Walls. Country set to Serbia: her bio says
-  // she returned there in 2025 after a decade abroad (the artist directory
-  // still reads "Serbia / Ivory Coast" — worth syncing). No year supplied.
+  // same series, in Works Beyond the Walls. Country is Serbia only, confirmed
+  // by the artist.
   ,{
     name: "Katarina Rasic",
     country: "Serbia",
     work: "Pineal Walk",
     type: "Durational performance",
-    materials: "Durational performance with pinecone, Ca\u00f1ada del Hoyo, Spain",
+    materials: "Durational performance with pinecone, Ca\u00f1ada del Hoyo, Spain, 2025",
     quote: "The route becomes a negotiation between external geography and internal experience.",
     statement: [
       "Katarina Rasic is a Serbian artist and educator whose practice explores belonging, memory, identity and transformation through embodied storytelling and cross-cultural dialogue. Working across performance, drawing, collage and participatory action, she investigates how personal and collective memories are carried through the body, place and everyday experience.",
@@ -634,6 +633,30 @@ module.exports = [
       { src: "/assets/images/exhibitions/swab-offsite-2026/katarina-rasic-3.jpg", caption: "Pineal Walk \u2014 the body over the pinecone" },
       { src: "/assets/images/exhibitions/swab-offsite-2026/katarina-rasic-4.jpg", caption: "Pineal Walk \u2014 walking on toward the pine-filled lakes" }
     ]
+  }
+
+  // Statement translated from Natalia's Spanish; bio supplied in English.
+  // IMAGES STILL TO COME. She also shows Edible plant-powered skin in
+  // Works Beyond the Walls. No year supplied for this work.
+  ,{
+    name: "Natalia Carminati",
+    country: "Argentina / Spain",
+    work: "Screening Body",
+    type: "Multistreaming performance",
+    materials: "Performance with live multistreaming",
+    quote: "As if our arm were a phone case, as if cameras grew from our toenails, as if our back could stream what is happening behind us.",
+    statement: [
+      "Natalia Carminati (Buenos Aires\u2013Barcelona) is an artist whose research and conceptual work focuses on the critical study of contemporary culture, postcolonial theory, biotechnology, and food sovereignty. Her projects materialize in the creation of multisensory devices that integrate video games, installation, painting, audiovisual languages, living organisms, food or performance.",
+      "She has participated in solo and group exhibitions and performances in museums and art centers in Spain, Argentina, Australia, the United States and Germany.",
+      "Screening Body is a multistreaming performance that treats the body as a support for the new technologies of everyday life. While the human is usually positioned as the operator of these technologies, holding them under their command, Screening Body explores how everyday technologies have become prostheses of our body. As if our arm were a phone case, as if cameras grew from our toenails, as if our back could stream what is happening behind us \u2014 making our body a mere medium through which these technologies perceive, rehearse, verify and experiment.",
+      "Drawing on the concept of extimacy described by the anthropologist Paula Sibilia, the performance proposes the passage of a body traversed by networks, in which public space presents itself as domestic space and the sphere of the virtual is the real. Through the possibilities of new technologies, the audience can reach different perspectives on one and the same bodily movement, as well as multiple temporalities within a single present instant."
+    ],
+    note: "Statement translated from Spanish.",
+    website: "https://nataliacarminati.com",
+    instagram: "https://www.instagram.com/nat_carminati/",
+    kind: "images",
+    images: [],
+    placeholder: "Images to follow"
   }
 
 ];
