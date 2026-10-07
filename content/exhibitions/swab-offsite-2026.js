@@ -666,6 +666,33 @@ module.exports = [
     ]
   }
 
+  // ANONYMOUS BY DESIGN. Credited to the group only — the members work under
+  // pseudonyms and have asked to stay anonymous, so do NOT add the name of the
+  // individual member who sent the work, even though Gordana knows her.
+  // Note: the text says eight characters but lists nine pseudonyms, and the
+  // photograph shows eight figures — worth checking with them.
+  // NO WORK TITLE SUPPLIED, and no country. Image is their file
+  // "DDTdada in Venice 26".
+  ,{
+    name: "DDT-dada",
+    country: "",
+    work: "",
+    type: "Performance",
+    materials: "Costume, persona and action in public space",
+    quote: "Eight characters who, like Commedia dell\u2019arte, all have a specific costume and persona that they act from.",
+    statement: [
+      "DDT-dada is a newly formed artist group that collectively investigates post-Dadaist possibilities for tackling contemporary art. Together, the group works in a tradition of Dadaism and Situationism and appears both on existing stages and in various other spaces.",
+      "DDT-dada consists of eight characters who, like Commedia dell\u2019arte, all have a specific costume and persona that they act from. All have a professional background in the visual arts or theatre and want to maintain their anonymity by operating under a pseudonym: Tango Kutukutu, Khalos Arms, Tita Bolzano, Flagellum Dei, Klaus Lobano, Rabbi Cent, Rhino Duck, Emiton Emanon Arev and Filidoro."
+    ],
+    note: "The members work under pseudonyms and remain anonymous.",
+    website: "https://www.ddtdada.com",
+    instagram: "",
+    kind: "images",
+    images: [
+      { src: "/assets/images/exhibitions/swab-offsite-2026/ddt-dada-1.jpg", caption: "DDT-dada in Venice" }
+    ]
+  }
+
 ];
 
 /* ─────────────────────────────────────────────────────────────
