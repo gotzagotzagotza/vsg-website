@@ -636,7 +636,8 @@ module.exports = [
   }
 
   // Statement translated from Natalia's Spanish; bio supplied in English.
-  // IMAGES STILL TO COME. She also shows Edible plant-powered skin in
+  // Stills are her own files "Multi FPS 1-5". She also shows Edible
+  // plant-powered skin in
   // Works Beyond the Walls. No year supplied for this work.
   ,{
     name: "Natalia Carminati",
@@ -655,8 +656,13 @@ module.exports = [
     website: "https://nataliacarminati.com",
     instagram: "https://www.instagram.com/nat_carminati/",
     kind: "images",
-    images: [],
-    placeholder: "Images to follow"
+    images: [
+      { src: "/assets/images/exhibitions/swab-offsite-2026/natalia-carminati-1.jpg", caption: "Screening Body \u2014 simultaneous streams from the performing body" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/natalia-carminati-2.jpg", caption: "Screening Body \u2014 simultaneous streams from the performing body" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/natalia-carminati-3.jpg", caption: "Screening Body \u2014 simultaneous streams from the performing body" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/natalia-carminati-4.jpg", caption: "Screening Body \u2014 simultaneous streams from the performing body" },
+      { src: "/assets/images/exhibitions/swab-offsite-2026/natalia-carminati-5.jpg", caption: "Screening Body \u2014 simultaneous streams from the performing body" }
+    ]
   }
 
 ];
