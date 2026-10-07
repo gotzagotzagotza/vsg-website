@@ -653,7 +653,7 @@ module.exports = [
       "Screening Body is a multistreaming performance that treats the body as a support for the new technologies of everyday life. While the human is usually positioned as the operator of these technologies, holding them under their command, Screening Body explores how everyday technologies have become prostheses of our body. As if our arm were a phone case, as if cameras grew from our toenails, as if our back could stream what is happening behind us \u2014 making our body a mere medium through which these technologies perceive, rehearse, verify and experiment.",
       "Drawing on the concept of extimacy described by the anthropologist Paula Sibilia, the performance proposes the passage of a body traversed by networks, in which public space presents itself as domestic space and the sphere of the virtual is the real. Through the possibilities of new technologies, the audience can reach different perspectives on one and the same bodily movement, as well as multiple temporalities within a single present instant."
     ],
-    note: "Statement translated from Spanish.",
+    note: "In collaboration with Daniel Moreno Rold\u00e1n. Created for LOOP Festival, curated by Carolina Ciuti. Statement translated from Spanish.",
     website: "https://nataliacarminati.com",
     instagram: "https://www.instagram.com/nat_carminati/",
     kind: "images",
