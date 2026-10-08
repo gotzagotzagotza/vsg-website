@@ -197,7 +197,11 @@ module.exports = [
     ],
     note: "Seb Bradshaw @artbyseb138 \u00b7 Heera Gul @ammipesca",
     website: "",
-    instagram: "https://www.instagram.com/artbyseb138/",
+    instagram: "",
+    extraLinks: [
+      { label: "Seb on Instagram", href: "https://www.instagram.com/artbyseb138/" },
+      { label: "Heera on Instagram", href: "https://www.instagram.com/ammipesca/" }
+    ],
     kind: "images",
     images: [
       { src: "/assets/images/exhibitions/swab-offsite-2026/seb-bradshaw-1.jpg", caption: "Stone Compass \u2014 laid out in the dunes" },
@@ -256,7 +260,7 @@ module.exports = [
     ],
     note: "",
     website: "https://achegaleria.com/copia-de-lpdlp",
-    instagram: "",
+    instagram: "https://www.instagram.com/juanpablo_meneses_/",
     kind: "images",
     images: [
       { src: "/assets/images/exhibitions/swab-offsite-2026/juan-pablo-meneses-1.jpg", caption: "RGB + Dead Pixel \u2014 installation view, with the neon EL PIXEL HA MUERTO" },
@@ -288,7 +292,11 @@ module.exports = [
     ],
     note: "Melih A\u015fanl\u0131 \u2014 video art and interpretation \u00b7 K\u00fcbra K\u00f6pr\u00fcl\u00fco\u011flu A\u015fanl\u0131 \u2014 paintings.",
     website: "https://kubrakopruluogluasanli.myportfolio.com/wisdomkeepers",
-    instagram: "https://www.instagram.com/noooneelsebutme/",
+    instagram: "",
+    extraLinks: [
+      { label: "K\u00fcbra on Instagram", href: "https://www.instagram.com/noooneelsebutme/" },
+      { label: "Melih on Instagram", href: "https://www.instagram.com/melihasanli.art/" }
+    ],
     kind: "video",
     video: {
       embed: "https://www.youtube.com/embed/Km-gqHSswVI",
@@ -513,7 +521,7 @@ module.exports = [
     ],
     note: "",
     website: "https://unjuan.com",
-    instagram: "",
+    instagram: "https://www.instagram.com/juandavidgalindoguarin/",
     kind: "video",
     video: {
       embed: "https://player.vimeo.com/video/326782961",
